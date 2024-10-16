@@ -412,13 +412,19 @@ function AddAdminUser(){
                .catch(function(error){
                      alert(error);
                });
+
+              
        }
    
         useEffect(()=>{
            
            axios.get('/adminDashboard/adminUsers?page='+pg).then(function(response){
+               if(Array.isArray(response.data)){
+                     setUsers(response.data);
+               }else{
+                     setUsers([]);
+               }
                
-               setUsers(response.data);
                       
                       users.map((usr)=>{
                             setEditId(usr._id);

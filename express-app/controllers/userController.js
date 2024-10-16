@@ -19,7 +19,7 @@ function createUser(req,res){
       });   
       
       
-      userModel.countDocuments({username:testUsername}).then(rows=>{
+      userModel.countDocuments({username:req.body.n_name}).then(rows=>{
             if(rows=="0"){
                    newUser.save().then(data=>{
                          res.send("New User Created Successfully.....");
@@ -53,7 +53,7 @@ function readUsers(req,res){
                    
                    userModel.find({}).skip(offset).limit(limit).then(data=>{
                         res.json(data);                     
-                        
+                        console.log(data)
                    });                  
                   
                   
