@@ -4,7 +4,10 @@ const session=require('express-session');
 const path = require('path');
 var cors = require('cors')
 var app = express();
-app.use(cors())
+app.use(cors({
+    origin: '*', // Allow all origins temporarily for testing
+    methods: ['GET', 'POST'],
+}))
 app.use(express.static('public'));
 app.use(express.static(path.join(__dirname,'../','../','react-app','build')));
 
