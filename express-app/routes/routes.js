@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 const session=require('express-session');
-//const path = require('path');
+const path = require('path');
 var cors = require('cors')
 var app = express();
 app.use(cors({
@@ -9,7 +9,7 @@ app.use(cors({
     methods: ['GET', 'POST'],
 }))
 app.use(express.static('public'));
-//app.use(express.static(path.join(__dirname,'../','../','react-app','build')));
+app.use(express.static(path.join(__dirname,'../','../','react-app','build')));
 
 
 
@@ -58,10 +58,10 @@ app.get('/adminDashboard/tourism',tourismController.tourismDetailsRead);
 app.get('/adminDashboard/tourism/tourism-edit',tourismController.tourismDetailsEdit);
 app.get('/adminDashboard/places',placesController.placeRead);
 app.get('/adminDashboard/places/place-edit',placesController.placeEdit);
-//app.get('/*', function (req, res) {
+app.get('/*', function (req, res) {
     //res.sendFile(path.join(__dirname,'../','../','react-app','build','index.html'));
     //console.log(path.join(__dirname,'../','../','react-app','build','index.html'))
-//});
+});
 
     
 
