@@ -2,8 +2,9 @@ var express = require('express');
 var bodyParser = require('body-parser');
 const session=require('express-session');
 const path = require('path');
+var cors = require('cors')
 var app = express();
-
+app.use(cors())
 app.use(express.static('public'));
 app.use(express.static(path.join(__dirname,'../','../','react-app','build')));
 
@@ -39,9 +40,9 @@ var tourismController=require('../controllers/tourismController.js');
 var placesController=require('../controllers/placesController.js');
 
 /* GET*/
-app.get('/*', function (req, res) {
-       res.sendFile(path.join(__dirname,'../','../','react-app','build','index.html'));
-});
+//app.get('/*', function (req, res) {
+       //res.sendFile(path.join(__dirname,'../','../','react-app','build','index.html'));
+//});
 
 
 app.get('/adminDashboard/adminUsers',userController.readUsers);

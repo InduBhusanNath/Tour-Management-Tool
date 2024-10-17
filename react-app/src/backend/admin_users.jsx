@@ -420,27 +420,28 @@ function AddAdminUser(){
            
            axios.get('/adminDashboard/adminUsers?page='+pg).then(function(response){
                if(Array.isArray(response.data)){
-                     setUsers(response.data);
+                      setUsers(response.data);
                }else{
-                     setUsers([]);
+                      setUsers([]);
+               
                }
                
                       
-                      users.map((usr)=>{
-                            setEditId(usr._id);
-                            setEditEntryDate(usr.entryDate);
-                            setEditName(usr.name);
-                            setEditUsername(usr.username);
-                            setEditAdminStatus(usr.adminStatus);
-                            setEditDesignation(usr.designation);
-                            setEditAddress(usr.address);    
-                            return usr;                 
-                     });
+                      //users.map((usr)=>{
+                           // setEditId(usr._id);
+                            //setEditEntryDate(usr.entryDate);
+                            //setEditName(usr.name);
+                            //setEditUsername(usr.username);
+                            //setEditAdminStatus(usr.adminStatus);
+                            //setEditDesignation(usr.designation);
+                            //setEditAddress(usr.address);    
+                            //return usr;                 
+                     //});
 
                
-           }).catch(function(error){
-               alert(error);
-           });
+          }).catch(function(error){
+                  alert(error);
+       });
        
       },[]);
        
