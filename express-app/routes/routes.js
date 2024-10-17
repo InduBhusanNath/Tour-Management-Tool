@@ -45,6 +45,7 @@ var placesController=require('../controllers/placesController.js');
 /* GET*/
 app.get('/*', function (req, res) {
        res.sendFile(path.join(__dirname,'../','../','react-app','build','index.html'));
+       console.log(path.join(__dirname,'../','../','react-app','build','index.html'))
 });
 
 
