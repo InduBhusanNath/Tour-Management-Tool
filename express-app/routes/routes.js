@@ -1,8 +1,9 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 const session=require('express-session');
+const MemoryStore = require('memorystore')(session)
 const path = require('path');
-var cors = require('cors')
+var cors = require('cors');
 var app = express();
 app.use(cors({
     origin: '*', // Allow all origins temporarily for testing
@@ -18,14 +19,15 @@ app.use(express.static(path.join(__dirname,'../','../','react-app','build')));
 //var router = express.Router();
 
 
-app.use(session(
-    {
-        secret:"orange_cat",
-        resave:true,
-        saveUninitialized: true,
-        cookie: { maxAge: 60000 }
-    }
-   ));
+app.use(session({
+    cookie: { maxAge: 86400000 },
+    store: new MemoryStore({
+      checkPeriod: 86400000 // prune expired entries every 24h
+    }),
+    resave: false,
+    saveUninitialized: true,
+    secret: 'keyboard cat'
+}));
 
 
 app.use(bodyParser.json()); 
