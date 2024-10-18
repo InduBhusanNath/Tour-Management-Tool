@@ -59,8 +59,8 @@ app.get('/adminDashboard/tourism/tourism-edit',tourismController.tourismDetailsE
 app.get('/adminDashboard/places',placesController.placeRead);
 app.get('/adminDashboard/places/place-edit',placesController.placeEdit);
 app.get('/*', function (req, res) {
-    //res.sendFile(path.join(__dirname,'../','../','react-app','build','index.html'));
-    //console.log(path.join(__dirname,'../','../','react-app','build','index.html'))
+     res.sendFile(path.join(__dirname,'../','../','react-app','build','index.html'));
+     console.log(path.join(__dirname,'../','../','react-app','build','index.html'))
 });
 
     
