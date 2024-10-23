@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { url } from "./url";
 
 
 export default function Images(){
-     return(<>
+     return(<> 
          <div className="container-fluid background-lightyellow">
               <Upload/> 
               <DisplayImageLinks/>            
@@ -32,7 +33,7 @@ function Upload(){
          fd.append("n_imageFile",imageFile);
          fd.append("n_imageLabel",imageLabel);
          
-         axios.post("http://166.0.244.44:5000/adminDashboard/images",fd,{
+         axios.post(url+"/adminDashboard/images",fd,{
             headers: {
               'Content-Type': 'multipart/form-data'
             }}
@@ -46,7 +47,7 @@ function Upload(){
         });        
 
 
-      }
+      } 
      return(<> 
          <div className="row">
              <div className="col-sm-2"></div>
@@ -100,7 +101,7 @@ function DisplayImageLinks(){
      const lastUrl="?page="+"1";
      const firstUrl="?page="+1;
     useEffect(()=>{ 
-         axios.get("http://166.0.244.44:5000/adminDashboard/images/?page="+pg)
+         axios.get(url+"/adminDashboard/images/?page="+pg)
          .then(response=>{
              setMsgd(response.data.flag);
              setImageLinks(response.data.result);
@@ -166,7 +167,7 @@ function DeleteImages({visibility,id,imgName}){
          var d={
             "n_delId":id
          }
-         axios.post("http://localhost:5000/adminDashboard/images/delete-image",d)
+         axios.post(url+"/adminDashboard/images/delete-image",d)
          .then(response=>{
              setDmsg(response.data);
          })
