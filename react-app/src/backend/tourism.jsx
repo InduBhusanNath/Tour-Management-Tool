@@ -71,7 +71,7 @@ function Body2(){
                  alert(error);
           });
           
-     },[]);
+     },[pg]);
 
      const tList=tourismList.map(tl=>
         <tr key={tl._id}>

@@ -64,7 +64,7 @@ function BlogList(){
       useEffect(()=>{
           axios({
                method:"get",
-               url:"/adminDashboard/blogs/?page="+pg                    
+               url:"http://localhost:5000/adminDashboard/blogs/?page="+pg                    
             }).then(response=>{
                     var blogData=response.data;
                     setBlogList(blogData.data);

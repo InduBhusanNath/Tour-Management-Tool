@@ -44,7 +44,7 @@ function VisitorMessages(){
      
 
      useEffect(()=>{
-            axios.get("/adminDashboard/contactus-messages/?page="+pg)
+            axios.get("http://localhost:5000/adminDashboard/contactus-messages/?page="+pg)
             .then(response=>{
                      if(response.data.flag==="1"){
                           setMsgDetails(response.data.result);
@@ -60,7 +60,7 @@ function VisitorMessages(){
                  setMsg1(error);
             });
 
-     },[]);
+     },[pg]);
  function hideDelPopup(){
      setDelPopup('hidden');
  }

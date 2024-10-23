@@ -5,12 +5,23 @@ const MemoryStore = require('memorystore')(session)
 const path = require('path');
 var cors = require('cors');
 var app = express();
+const multer  = require('multer');
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, './public/images');
+  },
+  filename: function (req, file, cb) {
+      cb(null, file.originalname );
+  }
+})
+
+const upload = multer({ storage: storage })
 app.use(cors({
     origin: '*', // Allow all origins temporarily for testing
     methods: ['GET', 'POST'],
 }))
 app.use(express.static('public'));
-app.use(express.static(path.join(__dirname,'../','../','react-app','build')));
+//app.use(express.static(path.join(__dirname,'../','../','react-app','build')));
 
 
 
@@ -43,6 +54,7 @@ var autoCreateAdminController=require('../controllers/autoCreateAdminController.
 var cabBookingController=require('../controllers/cabBookingController.js');
 var tourismController=require('../controllers/tourismController.js');
 var placesController=require('../controllers/placesController.js');
+var imageController=require('../controllers/imageController.js');
 
 /* GET*/
 
@@ -58,13 +70,13 @@ app.get('/adminDashboard/cab-booking-data/',cabBookingController.readCabBooking)
 app.get('/adminDashboard/manage-cab-booking/cab-booking-processing/get-cab-client-data/',cabBookingController.clientCabBooking);
 app.get('/adminDashboard/tourism',tourismController.tourismDetailsRead);
 app.get('/adminDashboard/tourism/tourism-edit',tourismController.tourismDetailsEdit);
-app.get('/adminDashboard/places',placesController.placeRead);
+app.get('/adminDashboard/places/',placesController.placeRead);
 app.get('/adminDashboard/places/place-edit',placesController.placeEdit);
-app.get('/*', function (req, res) {
-     res.sendFile(path.join(__dirname,'../','../','react-app','build','index.html'));
-     console.log(path.join(__dirname,'../','../','react-app','build','index.html'))
-});
+app.get('/adminDashboard/images/',imageController.ShowImages);
 
+//app.get('*', function (req, res) {
+     //res.sendFile(path.join(__dirname,'../','../','react-app','build','index.html'));
+//});
     
 
 
@@ -97,6 +109,8 @@ app.post('/adminDashboard/tourism/tourism-delete',tourismController.tourismDetai
 app.post('/adminDashboard/places/place-write',placesController.placeWrite);
 app.post('/adminDashboard/places/place-edit',placesController.placeUpdate);
 app.post('/adminDashboard/places/place-delete',placesController.placeDelete);
+app.post('/adminDashboard/images/',upload.single('n_imageFile'),imageController.uploadImage);
+app.post('/adminDashboard/images/delete-image',imageController.deleteImage);
 
 
 

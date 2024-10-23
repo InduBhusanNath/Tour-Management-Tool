@@ -37,6 +37,7 @@ import Places from "./backend/places";
 import PlaceWrite from "./backend/places-write";
 import PlaceEdit from "./backend/place-edit";
 import PlaceDelete from "./backend/place-delete";
+import Images from "./backend/images";
 
 
 const router=createBrowserRouter([
@@ -108,16 +109,16 @@ const router=createBrowserRouter([
          element:<WriteBlog/>
 
       },      
-      {  path:"/adminDashboard/blogs/show_blog/",
+      {  path:"/adminDashboard/blogs/show_blog",
          element:<ShowBlog/>
       },
       {  
-         path:"/adminDashboard/contactus-messages/",
+         path:"/adminDashboard/contactus-messages",
          element:<MessagesContactUs/>
 
       },
       {  
-        path:"/adminDashboard/places/",
+        path:"/adminDashboard/places",
         element:<Places/>
 
      },
@@ -132,9 +133,12 @@ const router=createBrowserRouter([
     {  
       path:"/adminDashboard/places/place-delete",
       element:<PlaceDelete/>
-    }
+    },
+    {  
+      path:"/adminDashboard/images",
+      element:<Images/>
 
-      
+   }      
 
     ]
        
