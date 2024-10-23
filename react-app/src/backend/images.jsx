@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+
 export default function Images(){
      return(<>
          <div className="container-fluid background-lightyellow">
@@ -31,7 +32,7 @@ function Upload(){
          fd.append("n_imageFile",imageFile);
          fd.append("n_imageLabel",imageLabel);
          
-         axios.post("http://localhost:5000/adminDashboard/images",fd,{
+         axios.post("http://166.0.244.44:5000/adminDashboard/images",fd,{
             headers: {
               'Content-Type': 'multipart/form-data'
             }}
@@ -99,7 +100,7 @@ function DisplayImageLinks(){
      const lastUrl="?page="+"1";
      const firstUrl="?page="+1;
     useEffect(()=>{ 
-         axios.get("http://localhost:5000/adminDashboard/images/?page="+pg)
+         axios.get("http://166.0.244.44:5000/adminDashboard/images/?page="+pg)
          .then(response=>{
              setMsgd(response.data.flag);
              setImageLinks(response.data.result);

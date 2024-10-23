@@ -25,8 +25,7 @@ function TechnicalSeo(){
      return(<>
          <Helmet>
              <html lang="en"/>
-             <title>Admin Login</title>
-             <meta name="description" content="Admin Login Page"/>
+             <title>Admin Login</title>            
              <body className="background-lightgoldenrodyellow"/>
          </Helmet>
      </>);
