@@ -24,7 +24,7 @@ function createautoAdmin(req,res){
                                 
          }else if(rows>0){
                  res.send("You Are Not A First-Time User. Login With Your Username and Password....."); 
-                 return;  console.log("test")              
+                 return;              
          }
 
     })
