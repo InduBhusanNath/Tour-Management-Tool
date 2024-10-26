@@ -65,8 +65,8 @@ app.get('/adminDashboard/images/',imageController.ShowImages);
 //app.get('*', function (req, res) {
      //res.sendFile(path.join(__dirname,'../','../','react-app','build','index.html'));
 //});
-  app.get('/',(req,res)=>{
-        console.log("test");
+  app.get('/api',(req,res)=>{
+        console.log("Api");
   });
 
 
