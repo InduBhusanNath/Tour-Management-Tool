@@ -71,7 +71,7 @@ app.get('/adminDashboard/images/',imageController.ShowImages);
 
 
 /*POST*/
-app.post('/adminLogin/create-auto-admin',autoCreateAdminController.createautoAdmin);
+app.post('/api/adminLogin/create-auto-admin',autoCreateAdminController.createautoAdmin);
 app.post('/adminDashboard/adminUsers/user_post',userController.createUser);
 app.post('/adminDashboard/adminUsers/user_edit_data',userController.editUsersData);
 app.post('/adminDashboard/adminUsers/user_edit',userController.editUsers); 
