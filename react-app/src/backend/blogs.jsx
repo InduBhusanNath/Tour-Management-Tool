@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import {url} from "./url";
 
 
 
@@ -21,9 +22,7 @@ function BlogList(){
      const [message,setMessage]=useState('');
      const [blogList,setBlogList]=useState([]);
      const [lastPage,setLastPage]=useState('');
-     const [blogCount,setBlogCount]=useState('');
-
-    
+     const [blogCount,setBlogCount]=useState('');    
      const [id]=useState('id');    
     
      
@@ -35,36 +34,21 @@ function BlogList(){
                       
      }else if(pg<1){
            pg=1;
-     }else if(pg>lastPage){
-           pg=lastPage;
-
      }
+
+     
       const nextUrl="?page="+(parseInt(pg)+1);         
       const prevUrl="?page="+(parseInt(pg)-1);
       const lastUrl="?page="+lastPage;
-      const firstUrl="?page="+1;
+      const firstUrl="?page="+1;  
 
       
      
-         
-      
-          
-          
-     
-     
-     
-     
-     
-        
-
-      
-     
-     var blogId=new FormData();
-     blogId.append("id",id);
+    
       useEffect(()=>{
           axios({
                method:"get",
-               url:"http://localhost:5000/adminDashboard/blogs/?page="+pg                    
+               url:url+"/adminDashboard/blogs/?page="+pg                    
             }).then(response=>{
                     var blogData=response.data;
                     setBlogList(blogData.data);
@@ -82,13 +66,14 @@ function BlogList(){
      
         
          const showBlogs=blogList.map(blg=>
-          <tr><td className="text-center">{blg.blogDate}</td><td className="text-center">{blg.blogHeading}</td><td>{blg.blogAuthor}</td><td className="text-center"><Link to={"show_blog/?"+id+"="+blg._id}>&#128065;</Link></td></tr> );  
+          <tr><td className="text-center">{blg.blogDate}</td><td className="text-center">{blg.blogHeading}</td><td>{blg.blogAuthor}</td><td className="text-center"><Link to={"show_blog/?"+id+"="+blg._id}>&#128065;</Link></td></tr> 
+       );  
      
      
         
         
 
-     return(<>
+     return(<> 
          
            <div className="row">
                 <div className="col-sm-2">

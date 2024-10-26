@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
+import parse from 'html-react-parser';
+import {url} from "./url";
 
 
 let params=new URLSearchParams(document.location.search);
@@ -16,13 +18,15 @@ export default function ShowBlog(){
     const [eBlogImagePath,setEBlogImagePath]=useState('');
     const [eBlogAuthor,setEBlogAuthor]=useState('');
     const [eBlogBody,setEBlogBody]=useState('');
+    const [eBlogFeaturedImageLink,setEBlogFeaturedImageLink]=useState('');
+    const [eBlogFeaturedContent,setEBlogFeaturedContent]=useState('');
+
     const [msg1,setMsg1]=useState('');
     const [isBlogContentShown,setisBlogContentShown]=useState('shown');
     const [isBlogEditShown,setIsBlogEditShown]=useState('hidden');
     const [isPopupShown,setIsPopupShown]=useState('hidden')
     const [message,setMessage]=useState('');
-    const [deleteMessage,setDeleteMessage]=useState('');
-    const [editImageFile,setEditImageFile]=useState('');
+    const [deleteMessage,setDeleteMessage]=useState('');    
     const [viewBlog,setViewBlog]=useState('background-palegoldenrod');
     const [updateBlog,setUpdateBlog]=useState('background-lightgoldenrodyellow');
 
@@ -31,7 +35,7 @@ export default function ShowBlog(){
     
 
      useEffect(()=>{
-             axios.get('/adminDashboard/blogs/show_blog/?blgId='+id)
+             axios.get(url+'/adminDashboard/blogs/show_blog/?blgId='+id)
              .then(response=>{
                    if(response.data.flag==="1"){
                          setMsg1("Blog Found.....");
@@ -47,6 +51,8 @@ export default function ShowBlog(){
                    setEBlogHeading(response.data.eBlogHeading);
                    setEBlogAuthor(response.data.eBlogAuthor);
                    setEBlogBody(response.data.eBlogBody);
+                   setEBlogFeaturedImageLink(response.data.eBlogFeaturedImageLink);
+                   setEBlogFeaturedContent(response.data.eBlogFeaturedContent);
             })
              .catch(error=>{
                    setMsg1("Something Went Wrong, Please Try Again.....");
@@ -56,7 +62,7 @@ export default function ShowBlog(){
 
    
 
-
+//Blog content
      function BlogContent(){
           
           
@@ -74,13 +80,20 @@ export default function ShowBlog(){
                                      <img src={eBlogImagePath} className="img-fluid"/>
                                      <p className="font font18">Author:&nbsp;{eBlogAuthor}</p>
                                      <br/>
+                                     
+                                     <br/>
                                      <h1>{eBlogHeading}</h1>
                                      
-                                     <br/> 
+                                     <br/>                                     
                                      
-                                     <b>
-                                     {eBlogBody}
-                                     </b>
+                                     {parse(eBlogBody)}
+                                     <br/>
+                                     <p className="font font18">Featured Image Link:&nbsp;{eBlogFeaturedImageLink}</p>
+                                     <br/>
+                                     <p className="font font18">Featured Content:&nbsp;</p>
+                                     <br/>
+                                     {eBlogFeaturedContent}
+                                     
                                      
                                                             
                                      
@@ -94,55 +107,9 @@ export default function ShowBlog(){
           
           </>);      
   }
-  function imageChange(e){
-       setEditImageFile(e.target.files[0]);       
-  }
-
-  function deleteBlogImage(e){
-       e.preventDefault();
-       var dltImg=new FormData();
-       dltImg.append('delete_blogImage',eBlogImagePath);
-       dltImg.append('delete_imageId',eBlog_Id);
-
-       
-                   axios.post("delete-blog-image",dltImg,{
-                         headers: {
-                               'Content-Type': 'application/json'
-                         }
-                   }).then(response=>{
-                         setMsg1(response.data);
-                   }).catch(error=>{
-                         setMsg1("Something Went Wrong, Please Try Again.....");
-                   });     
-                  
-       
-
-  }
   
 
-  
-  function updateBlogImage(e){
-       e.preventDefault();
-       if(!editImageFile){           
-             setMsg1("Image Field Cannot Be Blank.....");
-             return;
-       }else{
-            var edtImg=new FormData();
-            edtImg.append('edit_n_blogpic',editImageFile);
-            edtImg.append('original_image_path',eBlogImagePath);
-            edtImg.append('eImgEdtId',eBlog_Id);
-             
-                   axios.post("update-blog-image",edtImg,{
-                         'Content-Type': 'multipart/form-data'
-                   }).then(response=>{
-                         setMsg1(response.data);
-                   }).catch(error=>{
-                          setMsg1("Something Went Wrong, Please Try Again.....");
-                  });
-            
-       }
-
-  }
+ //Update Blog
 
   function updateBlogContent(e){
        e.preventDefault();
@@ -155,7 +122,7 @@ export default function ShowBlog(){
        updtBlg.append('edit_n_blogBody',eBlogBody);
      
        
-             axios.post("update-blog-content",updtBlg,{
+             axios.post(url+"/adminDashboard/blogs/show_blog/update-blog-content",updtBlg,{
                     headers: {
                          'Content-Type': 'application/json'
                 }
@@ -209,33 +176,7 @@ export default function ShowBlog(){
                               <span className="small text-danger">{message}</span>
                         </section>
 
-                         <section>
-                              <img src={eBlogImagePath} className="img-fluid"/>
-                               <br/>
-                               <form method="post" onSubmit={deleteBlogImage}>
-                                     <br/>
-                                     <div className="form-group">
-                                           <button type="submit" className="submit">Remove Image</button>
-                                     </div>                  
-
-
-                              </form>
-
-                         </section>
-                         <section>
-                               <form method="post" onSubmit={updateBlogImage} encType="multipart/form-data">
-                                    
-                                     <div className="form-group">
-                                           <label>Blog Picture</label>
-                                           <input className="form-control" type="file" name="edit_n_blogpic" onChange={imageChange}/>
-                                     </div>
-                               <br/>                         
-
-                                     <div className="form-group">
-                                           <button type="submit" className="submit">Update Image</button>
-                                     </div>
-                               </form>
-                         </section>
+                         
                          <section>
                                <form method="post" onSubmit={updateBlogContent}>
                                                                           
@@ -263,6 +204,16 @@ export default function ShowBlog(){
                                      <div className="form-group">
                                            <label>Write Blog</label>
                                            <textarea className="form-control" name="edit_n_blogBody" value={eBlogBody} onChange={(e)=>{setEBlogBody(e.target.value)}}/>
+                                     </div>
+                                     <br/>
+                                     <div className="form-group">
+                                           <label>Featured Image Link</label>
+                                           <input type="text" className="form-control" name="edit_n_featuredImageLink" value={eBlogFeaturedImageLink} onChange={(e)=>{setEBlogFeaturedImageLink(e.target.value)}}/>
+                                     </div>
+                                     <br/>
+                                     <div className="form-group">
+                                           <label>Featured Content</label>                             
+                                           <textarea className="form-control" name="edit_n_featuredContent" value={eBlogFeaturedContent} onChange={(e)=>{setEBlogFeaturedContent(e.target.value)}}/>
                                      </div>
                                      <br/>
                                      <div className="form-group">

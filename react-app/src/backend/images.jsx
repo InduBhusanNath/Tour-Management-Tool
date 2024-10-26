@@ -21,7 +21,7 @@ function Upload(){
          e.preventDefault();
          
          if(!imageFile){
-             setMsg("Image Name Cannot be Empty.....");
+             setMsg("Image Cannot be Empty.....");
              return;             
          }
          if(!imageLabel){
@@ -31,11 +31,11 @@ function Upload(){
          
          var fd=new FormData();
          fd.append("n_imageFile",imageFile);
-         fd.append("n_imageLabel",imageLabel);
+         fd.append("n_imageLabel",imageLabel);        
          
          axios.post(url+"/adminDashboard/images",fd,{
             headers: {
-              'Content-Type': 'multipart/form-data'
+              'Content-Type':'multipart/form-data'
             }}
         )
          .then(response=>{
@@ -145,6 +145,7 @@ function DisplayImageLinks(){
              </div>
              <DeleteImages visibility={showDeleteForm} id={delId} imgName={picName}/>
          </div>
+         
     
     </>);
 }

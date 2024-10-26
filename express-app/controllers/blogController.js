@@ -2,25 +2,24 @@ const blogModel=require('../models/blogModel.js');
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://127.0.0.1:27017/mydb');
 const express = require('express');
-const multer=require('multer');
-const fs=require("fs");
-const { unlinkSync } = require('node:fs');
-const path=require('node:path');
+
+
+
 
 
 
 
 //Create Blog
-function createBlog(req,res){
-       req.file;
+function createBlog(req,res){       
        var blog_date=req.body.n_blogDate; 
        var n_blogTitle=req.body.n_blogTitle;
-       var n_blogMetaDescription=req.body.n_blogMetaDescription;
-       var n_blogpic=req.file.originalname;             
+       var n_blogMetaDescription=req.body.n_blogMetaDescription;                   
        var n_blogHeading=req.body.n_blogHeading;
        var n_blogAuthor=req.body.n_blogAuthor;
        var n_blogBody=req.body.n_blogBody;
-       var blog_image_path='http://localhost:5000/images/BlogImages/'+n_blogpic;    
+       var n_featuredImageLink=req.body.n_featuredImageLink;
+       var n_featuredContent=req.body.n_featuredContent;
+          
        
             
        
@@ -28,11 +27,13 @@ function createBlog(req,res){
            blogDate:blog_date,
            blogTitle:n_blogTitle,
            blogMetaDescription:n_blogMetaDescription,
-           blogImagePath:blog_image_path,
            blogHeading:n_blogHeading,           
            blogAuthor:n_blogAuthor,
-           blogBody:n_blogBody
+           blogBody:n_blogBody,
+           blogFeaturedImageLink:n_featuredImageLink,
+           blogFeaturedContent:n_featuredContent
        });
+        console.log(newBlog)
        
        newBlog.save().then(result=>{
             res.send("New Blog Created Successfully.....");
@@ -58,9 +59,9 @@ async function readBlog(req,res){
       }else{
             pageNo=req.query.page;
       }     
- 
+     
       var totalPages;
-      var pageLimit=2;
+      var pageLimit=1;
       var offset; 
       var totalBlogs;
 
@@ -113,6 +114,7 @@ async function readBlog(req,res){
                         "totalPages":"0",
                         "totalBlogs":"0"
                  });
+                 console.log(result)
              });
 
 
@@ -139,10 +141,11 @@ function edit_displayBlog(req,res){
                    "eBlogDate":results.blogDate,
                    "eBlogTitle":results.blogTitle,
                    "eBlogMetaDescription":results.blogMetaDescription,
-                   "eBlogImagePath":results.blogImagePath,
                    "eBlogHeading":results.blogHeading,
                    "eBlogAuthor":results.blogAuthor,
-                   "eBlogBody":results.blogBody
+                   "eBlogBody":results.blogBody,
+                   "eBlogFeaturedImageLink":results.blogFeaturedImageLink,
+                   "eBlogFeaturedContent":results.blogFeaturedContent
                   });
             
             
@@ -152,53 +155,10 @@ function edit_displayBlog(req,res){
                  res.json({"result":"Something Went Wrong, Please Try Again....."
             })
        });
-       
+}      
  
 
-        
-}
-//Delete Blog Image
-function delete_blogImage(req,res){
-       var image_to_remove=req.body.delete_blogImage;
-       var id_image=req.body.delete_imageId;
-       var image_to_remove_name='./public/images/BlogImages/'+path.basename(image_to_remove);
-        
-       try{
-             unlinkSync(image_to_remove_name);
-             blogModel.findByIdAndUpdate(id_image,{blogImagePath:''}).then(result=>{
-                  res.send("Image Deleted.....");     
-            }).catch(error=>{
-                  res.send("Could Not Delete Image, Please Try Again.....");            
-            });
-             
-       } catch(err){
-            res.send("Could Not Delete Image.....");
-       }
-       /*
-       unlink('./public/images/BlogImages/ad1.jpg',(err)=>{
-            if(!err){
-                  res.send("Image Successfully Deleted....");
-            }else{
-                  res.send("Could Not Delete Image.....");
-            }
-
-       });
-
-       */
-       
-
-       
-
-}
-
-//Update Blog Image
-
-function edit_blogImage(req,res){
-      req.file;
-      res.send("Image Uploaded Successfully.....");
-
-}
-
+ 
 //Update Blog Content
 function edit_blogContent(req,res){
        var ubId=req.body.ublgId;
@@ -207,8 +167,10 @@ function edit_blogContent(req,res){
        var ubheading=req.body.edit_n_blogHeading;
        var ubauthor=req.body.edit_n_blogAuthor;
        var ubbody=req.body.edit_n_blogBody;
+       var ubfeaturedImageLink=req.body.edit_n_featuredImageLink;
+       var ubfeaturedContent=req.body.edit_n_featuredContent;
       
-      blogModel.findByIdAndUpdate(ubId,{blogTitle:ubtitle,blogMetaDescription:ubmetadesc,blogHeading:ubheading,blogAuthor:ubauthor,blogBody:ubbody})
+      blogModel.findByIdAndUpdate(ubId,{blogTitle:ubtitle,blogMetaDescription:ubmetadesc,blogHeading:ubheading,blogAuthor:ubauthor,blogBody:ubbody,blogFeaturedImageLink:ubfeaturedImageLink,blogFeaturedContent:ubfeaturedContent})
       .then(result=>{
              res.send("Blog Successfully Updated.....");
       }).catch(error=>{
@@ -241,8 +203,6 @@ module.exports={
        createBlog:createBlog,      
        readBlog:readBlog,
        edit_displayBlog:edit_displayBlog,
-       delete_blogImage:delete_blogImage,
-       edit_blogImage:edit_blogImage,
        edit_blogContent:edit_blogContent,
        delete_blogContent:delete_blogContent
       

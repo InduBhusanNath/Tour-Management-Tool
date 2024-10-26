@@ -1,15 +1,10 @@
 import { useState } from "react";
 import axios from "axios";
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
+import {url} from "./url";
+import DateObject from "react-date-object";
 
-
-const current = new Date();
-const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
-
-
-
-
+var dt = new DateObject();
+var date=dt.format('YYYY-MM-DD');
 
 
 export default function WriteBlog(){
@@ -20,7 +15,9 @@ export default function WriteBlog(){
      const [blogHeading,setBlogHeading]=useState('');
      const [blogAuthor,setBlogAuthor]=useState('');
      const [blogBody,setBlogBody]=useState('');
-     const [imageFile,setImageFile]=useState('');
+     const [featuredImageLink,setFeaturedImageLink]=useState('');
+     const [featuredContent,setFeaturedContent]=useState('');
+     
 
      function checkBlogTitle(e){
          setBlogTitle(e.target.value);            
@@ -60,15 +57,14 @@ export default function WriteBlog(){
         blogWrite.append("n_blogTitle",blogTitle);
         blogWrite.append("n_blogMetaDescription",blogMetaDescription);
         blogWrite.append("n_blogDate",blogDate);
-        blogWrite.append("n_blogpic",imageFile);
         blogWrite.append("n_blogHeading",blogHeading);
         blogWrite.append("n_blogAuthor",blogAuthor);
         blogWrite.append("n_blogBody",blogBody);
+        blogWrite.append("n_featuredImageLink",featuredImageLink);
+        blogWrite.append("n_featuredContent",featuredContent);
        
-        axios.post("create_blog",blogWrite,{
-            headers: {
-              'Content-Type': 'multipart/form-data'
-            }}).then((response)=>{
+        axios.post(url+"/adminDashboard/blogs/write_blog",blogWrite)
+           .then((response)=>{
                 setMesWriteBlog(response.data);
         }).catch((error)=>{
              setMesWriteBlog(error);
@@ -117,13 +113,7 @@ export default function WriteBlog(){
 
                          </div>                         
                          <div className="form-group">
-                            <input type="date" className="form-control" name="n_blogDate" value={blogDate}/>
-                         </div>
-                         <br/>
-                         <div className="form-group">
-                             <label>Blog Picture</label>
-                             <input className="form-control" type="file" name="n_blogpic" onChange={(e)=>{setImageFile(e.target.files[0])}}/>
-
+                            <input type="text" className="form-control" name="n_blogDate" value={blogDate} readonly/>
                          </div>
                          <br/>
                          <div className="form-group">
@@ -136,11 +126,18 @@ export default function WriteBlog(){
                          </div>
                          <br/>
                          <div className="form-group">
-                             <label>Write Blog</label>
-                             <ReactQuill theme="snow" value={blogBody} onChange={(value)=>{setBlogBody(value)}}/>
-                             <textarea className="form-control" value={blogBody} name="n_blogBody" onChange={(e)=>{setBlogBody(e.target.value)}}/>
+                             <label>Write Blog</label>                             
+                             <textarea className="form-control" name="n_blogBody" value={blogBody} onChange={(e)=>{setBlogBody(e.target.value)}}/>
                          </div>
                          <br/>
+                         <div className="form-group">
+                             <label>Featured Image Link</label>
+                             <input type="text" className="form-control" name="n_featuredImageLink" value={featuredImageLink} onChange={(e)=>{setFeaturedImageLink(e.target.value)}}/>
+                         </div>
+                         <div className="form-group">
+                             <label>Featured Content</label>                             
+                             <textarea className="form-control" name="n_featuredContent" value={featuredContent} onChange={(e)=>{setFeaturedContent(e.target.value)}}/>
+                         </div>
 
                          <div className="form-group">
                              <button type="submit" className="submit">Create Blog</button>

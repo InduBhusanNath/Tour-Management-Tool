@@ -3,6 +3,7 @@ const {Schema}=mongoose;
 
      const imageSchema=new mongoose.Schema({
          imagePath:String,
+         uploadPath:String,
          imageName:String,
          imageLabel:String
      });

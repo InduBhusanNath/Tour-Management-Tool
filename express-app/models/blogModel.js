@@ -5,10 +5,12 @@ const {Schema}=mongoose;
          blogDate:Date,
          blogTitle:String,
          blogMetaDescription:String,
-         blogImagePath:String,
          blogHeading:String,
          blogAuthor:String,
-         blogBody:String
+         blogBody:String,
+         blogFeaturedImageLink:String,
+         blogFeaturedContent:String
+
      });
 
      const Blog=mongoose.model('Blog',blogSchema);

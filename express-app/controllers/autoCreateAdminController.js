@@ -45,10 +45,9 @@ function createautoAdmin(req,res){
              newUser.save().then(result=>{ 
                          res.send("You Have Freshly Installed The Application.<br/> Your Temporary Username: <b>admin@admin.com</b>, and Password: <b>abc123</b>. <br/>Do Not Refresh.<br/> Details Are Also Available In the Readme File.....");
                        
-                      
              })
              .catch(error=>{
-                     res.send(error);
+                         res.send(error);
              });  
     } 
 }

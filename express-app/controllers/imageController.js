@@ -3,32 +3,48 @@ const imageModel=require('../models/imageModel');
 const { unlinkSync } = require('node:fs');
 const path = require('path');
 
-
 //upload image
 function uploadImage(req,res){
-
-    if(!req.file){
+   
+    if(!req.files){
         var rd={
-            "flag":"Could Not Upload File. Please Try Again.....",
+            "flag":"No Image Found.....",
             "img":""
         }
          res.json(rd);
-    }else{
-         var filePath='http://localhost:5000/images/'+req.file.originalname;
-         var newImage=new imageModel({
-             imagePath:filePath,
-             imageName:req.file.originalname,
-             imageLabel:req.body.n_imageLabel
-         });
-         newImage.save().then(result=>{
-             var rd={
-                 "flag":req.file.originalname+" Uploaded Successfully.....",
-                 "img":filePath
-             }           
-            res.send(rd); 
-
-         })
+         return;
     }
+
+     var uploadPath=('./public/images/')+req.files.n_imageFile.name;
+     
+     (req.files.n_imageFile).mv(uploadPath,(err)=>{
+         if(err){
+             var rd={
+                "flag":"Could Not Upload File. Please Try Again.....",
+                "img":""
+             }
+             res.json(rd);
+             return;
+         }else{
+                 var filePath='http://localhost:5000/images/'+req.files.n_imageFile.name;
+                 var newImage=new imageModel({
+                         imagePath:filePath,
+                         uploadPath:uploadPath,
+                         imageName:req.files.n_imageFile.name,
+                         imageLabel:req.body.n_imageLabel
+                 });
+                 newImage.save().then(result=>{
+                 var rd={
+                    "flag":req.files.n_imageFile.name +" Uploaded Successfully.....",
+                    "img":filePath
+                }           
+                 res.send(rd); 
+                 return;   
+            });
+         }
+
+     });
+ 
 }
 
 //Display Image
@@ -40,7 +56,7 @@ async function ShowImages(req,res){
         pageNo=req.query.page;
      } 
      var totalPages;
-     var pageLimit=2;
+     var pageLimit=10;
      var offset; 
      var totalImages; 
      totalImages=rows;             

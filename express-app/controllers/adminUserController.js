@@ -2,10 +2,10 @@ const userModel=require('../models/userModel.js');
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://127.0.0.1:27017/mydb');
 const bcrypt = require('bcrypt');
-const saltRounds = 10;
+
    
 //Admin Login
-function checkAdminUser(req,res,next){
+function checkAdminUser(req,res){
      
       var userName=req.body.userName;
       var originalPassword=req.body.userPassword;   
@@ -21,10 +21,10 @@ function checkAdminUser(req,res,next){
                  bcrypt.compare(originalPassword,pwd,function(err,result){
                      if(result==true){
                         userModel.countDocuments({username:userName,password:pwd,adminStatus:'Admin'}).then(count=>{
-                             if(count=="1"){
-                                 req.session.user=userName;
-                                 res.send({"flag":"1"});
-                            }
+                             if(count=="1"){                                                                          
+                                     res.send({"flag":"1"});                                    
+                                }                         
+                            
                         });
                      }else if(result==false){
                          res.send({"flag":"0+"});
@@ -36,15 +36,11 @@ function checkAdminUser(req,res,next){
              });
              
         }
-      });
-      
-     
-
-
-
+      }); 
 }
 
-module.exports={
-     checkAdminUser:checkAdminUser
 
+
+module.exports={
+     checkAdminUser
 }

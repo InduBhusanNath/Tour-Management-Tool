@@ -1,21 +1,13 @@
 var express = require('express');
+var app = express();
 var bodyParser = require('body-parser');
 const session=require('express-session');
 const MemoryStore = require('memorystore')(session)
 const path = require('path');
 var cors = require('cors');
-var app = express();
-const multer  = require('multer');
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, './public/images');
-  },
-  filename: function (req, file, cb) {
-      cb(null, file.originalname );
-  }
-})
+const fileUpload = require('express-fileupload');
+app.use(fileUpload());
 
-const upload = multer({ storage: storage })
 app.use(cors({
     origin: '*', // Allow all origins temporarily for testing
     methods: ['GET', 'POST'],
@@ -31,14 +23,10 @@ app.use(express.static('public'));
 
 
 app.use(session({
-    cookie: { maxAge: 86400000 },
-    store: new MemoryStore({
-      checkPeriod: 86400000 // prune expired entries every 24h
-    }),
-    resave: false,
-    saveUninitialized: true,
-    secret: 'keyboard cat'
-}));
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: true
+}))
 
 
 app.use(bodyParser.json()); 
@@ -62,7 +50,7 @@ var imageController=require('../controllers/imageController.js');
 
 app.get('/adminDashboard/adminUsers',userController.readUsers);
 app.get('/admin_session',sessionController.adminSession);
-app.get('/admin_logout',sessionController.adminLogOut);
+//app.get('/admin_logout',sessionController.adminLogOut);
 app.get('/adminDashboard/blogs/',blogController.readBlog);
 app.get('/adminDashboard/blogs/show_blog',blogController.edit_displayBlog);
 app.get('/adminDashboard/contactus-messages/',contactUsMessageModel.readMessages);
@@ -91,10 +79,8 @@ app.post('/adminDashboard/adminUsers/user_priviledge_data',userController.privil
 app.post('/adminDashboard/adminUsers/user_priviledge_data_change',userController.changeUserPriviledge);
 app.post('/change_password',userController.changePassword);
 app.post('/change_password_by_user',userController.changePasswordByUser);
-app.post('/check_admin_user',adminUserController.checkAdminUser);
-//app.post('/adminDashboard/blogs/write_blog/create_blog',upload.single("n_blogpic"),blogController.createBlog);
-//app.post('/adminDashboard/blogs/show_blog/update-blog-image',upload.single('edit_n_blogpic'),blogController.edit_blogImage);
-app.post('/adminDashboard/blogs/show_blog/delete-blog-image',blogController.delete_blogImage);
+app.post('/adminLogin/check_admin_user',adminUserController.checkAdminUser);
+app.post('/adminDashboard/blogs/write_blog',blogController.createBlog);
 app.post('/adminDashboard/blogs/show_blog/update-blog-content',blogController.edit_blogContent);
 app.post('/adminDashboard/blogs/show_blog/delete-blog-content',blogController.delete_blogContent);
 app.post('/contact-us-message',contactUsMessageModel.visitorMessage);
@@ -109,7 +95,7 @@ app.post('/adminDashboard/tourism/tourism-delete',tourismController.tourismDetai
 app.post('/adminDashboard/places/place-write',placesController.placeWrite);
 app.post('/adminDashboard/places/place-edit',placesController.placeUpdate);
 app.post('/adminDashboard/places/place-delete',placesController.placeDelete);
-app.post('/adminDashboard/images/',upload.single('n_imageFile'),imageController.uploadImage);
+app.post('/adminDashboard/images/',imageController.uploadImage);
 app.post('/adminDashboard/images/delete-image',imageController.deleteImage);
 
 
