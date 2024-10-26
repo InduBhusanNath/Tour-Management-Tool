@@ -65,7 +65,7 @@ app.get('/adminDashboard/images/',imageController.ShowImages);
 //app.get('*', function (req, res) {
      //res.sendFile(path.join(__dirname,'../','../','react-app','build','index.html'));
 //});
-  app.get('https://aeiety.com/api',(req,res)=>{
+  app.get('/api',(req,res)=>{
         console.log("Api");
   });
 
