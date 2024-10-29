@@ -148,21 +148,10 @@ function AllowAcces(){
          var admUserData=response.data;
          if(admUserData.flag==="1"){             
              setRes("Allowing Access.....");
-             axios.get(url+"/admin_session/?user="+adminEmail)
-             .then(response=>{
-                     var userSession=response.data;                  
-             })
-             .catch(error=>{
-                 alert(error);
-             });
-                
-             //setTimeout(()=>{
-                 //window.location.assign(url+"/adminDashboard");
-            //},2000);
-            //return;
-            
-            
-
+                 setTimeout(()=>{
+                     window.location.assign("/adminDashboard");
+                 },2000);
+            return;
          }else if(admUserData.flag==="0"){
               setRes("No Combination of Such Username/Password.....");
               return;

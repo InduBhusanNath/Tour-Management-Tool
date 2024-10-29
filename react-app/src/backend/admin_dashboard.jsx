@@ -8,12 +8,11 @@ import {faBlog} from '@fortawesome/free-solid-svg-icons';
 import {faEnvelopesBulk} from '@fortawesome/free-solid-svg-icons';
 import {faTaxi} from '@fortawesome/free-solid-svg-icons';
 import {faPersonWalkingLuggage} from '@fortawesome/free-solid-svg-icons';
-
-
 import React from 'react';  
 import { Link } from "react-router-dom";
 import { Outlet} from "react-router-dom";
 import axios from "axios";
+import SessionCheck from "./sessionCheck";
 import AdminUsers from "./admin_users";
 import { useEffect } from "react";
 
@@ -21,8 +20,7 @@ function TechnicalSeo(){
     return(<>
        <Helmet>
                <html lang="en"/>
-               <title>Admin Dashboard</title>
-               <meta name="description" content="Admin Dashboard Page"/>
+               <title>Admin Dashboard</title>               
                <body className="background-lightgoldenrodyellow"/>
            </Helmet>
     </>);
@@ -308,6 +306,7 @@ function AdmBody(){
 
 export default function AdminDashboard(){
      return(<>
+         <SessionCheck/>
          <TechnicalSeo/>
          <AdmBody/>
      </>);

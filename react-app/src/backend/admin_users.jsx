@@ -1,3 +1,4 @@
+import {url} from './url';
 import {Helmet} from "react-helmet";
 import {useState} from "react";
 import {useEffect} from "react";
@@ -418,7 +419,7 @@ function AddAdminUser(){
    
         useEffect(()=>{
            
-           axios.get('/adminDashboard/adminUsers?page='+pg).then(function(response){
+           axios.get(url+'/adminDashboard/adminUsers?page='+pg).then(function(response){
                if(Array.isArray(response.data)){
                       setUsers(response.data);
                }else{

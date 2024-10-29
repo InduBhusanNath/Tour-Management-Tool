@@ -2,6 +2,7 @@ import Header from "./header";
 import Footer from "./footer";
 import {Helmet} from "react-helmet";
 import { Link } from "react-router-dom";
+import TaxiService from "./taxi-service";
 
 export default function DelhiTaxi(){
      return(<>
@@ -50,6 +51,8 @@ function Body(){
             <div className="row">
                 <div className="col-sm-12">
                     <h1>PAGE UNDER CONSTRUCTION.....</h1>
+                    <TaxiService/>
+                   
                 </div>
             </div>
       

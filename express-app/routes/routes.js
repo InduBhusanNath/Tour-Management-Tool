@@ -48,7 +48,7 @@ var imageController=require('../controllers/imageController.js');
 
 
 
-app.get('/adminDashboard/adminUsers',userController.readUsers);
+app.get('/api/adminDashboard/adminUsers',userController.readUsers);
 app.get('/admin_session',sessionController.adminSession);
 //app.get('/admin_logout',sessionController.adminLogOut);
 app.get('/adminDashboard/blogs/',blogController.readBlog);
@@ -81,7 +81,7 @@ app.post('/adminDashboard/adminUsers/user_priviledge_data',userController.privil
 app.post('/adminDashboard/adminUsers/user_priviledge_data_change',userController.changeUserPriviledge);
 app.post('/change_password',userController.changePassword);
 app.post('/change_password_by_user',userController.changePasswordByUser);
-app.post('/adminLogin/check_admin_user',adminUserController.checkAdminUser);
+app.post('/api/adminLogin/check_admin_user',adminUserController.checkAdminUser);
 app.post('/adminDashboard/blogs/write_blog',blogController.createBlog);
 app.post('/adminDashboard/blogs/show_blog/update-blog-content',blogController.edit_blogContent);
 app.post('/adminDashboard/blogs/show_blog/delete-blog-content',blogController.delete_blogContent);

@@ -6,6 +6,7 @@ import Collapsible from 'react-collapsible';
 
 
 
+
 export default function HomePage(){
      return(<>
            <TechnicalSEO/>
