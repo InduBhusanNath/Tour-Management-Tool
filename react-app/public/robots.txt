@@ -1,18 +1,10 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:/
+Disallow:/adminLogin
+Disallow:/adminDashboard
 
 
-Allow: /$
-Allow: /delhi-taxi
-Allow: /guwahati-taxi
-Allow: /adventure-tourism
-Allow: /eco-tourism
-Allow: /relic-tourism
-Allow: /aboutus
-Allow: /contactus
-Allow: /blog-page
-Allow: /contactus
+
 
 
 Sitemap: https://aeiety.com/sitemap.xml
