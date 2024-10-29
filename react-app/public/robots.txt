@@ -3,6 +3,7 @@ User-agent: *
 Disallow:/
 
 
+Allow: /$
 Allow: /delhi-taxi
 Allow: /guwahati-taxi
 Allow: /adventure-tourism
