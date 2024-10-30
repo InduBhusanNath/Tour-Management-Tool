@@ -28,6 +28,10 @@ function TechnicalSEO(){
                    <link rel="canonical" href="http://mysite.com/example" />
                    <link rel="icon" href="./favicon.ico" type="image/gif" sizes="16x16"></link>
                    <meta name="description" content="Book taxi with us to experience the best cab travel. Timely pickup, safety, and reasonable fares make us an efficient taxi service provider. "/>
+                   <meta property="og:title" content="Experience Best Cab Services and Trips" />
+                   <meta property="og:image" content="%PUBLIC_URL%/MainImages/logo.png"/>
+                   <meta property="og:description" content="We are a trusted provider of excellent cab services and tours." />
+                   <meta property="og:url" content="https://aeiety.com" />
                    
                </Helmet>
                <Helmet>
