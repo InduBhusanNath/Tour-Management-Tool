@@ -14,7 +14,7 @@ import BlogPage from "./frontend/blog-page";
 import ContactUs from "./frontend/contactus";
 import AdventureTourism from "./frontend/adventure-tourism";
 import EcoTourism from "./frontend/eco-tourism";
-import RelicTourism from "./frontend/relic-tourism";
+import HistoricalTourism from "./frontend/historical-tourism";
 import UniqueAttractions from "./frontend/unique-attractions";
 import UniqueAttractionsAssam from "./frontend/unique-attractions-assam";
 
@@ -74,8 +74,8 @@ const router=createBrowserRouter([
    element:<EcoTourism/>
   },
   {
-   path:"/relic-tourism",
-   element:<RelicTourism/>
+   path:"/historical-tourism",
+   element:<HistoricalTourism/>
   },
   {
      path:"/adminLogin",

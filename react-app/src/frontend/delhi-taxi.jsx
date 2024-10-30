@@ -27,8 +27,7 @@ function TechnicalSEO(){
                 <link rel="canonical" href="http://mysite.com/example" />
                 <link rel="icon" href="./favicon.ico" type="image/gif" sizes="16x16"></link>
                 <meta name="description" content="Experience smooth and pleasant taxi rides with our excellent cab service in Delhi. Book taxis for local and outstation tours, including airport pickup and drop."/>
-                <meta property="og:title" content="MyApp" />
-                <meta property="og:image" content="path/to/image.jpg" />
+                
             </Helmet>
      
      </>);

@@ -28,8 +28,7 @@ function TechnicalSEO(){
                    <link rel="canonical" href="http://mysite.com/example" />
                    <link rel="icon" href="./favicon.ico" type="image/gif" sizes="16x16"></link>
                    <meta name="description" content="Book taxi with us to experience the best cab travel. Timely pickup, safety, and reasonable fares make us an efficient taxi service provider. "/>
-                   <meta property="og:title" content="MyApp" />
-                   <meta property="og:image" content="path/to/image.jpg" />
+                   
                </Helmet>
                <Helmet>
                 <meta charSet="utf-8"/>

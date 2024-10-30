@@ -22,10 +22,6 @@ function TechnicalSEO(){
                 <meta charSet="utf-8"/>
                 <title>Cab and Tour Operator: Top Class Service at Affordable Costs</title>                
                 <meta name="description" content="Are you searching for one of the trusted cab or tour operators? Choose us for cab booking and trip planning. We ensure the best experience at affordable prices."/>
-                <meta property="og:title" content="Experience Best Cab Services and Trips" />
-                <meta property="og:image" content={process.env.PUBLIC_URL + 'MainImages/logo.png'}/>
-                <meta property="og:description" content="We are a trusted provider of excellent cab services and tours." />
-                <meta property="og:url" content="https://aeiety.com" />
                 <link rel="canonical" href="https://aeiety.com/aboutus"/>
             </Helmet>
      
