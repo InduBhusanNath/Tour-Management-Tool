@@ -50,7 +50,7 @@ function Foot(){
                                  <p className="font font24 fw-bold">Services</p>
                                  &#10132;&nbsp;<Link to="/delhi-taxi" className="text-decoration-none text-dark">Delhi Taxi</Link>
                                  <br/>
-                                 &#10132;&nbsp;<Link to="/guwahati-taxi" className="text-decoration-none text-dark">Guwahati</Link>
+                                 &#10132;&nbsp;<Link to="/guwahati-taxi" className="text-decoration-none text-dark">Guwahati Taxi</Link>
                                  <br/>
                                  &#10132;&nbsp;<Link to="/adventure-tourism" className="text-decoration-none text-dark">Adventure Tourism</Link>
                                  <br/>

@@ -22,28 +22,12 @@ export default function ContactUs(){
 function TechnicalSEO(){
         return(<>
                 
-                <Helmet>
-                   <meta charSet="utf-8"/>
-                   <title>Book Taxi| Ensure Timely, Safe, Fair Priced Taxi Trips</title>
-                   <link rel="canonical" href="http://mysite.com/example" />
-                   <link rel="icon" href="./favicon.ico" type="image/gif" sizes="16x16"></link>
-                   <meta name="description" content="Book taxi with us to experience the best cab travel. Timely pickup, safety, and reasonable fares make us an efficient taxi service provider. "/>
-                   <meta property="og:title" content="Experience Best Cab Services and Trips" />
-                   <meta property="og:image" content="%PUBLIC_URL%/MainImages/logo.png"/>
-                   <meta property="og:description" content="We are a trusted provider of excellent cab services and tours." />
-                   <meta property="og:url" content="https://aeiety.com" />
-                   
-               </Helmet>
-               <Helmet>
-                <meta charSet="utf-8"/>
-                <title>Cab Service in Guwahati| Book Taxi at Affordable Fares</title>                
-                <meta name="description" content="Book efficient cab service in Guwahati for local and outstation taxi tours. Affordable fares, timely pickup, and customer-centricity distinguish our cabs."/>
-                <meta property="og:title" content="Experience Best Cab Services and Trips" />
-                <meta property="og:image" content={process.env.PUBLIC_URL + 'MainImages/logo.png'}/>
-                <meta property="og:description" content="We are a trusted provider of excellent cab services and tours." />
-                <meta property="og:url" content="https://aeiety.com" />
-                <link rel="canonical" href="https://aeiety.com/guwahati-taxi"/>
-            </Helmet>
+                 <Helmet>
+                         <meta charSet="utf-8"/>
+                         <title>Cab Service in Guwahati| Book Taxi at Affordable Fares</title>                
+                         <meta name="description" content="Book efficient cab service in Guwahati for local and outstation taxi tours. Affordable fares, timely pickup, and customer-centricity distinguish our cabs."/>
+                         <link rel="canonical" href="https://aeiety.com/contactus"/>
+                 </Helmet>
         
         </>);
    }
@@ -61,9 +45,9 @@ function Banner(){
 {/*Breadcrumb*/}
 function BreadCrumb(){
         return(<>
-                  <div className="row bg-transparent">
+                  <div className="row bg-info bg-gradient">
                        <div className="col-sm-12">
-                            <section className="padding25 font font18">
+                            <section className="p-0 font font16">
                             <Link to="/" className="text-decoration-none text-dark">HOME</Link>&gt;<Link to="/aboutus" className="text-decoration-none text-dark">About Us</Link>&gt;<Link to="/blog-page" className="text-decoration-none text-dark">Blogs</Link>&gt;Contact Us
                             </section>
                        </div>

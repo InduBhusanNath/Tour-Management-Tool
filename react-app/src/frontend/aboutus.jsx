@@ -14,7 +14,7 @@ export default function AboutUs(){
                 </div>                
      </>);
 }
-{/*Technical SEO*/}
+//Technical SEO
 function TechnicalSEO(){
      return(<>
              
@@ -27,7 +27,7 @@ function TechnicalSEO(){
      
      </>);
 }
-{/*Banner*/}
+
 function Banner(){
       return(<> 
                 <div className="row">
@@ -39,19 +39,19 @@ function Banner(){
       </>);
 }
 
-{/*Breadcrumb*/}
+//Breadcrumb
 function BreadCrumb(){
       return(<>
-                <div className="row">
+                <div className="row bg-info bg-gradient">
                      <div className="col-sm-12">
-                          <section className="p-1 font font18">
+                          <section className="p-0 font font16">
                                     <Link to="/" className="text-decoration-none text-dark">HOME</Link>&gt;About Us
                           </section>
                      </div>
                </div>
       </>);
 }
-{/*Body*/}
+//Body
 function Body(){
       return(<>
                 <div className="row background-lemonchiffon">

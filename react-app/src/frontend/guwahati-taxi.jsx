@@ -17,7 +17,7 @@ export default function GuwahatiTaxi(){
                 </div>
      </>);
 }
-{/*Technical SEO*/}
+//Technical SEO
 function TechnicalSEO(){
      return(<>
              
@@ -30,32 +30,32 @@ function TechnicalSEO(){
      
      </>);
 }
-{/*Breadcrumb*/}
+//Breadcrumb
 function BreadCrumb(){
      return(<>
-               <div className="row">
+               <div className="row bg-info bg-gradient">
                     <div className="col-sm-12">
-                         <section className="p1 font font18">
+                         <section className="p-o font font16">
                                    <Link to="/" className="text-decoration-none text-dark">HOME</Link>&gt;<Link to="/aboutus" className="text-decoration-none text-dark">About Us</Link>&gt;Guwahati Taxi Service
                          </section>
                     </div>
               </div>
      </>);
 }
-{/*Body1*/}
+//Body1
 function Body1(){
       return(<>
            <div className="row background-lemonchiffon">
                 <div className="col-sm-1"></div>                
                 <div className="col-sm-4 p-0 m-0">
-                     <section className="p-3">                          
-                               <img src={process.env.PUBLIC_URL + 'GeneralImages/Guwahati.png'} alt="AeietyTrips" className="img-fluid w-100 m-0 p-0"/>
+                     <section>                          
+                               <img src="https://i.ibb.co/JyDS7VY/guwahati.png" alt="AeietyTrips" className="img-fluid m-1 p-1 rounded shadow-sm"/>
                      </section>
                 </div>
                 <div className="col-sm-6 p-4 m-1">
                      <h1>Cab Service in Guwahati: Affordable Fare, Timely, Hassle-Free</h1>
                      <p className="font font22">
-                         At AeietyTrips, we provide efficient cab service in Guwahati. We distinguish ourselves through timeliness, understanding of the customer, our efforts to eradicate pain points, and efficiency. Our customer-centric local and outstation taxi service in Guwahati provides cabs of different types: small, medium, or luxury for various needs. You can get the best taxi ride experience when you choose our dedicated taxi service.     
+                          Get the best cab service in Guwahati from Aeiety Trips. With affordable fares, timely pickup, and nil hassles, we ensure smooth and efficient taxi trips. We at Aeiety Trips distinguish ourselves through timeliness, understanding of the customer, our efforts to eradicate pain points, and efficiency. Our customer-centric local and outstation taxi service in Guwahati provides cabs of different types: small, medium, or luxury for various needs. You can get the best taxi ride experience when you choose our dedicated taxi service.     
                      </p>
                      <button type="button" class="btn btn-warning shadow"><a href="/" className="action">Book Taxi Guwahati&nbsp;&#129146;</a></button>
 
@@ -67,9 +67,9 @@ function Body1(){
 
       </>);
 }
-{/*Body2*/}
+//Body2
 function Body2(){
-      return(<>
+      return(<>  <TaxiService/>
                 <div className="row background-lemonchiffon">
                      <div className="col-sm-1"></div>
                      <div className="col-sm-10 p-3">
@@ -101,7 +101,7 @@ function Body2(){
                      </div>
                      <div className="col-sm-1"></div>
 
-                </div>
+                </div>                
       
       </>);
 }
@@ -124,7 +124,7 @@ function Body3(){
                                     </section>
                                     <section className="font font22">
                                          <h3>Umananda-the Smallest Island in the World</h3>                                     
-                                         <p>
+                                         <p><img src="https://i.ibb.co/0BK1MbZ/umananda-final.png" alt="Umananda island" className="rounded shadow-sm img-fluid float-start m-1 p-1"/>
                                             The Umananda island is one of the best places to visit in Guwahati. Notably, it is the smallest river island in the world. Umananda is also a key component of Guwahati tourism.
                                          </p>
                                          <p>
@@ -136,7 +136,7 @@ function Body3(){
                                          <p>
                                            In addition, the surroundings all around Umananda are majestic. The beautiful view of the Brahmaputra river, with both banks and the city as the background, provides a mesmerizing sight that can remain in memory forever. Also, the peaceful atmosphere could bring calmness to the mind.
                                          </p>
-                                         <p>
+                                         <p> 
                                            Reaching Umananda can be quick and convenient by hiring a Guwahati taxi service. After deboarding from the taxi, visitors should board a ferry at the river bank to reach the island.
                                          </p>
                                          <p>
@@ -156,7 +156,7 @@ function Body3(){
                                            The best option to reach the temple is to rent a Guwahati taxi. The ride from the foothill to the temple can be an exciting experience. The natural beauty and serenity of the entire Nilachal hills make it an attractive place to visit in Guwahati.
                                          </p>
                                          <h3>Srimanta Sankardev Kalakshetra—the Cultural Hub</h3>
-                                         <p>
+                                         <p><img src="https://i.ibb.co/6NchkY6/kalakshetra.png" alt="Kalakshetra" className="rounded shadow-sm img-fluid float-end m-1 p-1"/>
                                             Visiting the Srimanta Sankardev Kalakshetra in Guwahati can be educative and exciting. It is a cultural institution that gives insights into the cultural heritage of Assam. In addition, other educative aspects of the institution make it an exciting place to visit in Guwahati.
                                          </p>
                                          <p>

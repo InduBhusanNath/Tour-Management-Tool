@@ -35,9 +35,9 @@ function TechnicalSEO(){
 {/*Breadcrumb*/}
 function BreadCrumb(){
      return(<>
-               <div className="row bg-transparent">
+               <div className="row bg-info bg-gradient">
                     <div className="col-sm-12">
-                         <section className="padding25 font font18">
+                         <section className="p-0 font font16">
                                    <Link to="/" className="text-decoration-none text-dark">HOME</Link>&gt;<Link to="/aboutus" className="text-decoration-none text-dark">About Us</Link>&gt;Delhi Taxi Service
                          </section>
                     </div>
