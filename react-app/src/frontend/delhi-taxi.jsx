@@ -1,9 +1,9 @@
 import Header from "./header";
 import Footer from "./footer";
 import {Helmet} from "react-helmet";
-import { Link } from "react-router-dom";
-import TaxiService from "./taxi-service";
 
+
+//Main export function
 export default function DelhiTaxi(){
      return(<>
                 <TechnicalSEO/>
@@ -17,40 +17,51 @@ export default function DelhiTaxi(){
      
      </>);
 }
-{/*Technical SEO*/}
+//Technical SEO
 function TechnicalSEO(){
      return(<>
              
              <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Cab Service in Delhi| Taxi for Outstation and Local Trips</title>
+                <title>Cab service in Delhi: Best Taxi Rides at Affordable Fares</title>
+                <meta name="description" content="Looking for the best cab service in Delhi? Book Delhi taxi from us to experience comfortable, trouble-free, safe and timely taxi rides at affordable fares."/>
                 <link rel="canonical" href="http://mysite.com/example" />
-                <link rel="icon" href="./favicon.ico" type="image/gif" sizes="16x16"></link>
-                <meta name="description" content="Experience smooth and pleasant taxi rides with our excellent cab service in Delhi. Book taxis for local and outstation tours, including airport pickup and drop."/>
-                
             </Helmet>
      
      </>);
 }
-{/*Breadcrumb*/}
+//Breadcrumb
 function BreadCrumb(){
      return(<>
-               <div className="row bg-info bg-gradient">
-                    <div className="col-sm-12">
-                         <section className="p-0 font font16">
-                                   <Link to="/" className="text-decoration-none text-dark">HOME</Link>&gt;<Link to="/aboutus" className="text-decoration-none text-dark">About Us</Link>&gt;Delhi Taxi Service
-                         </section>
+               <div className="row">
+                    <div className="col-sm-12 bg-light bg-gradient">
+                          <nav aria-label="breadcrumb">
+                               <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/aboutus">About Us</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Taxi Delhi</li>
+                               </ol>
+                          </nav> 
                     </div>
               </div>
      </>);
 }
-{/*Body*/}
+
+//Body
 function Body(){
       return(<>
             <div className="row">
                 <div className="col-sm-12">
-                    <h1>PAGE UNDER CONSTRUCTION.....</h1>
-                    <TaxiService/>
+                     <p>&nbsp;</p>
+                     <p>&nbsp;</p>
+                     <p>&nbsp;</p>
+                     <p>&nbsp;</p>
+                     <h1>PAGE UNDER CONSTRUCTION.....</h1>
+                     <p>&nbsp;</p>
+                     <p>&nbsp;</p>
+                     <p>&nbsp;</p>
+                     <p>&nbsp;</p>
+                     Cab service in Delhi is more affordable, efficient, and satisfying.                     
                    
                 </div>
             </div>

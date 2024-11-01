@@ -31,9 +31,8 @@ function HeaderBar(){
 function NextHeaderBar(){
       return(<>
            <div className="row background-blanchedalmond">
-                <div className="col-sm-3"></div>
-                <div className="col-sm-4"></div>
-                <div className="col-sm-2"><span className="font font18"></span></div>
+                <div className="col-sm-5"></div>                
+                <div className="col-sm-4"><BasicLinks/></div>
                 <div className="col-sm-3"><HelpLine/></div>
           </div>
        
@@ -78,11 +77,15 @@ function Nav(){
 
 function HelpLine(){
     return(<>
-         <section className="text-center font font18">            
-             Customer Care&nbsp;&nbsp;
-             &#128222;&nbsp;<a href="tel:+919531393648" className="text-decoration-none text-dark">(+91) 9531393648</a>
-             <br/>             
-         </section>
+          <section className="text-center font font18"> 
+                <nav>
+                     <ul>
+                          <li>
+                               Customer Care&nbsp;&nbsp;&#128222;&nbsp;<a href="tel:+919531393648" className="text-decoration-none text-dark">(+91) 9531393648</a>
+                          </li>
+                     </ul>
+                </nav>   
+          </section>
          
              
          
@@ -103,4 +106,18 @@ function Whatsapp(){
                      <a aria-label="Message AeietyTrips" href="https://wa.me/919531393648?text='Please%20get%20back%20to%20me%20for%20cab%20booking" className="whatsapp"> <img alt="Aeiety Trips" src={process.env.PUBLIC_URL + 'MainImages/whatsapp.png'}/></a>
                </section>           
            </>);  
+}
+function BasicLinks(){
+      return(<>
+           <section className="text-center font font18">
+                <nav>
+                     <ul>
+                          <li><Link to="/aboutus" className="text-decoration-none text-dark">About Us</Link></li>
+                          <li><Link to="/contactus" className="text-decoration-none text-dark">Contact Us</Link></li>
+                          <li><Link to="/blog-page" className="text-decoration-none text-dark">Blogs</Link></li>
+                          <li><Link to="/#" className="text-decoration-none text-dark">Places to Visit</Link></li>
+                     </ul>
+                </nav>
+           </section>
+      </>);
 }

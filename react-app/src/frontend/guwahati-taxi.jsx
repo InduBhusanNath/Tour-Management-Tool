@@ -1,7 +1,6 @@
 import Header from "./header";
 import Footer from "./footer";
 import {Helmet} from "react-helmet";
-import { Link } from "react-router-dom";
 import TaxiService from "./taxi-service";
 
 export default function GuwahatiTaxi(){

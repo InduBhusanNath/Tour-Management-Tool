@@ -79,7 +79,7 @@ function Body(){
                          <div className="col-sm-4 padding25">
                                  <section>
                                          <p className="font font24 fw-bold">CUSTOMER CARE</p>
-                                         <p className="font font22">Our dedicated customer care is available 24/7. Call or Whatsapp our customer care if you want to reschedule or cancel your trip, resolve any issues, or answers to your queries. </p>
+                                         <p className="font font22">Our dedicated customer care is available 24/7. Call or Whatsapp our customer care if you want to book a taxi or trip, reschedule or cancel your trip, resolve any issues, or get answers to your queries. </p>
                                          <p className="font font24">&#128241;&nbsp;(+91)&nbsp;9531393648</p>
                                          <p className="font font24">&#128231;&nbsp;trips.aeiety@gmail.com</p>
                                  </section>
@@ -100,7 +100,7 @@ function Body(){
                                  <section>
                                          <p className="font font24 fw-bold">FOLLOW US ON SOCIAL MEDIA</p>
                                          <p className="font font22">
-                                                 <a href="https://www.facebook.com/aeietytrips" className="text-decoration-none">
+                                                 <a href="https://www.facebook.com/aeietytrips" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
                                                          <img src="https://i.ibb.co/wybGyY7/facebook.png" alt="https://www.facebook.com/aeietytrips" className="img-fluid p-0 m-0"/>
                                                  </a>                                                                                                 
                                          </p>
@@ -108,7 +108,7 @@ function Body(){
                                  <section>
                                          <p className="font font24 fw-bold">SUBSCRIBE TO OUR YOUTUBE CHANNEL</p>
                                          <p className="font font22">
-                                                 <a href="https://www.youtube.com/@aeiety-trips" className="text-decoration-none">
+                                                 <a href="https://www.youtube.com/@aeiety-trips" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
                                                          <img src="https://i.ibb.co/ZL25CPH/youtube.png" alt="https://www.youtube.com/@aeiety-trips" className="img-fluid p-0 m-0"/>
                                                  </a> 
                                          </p>

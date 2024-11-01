@@ -68,13 +68,13 @@ function Foot(){
                                  <p>&#128231;&nbsp;trips.aeiety@gmail.com</p>                                 
                          </section>
                          <section>
-                                 <a href="https://www.facebook.com/aeietytrips/" target="_blank" className="text-decoration-none"><FontAwesomeIcon icon={faFacebook}/></a>
+                                 <a href="https://www.facebook.com/aeietytrips/" target="_blank" rel="noopener noreferrer" className="text-decoration-none"><FontAwesomeIcon icon={faFacebook}/></a>
                                  &nbsp;&nbsp;
                                  <FontAwesomeIcon icon={faTwitter} />
                                  &nbsp;&nbsp;
                                  <FontAwesomeIcon icon={faLinkedin} />
                                  &nbsp;&nbsp;
-                                 <a href="https://www.youtube.com/@aeiety-trips" target="_blank" className="text-decoration-none"><FontAwesomeIcon icon={faYoutube} /></a>
+                                 <a href="https://www.youtube.com/@aeiety-trips" target="_blank" rel="noopener noreferrer" className="text-decoration-none"><FontAwesomeIcon icon={faYoutube} /></a>
                                  &nbsp;&nbsp;
                                  <FontAwesomeIcon icon={faInstagram} />
 
