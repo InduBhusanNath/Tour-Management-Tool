@@ -64,7 +64,7 @@ function Foot(){
                  <div className="col-sm-3">
                          <section>
                                  <p className="font font24 fw-bold">Quick Connect</p>                                 
-                                 <p>&#128241;&nbsp;(+91)9531393648</p>                                 
+                                 <p>&#128241;&nbsp;<a href="tel:+919531393648" className="text-decoration-none text-dark">(+91) 9531393648</a></p>                                 
                                  <p>&#128231;&nbsp;trips.aeiety@gmail.com</p>                                 
                          </section>
                          <section>
@@ -83,7 +83,7 @@ function Foot(){
          </row>
      </>);
 }
-{/*Copyright*/}
+//Copyright
 function CopyRight(){
          return(<>
                  <div className="row background-lightsalmon">

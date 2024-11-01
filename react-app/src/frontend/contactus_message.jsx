@@ -59,8 +59,7 @@ function ProspectMessage(){
      return(<>
          <div className="col-sm-12">
              <span className="small text-danger">{ms1}</span>
-             <br/>
-             <span className="font font20">Message Us Your Query, We Will Get Back to You.....</span>
+             <br/>             
              <form method="post" onSubmit={submitContactUsMessage}>
                 <div className="form-group">                     
                      <input type="hidden" className="form-control" name="n_date" value={msgdate}/>

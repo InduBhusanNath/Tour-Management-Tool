@@ -33,11 +33,15 @@ function TechnicalSEO(){
 //Breadcrumb
 function BreadCrumb(){
      return(<>
-               <div className="row bg-info bg-gradient">
-                    <div className="col-sm-12">
-                         <section className="p-o font font16">
-                                   <Link to="/" className="text-decoration-none text-dark">HOME</Link>&gt;<Link to="/aboutus" className="text-decoration-none text-dark">About Us</Link>&gt;Guwahati Taxi Service
-                         </section>
+               <div className="row">
+                    <div className="col-sm-12 bg-light bg-gradient">
+                          <nav aria-label="breadcrumb">
+                               <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="/aboutus">About Us</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Taxi Guwahati</li>
+                               </ol>
+                          </nav> 
                     </div>
               </div>
      </>);
