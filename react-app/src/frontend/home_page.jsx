@@ -4,17 +4,21 @@ import CabBooking from "./cab_booking";
 import {Helmet} from "react-helmet";
 import Collapsible from 'react-collapsible';
 import TaxiService from "./taxi-service";
+import TourismServices from "./tourism-service";
+import ChooseUs from "./whychooseus";
 
 
 
-
+//Main export function
 export default function HomePage(){
      return(<>
            <TechnicalSEO/>
            <div className="container-fluid">                     
                      <Header/>
                      <Banner/>
-                     <Body/>                     
+                     <Body1/>
+                     <Body2/>
+                     <Body3/>                     
                      <Footer/>
            </div>     
      </>);
@@ -46,8 +50,8 @@ function Banner(){
       </>);
 }
 
-//Body
-function Body(){
+//Body1
+function Body1(){
       return(<>
                 <div className="row padding25 background-lightgoldenrodyellow">
                           <div className="col-sm-4">
@@ -162,5 +166,17 @@ function Body(){
 
                 </div>
 
+      </>);
+}
+//Body2
+function Body2(){
+      return(<>
+          <TourismServices/>
+      </>);
+}
+//Body3
+function Body3(){
+      return(<>
+          <ChooseUs/>
       </>);
 }
