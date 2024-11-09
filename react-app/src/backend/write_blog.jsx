@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import {url} from "./url";
+import { apihost } from "./apihost";
 import DateObject from "react-date-object";
 
 var dt = new DateObject();
@@ -63,7 +63,7 @@ export default function WriteBlog(){
         blogWrite.append("n_featuredImageLink",featuredImageLink);
         blogWrite.append("n_featuredContent",featuredContent);
        
-        axios.post(url+"/adminDashboard/blogs/write_blog",blogWrite)
+        axios.post(apihost+"/adminDashboard/blogs/write_blog",blogWrite)
            .then((response)=>{
                 setMesWriteBlog(response.data);
         }).catch((error)=>{

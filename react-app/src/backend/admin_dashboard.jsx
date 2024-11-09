@@ -1,21 +1,20 @@
 import {Helmet} from "react-helmet";
-import {useState} from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers } from '@fortawesome/free-solid-svg-icons';
-import { faGear } from '@fortawesome/free-solid-svg-icons';
-import {faHouse} from '@fortawesome/free-solid-svg-icons';
-import {faBlog} from '@fortawesome/free-solid-svg-icons';
-import {faEnvelopesBulk} from '@fortawesome/free-solid-svg-icons';
-import {faTaxi} from '@fortawesome/free-solid-svg-icons';
-import {faPersonWalkingLuggage} from '@fortawesome/free-solid-svg-icons';
-import React from 'react';  
-import { Link } from "react-router-dom";
-import { Outlet} from "react-router-dom";
+import {React,useState,useEffect} from "react";  
+import { Link,Outlet } from "react-router-dom";
 import axios from "axios";
 import SessionCheck from "./sessionCheck";
 import AdminUsers from "./admin_users";
-import { useEffect } from "react";
+import AdmSidePanel from "./admin-side-panel";
 
+//Main export function
+export default function AdminDashboard(){
+    return(<>
+        <SessionCheck/>
+        <TechnicalSeo/>
+        <AdmBody/>
+    </>);
+}
+//Technical SEO
 function TechnicalSeo(){
     return(<>
        <Helmet>
@@ -27,64 +26,10 @@ function TechnicalSeo(){
 }
 
 
-     function AdmSidePanel(){
-        const [togle,setTogle]=useState('+');
-        const [display,setDisplay]=useState('hidden')
-        function Settings(){
-            if(togle==='+'){
-                setTogle('-');
-                setDisplay('visible');
-            }else{
-                setTogle('+');
-                setDisplay('hidden');
-            }
-           
-         }
-         return(<>
-            <table className="table font font20">
-                <tbody>
-                    <tr>
-                         <td className="bg-transparent"><FontAwesomeIcon icon={faHouse}/>&nbsp;<Link to="/adminDashboard/" className="action">DASHBOARD</Link></td>                                 
-                    </tr>
-                    <tr>
-                         <td className="bg-transparent"><FontAwesomeIcon icon={faTaxi} />&nbsp;<Link to="/adminDashboard/manage-cab-booking/" className="action">Cab Management</Link></td> 
-                    </tr>
-                    <tr>
-                         <td className="bg-transparent"><FontAwesomeIcon icon={faBlog}/>&nbsp;<Link to="/adminDashboard/blogs/" className="action">Blogs</Link></td> 
-                    </tr>
-                    <tr>
-                         <td className="bg-transparent"><FontAwesomeIcon icon={faEnvelopesBulk}/>&nbsp;<Link to="/adminDashboard/contactus-messages/" className="action">Contact Us Messages</Link></td> 
-                    </tr>
-                    <tr>
-                         <td className="bg-transparent"><FontAwesomeIcon icon={faPersonWalkingLuggage}/>&nbsp;<Link to="/adminDashboard/tourism/" className="action">Tourism</Link></td> 
-                    </tr>
-                    <tr>
-                         <td className="bg-transparent">&#128506;&nbsp;<Link to="/adminDashboard/places/" className="action">Places</Link></td> 
-                    </tr>
-                    <tr>
-                         <td className="bg-transparent">&#127916;&nbsp;<Link to="/adminDashboard/images/" className="action">Images</Link></td> 
-                    </tr>
-                </tbody>
-                <button className="collapse_button w-75" onClick={Settings}><FontAwesomeIcon icon={faGear}/>&nbsp;Settings</button><span className="text-end w-25">{togle}</span>
-                     <section className={display}>
-                         <section className="text-left">
-                             <span className="bg-transparent"><FontAwesomeIcon icon={faUsers}/>&nbsp;<Link to="/adminDashboard/adminUsers/" className="action">Users</Link></span>
-                             <br/>
-                             test                           
-                             
-                         </section>
-                         
-                     </section>   
-                             
-                            
-            </table>
-         
-         </>);
-    
-       }
      
      
-
+     
+//Admin Body
 function AdmBody(){
     const [sessionUsername,setSessionUsername]=useState('');
     const [sessionName,setSessionName]=useState('');
@@ -201,9 +146,7 @@ function AdmBody(){
                     .catch(error=>{
         
                     });
-
-        }
-        
+        }        
      
     return(<>
          
@@ -285,10 +228,10 @@ function AdmBody(){
             </div>
              
             <div className="row">
-                 <div className="col-sm-3 padding25">
+                 <div className="col-sm-2 padding25">
                      <AdmSidePanel/>
                 </div>
-                <div className="col-sm-9 padding25">                    
+                <div className="col-sm-10 padding25">                    
                     <Outlet/>                    
                 </div>
             </div>
@@ -304,10 +247,3 @@ function AdmBody(){
 
 
 
-export default function AdminDashboard(){
-     return(<>
-         <SessionCheck/>
-         <TechnicalSeo/>
-         <AdmBody/>
-     </>);
-}

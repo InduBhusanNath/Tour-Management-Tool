@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { url } from "./url";
+import { apihost } from "./apihost";
 
 
 export default function Images(){
@@ -33,7 +33,7 @@ function Upload(){
          fd.append("n_imageFile",imageFile);
          fd.append("n_imageLabel",imageLabel);        
          
-         axios.post(url+"/adminDashboard/images",fd,{
+         axios.post(apihost+"/adminDashboard/images",fd,{
             headers: {
               'Content-Type':'multipart/form-data'
             }}
@@ -101,7 +101,7 @@ function DisplayImageLinks(){
      const lastUrl="?page="+"1";
      const firstUrl="?page="+1;
     useEffect(()=>{ 
-         axios.get(url+"/adminDashboard/images/?page="+pg)
+         axios.get(apihost+"/adminDashboard/images/?page="+pg)
          .then(response=>{
              setMsgd(response.data.flag);
              setImageLinks(response.data.result);
@@ -168,7 +168,7 @@ function DeleteImages({visibility,id,imgName}){
          var d={
             "n_delId":id
          }
-         axios.post(url+"/adminDashboard/images/delete-image",d)
+         axios.post(apihost+"/adminDashboard/images/delete-image",d)
          .then(response=>{
              setDmsg(response.data);
          })

@@ -21,10 +21,26 @@ function checkAdminUser(req,res){
                  bcrypt.compare(originalPassword,pwd,function(err,result){
                      if(result==true){
                         userModel.countDocuments({username:userName,password:pwd,adminStatus:'Admin'}).then(count=>{
-                             if(count=="1"){                                                                          
-                                     res.send({"flag":"1"});                                    
-                                }                         
-                            
+                             if(count=="1"){  
+                                     req.session.regenerate((err)=>{
+                                         if(err){
+                                             res.send({"flag":"err"});
+                                             return;
+                                         }else{
+                                             req.session.user=userName;
+                                             req.session.save((err)=>{
+                                                 if(err){
+                                                     res.send({"flag":"err"});
+                                                     return;
+                                                 }else{
+                                                     
+                                                     res.send({"flag":"1","sesId":req.session.user});
+                                                 }
+                                             });
+                                         }
+
+                                     });
+                                   }
                         });
                      }else if(result==false){
                          res.send({"flag":"0+"});
@@ -41,6 +57,7 @@ function checkAdminUser(req,res){
 
 
 
+
 module.exports={
-     checkAdminUser
+      checkAdminUser           
 }

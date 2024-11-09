@@ -1,4 +1,4 @@
-import {url} from './url';
+import { apihost } from "./apihost";
 import {Helmet} from "react-helmet";
 import {useState} from "react";
 import axios from "axios";
@@ -39,7 +39,7 @@ function CreateDummyUser(){
       }
       function HandleAutoUser(e){  
          e.preventDefault();    
-         axios.post(url+"/adminLogin/create-auto-admin",usr)
+         axios.post(apihost+"/adminLogin/create-auto-admin",usr)
          .then(response=>{
              setMsg1(response.data);
          })
@@ -143,21 +143,22 @@ function AllowAcces(){
      var adm_usr=new FormData();
      adm_usr.append('userName',adminEmail);
      adm_usr.append('userPassword',adminPassword);
-     axios.post(url+"/adminLogin/check_admin_user",adm_usr,{headers:{'Content-Type':'application/json'}})
+     axios.post(apihost+"/adminLogin/check_admin_user",adm_usr,{headers:{'Content-Type':'application/json'}})
      .then(response=>{
          var admUserData=response.data;
-         if(admUserData.flag==="1"){             
+         if(admUserData.flag==="1"){  
+             setSessionUserId(admUserData.sesId);                   
              setRes("Allowing Access.....");
                  setTimeout(()=>{
-                     window.location.assign("/adminDashboard");
+                     window.location.assign("/adminDashboard/");                                          
                  },2000);
-            return;
+             return;
          }else if(admUserData.flag==="0"){
-              setRes("No Combination of Such Username/Password.....");
-              return;
+             setRes("No Combination of Such Username/Password.....");
+             return;
          }else if(admUserData.flag==="1+"){
-              setRes("Duplicate Username Suspected.....");
-              return;
+             setRes("Duplicate Username Suspected.....");
+             return;
          }else if(admUserData.flag==="0+"){
              setRes("Type the Correct Password.....");
              return;
@@ -170,9 +171,9 @@ function AllowAcces(){
      .catch(error=>{
         setRes(error);
      });        
-     
-      
  }
+ 
+ 
  
      return(<>
           

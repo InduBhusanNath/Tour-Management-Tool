@@ -6,6 +6,7 @@ import Collapsible from 'react-collapsible';
 import TaxiService from "./taxi-service";
 import TourismServices from "./tourism-service";
 import ChooseUs from "./whychooseus";
+import InternationalTourPackageCarousel from "./international-tour-package-carousel";
 
 
 
@@ -18,7 +19,8 @@ export default function HomePage(){
                      <Banner/>
                      <Body1/>
                      <Body2/>
-                     <Body3/>                     
+                     <Body3/>
+                     <LastBody/>                     
                      <Footer/>
            </div>     
      </>);
@@ -176,6 +178,13 @@ function Body2(){
 }
 //Body3
 function Body3(){
+      return(<>
+           <InternationalTourPackageCarousel/>
+      </>);
+}
+
+//Last Body
+function LastBody(){
       return(<>
           <ChooseUs/>
       </>);

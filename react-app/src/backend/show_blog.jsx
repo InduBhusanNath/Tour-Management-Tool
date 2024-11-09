@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
 import parse from 'html-react-parser';
-import {url} from "./url";
+import { apihost } from "./apihost";
 
 
 let params=new URLSearchParams(document.location.search);
@@ -35,7 +35,7 @@ export default function ShowBlog(){
     
 
      useEffect(()=>{
-             axios.get(url+'/adminDashboard/blogs/show_blog/?blgId='+id)
+             axios.get(apihost+'/adminDashboard/blogs/show_blog/?blgId='+id)
              .then(response=>{
                    if(response.data.flag==="1"){
                          setMsg1("Blog Found.....");
@@ -122,7 +122,7 @@ export default function ShowBlog(){
        updtBlg.append('edit_n_blogBody',eBlogBody);
      
        
-             axios.post(url+"/adminDashboard/blogs/show_blog/update-blog-content",updtBlg,{
+             axios.post(apihost+"/adminDashboard/blogs/show_blog/update-blog-content",updtBlg,{
                     headers: {
                          'Content-Type': 'application/json'
                 }

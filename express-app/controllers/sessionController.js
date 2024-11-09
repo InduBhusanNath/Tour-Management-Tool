@@ -1,28 +1,35 @@
-const userModel=require('../models/userModel.js');
+const sessionModel=require('../models/sessionModel.js');
+const dateTime=new Date();
 
+//Check session
+async function checkSession(req,res){
+       //var user=req.body.user;              
+       //var rows=await sessionModel.countDocuments({userName:user});
+       //if(rows=="0"){
+             //await sessionModel.create({
+                   //userName:user,
+                   //isLoggedIn:"1",
+                   //loginDateTime:dateTime,
+                   //logoutDateTime:"",
+                   //loggedInDuration:""
+            //})
+            //.then(result=>{
+                   //res.json({
+                        //"flag":"1"
+                   //});
+           // })  
+            //.catch(error=>{
+                  //res.json({
+                        //"flag":"err"
+                   //});
+           // });          
+       //}else if(rows!=0){
+             //res.json({
+                  //"flag":"1+"
+             //});
+      // }   
+ }
 
-//Create Session
-
-function adminSession(req, res){
-      var sessionId=req.query.user;
-      res.send(sessionId)
-     //var sessionId=req.session.user;
-     //userModel.find({username:sessionId}).then(data=>{
-         //res.json(data);
-     //});      
-}
-//Admin Log Out
-function adminLogOut(req,res){     
-      console.log(req.session.user); 
-      req.session.destroy(err=>{
-           if(err){
-                res.send("-1");
-           }else{
-                res.send("1");
-           }
-      });
-}
-
-module.exports={
-      adminSession, adminLogOut
-}
+ module.exports={
+       checkSession
+ }

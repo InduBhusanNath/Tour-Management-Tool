@@ -15,8 +15,10 @@ import ContactUs from "./frontend/contactus";
 import AdventureTourism from "./frontend/adventure-tourism";
 import EcoTourism from "./frontend/eco-tourism";
 import HistoricalTourism from "./frontend/historical-tourism";
+import TourPackages from "./frontend/tour-packages";
 import UniqueAttractions from "./frontend/unique-attractions";
 import UniqueAttractionsAssam from "./frontend/unique-attractions-assam";
+import BhutanTourPackage from "./frontend/bhutan-tour-package";
 
 import AdminLogin from "./backend/admin_login";
 import AdminDashboard from "./backend/admin_dashboard";
@@ -77,6 +79,14 @@ const router=createBrowserRouter([
    path:"/historical-tourism",
    element:<HistoricalTourism/>
   },
+  {
+    path:"/tour-packages",
+    element:<TourPackages/>
+   },
+   {
+    path:"/bhutan-tour-packages",
+    element:<BhutanTourPackage/>
+   },
   {
      path:"/adminLogin",
      element:<AdminLogin/>

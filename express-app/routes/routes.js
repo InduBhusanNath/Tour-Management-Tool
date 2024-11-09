@@ -2,16 +2,19 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 const session=require('express-session');
-const MemoryStore = require('memorystore')(session)
+app.set('trust proxy', 1); // trust first proxy
+app.use(session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: true
+}));
+
 const path = require('path');
 var cors = require('cors');
 const fileUpload = require('express-fileupload');
 app.use(fileUpload());
 
-app.use(cors({
-    origin: '*', // Allow all origins temporarily for testing
-    methods: ['GET', 'POST'],
-}))
+app.use(cors());
 app.use(express.static('public'));
 //app.use(express.static(path.join(__dirname,'../','../','react-app','build')));
 
@@ -22,11 +25,7 @@ app.use(express.static('public'));
 //var router = express.Router();
 
 
-app.use(session({
-  secret: 'keyboard cat',
-  resave: false,
-  saveUninitialized: true
-}))
+
 
 
 app.use(bodyParser.json()); 
@@ -34,7 +33,7 @@ app.use(bodyParser.urlencoded({ extended:true}));
 
 var userController=require('../controllers/userController.js');
 var adminUserController=require('../controllers/adminUserController.js');
-const createUser = require('../controllers/userController.js');
+var createUser = require('../controllers/userController.js');
 var sessionController=require('../controllers/sessionController.js');
 var blogController=require('../controllers/blogController.js');
 var contactUsMessageModel=require('../controllers/contactUsMessageController.js');
@@ -49,7 +48,7 @@ var imageController=require('../controllers/imageController.js');
 
 
 app.get('/api/adminDashboard/adminUsers',userController.readUsers);
-app.get('/admin_session',sessionController.adminSession);
+//app.get('/admin_session',sessionController.adminSession);
 //app.get('/admin_logout',sessionController.adminLogOut);
 app.get('/adminDashboard/blogs/',blogController.readBlog);
 app.get('/adminDashboard/blogs/show_blog',blogController.edit_displayBlog);
@@ -72,7 +71,10 @@ app.get('/adminDashboard/images/',imageController.ShowImages);
 
 /*POST*/
 app.post('/api/adminLogin/create-auto-admin',autoCreateAdminController.createautoAdmin);
-app.post('/adminDashboard/adminUsers/user_post',userController.createUser);
+app.post('/api/adminLogin/check_admin_user',adminUserController.checkAdminUser);
+app.post('/api/adminLogin/check-session',sessionController.checkSession);
+app.post('/api/adminDashboard/adminUsers/user_post',userController.createUser);
+
 app.post('/adminDashboard/adminUsers/user_edit_data',userController.editUsersData);
 app.post('/adminDashboard/adminUsers/user_edit',userController.editUsers); 
 app.post('/adminDashboard/adminUsers/user_delete_data',userController.deleteUserData);
@@ -81,7 +83,7 @@ app.post('/adminDashboard/adminUsers/user_priviledge_data',userController.privil
 app.post('/adminDashboard/adminUsers/user_priviledge_data_change',userController.changeUserPriviledge);
 app.post('/change_password',userController.changePassword);
 app.post('/change_password_by_user',userController.changePasswordByUser);
-app.post('/api/adminLogin/check_admin_user',adminUserController.checkAdminUser);
+
 app.post('/adminDashboard/blogs/write_blog',blogController.createBlog);
 app.post('/adminDashboard/blogs/show_blog/update-blog-content',blogController.edit_blogContent);
 app.post('/adminDashboard/blogs/show_blog/delete-blog-content',blogController.delete_blogContent);

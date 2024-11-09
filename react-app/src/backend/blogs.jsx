@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import {url} from "./url";
+import { apihost } from "./apihost";
 
 
 
@@ -48,7 +48,7 @@ function BlogList(){
       useEffect(()=>{
           axios({
                method:"get",
-               url:url+"/adminDashboard/blogs/?page="+pg                    
+               url:apihost+"/adminDashboard/blogs/?page="+pg                    
             }).then(response=>{
                     var blogData=response.data;
                     setBlogList(blogData.data);

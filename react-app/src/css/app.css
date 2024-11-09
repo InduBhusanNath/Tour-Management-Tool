@@ -213,8 +213,7 @@
 .action{
        text-decoration:none;
        cursor:pointer;
-       color:black;
-       font-weight: bold;       
+       color:black;             
 }
 .shown{
       display: block;
