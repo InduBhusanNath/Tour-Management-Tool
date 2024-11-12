@@ -33,6 +33,9 @@ export default function AdmSidePanel(){
                      <td className="bg-transparent">&nbsp;<Link to="/adminDashboard/tourism/" className="action">Tourism</Link></td> 
                 </tr>
                 <tr>
+                     <td className="bg-transparent">&nbsp;<Link to="/adminDashboard/tour-packages/" className="action">Tour Packages</Link></td> 
+                </tr>
+                <tr>
                      <td className="bg-transparent">&nbsp;<Link to="/adminDashboard/places/" className="action">Places</Link></td> 
                 </tr>
                 <tr>

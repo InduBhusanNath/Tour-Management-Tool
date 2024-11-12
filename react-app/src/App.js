@@ -15,7 +15,7 @@ import ContactUs from "./frontend/contactus";
 import AdventureTourism from "./frontend/adventure-tourism";
 import EcoTourism from "./frontend/eco-tourism";
 import HistoricalTourism from "./frontend/historical-tourism";
-import TourPackages from "./frontend/tour-packages";
+import TourPackagesIntro from "./frontend/tour-packages-intro";
 import UniqueAttractions from "./frontend/unique-attractions";
 import UniqueAttractionsAssam from "./frontend/unique-attractions-assam";
 import BhutanTourPackage from "./frontend/bhutan-tour-package";
@@ -40,6 +40,8 @@ import PlaceWrite from "./backend/places-write";
 import PlaceEdit from "./backend/place-edit";
 import PlaceDelete from "./backend/place-delete";
 import Images from "./backend/images";
+import TourPackages from "./backend/tour-packages";
+
 
 
 const router=createBrowserRouter([
@@ -80,8 +82,8 @@ const router=createBrowserRouter([
    element:<HistoricalTourism/>
   },
   {
-    path:"/tour-packages",
-    element:<TourPackages/>
+    path:"/tour-packages-intro",
+    element:<TourPackagesIntro/>
    },
    {
     path:"/bhutan-tour-packages",
@@ -148,7 +150,12 @@ const router=createBrowserRouter([
       path:"/adminDashboard/images",
       element:<Images/>
 
-   }      
+    },
+    {
+      path:"/adminDashboard/tour-packages",
+      element:<TourPackages/>
+
+    }     
 
     ]
        
@@ -189,6 +196,7 @@ const router=createBrowserRouter([
       element:<TourismDelete/>
 
     },
+    
    
 ]);
 

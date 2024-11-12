@@ -42,6 +42,7 @@ var cabBookingController=require('../controllers/cabBookingController.js');
 var tourismController=require('../controllers/tourismController.js');
 var placesController=require('../controllers/placesController.js');
 var imageController=require('../controllers/imageController.js');
+var tourPackageController=require('../controllers/tourPackageController.js');
 
 /* GET*/
 
@@ -60,6 +61,9 @@ app.get('/adminDashboard/tourism/tourism-edit',tourismController.tourismDetailsE
 app.get('/adminDashboard/places/',placesController.placeRead);
 app.get('/adminDashboard/places/place-edit',placesController.placeEdit);
 app.get('/adminDashboard/images/',imageController.ShowImages);
+app.get('/api/adminDashboard/tour-packages/read',tourPackageController.readTourPackage);
+app.get('/api/adminDashboard/tour-packages/edit-data',tourPackageController.fetchEditData);
+app.get('/api/adminDashboard/tour-packages/delete-data',tourPackageController.fetchDeleteData);
 
 //app.get('*', function (req, res) {
      //res.sendFile(path.join(__dirname,'../','../','react-app','build','index.html'));
@@ -101,6 +105,9 @@ app.post('/adminDashboard/places/place-edit',placesController.placeUpdate);
 app.post('/adminDashboard/places/place-delete',placesController.placeDelete);
 app.post('/adminDashboard/images/',imageController.uploadImage);
 app.post('/adminDashboard/images/delete-image',imageController.deleteImage);
+app.post('/api/adminDashboard/tour-packages/create',tourPackageController.createTourPackage);
+app.post('/api/adminDashboard/tour-packages/update',tourPackageController.updateTourPackage);
+app.post('/api/adminDashboard/tour-packages/delete',tourPackageController.deleteTourPackage);
 
 
 

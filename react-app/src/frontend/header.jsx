@@ -67,7 +67,7 @@ function Nav(){
                                <li><Link to="/relic-tourism" className="text-decoration-none text-dark">Historical</Link></li>
                          </ul>
                   </li>
-                  <li><Link to="/tour-packages" className="text-decoration-none text-dark">&nbsp;Tour Packages</Link></li>
+                  <li><Link to="/tour-packages-intro" className="text-decoration-none text-dark">&nbsp;Tour Packages</Link></li>
                   <li><Link to="/#" className="text-decoration-none text-dark">&nbsp;Cruises</Link></li>
                   
               </ul>

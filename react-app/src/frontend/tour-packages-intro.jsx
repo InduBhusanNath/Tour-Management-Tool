@@ -2,7 +2,7 @@ import Header from "./header";
 import Footer from "./footer";
 import { Helmet } from "react-helmet";
 
-export default function TourPackages(){
+export default function TourPackagesIntro(){
      return(<>
          <div className="container-fluid">
              <Header/>
