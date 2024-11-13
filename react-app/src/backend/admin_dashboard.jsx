@@ -6,12 +6,15 @@ import SessionCheck from "./sessionCheck";
 import AdminUsers from "./admin_users";
 import AdmSidePanel from "./admin-side-panel";
 
+
+
+
 //Main export function
 export default function AdminDashboard(){
-    return(<>
-        <SessionCheck/>
-        <TechnicalSeo/>
-        <AdmBody/>
+    return(<>        
+         <TechnicalSeo/>
+         <SessionCheck/>
+         <AdmBody/>
     </>);
 }
 //Technical SEO
@@ -25,10 +28,6 @@ function TechnicalSeo(){
     </>);
 }
 
-
-     
-     
-     
 //Admin Body
 function AdmBody(){
     const [sessionUsername,setSessionUsername]=useState('');
@@ -148,7 +147,7 @@ function AdmBody(){
                     });
         }        
      
-    return(<>
+    return(<> 
          
              <div className="container">
                 
@@ -232,7 +231,7 @@ function AdmBody(){
                      <AdmSidePanel/>
                 </div>
                 <div className="col-sm-10 padding25">                    
-                    <Outlet/>                    
+                     <Outlet/>                    
                 </div>
             </div>
             

@@ -6,7 +6,8 @@ app.set('trust proxy', 1); // trust first proxy
 app.use(session({
   secret: 'keyboard cat',
   resave: false,
-  saveUninitialized: true
+  saveUninitialized: true,
+  cookie: { secure: true}
 }));
 
 const path = require('path');
@@ -49,7 +50,6 @@ var tourPackageController=require('../controllers/tourPackageController.js');
 
 
 app.get('/api/adminDashboard/adminUsers',userController.readUsers);
-//app.get('/admin_session',sessionController.adminSession);
 //app.get('/admin_logout',sessionController.adminLogOut);
 app.get('/adminDashboard/blogs/',blogController.readBlog);
 app.get('/adminDashboard/blogs/show_blog',blogController.edit_displayBlog);
@@ -108,6 +108,7 @@ app.post('/adminDashboard/images/delete-image',imageController.deleteImage);
 app.post('/api/adminDashboard/tour-packages/create',tourPackageController.createTourPackage);
 app.post('/api/adminDashboard/tour-packages/update',tourPackageController.updateTourPackage);
 app.post('/api/adminDashboard/tour-packages/delete',tourPackageController.deleteTourPackage);
+app.post('/api/adminDashboard/check-session',sessionController.checkSession);
 
 
 

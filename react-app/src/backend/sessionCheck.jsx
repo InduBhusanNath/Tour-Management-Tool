@@ -1,36 +1,18 @@
 import { apihost } from "./apihost";
+import { useState } from "react";
 import axios from "axios";
+import Cookies from 'js-cookie';
+import { useEffect } from "react";
 
 
 //Main export function
 export default function SessionCheck(){
-      var param=new URLSearchParams(window.document.location.search);
-      var usr=param.get('user');
-      var sendUsr={
-           "user":usr
-      }; 
-      var dashboardHost=window.location.host;
-      var dashboardPath=window.location.pathname;
-
-      axios.post(apihost+"/adminDashboard",sendUsr)
-      .then(response=>{
-           if(response.data.flag==="1"){
-                window.location.href="/adminDashboard"
-           }else if(response.data.flag==="1+"){
-                window.location.href="/adminLogin"
-           }else if(response.data.flag==="err"){
-                window.location.href="/adminLogin"              
-           }
-
-      })
-      .catch(error=>{
-           alert(error);
-      });
-      
-      
-
+      const[sesId]=useState(Cookies.get('sessionId'));
+      if(!sesId){
+          window.location.href="/adminLogin";
+      }
       
       return(<>
-         {usr}
+         {sesId} is Logged in 
       </>);
 }

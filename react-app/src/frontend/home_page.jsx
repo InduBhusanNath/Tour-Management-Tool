@@ -5,7 +5,7 @@ import {Helmet} from "react-helmet";
 import Collapsible from 'react-collapsible';
 import TaxiService from "./taxi-service";
 import TourismServices from "./tourism-service";
-import ChooseUs from "./whychooseus";
+import WhyChooseUs from "./whychooseus";
 import InternationalTourPackageCarousel from "./international-tour-package-carousel";
 
 
@@ -31,8 +31,8 @@ function TechnicalSEO(){
              
              <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Taxi Service: Book Affordable, Reliable, Secure, Timely Cabs</title>                
-                <meta name="description" content="Are you searching for a trusted taxi service for cab booking? Book taxi from us for all trips at affordable fares. We ensure reliability, safety, timeliness."/>
+                <title>Taxi Service, Tourism, Tour Packages-Book at the Best Prices</title>                
+                <meta name="description" content="Aeiety Trips provides affordable taxi services, curated tourism and package tours. Why not book a trip with us for a memorable experience due to our excellence?"/>
                 <link rel="canonical" href="https://aeiety.com"/>
             </Helmet>
      
@@ -186,6 +186,6 @@ function Body3(){
 //Last Body
 function LastBody(){
       return(<>
-          <ChooseUs/>
+          <WhyChooseUs/>
       </>);
 }

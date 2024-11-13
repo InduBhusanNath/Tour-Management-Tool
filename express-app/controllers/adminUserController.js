@@ -32,8 +32,7 @@ function checkAdminUser(req,res){
                                                  if(err){
                                                      res.send({"flag":"err"});
                                                      return;
-                                                 }else{
-                                                     
+                                                 }else{                                                     
                                                      res.send({"flag":"1","sesId":req.session.user});
                                                  }
                                              });

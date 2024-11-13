@@ -2,6 +2,8 @@ import { apihost } from "./apihost";
 import {Helmet} from "react-helmet";
 import {useState} from "react";
 import axios from "axios";
+import Cookies from 'js-cookie';
+
 
 //Export Component
 
@@ -113,6 +115,7 @@ function AllowAcces(){
      const [autousr,setAutousr]=useState('');
      const [sessionUserId, setSessionUserId]=useState('');
      const [sessionAdminStatus,setSessionAdminStatus]=useState('');
+     
 
      //Show/Hide Password
      function ShowPassword(e){         
@@ -147,7 +150,8 @@ function AllowAcces(){
      .then(response=>{
          var admUserData=response.data;
          if(admUserData.flag==="1"){  
-             setSessionUserId(admUserData.sesId);                   
+             Cookies.set('sessionId', admUserData.sesId, { expires: 7 })
+             
              setRes("Allowing Access.....");
                  setTimeout(()=>{
                      window.location.assign("/adminDashboard/");                                          

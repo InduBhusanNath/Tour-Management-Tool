@@ -1,7 +1,7 @@
 //Main export function
-export default function ChooseUs(){
+export default function WhyChooseUs(){
      return(<>
-        <div className="row background-mintcream">
+        <div className="row background-ghostwhite">
              <div className="col-sm-1"></div>
              <div className="col-sm-10">
                  <section className="padding25">
@@ -10,7 +10,7 @@ export default function ChooseUs(){
              </div>             
              <div className="col-sm-1"></div>
          </div>
-         <div className="row background-mintcream">
+         <div className="row background-ghostwhite">
              <div className="col-sm-1"></div>
              <div className="col-sm-10">
                  <section className="font font22">

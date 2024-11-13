@@ -94,6 +94,14 @@ const router=createBrowserRouter([
      element:<AdminLogin/>
   }, 
   {
+    path:"/contactus",
+    element:<ContactUsMessage/>
+ },
+  {
+   path:"/forgotPassword",
+   element:<ForgotPassword/>
+ },
+  {
    path:"/unique-attractions",
    element:<UniqueAttractions/>,
    children:[
@@ -155,28 +163,16 @@ const router=createBrowserRouter([
       path:"/adminDashboard/tour-packages",
       element:<TourPackages/>
 
-    }     
-
-    ]
-       
-  },
-   {  
-   path:"/adminDashboard/manage-cab-booking/",
-   element:<ManageCabBooking/>
-   },
-   {  
-   path:"/adminDashboard/manage-cab-booking/cab-booking-processing/",
-   element:<CabBookingProcessing/>
-   },
-   {
-      path:"/contactus",
-      element:<ContactUsMessage/>
-   },
-    {
-     path:"/forgotPassword",
-     element:<ForgotPassword/>
-   },
-   {
+    },
+    {  
+      path:"/adminDashboard/manage-cab-booking/",
+      element:<ManageCabBooking/>
+      },
+     {  
+        path:"/adminDashboard/manage-cab-booking/cab-booking-processing/",
+        element:<CabBookingProcessing/>
+     },
+     {
       path:"/adminDashboard/tourism",
       element:<Tourism/>
 
@@ -195,8 +191,9 @@ const router=createBrowserRouter([
       path:"/adminDashboard/tourism/tourism-delete",
       element:<TourismDelete/>
 
-    },
-    
+    }
+    ]
+  }    
    
 ]);
 
