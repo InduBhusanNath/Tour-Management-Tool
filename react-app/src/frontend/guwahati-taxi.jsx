@@ -1,10 +1,11 @@
 import Header from "./header";
 import Footer from "./footer";
-import {Helmet} from "react-helmet";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import TaxiService from "./taxi-service";
 
 export default function GuwahatiTaxi(){
      return(<>
+           <HelmetProvider>
                 <TechnicalSEO/>
                 <div className="container-fluid">
                      <Header/>
@@ -14,6 +15,7 @@ export default function GuwahatiTaxi(){
                      <Body3/>                 
                      <Footer/>
                 </div>
+           </HelmetProvider>
      </>);
 }
 //Technical SEO
@@ -22,11 +24,16 @@ function TechnicalSEO(){
              
              <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Cab Service in Guwahati: Book Taxi at Affordable Fares</title>                
-                <meta name="description" content="Book efficient cab service in Guwahati for local and outstation taxi tours. Affordable fares, timely pickup, and customer-centricity distinguish our cabs."/>
+                <title>Cab Service in Guwahati-Local, Outstation, Airport Bookings</title>                
+                <meta name="description" content="Learn why you should book taxi with Aeiety Trips.We provide safe, smooth and timely cab service in Guwahati at affordable prices for local and outstation."/>
                 <link rel="canonical" href="https://aeiety.com/guwahati-taxi"/>
+                <meta property="og:title" content="Taxi Service in Guwahati by Aeiety Trips"/>
+                <meta property="og:url" content="https://aeiety.com/guwahati-taxi"/>
+                <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
+                <meta property="og:type" content="Web Page"/>
+                <meta property="og:description" content="Learn about the excellent cab service in Guwahati by Aeiety Trips."/>
+                <meta property="og:locale" content="en_GB" />
             </Helmet>
-     
      </>);
 }
 //Breadcrumb
