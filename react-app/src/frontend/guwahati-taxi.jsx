@@ -1,6 +1,7 @@
 import Header from "./header";
 import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Link } from "react-router-dom";
 import Collapsible from 'react-collapsible';
 import TaxiService from "./taxi-service";
 
@@ -35,7 +36,7 @@ function TechnicalSEO(){
                 <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
                 <meta property="og:type" content="Web Page"/>
                 <meta property="og:description" content="Learn about the excellent cab service in Guwahati by Aeiety Trips."/>
-                <meta property="og:locale" content="en_GB" />
+                <meta property="og:locale" content="en_GB"/>
             </Helmet>
      </>);
 }
@@ -59,22 +60,44 @@ function BreadCrumb(){
 function Body1(){
       return(<>
            <div className="row background-lemonchiffon">
-                <div className="col-sm-1"></div>                
-                <div className="col-sm-4 p-0 m-0">
-                     <section>                          
-                               <img src="https://i.ibb.co/JyDS7VY/guwahati.png" alt="AeietyTrips" className="img-fluid m-1 p-1 rounded shadow-sm"/>
-                     </section>
-                </div>
-                <div className="col-sm-6 p-4 m-1">
+                <div className="col-sm-1"></div>  
+                <div className="col-sm-7 p-4 m-1">
                      <h1>Cab Service in Guwahati</h1>
                      <p className="font font24 fw-bold">We Made it Affordable,Timely, Hassle-Free</p>
                      <p className="font font22">
                           Get the best cab service in Guwahati from Aeiety Trips. With affordable fares, timely pickup, and nil hassles, we ensure smooth and efficient taxi trips. We at Aeiety Trips distinguish ourselves through timeliness, understanding of the customer, our efforts to eradicate pain points, and efficiency. Our customer-centric local and outstation taxi service in Guwahati provides cabs of different types: small, medium, or luxury for various needs. You can get the best taxi ride experience when you choose our dedicated taxi service.     
                      </p>
-                     <button type="button" class="btn btn-warning shadow"><a href="/" className="action">Book Taxi Guwahati&nbsp;&#129146;</a></button>
-
-
-
+                     <p>
+                          <button type="button" class="btn btn-warning shadow"><a href="/" className="action">Book Taxi Guwahati&nbsp;&#129146;</a></button> 
+                     </p>
+                     
+                </div>
+                <div className="col-sm-3 p-0 m-0">
+                     
+                     <section className="border-1 rounded shadow-sm padding25 bg-info">
+                          
+                          <p>&nbsp;</p>  
+                          <h2>QUICK CAB BOOKING</h2> 
+                          
+                          
+                          <p>&nbsp;</p>
+                          <p>
+                               <span className="font font28 fw-bold">CALL or Whatsapp Us</span>
+                          </p>
+                          <p>
+                               <span className="font font24 fw-bold">(+91) 9531393648</span>
+                          </p>
+                          
+                          <p>
+                               <span className="font font28 fw-bold">EMail Us</span>
+                          </p>
+                          <p>
+                               <span className="font font24 fw-bold">trips.aeiety@gmail.com</span>
+                          </p>
+                          <p>
+                               <span className="font font28 fw-bold"><Link to="/contactus" className="text-decoration-none text-dark">Message Us</Link></span>
+                          </p> 
+                     </section>
                 </div>
                 <div className="col-sm-1"></div>
           </div>
@@ -96,37 +119,37 @@ function Faqs(){
                 <div className="col-sm-7">
                      <section className="font font22">
                           <h2>FAQs</h2> 
-                          <Collapsible trigger="What are Aeiety Trips' offerings for its taxi service in Guwahati?">                               
+                          <Collapsible trigger="&#43;What are Aeiety Trips' offerings for its taxi service in Guwahati?">                               
                                <p className="bg-warning rounded shadow-sm padding25">
                                     Aeiety Trips provides local taxis, outstation cabs, airport transfers, and hourly rentals. 
                                </p>      
                           </Collapsible>
-                          <Collapsible trigger="What types of vehicles do Aeiety Trips provide?">                               
+                          <Collapsible trigger="&#43;What types of vehicles do Aeiety Trips provide?">                               
                                <p className="bg-warning rounded shadow-sm padding25">
                                     Aeiety Trips provides local taxis, outstation cabs, airport transfers, and hourly rentals. 
                                </p>      
                           </Collapsible>  
-                          <Collapsible trigger="Can I book a cab in advance?">                               
+                          <Collapsible trigger="&#43;Can I book a cab in advance?">                               
                                <p className="bg-warning rounded shadow-sm padding25">
                                     Yes, you can. Call, WhatsApp, or Email us to book a taxi in advance. Alternatively, you can submit the taxi booking form on our website.  
                                </p>      
                           </Collapsible>
-                          <Collapsible trigger="Can I cancel/reschedule my taxi booking?">                               
+                          <Collapsible trigger="&#43;Can I cancel/reschedule my taxi booking?">                               
                                <p className="bg-warning rounded shadow-sm padding25">
                                     Yes, you can. Let us know about your cancelation or rescheduling by informing us in advance.   
                                </p>      
                           </Collapsible>                          
-                          <Collapsible trigger="Which is the best tourist taxi service in Guwahati?">                               
+                          <Collapsible trigger="&#43;Which is the best tourist taxi service in Guwahati?">                               
                                <p className="bg-warning rounded shadow-sm padding25">
                                    Aeiety Trips is the one that provides exclusive cab service in Guwahati for tourists. Our knowledge of tourist places in Guwahati and outside the city eliminates the possibility of tourists missing out on such attractions. Likewise, our awareness of good hotels can help tourists to stay comfortably, according to their budgets. 
                                </p>      
                           </Collapsible>
-                          <Collapsible trigger="Is there any taxi service at Guwahati airport?">
+                          <Collapsible trigger="&#43;Is there any taxi service at Guwahati airport?">
                                <p className="bg-warning rounded shadow-sm padding25">
                                     Yes, there is. Aeiety Trips provides Guwahati airport cab service. We provide taxis to pick up and drop off at the airport. 
                                </p>      
                           </Collapsible>
-                          <Collapsible trigger="What are Guwahati outstation taxi service rates?">
+                          <Collapsible trigger="&#43;What are Guwahati outstation taxi service rates?">
                                <p className="bg-warning rounded shadow-sm padding25">
                                     Fares for outstation cab service in Guwahati depend on the type of car and distance. We at Aeiety Trips provide cabs for outstation destinations of all places in Assam and the northeastern states of Arunachal Pradesh and Meghalaya. As such, you can get Guwahati to Shillong taxi, Guwahati to Tawang cab, Guwahati to Jorhat taxi, Guwahati to Kaziranga taxi, and others. 
                                </p>      
@@ -200,7 +223,7 @@ function Body3(){
                                     </section>
                                     <section className="font font22">
                                          <h3>Umananda-the Smallest Island in the World</h3>                                     
-                                         <p><img src="https://i.ibb.co/0BK1MbZ/umananda-final.png" alt="Umananda island" className="rounded shadow-sm img-fluid float-start m-1 p-1"/>
+                                         <p><img src="https://i.ibb.co/0BK1MbZ/umananda-final.png" rel="noopener" alt="Umananda island" className="rounded shadow-sm img-fluid float-start m-1 p-1"/>
                                             The <a href="https://en.wikipedia.org/wiki/Umananda_Temple" target="_blank" className="text-decoration-none text-dark">Umananda</a> island is one of the best places to visit in Guwahati. Notably, it is the smallest river island in the world. Umananda is also a key component of Guwahati tourism.
                                          </p>
                                          <p>
@@ -223,7 +246,7 @@ function Body3(){
                                             A fusion of natural beauty and spirituality attracts people from various parts of the world to the Nilachal Hills. The hills stand on the south bank of the river Brahmaputra.
                                          </p>
                                          <p>
-                                           The fame of Nilachal Hills in Guwahati has spread globally due to the abode of the famous <a href="https://en.wikipedia.org/wiki/Kamakhya_Temple" target="_blank" className="text-decoration-none text-dark">Kamakhya</a> temple being on the hills.
+                                           The fame of Nilachal Hills in Guwahati has spread globally due to the abode of the famous <a href="https://en.wikipedia.org/wiki/Kamakhya_Temple" rel="noopener" target="_blank" className="text-decoration-none text-dark">Kamakhya</a> temple being on the hills.
                                          </p>
                                          <p>
                                            People from different parts of India and overseas countries regularly visit the temple. The presence of people from various places also creates vibrancy around.

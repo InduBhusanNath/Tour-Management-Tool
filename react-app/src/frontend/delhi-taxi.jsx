@@ -1,31 +1,39 @@
 import Header from "./header";
 import Footer from "./footer";
-import {Helmet} from "react-helmet";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import Collapsible from 'react-collapsible';
+import TaxiService from "./taxi-service";
 
 
 //Main export function
 export default function DelhiTaxi(){
      return(<>
+           <HelmetProvider>
                 <TechnicalSEO/>
                 <div className="container-fluid">
                      <Header/>
                      <BreadCrumb/>
-                     <Body/>
+                     <Body1/>
                      <Footer/>
                 </div>
-
+           </HelmetProvider>
      
      </>);
 }
 //Technical SEO
 function TechnicalSEO(){
      return(<>
-             
-             <Helmet>
+            <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Cab service in Delhi: Best Taxi Rides at Affordable Fares</title>
-                <meta name="description" content="Looking for the best cab service in Delhi? Book Delhi taxi from us to experience comfortable, trouble-free, safe and timely taxi rides at affordable fares."/>
-                <link rel="canonical" href="http://mysite.com/example" />
+                <title>Cab Service in Delhi-Satisfying Rides at Reasonable Prices</title>                
+                <meta name="description" content="Searching for a trusted and efficient cab service in Delhi? Discover what makes us a preferred provider of Delhi taxi service. Book taxi for a satisfying ride."/>
+                <link rel="canonical" href="https://aeiety.com/guwahati-taxi"/>
+                <meta property="og:title" content="Taxi Service in Guwahati by Aeiety Trips"/>
+                <meta property="og:url" content="https://aeiety.com/guwahati-taxi"/>
+                <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
+                <meta property="og:type" content="Web Page"/>
+                <meta property="og:description" content="Learn about the excellent cab service in Guwahati by Aeiety Trips."/>
+                <meta property="og:locale" content="en_GB" />
             </Helmet>
      
      </>);
@@ -48,19 +56,11 @@ function BreadCrumb(){
 }
 
 //Body
-function Body(){
+function Body1(){
       return(<>
             <div className="row">
                 <div className="col-sm-12">
-                     <p>&nbsp;</p>
-                     <p>&nbsp;</p>
-                     <p>&nbsp;</p>
-                     <p>&nbsp;</p>
-                     <h1>PAGE UNDER CONSTRUCTION.....</h1>
-                     <p>&nbsp;</p>
-                     <p>&nbsp;</p>
-                     <p>&nbsp;</p>
-                     <p>&nbsp;</p>
+                     
                      Cab service in Delhi is more affordable, efficient, and satisfying.                     
                    
                 </div>

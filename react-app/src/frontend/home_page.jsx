@@ -1,7 +1,7 @@
 import Header from "./header";
 import Footer from "./footer";
 import CabBooking from "./cab_booking";
-import {Helmet} from "react-helmet";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Collapsible from 'react-collapsible';
 import TaxiService from "./taxi-service";
 import TourismServices from "./tourism-service";
@@ -13,8 +13,9 @@ import InternationalTourPackageCarousel from "./international-tour-package-carou
 //Main export function
 export default function HomePage(){
      return(<>
+           <HelmetProvider>
            <TechnicalSEO/>
-           <div className="container-fluid">                     
+                <div className="container-fluid">                     
                      <Header/>
                      <Banner/>
                      <Body1/>
@@ -22,7 +23,8 @@ export default function HomePage(){
                      <Body3/>
                      <LastBody/>                     
                      <Footer/>
-           </div>     
+                </div>   
+           </HelmetProvider>  
      </>);
 }
 //Technical SEO
@@ -34,6 +36,12 @@ function TechnicalSEO(){
                 <title>Taxi Service, Tourism, Tour Packages-Book at the Best Prices</title>                
                 <meta name="description" content="Aeiety Trips provides affordable taxi services, curated tourism and package tours. Why not book a trip with us for a memorable experience due to our excellence?"/>
                 <link rel="canonical" href="https://aeiety.com"/>
+                <meta property="og:title" content="Cabs, Tourism, Package Tours by Aeiety Trips"/>
+                <meta property="og:url" content="https://aeiety.com/"/>
+                <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
+                <meta property="og:type" content="Web Page"/>
+                <meta property="og:description" content="Learn about the excellent Cabs, Tourism, Package Tours by Aeiety Trips."/>
+                <meta property="og:locale" content="en_GB" />
             </Helmet>
      
      </>);
