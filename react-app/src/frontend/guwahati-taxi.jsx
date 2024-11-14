@@ -1,6 +1,7 @@
 import Header from "./header";
 import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import Collapsible from 'react-collapsible';
 import TaxiService from "./taxi-service";
 
 export default function GuwahatiTaxi(){
@@ -11,6 +12,8 @@ export default function GuwahatiTaxi(){
                      <Header/>
                      <BreadCrumb/>
                      <Body1/>
+                     <TaxiServiceFeatures/>
+                     <Faqs/>
                      <Body2/>
                      <Body3/>                 
                      <Footer/>
@@ -63,7 +66,8 @@ function Body1(){
                      </section>
                 </div>
                 <div className="col-sm-6 p-4 m-1">
-                     <h1>Cab Service in Guwahati: Affordable Fare, Timely, Hassle-Free</h1>
+                     <h1>Cab Service in Guwahati</h1>
+                     <p className="font font24 fw-bold">We Made it Affordable,Timely, Hassle-Free</p>
                      <p className="font font22">
                           Get the best cab service in Guwahati from Aeiety Trips. With affordable fares, timely pickup, and nil hassles, we ensure smooth and efficient taxi trips. We at Aeiety Trips distinguish ourselves through timeliness, understanding of the customer, our efforts to eradicate pain points, and efficiency. Our customer-centric local and outstation taxi service in Guwahati provides cabs of different types: small, medium, or luxury for various needs. You can get the best taxi ride experience when you choose our dedicated taxi service.     
                      </p>
@@ -77,9 +81,71 @@ function Body1(){
 
       </>);
 }
+//Service Features
+function TaxiServiceFeatures(){
+      return(<>
+           <TaxiService/>
+      </>);
+}
+//FAQs
+function Faqs(){
+      return(<>
+           
+           <div className="row background-lightyellow padding25">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-7">
+                     <section className="font font22">
+                          <h2>FAQs</h2> 
+                          <Collapsible trigger="What are Aeiety Trips' offerings for its taxi service in Guwahati?">                               
+                               <p className="bg-warning rounded shadow-sm padding25">
+                                    Aeiety Trips provides local taxis, outstation cabs, airport transfers, and hourly rentals. 
+                               </p>      
+                          </Collapsible>
+                          <Collapsible trigger="What types of vehicles do Aeiety Trips provide?">                               
+                               <p className="bg-warning rounded shadow-sm padding25">
+                                    Aeiety Trips provides local taxis, outstation cabs, airport transfers, and hourly rentals. 
+                               </p>      
+                          </Collapsible>  
+                          <Collapsible trigger="Can I book a cab in advance?">                               
+                               <p className="bg-warning rounded shadow-sm padding25">
+                                    Yes, you can. Call, WhatsApp, or Email us to book a taxi in advance. Alternatively, you can submit the taxi booking form on our website.  
+                               </p>      
+                          </Collapsible>
+                          <Collapsible trigger="Can I cancel/reschedule my taxi booking?">                               
+                               <p className="bg-warning rounded shadow-sm padding25">
+                                    Yes, you can. Let us know about your cancelation or rescheduling by informing us in advance.   
+                               </p>      
+                          </Collapsible>                          
+                          <Collapsible trigger="Which is the best tourist taxi service in Guwahati?">                               
+                               <p className="bg-warning rounded shadow-sm padding25">
+                                   Aeiety Trips is the one that provides exclusive cab service in Guwahati for tourists. Our knowledge of tourist places in Guwahati and outside the city eliminates the possibility of tourists missing out on such attractions. Likewise, our awareness of good hotels can help tourists to stay comfortably, according to their budgets. 
+                               </p>      
+                          </Collapsible>
+                          <Collapsible trigger="Is there any taxi service at Guwahati airport?">
+                               <p className="bg-warning rounded shadow-sm padding25">
+                                    Yes, there is. Aeiety Trips provides Guwahati airport cab service. We provide taxis to pick up and drop off at the airport. 
+                               </p>      
+                          </Collapsible>
+                          <Collapsible trigger="What are Guwahati outstation taxi service rates?">
+                               <p className="bg-warning rounded shadow-sm padding25">
+                                    Fares for outstation cab service in Guwahati depend on the type of car and distance. We at Aeiety Trips provide cabs for outstation destinations of all places in Assam and the northeastern states of Arunachal Pradesh and Meghalaya. As such, you can get Guwahati to Shillong taxi, Guwahati to Tawang cab, Guwahati to Jorhat taxi, Guwahati to Kaziranga taxi, and others. 
+                               </p>      
+                          </Collapsible>
+                     </section>
+                </div>
+                <div className="col-sm-3">
+                     <section className="rounded shadow bg-warning padding25 lead">
+                     We are ready to assist you in your cab travel. If you need any help, feel free to let us know. You can contact us through our helpline: (+91) 9531393648 (Call or Whatsapp), email, or a message from the form on the Contact Us page. 
+                     </section>
+                </div>
+                <div className="col-sm-1"></div>               
+          </div>
+     </>);
+}
+
 //Body2
 function Body2(){
-      return(<>  <TaxiService/>
+      return(<>  
                 <div className="row background-lemonchiffon">
                      <div className="col-sm-1"></div>
                      <div className="col-sm-10 p-3">
@@ -135,7 +201,7 @@ function Body3(){
                                     <section className="font font22">
                                          <h3>Umananda-the Smallest Island in the World</h3>                                     
                                          <p><img src="https://i.ibb.co/0BK1MbZ/umananda-final.png" alt="Umananda island" className="rounded shadow-sm img-fluid float-start m-1 p-1"/>
-                                            The Umananda island is one of the best places to visit in Guwahati. Notably, it is the smallest river island in the world. Umananda is also a key component of Guwahati tourism.
+                                            The <a href="https://en.wikipedia.org/wiki/Umananda_Temple" target="_blank" className="text-decoration-none text-dark">Umananda</a> island is one of the best places to visit in Guwahati. Notably, it is the smallest river island in the world. Umananda is also a key component of Guwahati tourism.
                                          </p>
                                          <p>
                                             The island stands on the river Brahmaputra, flowing across the city. Being the smallest island does not mean it is devoid of human activities. Instead, Umananda attracts foreign tourists and other people. As such, it receives significant footfalls regularly.
@@ -157,7 +223,7 @@ function Body3(){
                                             A fusion of natural beauty and spirituality attracts people from various parts of the world to the Nilachal Hills. The hills stand on the south bank of the river Brahmaputra.
                                          </p>
                                          <p>
-                                           The fame of Nilachal Hills in Guwahati has spread globally due to the abode of the famous Kamakhya temple being on the hills.
+                                           The fame of Nilachal Hills in Guwahati has spread globally due to the abode of the famous <a href="https://en.wikipedia.org/wiki/Kamakhya_Temple" target="_blank" className="text-decoration-none text-dark">Kamakhya</a> temple being on the hills.
                                          </p>
                                          <p>
                                            People from different parts of India and overseas countries regularly visit the temple. The presence of people from various places also creates vibrancy around.
