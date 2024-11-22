@@ -4,6 +4,8 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Link } from "react-router-dom";
 import Collapsible from 'react-collapsible';
 import TaxiService from "./taxi-service";
+import YoutubeGuwahatiTaxi from "./youtube-guwahati-taxi";
+import WhatYouGetFromUs from "./what-you-get-from-us";
 
 export default function GuwahatiTaxi(){
      return(<>
@@ -11,6 +13,7 @@ export default function GuwahatiTaxi(){
                 <TechnicalSEO/>
                 <div className="container-fluid">
                      <Header/>
+                     <GuwahatiTaxiBanner/>
                      <BreadCrumb/>
                      <Body1/>
                      <TaxiServiceFeatures/>
@@ -29,7 +32,7 @@ function TechnicalSEO(){
              <Helmet>
                 <meta charSet="utf-8"/>
                 <title>Cab Service in Guwahati-Local, Outstation, Airport Bookings</title>                
-                <meta name="description" content="Learn why you should book taxi with Aeiety Trips.We provide safe, smooth and timely cab service in Guwahati at affordable prices for local and outstation."/>
+                <meta name="description" content="Get dedicated cab service in Guwahati from Aeiety Trips. We provide safe, smooth and timely Guwahati taxi service at affordable prices for local and outstation."/>
                 <link rel="canonical" href="https://aeiety.com/guwahati-taxi"/>
                 <meta property="og:title" content="Taxi Service in Guwahati by Aeiety Trips"/>
                 <meta property="og:url" content="https://aeiety.com/guwahati-taxi"/>
@@ -39,6 +42,16 @@ function TechnicalSEO(){
                 <meta property="og:locale" content="en_GB"/>
             </Helmet>
      </>);
+}
+//Bannner
+function GuwahatiTaxiBanner(){
+      return(<>
+           <div className="row">
+                <div className="col-sm-12 p-0 m-0">
+                     <img src="https://i.ibb.co/4mXDNqh/Cab-Guwahati-Banner.png" alt="Guwahati Cab" className="img-fluid w-100 p-0 m-0"/>
+                </div>
+           </div>          
+      </>);
 }
 //Breadcrumb
 function BreadCrumb(){
@@ -62,41 +75,32 @@ function Body1(){
            <div className="row background-lemonchiffon">
                 <div className="col-sm-1"></div>  
                 <div className="col-sm-7 p-4 m-1">
-                     <h1>Cab Service in Guwahati</h1>
+                     <h1>CAB SERVICE IN GUWAHATI&#9889;</h1>
                      <p className="font font24 fw-bold">We Made it Affordable,Timely, Hassle-Free</p>
                      <p className="font font22">
-                          Get the best cab service in Guwahati from Aeiety Trips. With affordable fares, timely pickup, and nil hassles, we ensure smooth and efficient taxi trips. We at Aeiety Trips distinguish ourselves through timeliness, understanding of the customer, our efforts to eradicate pain points, and efficiency. Our customer-centric local and outstation taxi service in Guwahati provides cabs of different types: small, medium, or luxury for various needs. You can get the best taxi ride experience when you choose our dedicated taxi service.     
+                          Cab service in Guwahati by Aeiety Trips is synonymous with a firm dedication to providing customers with the best Guwahati taxi service. With affordable fares, timely pickup, and nil hassles, we ensure smooth and efficient taxi trips. We at Aeiety Trips distinguish ourselves through timeliness, understanding of the customer, our efforts to eradicate pain points, and efficiency. Our customer-centric local and outstation taxi service in Guwahati provides cabs of different types: small, medium, or luxury for various needs. You can get the best taxi Guwahati ride experience when you choose Aeiety Trips.     
                      </p>
                      <p>
                           <button type="button" class="btn btn-warning shadow"><a href="/" className="action">Book Taxi Guwahati&nbsp;&#129146;</a></button> 
                      </p>
                      
                 </div>
-                <div className="col-sm-3 p-0 m-0">
+                <div className="col-sm-3 p-4 m-1">                     
                      
-                     <section className="border-1 rounded shadow-sm padding25 bg-info">
-                          
-                          <p>&nbsp;</p>  
-                          <h2>QUICK CAB BOOKING</h2> 
-                          
-                          
-                          <p>&nbsp;</p>
-                          <p>
-                               <span className="font font28 fw-bold">CALL or Whatsapp Us</span>
-                          </p>
-                          <p>
-                               <span className="font font24 fw-bold">(+91) 9531393648</span>
-                          </p>
-                          
-                          <p>
-                               <span className="font font28 fw-bold">EMail Us</span>
-                          </p>
-                          <p>
-                               <span className="font font24 fw-bold">trips.aeiety@gmail.com</span>
-                          </p>
-                          <p>
-                               <span className="font font28 fw-bold"><Link to="/contactus" className="text-decoration-none text-dark">Message Us</Link></span>
-                          </p> 
+                     <section className="p-1">
+                          <div className="card border-info mb-3 text-dark bg-info text-center shadow-sm">
+                               <div className="card-header">
+                                    <span className="fw-bold">QUICK BOOKING</span>
+                               </div>
+                               <div className="card-body">
+                                  Call/Whatsapp
+                                  <br/>
+                                  <span className="fw-bold">(+91)9531393648</span>
+                               </div>
+                          </div>
+                     </section>
+                     <section className="p-1">
+                          <YoutubeGuwahatiTaxi/>
                      </section>
                 </div>
                 <div className="col-sm-1"></div>
@@ -156,11 +160,11 @@ function Faqs(){
                           </Collapsible>
                      </section>
                 </div>
-                <div className="col-sm-3">
-                     <section className="rounded shadow bg-warning padding25 lead">
-                     We are ready to assist you in your cab travel. If you need any help, feel free to let us know. You can contact us through our helpline: (+91) 9531393648 (Call or Whatsapp), email, or a message from the form on the Contact Us page. 
-                     </section>
-                </div>
+                <div className="col-sm-3">                     
+                     <section>
+                         <WhatYouGetFromUs/>
+                     </section>             
+                </div>                 
                 <div className="col-sm-1"></div>               
           </div>
      </>);
@@ -188,7 +192,7 @@ function Body2(){
                           <section className="font font22">
                                <p>We have dedicated time and effort to serve our customers in the best possible ways. And that resulted in the excellence of our cab service in Guwahati.</p>
                                <p>Timely pickup is the assurance of our Guwahati taxi service. For this reason, you can board the taxi on time. As such, you can reach your destination as per your schedule.</p>
-                               <p>Safety is our focus which ensures customers encounter no unwanted situations during their rides. For this, we provide well-maintained cabs and ensure experienced drivers. We believe this is one of the most essential criteria for the best taxi service in Guwahati. With the initiatives, the probability of accidents is the minimum. We are among those taxi operators in Guwahati that have made timely servicing of cars and expert drivers mandatory for our operations.</p>
+                               <p>Safety is our focus which ensures customers encounter no unwanted situations during their rides. For this, we provide well-maintained cabs and ensure experienced drivers. We believe this is one of the most essential criteria for the best taxi service in Guwahati. With these initiatives, the probability of accidents is minimal. We are among those taxi operators in Guwahati that have made timely servicing of cars and expert drivers mandatory for our operations.</p>
                                <p>Asking for reasonable fares is our principle. So, we refrain from asking for excessive fares. That makes us the most reasonably-priced Guwahati cab service provider. In addition, we do not incorporate any hidden costs in our pricing structure. </p>
                                <p>Notably, we are one of the taxi operators in Guwahati, offering high-quality Guwahati taxi service. </p>
                                <p>In addition to providing the best local taxi service in Guwahati, we run an excellent taxi service in Guwahati for outstation. If you are a foreigner looking for a reliable outstation taxi service in Guwahati,you can use our taxis in Guwahati. We provide cabs in Guwahati to any destination in Assam and northeastern states.</p>
