@@ -30,9 +30,11 @@ function HeaderBar(){
 //Next Header
 function NextHeaderBar(){
       return(<>
-           <div className="row background-blanchedalmond">
+           <div className="row background-bisque">
                 <div className="col-sm-5"></div>                
-                <div className="col-sm-4"><BasicLinks/></div>
+                <div className="col-sm-4">
+                     <BasicLinks/>                   
+                </div>
                 <div className="col-sm-3"><HelpLine/></div>
           </div>
        
