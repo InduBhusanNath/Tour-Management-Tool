@@ -126,14 +126,14 @@ function TaxiServiceFeatures(){
 //FAQs
 function Faqs(){
       return(<>
-           <div className="row background-lightyellow padding25">
+           <div className="row background-lightyellow p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-4">
                      <h2>FAQs</h2>
                 </div>
                 <div className="col-sm-4"></div>
            </div>
-           <div className="row background-lightyellow padding25">
+           <div className="row background-lightyellow p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-5">                     
                      <section className="font font22">
@@ -197,7 +197,7 @@ function Body2(){
                                       <li><b>Local taxis</b> to institutions, offices, hotels, markets, hospitals, or entertainment entities within the city.</li>
                                       <li><b>Outstation taxis</b> to places outside the city. We run one-way and round-way cabs for all destinations within Assam, Arunachal Pradesh, and Meghalaya. </li>
                                       <li><b>Airport transfers</b> for picking up and dropping.</li>
-                                      <li><b>Sightseeing cabs</b>for pleasure trips to destinations inside and outside the city.  </li>
+                                      <li><b>Sightseeing cabs</b> for pleasure trips to destinations inside and outside the city.  </li>
                                   </ul>
                                </p>
                           </section>

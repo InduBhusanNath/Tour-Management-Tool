@@ -9,6 +9,7 @@ export default function BhutanTourPackage(){
                      <Header/>
                      <BhutanTourPackageBanner/>
                      <BreadCrumb/>
+                     <Body1/>
                      <Footer/>
                 </div> 
            </HelmetProvider>
@@ -58,4 +59,22 @@ function BreadCrumb(){
                     </div>
               </div>
      </>);
+ }
+ //Body1
+ function Body1(){
+      return(<>
+           <div className="row bg-light">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h1 className="text-center">Bhutan Tour Packages</h1>
+                     <section className="font font22">
+                          <p>
+                               Bhutan's carbon-neutral atmosphere, spectacular mountains, and natural beauty prompt people worldwide to tour the country. We at Aeiety Trips facilitate such trips with our exclusive Bhutan Tour Packages. If you decide to tour Bhutan, choose one of our curated Bhutan travel packages. It will allow you to experience the richness of the country. A Bhutan trip package will enable you to indulge in many exciting activities. From trekking in the mountains to enjoying delicious local food, you will get the opportunity to experience the country's uniqueness of the country. After a tour of Bhutan, you will carry lifetime memories and an urge to visit again. 
+                          </p>
+                     </section>
+                </div>
+                <div className="col-sm-1"></div>
+                
+           </div>
+      </>);
  }
