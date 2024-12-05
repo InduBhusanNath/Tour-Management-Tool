@@ -45,6 +45,10 @@ var placesController=require('../controllers/placesController.js');
 var imageController=require('../controllers/imageController.js');
 var tourPackageController=require('../controllers/tourPackageController.js');
 
+
+/*Frontend GET*/
+app.get('/api/bhutan-tour-packages',tourPackageController.frontendBhutanTourPackageDisplay);
+
 /* GET*/
 
 
@@ -71,6 +75,7 @@ app.get('/api/adminDashboard/tour-packages/delete-data',tourPackageController.fe
   app.get('/api',(req,res)=>{
         console.log("Api");
   });
+
 
 
 /*POST*/

@@ -61,7 +61,7 @@ function Body2(){
      const firstUrl="?page="+1;
 
      useEffect(()=>{
-          axios("/adminDashboard/tourism?page="+pg)
+          axios.get("/adminDashboard/tourism?page="+pg)
           .then(response=>{
                  setTourismList(response.data.data);
                  setLastPage(response.data.totalPages);
