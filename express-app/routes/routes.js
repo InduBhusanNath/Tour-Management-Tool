@@ -44,10 +44,12 @@ var tourismController=require('../controllers/tourismController.js');
 var placesController=require('../controllers/placesController.js');
 var imageController=require('../controllers/imageController.js');
 var tourPackageController=require('../controllers/tourPackageController.js');
+var frontendTourPackageController=require('../controllers/frontend-tour-package-controller.js');
 
 
 /*Frontend GET*/
-app.get('/api/bhutan-tour-packages',tourPackageController.frontendBhutanTourPackageDisplay);
+app.get('/api/bhutan-tour-packages',frontendTourPackageController.frontendTourPackageDisplay);
+app.get('/api/bhutan-tour-package-description',frontendTourPackageController.frontendTourPackageDescription);
 
 /* GET*/
 

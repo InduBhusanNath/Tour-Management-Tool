@@ -148,33 +148,14 @@ async function deleteTourPackage(req,res){
        });
      }
 }
-//Frontend Bhutan Tour Package Display
-async function frontendBhutanTourPackageDisplay(req,res){
-     var rows=await tourPackageModel.countDocuments({tourPackageCountry:'Bhutan'});
-      if(rows==="0"){
-         res.send({
-             "flag":"0",
-             "result":[]
-         });
-         return;
-      }
 
-      var result=await tourPackageModel.find({tourPackageCountry:'Bhutan'});
-         res.send({
-             "flag":"1",
-             "result":result
-         });
-
-
-}
 module.exports={
      createTourPackage,
      readTourPackage,
      fetchEditData,
      updateTourPackage,
      fetchDeleteData,
-     deleteTourPackage,
-     frontendBhutanTourPackageDisplay
+     deleteTourPackage     
 }
 
 

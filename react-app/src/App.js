@@ -41,6 +41,7 @@ import PlaceEdit from "./backend/place-edit";
 import PlaceDelete from "./backend/place-delete";
 import Images from "./backend/images";
 import TourPackages from "./backend/tour-packages";
+import BhutanTourPackageDescription from "./frontend/bhutan-tour-package-description";
 
 
 
@@ -88,6 +89,10 @@ const router=createBrowserRouter([
    {
     path:"/bhutan-tour-packages",
     element:<BhutanTourPackage/>
+   },
+   {
+    path:"/bhutan-tour-package-description",
+    element:<BhutanTourPackageDescription/>
    },
   {
      path:"/adminLogin",
