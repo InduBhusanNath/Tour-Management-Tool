@@ -23,60 +23,35 @@ export default function DisplayBhutanTourPackages(){
       
       var listPackages=showBhutanPackages.map(tbp=>                       
              <Fragment key={tbp._id}>                 
-                 <div className="row">
-                     <div className="col">
-                        <img src={tbp.tourPackageFeaturedImage} className="img-fluid w-100" alt="Bhutan Travel Packages"/>
+                 <div className="row background-palegoldenrod rounded shadow-sm p-2 m-2">
+                     <div className="col p-1 m-0 w-25">
+                        <img src={tbp.tourPackageFeaturedImage} className="img-fluid w-100 h-100 rounded shadow-sm" alt="Bhutan Travel Packages"/>
                      </div>
-                     <div className="col">
-                         <div className="table">
-                             <tbody>
-                                 <tr>
-                                     <td className="font font22 fw-bold">Country</td>
-                                     <td className="font font22">{tbp.tourPackageCountry}</td>
-                                 </tr>
-                                 <tr>
-                                     <td className="font font22 fw-bold">Package</td>
-                                     <td className="font font22">{tbp.tourPackageName}</td>
-                                 </tr>
-                                 <tr>
-                                     <td className="font font22 fw-bold">Duration</td>
-                                     <td className="font font22">{tbp.tourPackageDuration}</td>
-                                 </tr>
-                                 <tr>
-                                     <td className="font font22 fw-bold">Inclusions</td>
-                                     <td className="font font22">{tbp.tourPackageInclusions}</td>
-                                 </tr>
-                                 <tr>
-                                     <td className="font font22 fw-bold">Activities</td>
-                                     <td className="font font22">{tbp.tourPackageActivities}</td>
-                                 </tr>
-                                 <tr>
-                                     <td className="font font22 fw-bold">Category</td>
-                                     <td className="font font22">{tbp.tourPackageType}</td>
-                                 </tr>
-                             </tbody>
-                         </div>                         
+                     <div className="col p-1 m-0 w-50">
+                         <section className="font font20">
+                             <span className="fw-bold text-muted p-1">Country:</span><span className="p-1">{tbp.tourPackageCountry}</span>
+                             <br/>
+                             <span className="fw-bold text-muted p-1">Package:</span><span className="p-1">{tbp.tourPackageName}</span>
+                             <br/>
+                             <span className="fw-bold text-muted p-1">Duration:</span><span className="p-1">{tbp.tourPackageDuration}</span>
+                             <br/>
+                             <span className="fw-bold text-muted p-1">Activities:</span><span className="p-1">{tbp.tourPackageActivities}</span>
+                             <br/>
+                             <span className="fw-bold text-muted p-1">Category:</span><span className="p-1">{tbp.tourPackageType}</span>
+
+                         </section>                                          
                      </div>
-                     <div className="col">
-                         <div className="table">
-                             <tbody>
-                                <tr>
-                                     <td>&nbsp;</td>
-                                     <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                     <td>&nbsp;</td>
-                                     <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                     <td className="font font22 fw-bold">Price</td>
-                                     <td className="font font22">{tbp.tourPackageSellingPrice}</td>
-                                </tr>
-                                <tr>
-                                     <td className="font font22"><a href={"/bhutan-tour-package-description/?packageId="+tbp._id} className="text-decoration-none link-dark">Details</a></td>
-                                </tr>
-                            </tbody>
-                         </div>                         
+                     <div className="col p-1 m-0 w-25">
+                         <section className="font font20 text-center">
+                             <span className="fw-bold text-muted p-1">&nbsp;</span><span className="p-1">&nbsp;</span>
+                             <br/>                             
+                             <span className="text-muted p-1">Starting Price</span>
+                             <br/>
+                             <span className="p-1 text-danger fw-bold">USD &nbsp;{tbp.tourPackageSellingPrice}/Person</span>
+                             <br/>                             
+                             <span className="fw-bold text-muted p-1"><a href={"/bhutan-tour-package-description/?packageId="+tbp._id} className="text-decoration-none link-info"><button type="button" class="btn btn-warning shadow-sm">Details&#11166;</button></a></span>
+                             <br/>
+                         </section>                                                  
                      </div>
                  </div>
              </Fragment> 
@@ -85,13 +60,13 @@ export default function DisplayBhutanTourPackages(){
 
      return(<>
          <div className="row">
-             <div className="col-sm-1"></div>
-             <div className="col-sm-10">
+             <div className="col-sm-2"></div>
+             <div className="col-sm-8">
                   <span className="small text-danger">{msg}</span>
                  <br/>                 
                  {listPackages}
              </div>
-             <div className="col-sm-1"></div> 
+             <div className="col-sm-2"></div> 
          </div>
      </>);
 }

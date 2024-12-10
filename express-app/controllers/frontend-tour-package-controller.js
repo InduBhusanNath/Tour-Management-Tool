@@ -29,18 +29,21 @@ async function frontendTourPackageDescription(req,res){
          });
          return;         
      }
-     var result=await tourPackageModel.find({_id:tId});
+     var result=await tourPackageModel.findById(tId);      
+     
      res.send({
-         "tourPackageCategory":result.tourPackageCategory,
-         "tourPackageCountry":result.tourPackageCountry,
-         "tourPackageName":result.tourPackageName,
-         "tourPackageDuration":result.tourPackageDuration,
-         "tourPackageInclusions":result.tourPackageInclusions,
-         "tourPackageActivities":result.tourPackageActivities,
-         
-
-
-
+          "flag":"1",
+          "tourPackageCategory":result.tourPackageCategory,
+          "tourPackageCountry":result.tourPackageCountry,
+          "tourPackageName":result.tourPackageName,
+          "tourPackageDuration":result.tourPackageDuration,
+          "tourPackageInclusions":result.tourPackageInclusions,
+          "tourPackageActivities":result.tourPackageActivities,
+          "tourPackageType":result.tourPackageType,
+          "tourPackagePriceBeforeDiscount":result.tourPackagePriceBeforeDiscount,
+          "tourPackageSellingPrice":result.tourPackageSellingPrice,
+          "tourPackageFeaturedImage":result.tourPackageFeaturedImage,
+          "tourPackageDescription":result.tourPackageDescription          
      });
 
       

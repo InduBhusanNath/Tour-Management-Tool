@@ -1,18 +1,84 @@
 import { apihost } from "../backend/apihost";
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import {Link} from "react-router-dom";
+import parse from 'html-react-parser';
+
+//Main Export Function
 export default function BhutanTourPackageDescription(){
-     const params=new URLSearchParams(window.location.search);
-     const tId=params.get("packageId")
-     useEffect(()=>{
-         axios.get(apihost+"/bhutan-tour-package-description?id="+tId)
-         .then(response=>{
-            alert(response.data)
-         })
-         .catch(error=>{
-            alert(error)
-         });
-     },[tId]);
      
-    return(<>Ji</>)
+     
+    return(<>
+       <div className="container-fluid">
+          <TopBar/>
+          <PackageData/>         
+       </div>    
+    </>)
+}
+//Top Bar
+function TopBar(){
+    return(<>
+       <div className="row">
+          <div className="col-sm-4">
+             <Link to="/bhutan-tour-packages" className="text-decoration-none link-dark font24">&#128281;</Link>
+            
+          </div>
+          <div className="col-sm-4"></div>
+          <div className="col-sm-4"></div>
+       </div>    
+    </>);
+}
+//Extract Data
+function PackageData(){
+    const [msg,setMsg]=useState('');    
+    const[tourPackageCategory,setTourPackageCategory]=useState('');
+    const[tourPackageCountry,setTourPackageCountry]=useState('');
+    const[tourPackageName,setTourPackageName]=useState('');
+    const[tourPackageDuration,setTourPackageDuration]=useState('');
+    const[tourPackageInclusions,setTourPackageInclusions]=useState('');
+    const[tourPackageActivities,setTourPackageActivities]=useState('');
+    const[tourPackageType,setTourPackageType]=useState('');    
+    const[tourPackageSellingPrice,setTourPackageSellingPrice]=useState('');
+    const[tourPackageDescription,setTourPackageDescription]=useState('');
+    
+    const params=new URLSearchParams(window.location.search);
+    const tId=params.get("packageId")
+    useEffect(()=>{
+       axios.get(apihost+"/bhutan-tour-package-description?id="+tId)
+       .then(response=>{
+          if(response.data.flag==="0"){
+             setMsg("Something Went Wrong, Please Try Again.....");
+             return;
+          }
+          setTourPackageCategory(response.data.tourPackageCategory);
+          setTourPackageCountry(response.data.tourPackageCountry);
+          setTourPackageName(response.data.tourPackageName);
+          setTourPackageDuration(response.data.tourPackageDuration);
+          setTourPackageInclusions(response.data.tourPackageInclusions);
+          setTourPackageActivities(response.data.tourPackageActivities);
+          setTourPackageType(response.data.tourPackageType);  
+          setTourPackageSellingPrice(response.data.tourPackageSellingPrice);
+          setTourPackageDescription(response.data.tourPackageDescription);                    
+       })
+       .catch(error=>{
+          alert(error)
+       });
+   },[tId]);
+   
+    
+    
+    return(<>
+       <div className="row">
+          <div className="col-sm-1"></div>
+          <div className="col-sm-10">
+             <span className="text-danger small">{msg}</span>
+             <br/>
+             <h1>{tourPackageName}</h1>
+             {parse(tourPackageDescription)};
+              
+          </div>
+          <div className="col-sm-1"></div>
+       </div>   
+   </>);
+
 }
