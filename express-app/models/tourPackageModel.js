@@ -16,7 +16,7 @@ const {Schema}=mongoose;
          tourPackageDescription:String,
          tourPackageSeller:String,
          tourPackageSellerDetails:String
-     });
+     },{ bufferCommands: false });
 
      const TourPackage=mongoose.model('TourPackage',tourPackageSchema);
      module.exports=TourPackage;
