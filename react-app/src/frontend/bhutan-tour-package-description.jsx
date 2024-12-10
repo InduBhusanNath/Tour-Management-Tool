@@ -3,13 +3,14 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import {Link} from "react-router-dom";
 import parse from 'html-react-parser';
+import ContactUsMessage from "./contactus_message" 
 
 //Main Export Function
 export default function BhutanTourPackageDescription(){
      
      
     return(<>
-       <div className="container-fluid">
+       <div className="container-fluid background-aliceblue">
           <TopBar/>
           <PackageData/>         
        </div>    
@@ -70,14 +71,19 @@ function PackageData(){
     return(<>
        <div className="row">
           <div className="col-sm-1"></div>
-          <div className="col-sm-10">
+          <div className="col-sm-8">
              <span className="text-danger small">{msg}</span>
              <br/>
-             <h1>{tourPackageName}</h1>
+             <h1 className="text-center">{tourPackageName}</h1>
              {parse(tourPackageDescription)};
               
           </div>
-          <div className="col-sm-1"></div>
+          <div className="col-sm-3">
+             <section className="border border-primary-subtle border-1 rounded">
+                  <ContactUsMessage />
+             </section>
+            
+          </div>
        </div>   
    </>);
 
