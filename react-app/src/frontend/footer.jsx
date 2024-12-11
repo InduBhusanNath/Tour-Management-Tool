@@ -65,7 +65,10 @@ function Foot(){
                          <section>
                                  <p className="font font24 fw-bold">Quick Connect</p>                                 
                                  <p>&#128241;&nbsp;<a href="tel:+919531393648" className="text-decoration-none text-dark">(+91) 9531393648</a></p>                                 
-                                 <p>&#128231;&nbsp;trips.aeiety@gmail.com</p>                                 
+                                 <p>&#128231;&nbsp;trips.aeiety@gmail.com</p>  
+                                 <p>&#127759;&nbsp;https://aeiety.com</p>  
+
+                                                                
                          </section>
                          <section>
                                  <a href="https://www.facebook.com/aeietytrips/" target="_blank" rel="noopener noreferrer" className="text-decoration-none"><FontAwesomeIcon icon={faFacebook}/></a>

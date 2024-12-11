@@ -55,7 +55,7 @@ function BhutanTourPackageBanner(){
 function BreadCrumb(){
      return(<>
                <div className="row">
-                    <div className="col-sm-12 bg-light bg-gradient">
+                    <div className="col-sm-12 background-mintcream">
                          <nav aria-label="breadcrumb">
                               <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="/" className="link-dark">Home</a></li>
@@ -72,7 +72,7 @@ function BreadCrumb(){
  //Body1
  function Body1(){
       return(<>
-           <div className="row bg-light">
+           <div className="row background-mintcream">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h1 className="text-center">Bhutan Tour Packages</h1>
@@ -91,14 +91,14 @@ function BreadCrumb(){
  //Body2
  function Body2(){
       return(<>
-           <div className="row">
+           <div className="row background-mintcream">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h2>A Bit About Bhutan </h2>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
-           <div className="row">
+           <div className="row background-mintcream">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                      <section className="font font22">                          
@@ -117,14 +117,14 @@ function BreadCrumb(){
  //Body3
  function Body3(){
       return(<>
-           <div className="row">
+           <div className="row background-mintcream">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h2>Tourist Attractions in Bhutan</h2>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
-           <div className="row">
+           <div className="row background-mintcream">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <section className="font font22">
@@ -140,14 +140,14 @@ function BreadCrumb(){
  //Body4
  function Body4(){
       return(<>
-           <div className="row">
+           <div className="row background-mintcream">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h2>Adventure Tourism in Bhutan</h2>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
-           <div className="row">
+           <div className="row background-mintcream">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <section className="font font22">
@@ -169,14 +169,14 @@ function BreadCrumb(){
  //Body5
  function Body5(){
      return(<>
-          <div className="row">
+          <div className="row background-mintcream">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                     <h2>Eco Tourism in Bhutan</h2>
                </div>
                <div className="col-sm-1"></div>
           </div>
-          <div className="row">
+          <div className="row background-mintcream">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                     <section className="font font22">
@@ -195,12 +195,23 @@ function BreadCrumb(){
 //Body6
 function Body6(){
       return(<>
-           <div className="col-sm-1"></div>
-           <div className="col-sm-10">
-                <section className="font font22">
-
-                </section>
-           </div>
-           <div className="col-sm-1"></div>
+           <div className="row background-mintcream">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2>Places to Visit in Bhutan</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>  
+           <div className="row background-mintcream">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <section className="font font22">
+                          <p>
+                               When you are in Bhutan, naturally beautiful places will surround you. There are many appealing places to visit in Bhutan. In the vibrant places, you will find yourself in the rich Bhutanese culture and art. Artistic excellence in local handicrafts will leave you spellbound. And, the delicious taste of traditional food will become a lifetime memory.  Being a tourist in Bhutan, you will find ample opportunities to indulge in adventures and eco-activities. 
+                          </p>
+                     </section>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>           
       </>);
 }

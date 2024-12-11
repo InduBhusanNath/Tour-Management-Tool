@@ -32,8 +32,8 @@ function TechnicalSEO(){
      return(<>
             <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Cab Service in Delhi-Satisfying Rides at Reasonable Prices</title>                
-                <meta name="description" content="Searching for a trusted and efficient cab service in Delhi? Discover what makes us a preferred provider of Delhi taxi service. Book taxi for a satisfying ride."/>
+                <title>Cab Service in Delhi-Always on Time</title>                
+                <meta name="description" content="Use our efficient cab service in Delhi. We at Aeiety Trips run reliable taxi service, ensuring timely pickup and reasonable fares."/>
                 <link rel="canonical" href="https://aeiety.com/delhi-taxi"/>
                 <meta property="og:title" content="Taxi Service in Delhi by Aeiety Trips"/>
                 <meta property="og:url" content="https://aeiety.com/delhi-taxi"/>
@@ -78,7 +78,7 @@ function Body1(){
            <div className="row background-lemonchiffon">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-7 p-4 m-1">
-                     <h1>Cab Service in Delhi&#9889;</h1>
+                     <h1>We Run Dependable Cab Service in Delhi&#9889;</h1>
                      <p className="font font24 fw-bold text-muted">Experience More Satisfaction and Zero Hassles </p>
                      <p className="font font22">
                           Cab service in Delhi by Aeiety Trips is more affordable and satisfying. We focus on easing and streamlining taxi rides in the city's busy environment. Due to our comprehensive spectrum of offerings, you will get local and outstation taxi service in Delhi for all needs. Whether you need a cab for business travel, an official trip, a sightseeing tour, an airport transfer, or carrying a patient to the hospital, you all get them from us. A combination of safety, timeliness, reasonable pricing, and focus on customer satisfaction renders Aeiety Trips the number one choice for satisfying Delhi taxi service.        
@@ -133,6 +133,10 @@ function Body2(){
                      <h2>The Key Features of Our Dedicated Cab Service in Delhi</h2>
                      <p className="font font22">
                           Our dedicated Delhi cab service focuses on maximizing customer satisfaction. We have structured our taxi service Delhi to suit the busy atmosphere of the city. Also, we have optimized our customer-centric cab service in Delhi for outstation trips to streamline the high frequency of cab requirements for tours outside the city. With the facility of a quick taxi booking Delhi, we give you the flexibility to book taxi from anywhere at any time. Notably, tourists can avail of our devoted Delhi airport cab service. They can book a cab beforehand to transport them to the hotel after landing at the Delhi airport. 
+                     </p>
+                     <p className="font font22 fw-bold">Timeliness</p>
+                     <p className="font font22">
+                          It is our foremost priority. We ensure that we pick you up at the scheduled time. Our focus is to allow you to reach your destination on time. That way, you do not arrive late to work or miss the flight. 
                      </p>
                      <p className="font font22 fw-bold">Safety</p>
                      <p className="font font22">

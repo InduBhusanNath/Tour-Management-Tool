@@ -19,7 +19,7 @@ export default function BhutanTourPackageDescription(){
 //Top Bar
 function TopBar(){
     return(<>
-       <div className="row">
+       <div className="row background-azure p-3">
           <div className="col-sm-4">
              <Link to="/bhutan-tour-packages" className="text-decoration-none link-dark font24">&#128281;</Link>
             
@@ -69,7 +69,7 @@ function PackageData(){
     
     
     return(<>
-       <div className="row background-lemonchiffon p-3">
+       <div className="row background-azure p-3">
           <div className="col-sm-1"></div>
           <div className="col-sm-8">
              <span className="text-danger small">{msg}</span>
@@ -79,17 +79,26 @@ function PackageData(){
               
           </div>
           <div className="col-sm-3">
-             <section className="border border-warning-subtle border-1 rounded-top text-center shadow-sm">
-                <span className="font font24 fw-bold text-danger">Interested?</span>
+             <section className="bg-info-subtle border border-primary-subtle border-1 rounded-top text-center shadow-sm">
+                <span className="font font24 fw-bold text-danger">&#127776;Interested?</span>
                 <br/>
-                <span className="font font18 text-success">Drop Us a Message</span>                
+                <span className="font font18 text-dark">Drop Us a Message</span>                
              </section>
-             <section className="border border-warning-subtle border-1 rounded-bottom shadow-sm">
+             <section className=" bg-info-subtle border border-primary-subtle border-1 rounded-bottom shadow-sm">
                    <ContactUsMessage />
                    <br/>
                    <section className="text-center">
-                      <span className="font font18 text-success fw-bold">We Will Get Back to You!</span>
+                      <span className="font font18 text-dark fw-bold">We Will Get Back to You!</span>
                    </section>
+             </section>
+             <p>&nbsp;</p>
+             <section className="p-2 bg-info-subtle border border-info-subtle border-1 rounded shadow-sm text-center">
+                   <span className="font font24 text-dark">Want to Connect Quickly?</span>
+                   
+                   <br/>
+                   <span className="font font24 fw-bold">(+91) 9531393648</span> 
+                   <br/>
+                   <span className="font font22 text-dark">Call/Whatsapp Us</span>                  
              </section>
             
           </div>

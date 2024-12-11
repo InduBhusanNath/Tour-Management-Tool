@@ -74,7 +74,7 @@ function Body1(){
            <div className="row background-lemonchiffon">
                 <div className="col-sm-1"></div>  
                 <div className="col-sm-7 p-4 m-1">
-                     <h1>Cab Service in Guwahati&#9889;</h1>
+                     <h1>Experience the Difference in Cab Service in Guwahati&#9889;</h1>
                      <p className="font font24 fw-bold text-muted">We Made it Affordable,Timely, Hassle-Free</p>
                      <p className="font font22">
                           Cab service in Guwahati by Aeiety Trips is synonymous with a firm dedication to providing customers with the best Guwahati taxi service. With affordable fares, timely pickup, and nil hassles, we ensure smooth and efficient taxi trips. We at Aeiety Trips distinguish ourselves through timeliness, understanding of the customer, our efforts to eradicate pain points, and efficiency. Our customer-centric local and outstation taxi service in Guwahati provides cabs of different types: small, medium, or luxury for various needs. You can get the best taxi Guwahati ride experience when you choose Aeiety Trips.     

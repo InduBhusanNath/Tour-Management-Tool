@@ -22,49 +22,55 @@ export default function DisplayBhutanTourPackages(){
      },[]);
       
       var listPackages=showBhutanPackages.map(tbp=>                       
-             <Fragment key={tbp._id}>                 
-                 <div className="row background-palegoldenrod rounded shadow-sm p-2 m-2">
-                     <div className="col p-1 m-0 w-25">
-                        <img src={tbp.tourPackageFeaturedImage} className="img-fluid w-100 h-100 rounded shadow-sm" alt="Bhutan Travel Packages"/>
+             <Fragment key={tbp._id}> 
+                 <div className="card-group shadow-sm">
+                     <div className="card rounded-left bg-light">
+                         <div className="card-body p-0 m-0">
+                             <img src={tbp.tourPackageFeaturedImage} className="img-fluid w-100 h-100 rounded-left" alt="Bhutan Travel Packages"/>
+                         </div>
                      </div>
-                     <div className="col p-1 m-0 w-50">
-                         <section className="font font20">
-                             <span className="fw-bold text-muted p-1">Country:</span><span className="p-1">{tbp.tourPackageCountry}</span>
-                             <br/>
-                             <span className="fw-bold text-muted p-1">Package:</span><span className="p-1">{tbp.tourPackageName}</span>
-                             <br/>
-                             <span className="fw-bold text-muted p-1">Duration:</span><span className="p-1">{tbp.tourPackageDuration}</span>
-                             <br/>
-                             <span className="fw-bold text-muted p-1">Activities:</span><span className="p-1">{tbp.tourPackageActivities}</span>
-                             <br/>
-                             <span className="fw-bold text-muted p-1">Category:</span><span className="p-1">{tbp.tourPackageType}</span>
-
-                         </section>                                          
+                     <div className="card bg-light">
+                         <div className="card-body p-0 m-0">
+                             <section className="font font20 p-2">
+                                 <span className="fw-bold text-muted p-1">Country:</span><span className="p-1">{tbp.tourPackageCountry}</span>
+                                 <br/>
+                                 <span className="fw-bold text-muted p-1">Package:</span><span className="p-1">{tbp.tourPackageName}</span>
+                                 <br/>
+                                 <span className="fw-bold text-muted p-1">Duration:</span><span className="p-1">{tbp.tourPackageDuration}</span>
+                                  <br/>
+                                 <span className="fw-bold text-muted p-1">Activities:</span><span className="p-1">{tbp.tourPackageActivities}</span>
+                                  <br/>
+                                 <span className="fw-bold text-muted p-1">Category:</span><span className="p-1">{tbp.tourPackageType}</span>
+                             </section>
+                         </div>
                      </div>
-                     <div className="col p-1 m-0 w-25">
-                         <section className="font font20 text-center">
-                             <span className="fw-bold text-muted p-1">&nbsp;</span><span className="p-1">&nbsp;</span>
-                             <br/>                             
-                             <span className="text-muted p-1">Starting Price</span>
-                             <br/>
-                             <span className="p-1 text-danger fw-bold">USD &nbsp;{tbp.tourPackageSellingPrice}/Person</span>
-                             <br/>                             
-                             <span className="fw-bold text-muted p-1"><a href={"/bhutan-tour-package-description/?packageId="+tbp._id} className="text-decoration-none link-info"><button type="button" class="btn btn-warning shadow-sm">Details&#11166;</button></a></span>
-                             <br/>
-                         </section>                                                  
+                     <div className="card rounded-right bg-light">
+                         <div className="card-body p-0 m-0">
+                             <section className="font font20 text-center p-2">
+                                 <span className="fw-bold text-muted p-1">&nbsp;</span><span className="p-1">&nbsp;</span>
+                                 <br/>                             
+                                 <span className="text-muted p-1">Starting Price</span>
+                                 <br/>
+                                 <span className="p-1 text-danger fw-bold">USD &nbsp;{tbp.tourPackageSellingPrice}/Person</span>
+                                  <br/>                             
+                                 <span className="fw-bold text-muted p-1"><a href={"/bhutan-tour-package-description/?packageId="+tbp._id} className="text-decoration-none link-info"><button type="button" class="btn btn-warning shadow-sm"><span className="font font22 fw-bold">Details&#129154;</span></button></a></span>
+                                 <br/>
+                             </section>
+                         </div>
                      </div>
-                 </div>
+                 </div>     
              </Fragment> 
                             
       );
 
      return(<>
-         <div className="row">
+         <div className="row background-aliceblue p-1">
              <div className="col-sm-2"></div>
              <div className="col-sm-8">
-                  <span className="small text-danger">{msg}</span>
-                 <br/>                 
+                 <span className="small text-danger">{msg}</span>
+                 <br/>                
                  {listPackages}
+                 <br/>
              </div>
              <div className="col-sm-2"></div> 
          </div>
