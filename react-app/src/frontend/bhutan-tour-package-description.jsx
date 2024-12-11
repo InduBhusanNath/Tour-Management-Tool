@@ -69,7 +69,7 @@ function PackageData(){
     
     
     return(<>
-       <div className="row">
+       <div className="row background-lemonchiffon p-3">
           <div className="col-sm-1"></div>
           <div className="col-sm-8">
              <span className="text-danger small">{msg}</span>
@@ -79,8 +79,17 @@ function PackageData(){
               
           </div>
           <div className="col-sm-3">
-             <section className="border border-primary-subtle border-1 rounded">
-                  <ContactUsMessage />
+             <section className="border border-warning-subtle border-1 rounded-top text-center shadow-sm">
+                <span className="font font24 fw-bold text-danger">Interested?</span>
+                <br/>
+                <span className="font font18 text-success">Drop Us a Message</span>                
+             </section>
+             <section className="border border-warning-subtle border-1 rounded-bottom shadow-sm">
+                   <ContactUsMessage />
+                   <br/>
+                   <section className="text-center">
+                      <span className="font font18 text-success fw-bold">We Will Get Back to You!</span>
+                   </section>
              </section>
             
           </div>
