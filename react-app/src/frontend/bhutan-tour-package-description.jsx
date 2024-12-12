@@ -74,7 +74,33 @@ function PackageData(){
           <div className="col-sm-8">
              <span className="text-danger small">{msg}</span>
              <br/>
-             <h1 className="text-center">{tourPackageName}</h1>
+             <section className="background-khaki shadow-sm">
+                   <h1 className="text-center">{tourPackageName}</h1>
+             </section>
+             <section className="background-palegoldenrod shadow-sm">
+                <div className="table">
+                   <tbody>
+                      <tr>
+                         <td className="bg-transparent font font20 p-2 fw-bold text-left">Category:</td>
+                         <td className="bg-transparent font font20 p-2 text-left">{tourPackageCategory}</td>
+                         <td className="bg-transparent font font20 p-2 fw-bold text-end">Country:</td>
+                         <td className="bg-transparent font font20 p-2 text-left">{tourPackageCountry}</td>
+                         <td className="bg-transparent font font20 p-2 fw-bold text-left">Duration:</td>
+                         <td className="bg-transparent font font20 p-2 text-left">{tourPackageDuration}</td>
+                      </tr>
+                      <tr>
+                         <td className="bg-transparent font font20 p-2 fw-bold text-left">Inclusions:</td>
+                         <td className="bg-transparent font font20 p-2 text-left">{tourPackageInclusions}</td>
+                         <td className="bg-transparent font font20 p-2 fw-bold text-left">Activities:</td>
+                         <td className="bg-transparent font font20 p-2 text-left">{tourPackageActivities}</td>
+                         <td className="bg-transparent font font20 p-2 fw-bold text-left">Package Type:</td>
+                         <td className="bg-transparent font font20 p-2 text-left">{tourPackageType}</td>
+                      </tr>
+                      
+                   </tbody>
+                </div>
+             </section>
+             
              {parse(tourPackageDescription)};
               
           </div>
