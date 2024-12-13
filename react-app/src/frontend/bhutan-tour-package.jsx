@@ -2,6 +2,8 @@ import Header from "./header"
 import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import DisplayBhutanTourPackages from "./display-bhutan-tour-packages";
+import BhutanFood from "./bhutan-food";
+import BhutanHandicrafts from "./bhutan-handicrafts";
 
 export default function BhutanTourPackage(){
       return(<>
@@ -15,6 +17,8 @@ export default function BhutanTourPackage(){
                      <DisplayBhutanTourPackages/>
                      <Body2/>
                      <Body3/>
+                     <BhutanFood/>
+                     <BhutanHandicrafts/>
                      <Body4/>
                      <Body5/>
                      <Body6/>
@@ -91,7 +95,7 @@ function BreadCrumb(){
  //Body2
  function Body2(){
       return(<>
-           <div className="row background-mintcream">
+           <div className="row background-mintcream p-2">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h2>A Bit About Bhutan </h2>
@@ -117,7 +121,7 @@ function BreadCrumb(){
  //Body3
  function Body3(){
       return(<>
-           <div className="row background-mintcream">
+           <div className="row background-mintcream p-2">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h2>Tourist Attractions in Bhutan</h2>
@@ -137,10 +141,11 @@ function BreadCrumb(){
            </div>      
       </>);
  }
+ 
  //Body4
  function Body4(){
       return(<>
-           <div className="row background-mintcream">
+           <div className="row background-mintcream p-2">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h2>Adventure Tourism in Bhutan</h2>
@@ -169,7 +174,7 @@ function BreadCrumb(){
  //Body5
  function Body5(){
      return(<>
-          <div className="row background-mintcream">
+          <div className="row background-mintcream p-2">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                     <h2>Eco Tourism in Bhutan</h2>
@@ -195,7 +200,7 @@ function BreadCrumb(){
 //Body6
 function Body6(){
       return(<>
-           <div className="row background-mintcream">
+           <div className="row background-mintcream p-2">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h2>Places to Visit in Bhutan</h2>
