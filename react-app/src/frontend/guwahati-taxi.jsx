@@ -18,6 +18,8 @@ export default function GuwahatiTaxi(){
                      <Faqs/>
                      <Body2/>
                      <Body3/>
+                     <Body3a/>
+                     <Body3b/>
                      <Body4/>                 
                      <Footer/>
                 </div>
@@ -30,7 +32,7 @@ function TechnicalSEO(){
              
              <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Cab Service in Guwahati-Local, Outstation, Airport Bookings</title>                
+                <title>Cab Service in Guwahati-#1 Choice</title>                
                 <meta name="description" content="Get dedicated cab service in Guwahati from Aeiety Trips. We provide safe, smooth and timely Guwahati taxi service at affordable prices for local and outstation."/>
                 <link rel="canonical" href="https://aeiety.com/guwahati-taxi"/>
                 <meta property="og:title" content="Taxi Service in Guwahati by Aeiety Trips"/>
@@ -226,22 +228,81 @@ function Body2(){
 //Body3
 function Body3(){
       return(<>
-                <div className="row background-lemonchiffon">
-                          <div className="col-sm-1"></div>
-                          <div className="col-sm-10 p-3">
-                                    <h2>Excellent Taxi Service in Guwahati for Local Trips</h2>
-                                    <section className="font font22">
-                                         <p>
-                                              We provide cabs to any place to visit in Guwahati. With many tourist places in Guwahati, foreigners and visitors from different places in India can get many options. They can undergo the best sightseeing experience by hiring our dedicated cab service in Guwahati. With our comprehensive knowledge of the available Guwahati tour places, we can ensure customers a rich Guwahati tourism experience.
-                                         </p>
-                                         <p>
-                                         Ancient temples, stunning river beaches, parks, waterfalls, a planetarium, a science museum, and an art museum are the attractive Guwahati tourist places. Our customer-centric taxi service in Guwahati covers all such locations.
-                                         </p>
-                                    </section>
-                          </div>
-                          <div className="col-sm-1"></div>
-                </div>          
+           <div className="row background-lemonchiffon">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10 p-3">
+                     <h2>Excellent Taxi Service in Guwahati for Local Trips</h2>
+                     <section className="font font22">
+                          <p>
+                               We provide cabs to any place to visit in Guwahati. With many tourist places in Guwahati, foreigners and visitors from different places in India can get many options. They can undergo the best sightseeing experience by hiring our dedicated cab service in Guwahati. With our comprehensive knowledge of the available Guwahati tour places, we can ensure customers a rich Guwahati tourism experience.
+                          </p>
+                          <p>
+                               Ancient temples, stunning river beaches, parks, waterfalls, a planetarium, a science museum, and an art museum are the attractive Guwahati tourist places. Our customer-centric taxi service in Guwahati covers all such locations.
+                          </p>
+                     </section>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>          
       </>);
+}
+//Body3a
+function Body3a(){
+      return(<>
+      <div className="row background-lemonchiffon">
+           <div className="col-sm-1"></div>
+           <div className="col-sm-10 p-3">
+                <h2>Dedicated Taxi Service in Guwahati for Outstation Destinations</h2>
+                <section className="font font22">
+                     <p>
+                          At Aeiety Trips, we provide excellent outstation cab service in Guwahati. It is helpful for foreigners who come to the city to explore other parts of Assam and northeast India. They can regard it as a tourist taxi service in Guwahati. We know about the best hotels and tourist spots in the northeastern region. As such, we can act as a trusted guide, giving them a smooth trip experience. Due to our reliable guidance, tourists can travel smoothly.                     
+                     </p>
+                     <p>
+                          We provide taxis to all parts of Assam and the northeastern states of Arunachal Pradesh and Meghalaya.        
+                     </p>
+                </section>
+           </div>
+           <div className="col-sm-1"></div>
+     </div>
+
+     
+     </>);     
+}
+//Body3b
+function Body3b(){
+     return(<>
+           <div className="row background-lemonchiffon">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10 p-3">
+                     <h3>Top Outstation Routes</h3>               
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-5 p-2">
+                     <section className="font font22 w-100">
+                          <section className="border-1 border-warning bg-primary-subtle rounded-pill shadow p-1 m-1 text-center">&#187;Guwahati to Kaziranga Taxi</section>
+                          
+                          <section className="border-1 border-warning bg-primary-subtle rounded-pill shadow p-1 m-1 text-center">&#187;Guwahati to Shillong taxi</section>
+                          <section className="border-1 border-warning bg-primary-subtle rounded-pill shadow p-1 m-1 text-center">&#187;Guwahati to Tawang cab</section>
+                          <section className="border-1 border-warning bg-primary-subtle rounded-pill shadow p-1 m-1 text-center">&#187;Guwahati to Itanagar taxi</section>
+                          <section className="border-1 border-warning bg-primary-subtle rounded-pill shadow p-1 m-1 text-center">&#187;Guwahati to Sivasagar cab</section>
+                     </section>  
+                </div>
+                <div className="col-sm-5 p-2">
+                    <section className="font font22 w-100">
+                          <section className="border-1 border-warning bg-primary-subtle rounded-pill shadow p-1 m-1 text-center">&#187;Guwahati to Dibrugarh taxi</section>
+                          <section className="border-1 border-warning bg-primary-subtle rounded-pill shadow p-1 m-1 text-center">&#187;Guwahati to Tinsukia cab</section>
+                          <section className="border-1 border-warning bg-primary-subtle rounded-pill shadow p-1 m-1 text-center">&#187;Guwahati to Jorhat taxi</section>
+                          <section className="border-1 border-warning bg-primary-subtle rounded-pill shadow p-1 m-1 text-center">&#187;Guwahati to Sohra cab</section>
+                          <section className="border-1 border-warning bg-primary-subtle rounded-pill shadow p-1 m-1 text-center">&#187;Guwahati to Dawki taxi</section>
+                     </section> 
+                                  
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+    
+    </>);     
 }
 //Body4
 function Body4(){
@@ -251,7 +312,7 @@ function Body4(){
                 <div className="col-sm-10 p-3">
                      <h2 className="text-center">Places to Visit in Guwahati</h2>
                      <section className="font font22">
-                          <h3><span className="text-dark badge bg-info">Umananda:the Smallest River Island in the World</span> </h3>                  
+                          <h3><span className="text-dark badge bg-primary-subtle">Umananda:the Smallest River Island in the World</span> </h3>                  
                           <p><img src="https://i.ibb.co/0BK1MbZ/umananda-final.png" rel="noopener" alt="Umananda island" className="rounded shadow-sm img-fluid float-start m-1 p-1"/>
                                The <a href="https://en.wikipedia.org/wiki/Umananda_Temple" target="_blank" rel="noreferrer noopener" className="text-decoration-none text-dark">Umananda</a> island is one of the best places to visit in Guwahati. Notably, it is the smallest river island in the world. Umananda is also a key component of Guwahati tourism.
                           </p>
@@ -270,7 +331,7 @@ function Body4(){
                           <p>
                                 Ferries run at frequent intervals, providing seamless connectivity between the island and the river bank. Interestingly, the ferry travel can be another exciting experience. With the island in sight, the flowing river, and the natural beauty around, the experience can be unforgettable.
                           </p>
-                          <h3><span className="text-dark badge bg-info">Nilachal Hill:the Abode of the Kamakhya Temple</span></h3>
+                          <h3><span className="text-dark badge bg-primary-subtle">Nilachal Hill:the Abode of the Kamakhya Temple</span></h3>
                           <p>
                                A fusion of natural beauty and spirituality attracts people from various parts of the world to the Nilachal Hills. The hills stand on the south bank of the river Brahmaputra.
                           </p>
@@ -283,7 +344,7 @@ function Body4(){
                           <p>
                                The best option to reach the temple is to rent a Guwahati taxi. The ride from the foothill to the temple can be an exciting experience. The natural beauty and serenity of the entire Nilachal hills make it an attractive place to visit in Guwahati.
                           </p>
-                          <h3><span className="text-dark badge bg-info">Srimanta Sankardev Kalakshetra:the Cultural Hub</span></h3>
+                          <h3><span className="text-dark badge bg-primary-subtle">Srimanta Sankardev Kalakshetra:the Cultural Hub</span></h3>
                            <p> 
                               <img src="https://i.ibb.co/6NchkY6/kalakshetra.png" alt="Kalakshetra" className="rounded shadow-sm img-fluid float-end m-1 p-1"/>
                                Visiting the Srimanta Sankardev Kalakshetra in Guwahati can be educative and exciting. It is a cultural institution that gives insights into the cultural heritage of Assam. In addition, other educative aspects of the institution make it an exciting place to visit in Guwahati.
@@ -297,7 +358,7 @@ function Body4(){
                           <p>
                                Visitors can avail of a Guwahati cab service to reach the cultural institution.
                           </p>
-                          <h2><span className="text-dark badge bg-info">North Bank of River Brahmaputra:the Land of Ancient Temples</span></h2>
+                          <h3><span className="text-dark badge bg-primary-subtle">North Bank of River Brahmaputra:the Land of Ancient Temples</span></h3>
                           <p>
                                The city’s part on the north bank of the river Brahmaputra is popularly known as North Guwahati. It is different from the rest of Guwahati due to the calm atmosphere.
                           </p>
@@ -330,6 +391,30 @@ function Body4(){
                           </p>
                           <p>
                                Besides, the ropeway can be another exciting option for commuting to and from North Guwahati. 
+                          </p>
+                          <h3><span className="text-dark badge bg-primary-subtle">Basistha Temple: Mythologically Relevant </span></h3>
+                          <p>
+                               You can visit the famous Basistha Temple in Guwahati. It is mythologically relevant. You can hire our reliable taxi service in Guwahati to reach the temple.  It is around 2.9 km from the Basistha Charilai.
+                          </p>
+                          <p>
+                               According to historical literature, Raja Rajeswar, a king of the Ahom dynasty, built it in the 18th century. The natural surroundings of the temple are calm and peaceful. 
+                          </p>
+                          <p>
+                               Book our trusted Guwahati taxi to reach the temple conveniently. You can enjoy the natural beauty around the temple. It is on the Sandhyachal Hill. Interestingly, the temple is in the confluence of the three rivers: Sandhya, Kanta, and Lalita.
+                          </p>
+                          <h3><span className="text-dark badge bg-primary-subtle">Garbhanga Waterfall: Adventure and Wildlife Meet </span></h3>
+                          <p>
+                               You have the opportunity to visit a waterfall in Guwahati. It is at Garbhanga in the city. Garhnanga is a wildlife sanctuary in 15 km south of the city. You can reach there without any hassles by availing of our best cab service in Guwahati. Interestingly, enjoying the scenic beauty of the waterfall is not the activity at Garbhanga. You can enjoy picnics, watching birds, walking in the forest, and clicking photographs. Garbhanga is reachable by a Guwahati cab booking from Aeiety Trips. 
+                          </p>
+                          <p>
+                               Notably, the forest reserve is also a place for adventure tourism. As such, you can engage in trekking. Nevertheless, it is a must-visit place in Guwahati.
+                          </p>
+                          <h3><span className="text-dark badge bg-primary-subtle">Assam State Museum: Standing Since the British Era</span></h3>
+                          <p>
+                               If you are keen on experiencing things established during the pre-independence period, the Assam State Museum is the one to go. It is in Guwahati. You can hire our reliable cab service in Guwahati to reach the museum.
+                          </p>
+                          <p>
+                               Robert Reid, the then Governor of Assam inaugurated it on 21st April 1940. It is a must-see entity in the city. Assam State Museum is near Dighalipukhuri. 
                           </p>
                      </section>
                 </div>
