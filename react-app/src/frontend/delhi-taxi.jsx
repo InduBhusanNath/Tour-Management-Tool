@@ -18,9 +18,11 @@ export default function DelhiTaxi(){
                      <BreadCrumb/>
                      <Body1/>
                      <TaxiServiceFeatures/>
-                     <Body2/>
-                     <Faqs/>
+                     <Body2/>                     
+                     <Faqs/>                     
+                     <Body3/>                     
                      <OutstationRoutes/>
+                     <Body4/>
                      <Footer/>
                 </div>
            </HelmetProvider>
@@ -127,7 +129,7 @@ function TaxiServiceFeatures(){
 //Body2
 function Body2(){
       return(<>
-           <div className="row">
+           <div className="row background-lemonchiffon">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10 p-4 m-1">
                      <h2>The Key Features of Our Dedicated Cab Service in Delhi</h2>
@@ -229,20 +231,70 @@ function OutstationRoutes(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-5">
 
-                     <section className="background-khaki text-center p-1 m-1 rounded-pill shadow-sm font font22">Delhi to Agra taxi</section>
+                     <section className="background-transparent text-center p-1 m-1 rounded-pill shadow-sm font font22">Delhi to Agra taxi</section>
                      
-                     <section className="background-khaki text-center p-1 m-1 rounded-pill shadow-sm font font22">Delhi to Shimla cab</section>
+                     <section className="background-transparent text-center p-1 m-1 rounded-pill shadow-sm font font22">Delhi to Shimla cab</section>
                      
-                     <section className="background-khaki text-center p-1 rounded-pill shadow-sm font font22">Delhi to Manali taxi</section>
+                     <section className="background-transparent text-center p-1 rounded-pill shadow-sm font font22">Delhi to Manali taxi</section>
                 </div>
                 <div className="col-sm-5">
-                     <section className="background-khaki text-center p-1 m-1 rounded-pill shadow-sm font font22">Delhi to Haridwar cab</section>
+                     <section className="background-transparent text-center p-1 m-1 rounded-pill shadow-sm font font22">Delhi to Haridwar cab</section>
                      
-                     <section className="background-khaki text-center p-1 m-1 rounded-pill shadow-sm font font22">Delhi to Rishikesh taxi</section>
+                     <section className="background-transparent text-center p-1 m-1 rounded-pill shadow-sm font font22">Delhi to Rishikesh taxi</section>
                      
-                     <section className="background-khaki text-center p-1 rounded-pill shadow-sm font font22">Delhi to Jaipur cab</section>
+                     <section className="background-transparent text-center p-1 rounded-pill shadow-sm font font22">Delhi to Jaipur cab</section>
                 </div>
                 <div className="col-sm-1"></div>
           </div>
       </>);
+}
+//Body3
+function Body3(){
+     return(<>
+          <div className="row background-lemonchiffon">
+               <div className="col-sm-1"></div>
+               <div className="col-sm-10 p-4 m-1">
+                     <h2>Offerings of Our Top-Class Cab Service in Delhi</h2>
+                     <p className="font font22">
+                           We care for you. As such, you continuously strive to give you a solution for all needs. It does not matter whether you need a taxi for local or outstation travel. We at Aeiety Trips can provide that to you. Our local taxi service in Delhi includes cabs for rides within the city. As such, you can use our cabs for office visits, attending business meetings, sightseeing tours with your family, hospital visits, or airport transfers. Likewise, you can get a dedicated outstation cab service in Delhi to travel outside the city without hassles from Aeiety trips.
+                    </p>
+                    
+              </div>
+              <div className="col-sm-1"></div>
+         </div>
+     </>);
+}
+//Body4
+function Body4(){
+     return(<>
+          <div className="row background-lemonchiffon">
+               <div className="col-sm-1"></div>
+               <div className="col-sm-10 p-4 m-1">
+                     <h2 className="text-center">Top Visiting Places in Delhi</h2>
+                     <h3>Qutub Minar</h3>
+                     <p className="font font22">
+                          The sight of the tall and iconic Qutub Minar is mentally stimulating. When you look at it from a distance, the curiosity to know how it came into being will catch your mind. It has significant historical significance. We provide the best taxi service in Delhi to transport you to the iconic site. 
+                     </p>
+                     <p className="font font22">
+                          Its height is 72.5m (238 ft). As a result, it is the world's tallest brick-built Minaret. Interestingly, it has 379 steps. A Delhi cab booking from Aeiety Trips can ease your travel to the site.
+                     </p>
+                     <h3>Purana Qila (Old Fort)</h3>
+                     <p className="font font22">
+                          The testimony to the history is visible in the Purana Qila. Also called the Red Fort, it is one of the major attractions. It is a fort of the Mughal dynasty era. We provide a dependable taxi service in Delhi to transport people to and from the Purana Qila. 
+                     </p>
+                     <p className="font font22">
+                          According to the historical literature, Mughal Emperor Humayun and Surid Sultan Sher Shah Suri built it. The construction was completed in 1538. 
+                     </p>
+                     <p className="font font22">
+                           Old Fort is near Pragati Maidan. You can get there without any hassles by using our excellent Delhi taxi service. You can experience the rich history of the Old Fort by visiting it. 
+                     </p>
+                     <h3>Lotus Temple</h3>
+                     <p className="font font22">
+                          It is a prominent attraction in New Delhi. You can hire our local cab service in Delhi to visit Lotus Temple. Its structure is that of a lotus, hence the name. It is 34m in height. The construction was completed in 1986. Interestingly, people of any religion can visit the Lotus Temple. 
+                     </p>
+                    
+              </div>
+              <div className="col-sm-1"></div>
+         </div>
+     </>);
 }

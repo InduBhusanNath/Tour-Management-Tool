@@ -22,6 +22,7 @@ export default function BhutanTourPackage(){
                      <Body4/>
                      <Body5/>
                      <Body6/>
+                     <Thimphu/>
                      <Footer/>
                 </div> 
            </HelmetProvider>
@@ -219,4 +220,37 @@ function Body6(){
                 <div className="col-sm-1"></div>
            </div>           
       </>);
+}
+//Body7
+
+function Thimphu(){
+     return(<>
+          <div className="row background-mintcream p-2">
+               <div className="col-sm-1"></div>
+               <div className="col-sm-10">
+                    <h3>Thimphu</h3>
+               </div>
+               <div className="col-sm-1"></div>
+          </div>  
+          <div className="row background-mintcream">
+               <div className="col-sm-1"></div>
+               <div className="col-sm-10">
+                    <section className="font font22">
+                         <p>
+                               It is the Bhutan capital city. Thimphu is one of the major tourist places in Bhutan. Tourists can explore the city with one of our exclusive Bhutan tour packages. Thimphu town is at an altitude of 2,248 to 2,648 meters. If a list of the world's highest cities is made, Thimphu will be in the sixth position. It became the Bhutan capital in 1961. Previously, Punakha was the capital of Bhutan. 
+                         </p>
+                         <p>
+                               Thimphu town is the most significant hub for political, commercial, and religious activities. In the city, modern developments and ancient traditions co-exist. Notably, the city is without a traffic light. Perhaps, it is the only one of the kinds in the world. Thimphu in Bhutan has a population of approximately 90,000. 
+                         </p>
+                         <p>
+                               There are good lodging facilities in the city. Due to the availability of good hotels in Thimphu, a tourist in Bhutan can quickly find accommodation. 
+                         </p>
+                         <p>
+                               There are many places to visit in Thimphu. Also, tourists will find many things to do in Thimphu. 
+                         </p>
+                    </section>
+               </div>
+               <div className="col-sm-1"></div>
+          </div>           
+     </>);
 }
