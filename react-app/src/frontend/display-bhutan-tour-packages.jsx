@@ -24,12 +24,12 @@ export default function DisplayBhutanTourPackages(){
       var listPackages=showBhutanPackages.map(tbp=>                       
              <Fragment key={tbp._id}> 
                  <div className="row rounded shadow-sm">
-                     <div className="col-sm-4 p-0 m-0">
+                     <div className="col-sm-4 bg-info-subtle p-0 m-0">
                          <section>
                              <img src={tbp.tourPackageFeaturedImage} className="img-fluid w-100 h-100 rounded-left" alt="Bhutan Travel Packages"/>
                         </section>                        
                      </div>
-                     <div className="col-sm-5 bg-info-subtle">
+                     <div className="col-sm-5 bg-info-subtle p-0 m-0">
                          <section className="font font20 p-2">
                              <div className="table">
                                  <tbody>
@@ -57,7 +57,7 @@ export default function DisplayBhutanTourPackages(){
                              </div>
                          </section>
                      </div>
-                     <div className="col-sm-3 bg-primary-subtle">
+                     <div className="col-sm-3 bg-primary-subtle p-0 m-0">
                          <section className="font font20 text-center p-2">
                              <span className="fw-bold text-muted p-1">&nbsp;</span><span className="p-1">&nbsp;</span>
                              <br/>                             
@@ -69,7 +69,8 @@ export default function DisplayBhutanTourPackages(){
                              <br/>
                          </section>
                      </div>
-                 </div>                     
+                 </div>
+                 <br/>                     
              </Fragment> 
                             
       );
