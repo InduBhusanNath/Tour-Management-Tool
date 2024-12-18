@@ -23,7 +23,7 @@ export default function DisplayBhutanTourPackages(){
       
       var listPackages=showBhutanPackages.map(tbp=>                       
              <Fragment key={tbp._id}> 
-                 <div className="row rounded shadow-sm p-3 m-3">
+                 <div className="row rounded shadow-sm p-0 m-3">
                      <div className="col-sm-4 bg-info-subtle p-0 m-0">
                          <section>
                              <img src={tbp.tourPackageFeaturedImage} className="img-fluid w-100 h-100 rounded-left" alt="Bhutan Travel Packages"/>

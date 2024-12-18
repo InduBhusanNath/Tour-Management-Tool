@@ -14,18 +14,17 @@ export default function BhutanTourPackage(){
                      <BhutanTourPackageBanner/>
                      <BreadCrumb/>
                      <Body1/>
+                     <Body1a/>
                      <ListBhutanTourPackages/>
                      <Body2/>
                      <Body3/>
-                     <BhutanFood/>
-                     <BhutanHandicrafts/>
-                     <Body4/>
-                     <Body5/>
-                     <Body6/>
+                     <BhutanVisitingPlaces/>
                      <Thimphu/>
                      <ThimphuVisitingPlaces/>
                      <Paro/>
                      <ParoVisitingPlaces/>
+                     <BhutanFood/>
+                     <BhutanHandicrafts/>
                      <Footer/>
                 </div> 
            </HelmetProvider>
@@ -54,7 +53,7 @@ function BhutanTourPackageBanner(){
       return(<>
            <div className="row">
                 <div className="col-sm-12 p-0 m-0">
-                     <img src="https://i.ibb.co/d0vMGjt/Bhutan-Banner.png" alt="Bhutan Tour Packages" className="w-100 img-fluid p-0 m-0"/>
+                     <img src="https://i.ibb.co/bbTbpH2/Bhutan-Banner.webp" alt="Bhutan Tour Packages" className="w-100 img-fluid p-0 m-0"/>
                 </div>
            </div>
       </>);
@@ -80,13 +79,14 @@ function BreadCrumb(){
  //Body1
  function Body1(){
       return(<>
-           <div className="row background-mintcream">
+           <div className="row background-mintcream p-2">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h1 className="text-center">Exclusive Bhutan Tour Packages</h1>
-                     <section className="font font22">
+
+                     <section className="font font22 text-center">
                           <p>
-                               Bhutan's carbon-neutral atmosphere, spectacular mountains, and natural beauty prompt people worldwide to tour the country. We at Aeiety Trips facilitate such trips with our exclusive Bhutan Tour Packages. If you decide to tour Bhutan, choose one of our curated Bhutan travel packages. It will allow you to experience the richness of the country. A Bhutan trip package will enable you to indulge in many exciting activities. From trekking in the mountains to enjoying delicious local food, you will get the opportunity to experience the country's uniqueness of the country. After a tour of Bhutan, you will carry lifetime memories and an urge to visit again. 
+                               Explore the Carbon-Neutral Paradise,Take Home Lifetime Memories
                           </p>
                      </section>
                 </div>
@@ -95,6 +95,24 @@ function BreadCrumb(){
            </div>
       </>);
  }
+ //Body1a
+ function Body1a(){
+     return(<>
+          <div className="row background-mintcream p-2">
+               <div className="col-sm-1"></div>
+               <div className="col-sm-10">                   
+                    
+                    <section className="font font22">
+                         <p>
+                              Bhutan's carbon-neutral atmosphere, spectacular mountains, and natural beauty prompt people worldwide to tour the country. We at Aeiety Trips facilitate such trips with our exclusive Bhutan Tour Packages. If you decide to tour Bhutan, choose one of our curated Bhutan travel packages. It will allow you to experience the richness of the country. A Bhutan trip package will enable you to indulge in many exciting activities. From trekking in the mountains to enjoying delicious local food, you will get the opportunity to experience the country's uniqueness of the country. After a tour of Bhutan, you will carry lifetime memories and an urge to visit again. 
+                         </p>
+                    </section>
+               </div>
+               <div className="col-sm-1"></div>
+               
+          </div>
+     </>);
+}
 // Tour Packages
 function ListBhutanTourPackages(){
       return(<>
@@ -155,12 +173,54 @@ function ListBhutanTourPackages(){
                      </section>
                 </div>
                 <div className="col-sm-1"></div>
-           </div>      
+           </div>
+           <div className="row background-mintcream">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <section className="font font22">
+                          <p>
+                               There are many exciting places to visit in Bhutan. In addition, delicious local food is a major attraction. You will find food items of the same ingredients throughout Bhutan. Cheese made of cow or yak milk, red rice, butter, buckwheat, and chilies are the popular ingredients. Delicious local food is also an attractive component of Bhutan tourism. 
+                          </p>
+                     </section>
+                </div>
+                <div className="col-sm-1"></div>
+           </div> 
+           <div className="row background-mintcream">
+                <div className="col-sm-2"></div>
+                <div className="col-sm-8">
+                     <section className="p-2">
+                          <div className="card-group">
+                               <div className="card border-start-0 border-bottom-0 border-top-0">
+                                    <div className="card-body p-0 m-0">
+                                        <img src="https://i.ibb.co/BPf1RxN/Places1.png" className="img-fluid w-100 p-0 m-0" alt="Bhutan tourist spots"/>
+                                    </div>
+                              </div>                              
+                              <div className="card border-start-0 border-bottom-0 border-top-0">
+                                    <div className="card-body p-0 m-0">
+                                        <img src="https://i.ibb.co/w6Vp236/Food1.png" className="img-fluid w-100 p-0 m-0" alt="Bhutan traditional food"/>
+                                    </div>
+                              </div>
+                              <div className="card border-start-0 border-bottom-0 border-top-0">
+                                    <div className="card-body p-0 m-0">
+                                        <img src="https://i.ibb.co/B4rmndB/Arts-Crafts1.png" className="img-fluid w-100 p-0 m-0" alt="Bhutan traditional arts and crafts"/>
+                                    </div>
+                              </div>
+                              <div className="card border-start-0 border-bottom-0 border-top-0 border-end-0">
+                                    <div className="card-body p-0 m-0">
+                                        <img src="https://i.ibb.co/LQSw1yX/Activities1.png" className="img-fluid w-100 p-0 m-0" alt="Adventure in Bhutan"/>
+                                    </div>
+                              </div>
+                          </div>
+                     </section>
+                </div>
+                <div className="col-sm-2"></div>
+           </div>             
+                   
       </>);
  }
  
- //Body4
- function Body4(){
+ //Adventure
+ function AdventureTourismBhutan(){
       return(<>
            <div className="row background-mintcream p-2">
                 <div className="col-sm-1"></div>
@@ -188,8 +248,8 @@ function ListBhutanTourPackages(){
            </div>
       </>);
  }
- //Body5
- function Body5(){
+ //Eco
+ function EcoTourismBhutan(){
      return(<>
           <div className="row background-mintcream p-2">
                <div className="col-sm-1"></div>
@@ -214,8 +274,8 @@ function ListBhutanTourPackages(){
           </div>
      </>);
 }
-//Body6
-function Body6(){
+//Bhutan Visiting Places
+function BhutanVisitingPlaces(){
       return(<>
            <div className="row background-mintcream p-2">
                 <div className="col-sm-1"></div>
