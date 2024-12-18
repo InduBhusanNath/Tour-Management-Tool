@@ -313,7 +313,7 @@ function Body4(){
                      <h2 className="text-center">Places to Visit in Guwahati</h2>
                      <section className="font font22">
                           <h3><span className="text-dark badge bg-primary-subtle">Umananda:the Smallest River Island in the World</span> </h3>                  
-                          <p><img src="https://i.ibb.co/0BK1MbZ/umananda-final.png" rel="noopener" alt="Umananda island" className="rounded shadow-sm img-fluid float-start m-1 p-1"/>
+                          <p><img src="https://i.ibb.co/0BK1MbZ/umananda-final.png" alt="Umananda island" className="rounded shadow-sm img-fluid float-start m-1 p-1"/>
                                The <a href="https://en.wikipedia.org/wiki/Umananda_Temple" target="_blank" rel="noreferrer noopener" className="text-decoration-none text-dark">Umananda</a> island is one of the best places to visit in Guwahati. Notably, it is the smallest river island in the world. Umananda is also a key component of Guwahati tourism.
                           </p>
                           <p>
