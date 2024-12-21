@@ -1,7 +1,7 @@
 import Header from "./header"
 import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import DisplayBhutanTourPackages from "./display-bhutan-tour-packages";
+import DisplayBhutanTourPackages from "./bhutan-tour-packages-display";
 import BhutanFood from "./bhutan-food";
 import BhutanHandicrafts from "./bhutan-handicrafts";
 
@@ -25,6 +25,8 @@ export default function BhutanTourPackage(){
                      <ParoVisitingPlaces/>
                      <BhutanFood/>
                      <BhutanHandicrafts/>
+                     <AdventureTourismBhutan/>
+                     <EcoTourismBhutan/>
                      <Footer/>
                 </div> 
            </HelmetProvider>
@@ -53,7 +55,7 @@ function BhutanTourPackageBanner(){
       return(<>
            <div className="row">
                 <div className="col-sm-12 p-0 m-0">
-                     <img src="https://i.ibb.co/bbTbpH2/Bhutan-Banner.webp" alt="Bhutan Tour Packages" className="w-100 img-fluid p-0 m-0"/>
+                     <img src="https://i.ibb.co/PYpXTrv/Bhutan-Banner-Live.webp" alt="Bhutan Tour Packages" className="w-100 img-fluid p-0 m-0"/>
                 </div>
            </div>
       </>);
@@ -189,25 +191,25 @@ function ListBhutanTourPackages(){
                 <div className="col-sm-2"></div>
                 <div className="col-sm-8">
                      <section className="p-2">
-                          <div className="card-group">
+                          <div className="card-group shadow-sm">
                                <div className="card border-start-0 border-bottom-0 border-top-0">
                                     <div className="card-body p-0 m-0">
-                                        <img src="https://i.ibb.co/BPf1RxN/Places1.png" className="img-fluid w-100 p-0 m-0" alt="Bhutan tourist spots"/>
+                                        <img src="https://i.ibb.co/G0xDdhq/Beautiful-Places.webp" className="img-fluid w-100 p-0 m-0" alt="Bhutan tourist spots"/>
                                     </div>
                               </div>                              
                               <div className="card border-start-0 border-bottom-0 border-top-0">
                                     <div className="card-body p-0 m-0">
-                                        <img src="https://i.ibb.co/w6Vp236/Food1.png" className="img-fluid w-100 p-0 m-0" alt="Bhutan traditional food"/>
+                                        <img src="https://i.ibb.co/QHYVkxV/Delicious-Food.webp" className="img-fluid w-100 p-0 m-0" alt="Bhutan traditional food"/>
                                     </div>
                               </div>
                               <div className="card border-start-0 border-bottom-0 border-top-0">
                                     <div className="card-body p-0 m-0">
-                                        <img src="https://i.ibb.co/B4rmndB/Arts-Crafts1.png" className="img-fluid w-100 p-0 m-0" alt="Bhutan traditional arts and crafts"/>
+                                        <img src="https://i.ibb.co/BsjF8z9/Creative-Arts.webp" className="img-fluid w-100 p-0 m-0" alt="Bhutan traditional arts and crafts"/>
                                     </div>
                               </div>
                               <div className="card border-start-0 border-bottom-0 border-top-0 border-end-0">
                                     <div className="card-body p-0 m-0">
-                                        <img src="https://i.ibb.co/LQSw1yX/Activities1.png" className="img-fluid w-100 p-0 m-0" alt="Adventure in Bhutan"/>
+                                        <img src="https://i.ibb.co/DYbHtNj/Exciting-Activities.webp" className="img-fluid w-100 p-0 m-0" alt="Adventure in Bhutan"/>
                                     </div>
                               </div>
                           </div>

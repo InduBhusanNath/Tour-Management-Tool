@@ -14,6 +14,7 @@ export default function DisplayBhutanTourPackages(){
                  setMsg("No Tour Packages Found.....");                 
               }else if(response.data.flag==="1"){
                  setShowBhutanPackages(response.data.result);
+                 setMsg("");  
               }             
          })
          .catch(error=>{
@@ -23,7 +24,7 @@ export default function DisplayBhutanTourPackages(){
       
       var listPackages=showBhutanPackages.map(tbp=>                       
              <Fragment key={tbp._id}> 
-                 <div className="row rounded shadow-sm p-0 m-3">
+                 <div className="row rounded shadow-sm p-0 m-0 border border-info border-2">
                      <div className="col-sm-4 bg-info-subtle p-0 m-0">
                          <section>
                              <img src={tbp.tourPackageFeaturedImage} className="img-fluid w-100 h-100 rounded-left" alt="Bhutan Travel Packages"/>
@@ -60,7 +61,9 @@ export default function DisplayBhutanTourPackages(){
                      <div className="col-sm-3 bg-primary-subtle p-0 m-0">
                          <section className="font font20 text-center p-2">
                              <span className="fw-bold text-muted p-1">&nbsp;</span><span className="p-1">&nbsp;</span>
-                             <br/>                             
+                             <br/> 
+                             <span className="fw-bold text-muted p-1">&nbsp;</span><span className="p-1">&nbsp;</span>
+                             <br/>                                                         
                              <span className="text-muted p-1">Starting Price</span>
                              <br/>
                              <span className="p-1 text-danger fw-bold">USD &nbsp;{tbp.tourPackageSellingPrice}/Person</span>
