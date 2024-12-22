@@ -66,7 +66,7 @@ function Nav(){
                                
                                <li><Link to="/adventure-tourism" className="text-decoration-none text-dark">Adventure</Link></li>
                                <li><Link to="/eco-tourism" className="text-decoration-none text-dark">Eco</Link></li>
-                               <li><Link to="/relic-tourism" className="text-decoration-none text-dark">Historical</Link></li>
+                               <li><Link to="/historical-tourism" className="text-decoration-none text-dark">Historical</Link></li>
                          </ul>
                   </li>
                   <li><Link to="/tour-packages-intro" className="text-decoration-none text-dark">&nbsp;Tour Packages</Link></li>
