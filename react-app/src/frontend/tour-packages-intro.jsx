@@ -12,7 +12,8 @@ export default function TourPackagesIntro(){
              <BreadCrumb/>
              <Body1/>
              <Body2/>
-             <InternationalTourPackagesList/>             
+             <InternationalTourPackagesList/>
+             <Body3/>             
              <Footer/>
          </div>     
      </>);
@@ -66,9 +67,16 @@ function BreadCrumb(){
 //International Tour Packages
 function InternationalTourPackagesList(){
      return(<>
-         <div className="row">
+         <div className="row background-lightgoldenrodyellow p-3">
              <div className="col-sm-1"></div>
-             <div className="col-sm-10">
+             <div className="col-sm-10 p-2">
+                 <h2 className="text-center">International Trip Packages</h2>
+             </div>
+             <div className="col-sm-1"></div>
+         </div>
+         <div className="row background-lightgoldenrodyellowp-3">
+             <div className="col-sm-1"></div>
+             <div className="col-sm-10 border border-warning border-2 rounded p-2">
                  <InternationalTourPackagesDisplay/>
              </div>
              <div className="col-sm-1"></div>
@@ -82,7 +90,7 @@ function Body1(){
          <div className="row background-lightgoldenrodyellow">
              <div className="col-sm-1"></div>
              <div className="col-sm-10">
-                 <h1 className="text-center">Amazing Tour Packages</h1>
+                 <h1 className="text-center">Curated Tour Packages for Your Dream Trip</h1>
              </div>
              <div className="col-sm-1"></div>             
          </div>
@@ -91,7 +99,7 @@ function Body1(){
              <div className="col-sm-10">
                  <section className="text-center font font24">
                      <p>
-                         Fulfil Your Long Cherished 
+                          We Understand Your Demands, We Orient Your Tour to Your Preferences, We Ensure the Best Experiences  
                      </p>
                  </section>
              </div>
@@ -102,13 +110,51 @@ function Body1(){
 //Body2
 function Body2(){
      return(<>
-         <div className="row background-lightyellow p-3">
+         <div className="row background-lightgoldenrodyellow p-3">
              <div className="col-sm-1"></div>
-             <div className="col-sm-3 p-1">
-                 
-             </div>
-             <div className="col-sm-7"></div>
+             <div className="col-sm-10 p-1">                 
+                     <p className="font font22">
+                         Wait no further. There is no reason to do so. Embark upon your dream trip with one of our curated tour packages. We at Aeiety Trips do not sell just packages. We provide enablers of the best travel experiences. We care for you throughout your tour to prevent unpleasant situations that can erode your trip excitement. Our thoughtfully crafted holiday packages are a class apart. We have tailored them to suit your preferences. We strive to understand customer needs before creating such packages. As such, we can satisfy customers with varied needs.
+                     </p>                                 
+             </div>             
              <div className="col-sm-1"></div>
          </div>
      </>);
+}
+//Body3
+function Body3(){
+    return(<>
+        <div className="row background-lightgoldenrodyellow p-3">
+             <div className="col-sm-1"></div>
+             <div className="col-sm-10 p-1">
+                 <h2>Why Choose Our Tour Packages?</h2>
+             </div>             
+            <div className="col-sm-1"></div>
+        </div>
+        <div className="row background-lightyellow p-1">
+             <div className="col-sm-1"></div>
+             <div className="col-sm-10 p-1">
+                 <p className="font font22">
+                     The answer is straightforward. That will give you the best trip experience. That is why select one of our best-in-class tour packages to go to the destination you have dreamt of. We provide you with an extended list of such packages to enable you to pick up the perfect one. That way, you can experience the best tour of your life.
+                 </p>
+                 <h3>Wonderful Destinations</h3>
+                 <p className="font font22">
+                     Our excellent holiday packages are with attractive destinations. In addition to enjoying beautiful places, you will experience different cultures, traditional food, and arts. That way, you will carry home exciting memories. We create value for your tour. 
+                 </p>
+                 <h3>Customized</h3>
+                 <p className="font font22">
+                     We at Aeiety Trips do not structure tour packages randomly. Instead, we frame them thoughtfully and creatively. We implement personalized aspects to customize our packages to the tastes and preferences of our prospective customers. During package creation, customer benefits become the topmost priority. We eliminate all hassles that could make your trip unpleasant. 
+                 </p>
+                 <h3>Affordable</h3>
+                 <p className="font font22">
+                     At Aeiety Trips, affordable pricing is one of our core tenets. We do not allow our valuable customers to spend excessively on their dream trips. Instead, we price our excellent holiday packages at reasonable prices. Therefore, customers get the value of the money they spend on our packages. 
+                 </p>
+                 <h3>Satisfying</h3>
+                 <p className="font font22">
+                     We aspire to your satisfaction. We direct our sincere efforts to enable you to undergo a satisfying trip. Your satisfaction is the final benchmark of our success.  
+                 </p>
+             </div>             
+            <div className="col-sm-1"></div>
+        </div>
+    </>);
 }
