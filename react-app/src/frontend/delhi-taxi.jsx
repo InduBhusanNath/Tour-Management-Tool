@@ -290,7 +290,67 @@ function Body4(){
                      </p>
                      <h3>Lotus Temple</h3>
                      <p className="font font22">
-                          It is a prominent attraction in New Delhi. You can hire our local cab service in Delhi to visit Lotus Temple. Its structure is that of a lotus, hence the name. It is 34m in height. The construction was completed in 1986. Interestingly, people of any religion can visit the Lotus Temple. 
+                          It is a prominent attraction in New Delhi. You can hire our local cab service in Delhi to visit Lotus Temple. Its structure is that of a lotus, hence the name. It is 34m in height. Construction of the Lotus Temple was completed in 1986. Interestingly, people of any religion can visit the Lotus Temple.  
+                     </p>
+                     <h3>India Gate</h3>
+                     <p className="font font22">
+                          The iconic India Gate is a must-see entity in Delhi. It is a war memorial near Rajpath of New Delhi. India’s parliament is nearby. The British set up India Gate in memory of soldiers who died in the First World War. The inauguration day was December February 12, 1931.
+                     </p>
+                     <p className="font font22">
+                          The historically relevant war memorial is among the most sought-after tourist attractions in Delhi. Interestingly, you will get a good view of India’s parliament building from India Gate. You can hire our best Delhi taxi service to visit the war memorial. 
+                     </p>
+                     <p className="font font22">
+                          You can relax there apart from viewing the iconic war memorial. Regular illumination between 19.00 hrs to 21.30 hrs every day attracts people to participate in it. Our trusted taxi service in Delhi can be the best option for reaching India Gate seamlessly.
+                     </p>
+                     <h3>Connaught Place</h3>
+                     <p className="font font22">
+                          People often call it CP. It is the main business and financial hub in New Delhi. In Connaught Place, you will find the major companies operating, entailing a corporate atmosphere. The place also has another name: Rajiv Chowk, which is associated with especially the metro station area. Our reliable cab service in Delhi also covers CP for up and up-and-down. 
+                     </p>
+                     <p className="font font22">
+                          There are many shopping options, including nightlife. In addition to branded showrooms, you can go on a shopping spree in the famous Palika Bazaar, and the roadside shops.
+                     </p>
+                     <p className="font font22">
+                          With many food outlets in Connaught Place, you will find numerous dining options. There are many branded restaurants and popular food outlets to choose from. Notably, some restaurants in CP started operations in the pre-independence period. 
+                     </p>
+                     <p className="font font22">
+                          For cinema lovers, CP is the place to go. You will find many cinema halls, including multiplexes. Notably, the Regal Cinema Hall is an iconic theatre, built in 1932. You can leave the task of transporting you to the theatre to our dependable Delhi cab booking. We will drop you at the cinema hall, and pick you up after the show.
+                     </p>
+                     <p className="font font22">
+                          There is a beautiful large park at the center of CP. You can relax there amid a busy environment. 
+                     </p>
+                     <p className="font font22">
+                          Furthermore, Connaught Place hosts the famous astronomical observatory Jantar Mantar, built in 1724. In addition, CP is nearby to Barakhamba Road and Kasturba Gandhi Marg.
+                     </p>
+                     <h3>Jantar Mantar</h3>
+                     <p className="font font22">
+                          In Delhi, Jantar Mantar is a must-see thing. It was built in 1724 to carry out astronomical observations. Our best-in-class local Delhi taxi service can help make a trip there smoothly. It is one of the significant attractions in the city. People from within and outside the country come to visit the historical astronomical observatory. We provide excellent taxi service in Delhi to travel to such iconic and historically relevant sites.
+                     </p>
+                     <h3>Dilli Haat</h3>
+                     <p className="font font22">
+                          People, including foreigners, regularly throng Dilli Haat, opposite the INA market. Here, you can buy food, crafts, and textiles from other states of India.
+                     </p>
+                     <p className="font font22">
+                          Inside Dilli Haat, people of the respective states operate state-wise stalls. You can eat traditional food, buy traditional crafts and clothes, and experience the cultures of different states. Our excellent taxi service in Delhi can drop you off at Dilli Haat. 
+                     </p>
+                     <h3>Humayun’s Tomb</h3>
+                     <p className="font font22">
+                          It is one of the major tourist attractions in Delhi. Notably, the Humayun’s Tomb is also a UNESCO Heritage Site. It displays the richness of the architectural technology that prevailed during the Mughal times. The marvelous tourist spot is in Nizamuddin East in New Delhi. 
+                     </p>
+                     <p className="font font22">
+                          Interestingly, the magnificent monument, built in 1558, has not lost its charm even after centuries. You can go there by booking a Delhi taxi from Aeiety Trips. 
+                     </p>
+                     <p className="font font22">
+                          Remarkably, the popular historical structure is built of red sandstone. Our best cab service in Delhi can be a good option. It can help you reach  Humayun’s Tomb quickly. If you book a round trip, we will pick you up after your visit.
+                     </p>
+                     <h3>Lal Qila (Red Fort)</h3>
+                     <p className="font font22">
+                          Red Fort is the English translation of Lal Qila. It is a significant historical entity in Delhi. We run a dedicated local taxi service in Delhi to transport visitors to Red Fort, one of the most visited tourist places in Delhi. 
+                     </p>
+                     <p className="font font22">
+                          The history behind its construction is significant. The shifting of the Mughal capital from Agra to Delhi triggered the need to construct the Red Fort. It functioned as the emperor's residence. 
+                     </p>
+                     <p className="font font22">
+                          Emperor Shah Jahan started the construction of Lal Qila on 12 May 1638. The construction attained completion on 6 April 1648. You can travel to the UNESCO World Heritage Site by booking a Delhi taxi from Aeiety Trips. 
                      </p>
                     
               </div>
