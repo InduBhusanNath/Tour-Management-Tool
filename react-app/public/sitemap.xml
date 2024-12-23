@@ -5,12 +5,44 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://aeiety.com/</loc>
-  <lastmod>2024-10-29T03:59:39+00:00</lastmod>
-</url>
-
-
+     <url>
+         <loc>https://aeiety.com/</loc>
+         <lastmod>2024-12-23T06:40:48+00:00</lastmod>
+     </url>
+     <url>
+         <loc>https://aeiety.com/aboutus</loc>
+         <lastmod>2024-12-23T06:40:48+00:00</lastmod>
+     </url>
+     <url>
+         <loc>https://aeiety.com/contactus</loc>
+         <lastmod>2024-12-23T06:40:48+00:00</lastmod>
+     </url>
+     <url>
+         <loc>https://aeiety.com/delhi-taxi</loc>
+         <lastmod>2024-12-23T06:40:48+00:00</lastmod>
+     </url>
+     <url>
+         <loc>https://aeiety.com/guwahati-taxi</loc>
+         <lastmod>2024-12-23T06:40:48+00:00</lastmod>
+     </url>
+     <url>
+         <loc>https://aeiety.com/adventure-tourism</loc>
+         <lastmod>2024-12-23T06:40:48+00:00</lastmod>
+     </url>
+     <url>
+         <loc>https://aeiety.com/eco-tourism</loc>
+         <lastmod>2024-12-23T06:40:48+00:00</lastmod>
+     </url>
+     <url>
+         <loc>https://aeiety.com/historical-tourism</loc>
+         <lastmod>2024-12-23T06:40:48+00:00</lastmod>
+     </url>
+     <url>
+         <loc>https://aeiety.com/tour-packages-intro</loc>
+         <lastmod>2024-12-23T06:40:48+00:00</lastmod>
+     </url>
+     <url>
+         <loc>https://aeiety.com/bhutan-tour-packages</loc>
+         <lastmod>2024-12-23T06:40:48+00:00</lastmod>
+     </url>
 </urlset>

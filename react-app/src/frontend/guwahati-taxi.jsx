@@ -2,7 +2,7 @@ import Header from "./header";
 import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Collapsible from 'react-collapsible';
-import TaxiService from "./taxi-service";
+import TaxiServiceDisplay from "./taxi-service-display";
 import YoutubeGuwahatiTaxi from "./youtube-guwahati-taxi";
 
 export default function GuwahatiTaxi(){
@@ -122,7 +122,7 @@ function Body1(){
 //Service Features
 function TaxiServiceFeatures(){
       return(<>
-           <TaxiService/>
+           <TaxiServiceDisplay/>
       </>);
 }
 //FAQs

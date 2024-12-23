@@ -3,7 +3,7 @@ import Footer from "./footer";
 import CabBooking from "./cab_booking";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Collapsible from 'react-collapsible';
-import TaxiService from "./taxi-service";
+import TaxiServiceDisplay from "./taxi-service-display";
 import TourismServices from "./tourism-service";
 import WhyChooseUs from "./whychooseus";
 import InternationalTourPackageCarousel from "./international-tour-package-carousel";
@@ -131,7 +131,7 @@ function Body1(){
                 <div className="row background-lightgoldenrodyellow padding25">
                           
                           <div className="col-sm-12">
-                               <TaxiService/>                               
+                               <TaxiServiceDisplay/>                               
                           </div>
                           
                           

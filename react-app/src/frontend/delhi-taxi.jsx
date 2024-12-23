@@ -2,8 +2,7 @@ import Header from "./header";
 import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Collapsible from 'react-collapsible';
-import TaxiService from "./taxi-service";
-import WhatYouGetFromUs from "./what-you-get-from-us";
+import TaxiServiceDisplay from "./taxi-service-display";
 import YoutubeDelhiTaxi from "./youtube-delhi-taxi";
 
 
@@ -52,7 +51,7 @@ function DelhiTaxiBanner(){
      return(<>
           <div className="row">
                <div className="col-sm-12 p-0 m-0">
-                    <img src="https://i.ibb.co/z2RPvRq/Delhi-Cab-Banner.png" alt="Delhi Cab" className="img-fluid w-100 p-0 m-0"/>
+                    <img src="https://i.postimg.cc/BQYrCvxm/Delhi-Cab-Banner.webp" alt="Delhi Cab" className="img-fluid w-100 p-0 m-0"/>
                </div>
           </div>          
      </>);
@@ -123,7 +122,7 @@ function Body1(){
 //Service Features
 function TaxiServiceFeatures(){
      return(<>
-          <TaxiService/>
+          <TaxiServiceDisplay/>
      </>);
 }
 //Body2
