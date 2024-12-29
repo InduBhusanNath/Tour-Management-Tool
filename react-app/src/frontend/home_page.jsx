@@ -3,10 +3,11 @@ import Footer from "./footer";
 import CabBooking from "./cab_booking";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Collapsible from 'react-collapsible';
+import OurPrinciples from "./OurPrinciples";
 import TaxiServiceDisplay from "./taxi-service-display";
 import TourismServices from "./tourism-service";
-import WhyChooseUs from "./whychooseus";
 import InternationalTourPackageCarousel from "./international-tour-package-carousel";
+import { Link } from "react-router-dom";
 
 
 
@@ -18,10 +19,12 @@ export default function HomePage(){
                 <div className="container-fluid">                     
                      <Header/>
                      <Banner/>
-                     <Body1/>
-                     <Body2/>
-                     <Body3/>
-                     <LastBody/>                     
+                     <Intro/>
+                     <OurGoverningPrinciples/>                     
+                     <CabServiceHomePage/>
+                     <TourPackageHomePage/>
+                     <TourismHomePage/>
+                     <WhyChooseUs/>                                          
                      <Footer/>
                 </div>   
            </HelmetProvider>  
@@ -33,8 +36,8 @@ function TechnicalSEO(){
              
              <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Taxi Service, Tourism, Tour Packages-Book at the Best Prices</title>                
-                <meta name="description" content="Aeiety Trips provides affordable taxi services, curated tourism and package tours. Why not book a trip with us for a memorable experience due to our excellence?"/>
+                <title>Aeiety Trips: Book Cab, Tour, Cruise from #1 Travel Agency</title>                
+                <meta name="description" content="Experience the best satisfaction with our travel agency—excellent cab services, exciting tour packages, and luxurious cruises. Plan your dream travel with us!"/>
                 <link rel="canonical" href="https://aeiety.com"/>
                 <meta property="og:title" content="Cabs, Tourism, Package Tours by Aeiety Trips"/>
                 <meta property="og:url" content="https://aeiety.com/"/>
@@ -51,149 +54,174 @@ function Banner(){
       return(<>
            <div className="row">
                 <div className="col-sm-12 p-0 m-0">
-                     <section className="w-100">
-                          <img src={process.env.PUBLIC_URL +'MainImages/HpTaxi.png'} alt="Taxi Services" className="img-fluid w-100"/>
-                     </section>
-                     
+                     <img src="https://i.postimg.cc/ryn8Crjs/Home-Page-Aeiety.webp" alt="Aeiety Trips" className="img-fluid w-100 p-0 m-0"/>                     
                 </div>
            </div>
       </>);
 }
 
-//Body1
-function Body1(){
+//Intro
+function Intro(){
       return(<>
-                <div className="row padding25 background-lightgoldenrodyellow">
-                          <div className="col-sm-4">
-                                    <section className="background-powderblue shadow rounded">
-                                         <section className="font font18 fw-bold padding10 text-center">&#128587;&nbsp;BOOK A CAB</section>
-                                         <CabBooking/>                                         
-                                    </section>
-                                    <p>&nbsp;</p>                                    
-                          </div>
-                          <div className="col-sm-8">
-                               <h1><b>TAXI SERVICE</b> Giving You the Best Experience </h1>
-                               <br/>
-                               <section className="font font22">                                    
-                                    <p>Choosing <b>Aeiety Trips</b> could mean selecting a customer-centric taxi service provider. That way, you can ensure timely, safe and reasonably priced cab travel.</p>
-                                    <p>We carefully plan our cab operations by keeping the customer at the centre of everything. </p>
-                                    <p>Our priority is to ease customer's pain points and give them the best experience. As such, you can get the value of your money and time by choosing our excellent cab services. </p>
-                                    <p>Aeiety Trips is especially the ideal choice for <b>foreign tourists</b> because of our comprehensive knowledge of the places worthy of visiting. In addition, our in-depth knowledge of hotels makes us the most preferred cab service provider for them.</p>
-                                    
-                               </section>
-                               <br/>
-                               <section>
-                                    <p><img src={process.env.PUBLIC_URL +'GeneralImages/OurExcellence.png'} alt="cab service" className="img-fluid"/></p>
-                               <div className="card-group font font18">
-                                              <div className="card bg-transparent border-info">
-                                                        <div className="card-header bg-transparent border-info text-center">&#8377;&nbsp;<br/><b>REASONABLE FARES</b></div>
-                                                        <div className="card-body">                                                                  
-                                                                  ➔Trip Cost Stays Within Budget<br/>
-                                                                  ➔No Excessive Payment
-                                                        </div>
-                                              </div>
-                                              <div className="card bg-transparent border-info">
-                                                        <div className="card-header bg-transparent border-info text-center">&#8986;&nbsp;<br/><b>TIMELY PICKUP</b></div>
-                                                        <div className="card-body">                                                                  
-                                                                  ➔Reach Destination on Time<br/>
-                                                                  ➔No Hassles in Waiting for Cab   
-                                                        </div>
-                                              </div>
-                                              <div className="card bg-transparent border-info">
-                                                        <div className="card-header bg-transparent border-info text-center">&#128663;&nbsp;<br/><b>SERVICED CARS</b></div>
-                                                        <div className="card-body">                                                                  
-                                                                  ➔Pleasant Ride With Clean Interior<br/>
-                                                                  ➔No Car Breakdown on the Way
-                                                        </div>
-                                              </div>
-                                              <div className="card bg-transparent border-info">
-                                                        <div className="card-header bg-transparent border-info text-center">&#128587;&nbsp;<br/><b>EXPERIENCED DRIVERS</b></div>
-                                                        <div className="card-body"> 
-                                                                  ➔Travel Through Best Routes<br/>
-                                                                  ➔No Worries of Accidents 
-                                                        </div>
-                                              </div>
-                                              
-                                    </div>
-
-
-                               </section>                                
-                               
-                               
-                                        
-                          </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h1 className="text-center">We Present You With A Basket of Travel Options </h1>
+                     <p className="font font24 text-center">
+                          We Care for You, We Understand You, Your Satisfaction is Our Success
+                     </p>
                 </div>
-                <div className="row background-lightgoldenrodyellow padding25">
-                     <div className="col-sm-12">
-                         <span><img src={process.env.PUBLIC_URL +'GeneralImages/Services4u.png'} alt="book taxi" className="img-fluid"/></span>                         
-                     </div>                     
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <p className="font font22">
+                          We at Aeiety Trips work dedicatedly to enable you to experience the best travel. As a premier travel agency, we offer exciting and satisfying travel options. You can choose anything from taxi services, tourism options, tour packages, or cruise services. We strive to give the most fulfilling travel experience. That is why we run our operations with customer-centric policies. Our principal focus is your satisfaction, which is also the benchmark of our success. Our continuous emphasis on eliminating hassles and shortcomings has fine-tuned our services. As such, you will experience the best from whichever service you avail of from us. We are committed to operating Aeiety Trips with the governing tenets of affordability, timeliness, safety, and customer satisfaction.
+                     </p>                                        
                 </div>
-                <div className="row background-lightgoldenrodyellow padding25">
-                          
-                          <div className="col-sm-12">
-                               <TaxiServiceDisplay/>                               
-                          </div>
-                          
-                          
-                </div>
-                <div className="row background-lightgoldenrodyellow padding25">
-                          <div className="col-sm-6">
-                                         <p><img src={process.env.PUBLIC_URL +'GeneralImages/FAQ.png'} alt="cab service" className="img-fluid"/></p>
-                               <section className="padding10">
-                                    
-                                    <Collapsible className="font font22" trigger="How to Book Taxi With Aeiety Trips?&#5161;">
-                                              <section className="font font22 bg-info rounded padding10">
-                                              Booking a cab with AeietyTrips is a simple affair. All you need to do is fill out the cab request form on the website, call us, email us,  message us from the website's Contact Us page, or WhatsApp us. Upon receiving your request, we will do the rest.
-                                              </section>                                               
-                                    </Collapsible>
-                                    <Collapsible className="font font22" trigger="How to Reschedule My Taxi Trip?&#5161;">
-                                              <section className="font font22 bg-info rounded padding10">
-                                              You can reschedule your cab trip by informing us three hours before the departure. There will be no charges. However, charges will be applicable if you let us know of your rescheduling three hours before the pickup time.  
-                                              </section>                                               
-                                    </Collapsible>
-                                    <Collapsible className="font font22" trigger="How to Cancel My Scheduled Cab Trip?&#5161;">
-                                              <section className="font font22 bg-info rounded padding10">
-                                              You can cancel your scheduled cab trip without incurring cancellation charges by informing us anytime up to the day before the departure day. You should pay 50% of the trip fare if you cancel on the pickup day for the apparent reason.    
-                                              </section>                                               
-                                    </Collapsible>
-                                    <Collapsible className="font font22" trigger="Can I Get Help to Find Accommodation?&#5161;">
-                                              <section className="font font22 bg-info rounded padding10">
-                                              Yes, we can find or recommend a good hotel for your stay after your cab trip to outstation destinations. Our comprehensive knowledge of accommodation facilities could be helpful to you.      
-                                              </section>                                               
-                                    </Collapsible>
-                               </section>
-                                   
-                          </div>
-                          <div className="col-sm-6">
-                               <p><img src={process.env.PUBLIC_URL +'GeneralImages/NeedHelp.png'} alt="cab service" className="img-fluid"/></p>
-                               <section className="font font20 bg-info shadow rounded padding25">
-
-                               We are ready to help you at every step during your taxi booking journey.
-                               <br/>
-                               &#128129;&nbsp;Call or WhatsApp us at (+91) 9531393648, or drop a message from the Contact Us page.
-                               </section>
-                          </div>
-
-                </div>
-
+                <div className="col-sm-1"></div>
+           </div>
       </>);
 }
-//Body2
-function Body2(){
+//Our Governing Principles
+function OurGoverningPrinciples(){
       return(<>
-          <TourismServices/>
+           <div className="row background-palegoldenrod p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2 className="text-center">The Principles We Stand Upon</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-palegoldenrod p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <OurPrinciples/>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
       </>);
 }
-//Body3
-function Body3(){
+//Cab Service 
+function CabServiceHomePage(){
       return(<>
-           <InternationalTourPackageCarousel/>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2 className="text-center">Taxi Service</h2>
+                     <p className="font font24">
+                          Excellence drives our cab rental services. We ensure that our customer-focused can service is timely, comfortable, safe, and priced reasonably. We provide taxis for all needs.
+                     </p>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>           
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <TaxiServiceDisplay/>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-6"></div>
+                <div className="col-sm-4 text-end">
+                     <Link to="/taxi-service" className="text-decoration-none link-dark">
+                          <span className="fs-4 text-danger fw-bold rounded p-2">Taxi Service&#129146;</span>
+                     </Link>
+                </div>
+                <div className="col-sm-1"></div>
+                
+           </div>
+      </>);
+}
+//Tour Package
+function TourPackageHomePage(){
+      return(<>
+           <div className="row background-palegoldenrod p-3">
+                <div className="col-sm-1"></div> 
+                <div className="col-sm-10">
+                     <h2 className="text-center">Tour Packages</h2>
+                     <p className="font font24">
+                          Exciting and satisfying trips to your dream destinations are just a call away. Our thoughtful tour packages are structured to provide exclusive tour options to your wonderlands.
+                     </p>
+                </div> 
+                <div className="col-sm-1"></div>           
+           </div>            
+           <div className="row background-palegoldenrod p-3">
+                <div className="col-sm-2"></div> 
+                <div className="col-sm-8">
+                     <InternationalTourPackageCarousel/>
+                </div> 
+                <div className="col-sm-2"></div>           
+           </div> 
+           <div className="row background-palegoldenrod p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-6"></div>
+                <div className="col-sm-4 text-end">
+                     <Link to="/tour-packages-intro" className="text-decoration-none link-dark">
+                          <span className="fs-4 text-danger fw-bold rounded p-2">All Tour Packages&#129146;</span>
+                     </Link>
+                </div>
+                <div className="col-sm-1"></div>
+                
+           </div>   
+      </>);
+}
+//Tourism
+function TourismHomePage(){
+      return(<>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2 className="text-center">Special Tourism</h2>
+                     <p className="font font24">
+                          Do you want to embark on a different journey that can entail new experiences and knowledge? If so, why not try our exclusive adventure, eco, and historical tourism options?  
+                     </p>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-2"></div>
+                <div className="col-sm-8">
+                     <TourismServices/>
+                </div>
+                <div className="col-sm-2"></div>
+           </div>      
       </>);
 }
 
-//Last Body
-function LastBody(){
+
+//Why Choose Us
+function WhyChooseUs(){
       return(<>
-          <WhyChooseUs/>
+           <div className="row background-palegoldenrod p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                    <h2 className="text-center">Why Choose Aeiety Trips?</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-palegoldenrod p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <section className="font font22">
+                          <p>
+                               There can be justifiable reasons behind selecting us. We are a travel agency dedicated to offering you satisfying travel options. At Aeiety Trips, we maintain trust in our services. Our operating policies revolve around the customer. We take ample care to eliminate customers' pain points. That helps us to fine-tune our operations, giving them the best experience. Customer satisfaction is the focus of every aspect of our dedicated operations.
+                          </p>
+                          <p>
+                               Affordability is the core tenant of our thoughtful pricing structure. We refrain from charging excessive and unreasonable prices, ensuring customers get value for their money. In addition, our pricing structure is free of any hidden costs.
+                          </p>
+                          <p>
+                               Timeliness is a characteristic feature of our operations. Therefore, customers are not susceptible to the consequences of late arrivals.
+                          </p>
+                          <p>
+                               At Aeiety Trips, customer-centricity and transparency are among the core features. We ensure the best deals for our customers without hassles, entailing their satisfaction. We are an excellent travel agency with curated services. Therefore, experience our best-in-class services and gain a lifetime memory.
+                          </p>
+                     </section>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>              
       </>);
 }

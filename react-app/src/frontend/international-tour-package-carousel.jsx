@@ -23,49 +23,38 @@ const responsive = {
 //Main export function
 export default function InternationalTourPackageCarousel(){
 return(<>
-     <div className="row background-mintcream">
-         <div className="col-sm-2"></div>
-         <div className="col-sm-8 padding25">
-              <h2 className="text-center">International Tour Packages</h2>
-         </div>
-         <div className="col-sm-2"></div>
-     </div>
-     <div className="row background-mintcream">
-         <div className="col-sm-1"></div>
-         <div className="col-sm-10">
+     
              <Carousel responsive={responsive}>
                  <div>
-                     <div className="card rounded p-1 m-1 shadow-sm">
-                         <a href="/bhutan-tour-packages" className="text-decoration-none text-dark">
-                             <img src="https://i.postimg.cc/zBC6XbwG/bhutancar.png" class="card-img-top img-fluid" alt="Bhutan Package"/>
-                             <div className="card-footer text-center">Bhutan</div>
-                         </a>
+                     <div className="card border-0 rounded p-0 m-1">
+                         <div className="card-body p-0 m-0">
+                             <a href="/bhutan-tour-packages" className="text-decoration-none text-dark">
+                                 <img src="https://i.postimg.cc/SxVtxr1d/Bhutan-Carousel.webp" class="img-fluid rounded shadow-sm w-100 p-0 m-0" alt="Bhutan Package"/>                             
+                             </a>
+                         </div>                         
                      </div>
                  </div>
                  <div>
-                     <div className="card rounded p-1 m-1 shadow-sm">
-                         <img src="https://i.postimg.cc/gJXpmqNF/srilankacar.png" class="card-img-top img-fluid" alt="Sri Lanka Package"/>
-                         <div className="card-footer text-center">Sri Lanka</div>
+                     <div className="card border-0 rounded p-0 m-1">
+                         <div className="card-body p-0 m-0">
+                             <img src="https://i.postimg.cc/XJB2x0j1/New-Zealand-Carousel.webp" class="img-fluid rounded shadow-sm w-100 p-0 m-0" alt="New Zealand Package"/>
+                         </div>
                      </div>
                  </div>
-                 <div>
-                     <div className="card rounded p-1 m-1 shadow-sm">
-                         <img src="https://i.postimg.cc/T1BpT3rQ/maldivescar.png" class="card-img-top img-fluid" alt="Maldives Package"/>
-                         <div className="card-footer text-center">Maldives</div>
-                     </div>
+                 <div>                     
+                     <div className="card border-0 rounded p-0 m-1">
+                         <div className="card-body p-0 m-0">
+                             <img src="https://i.postimg.cc/q7RDh39T/Dubai-Carousel.webp" class="img-fluid rounded shadow-sm w-100 p-0 m-0" alt="Dubai Package"/>
+                         </div>
+                     </div>                     
                  </div>
-                 <div>
-                       <div className="card rounded p-1 m-1 shadow-sm">
-                         <img src="https://i.postimg.cc/Kj8HmZZK/dubaicar.png" class="card-img-top img-fluid" alt="Maldives Package"/>
-                         <div className="card-footer text-center">Dubai</div>
-                       </div>
-                 </div>
-             </Carousel>; 
-         </div>             
-         <div className="col-sm-1"></div>
-     </div>
-     <div className="row background-mintcream">
-         <div className="col-sm-12 padding25"></div>
-     </div>   
+                 <div>                     
+                     <div className="card border-0 rounded p-0 m-1">
+                         <div className="card-body p-0 m-0">
+                             <img src="https://i.postimg.cc/25Kc45DB/Maldives-Carousel.webp" class="img-fluid rounded shadow-sm w-100 p-0 m-0" alt="Maldives Package"/>
+                         </div>
+                     </div>                     
+                 </div>                 
+             </Carousel>;           
  </>);
 }
