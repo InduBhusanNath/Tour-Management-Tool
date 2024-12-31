@@ -4,10 +4,10 @@ import CabBooking from "./cab_booking";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Collapsible from 'react-collapsible';
 import OurPrinciples from "./OurPrinciples";
-import TaxiServiceDisplay from "./taxi-service-display";
 import TourismServices from "./tourism-service";
 import InternationalTourPackageCarousel from "./international-tour-package-carousel";
 import { Link } from "react-router-dom";
+import CabTypes from "./cab-types";
 
 
 
@@ -117,11 +117,11 @@ function CabServiceHomePage(){
                 <div className="col-sm-1"></div>
            </div>           
            <div className="row background-lemonchiffon p-3">
-                <div className="col-sm-1"></div>
-                <div className="col-sm-10">
-                     <TaxiServiceDisplay/>
-                </div>
-                <div className="col-sm-1"></div>
+                <div className="col-sm-1"></div>                
+                <div className="col-sm-10 p-0 m-0">
+                     <CabTypes/>
+                </div>  
+                <div className="col-sm-1"></div>                  
            </div>
            <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>

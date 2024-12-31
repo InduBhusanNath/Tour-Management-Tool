@@ -416,6 +416,10 @@ function Body4(){
                           <p>
                                Robert Reid, the then Governor of Assam inaugurated it on 21st April 1940. It is a must-see entity in the city. Assam State Museum is near Dighalipukhuri. 
                           </p>
+                          <h3><span className="text-dark badge bg-primary-subtle">Science Museum: Knowledge and Entertainment </span></h3>
+                          <p>
+                               The National Science Centre is the official name of the Science Museum. It is among the important places to visit in Guwahati. You can hire our affordable Guwahati taxi service to reach the science museum, located in Khanapara. You can learn many aspects of science by visiting the museum. Moreover, you can get the opportunity to participate in the science exhibitions and activities the museum organizes from time to time. Notably, you can enjoy the regular 3-D film shows on science in the museum. There are picnic facilities inside the museum premises. As such, you can enjoy a picnic with your family there. The science museum is 32 km away from the airport. You can rent our airport taxi Guwahati to visit the National Science Centre.
+                          </p>
                      </section>
                 </div>
                 <div className="col-sm-1"></div>

@@ -33,14 +33,14 @@ function TechnicalSEO(){
      return(<>
             <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Cab Service in Delhi-Always on Time</title>                
-                <meta name="description" content="Use our efficient cab service in Delhi. We at Aeiety Trips run reliable taxi service, ensuring timely pickup and reasonable fares."/>
+                <title>Delhi Taxi| Always on Time, Satisfying, Affordable Prices</title>                
+                <meta name="description" content="Searching for a trusted and efficient Delhi taxi service? Discover what makes us a preferred provider of Delhi airport taxi and cab service in Delhi."/>
                 <link rel="canonical" href="https://aeiety.com/delhi-taxi"/>
                 <meta property="og:title" content="Taxi Service in Delhi by Aeiety Trips"/>
                 <meta property="og:url" content="https://aeiety.com/delhi-taxi"/>
                 <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
                 <meta property="og:type" content="Web Page"/>
-                <meta property="og:description" content="Learn about the excellent cab service in Delhi by Aeiety Trips."/>
+                <meta property="og:description" content="Learn about the excellent Delhi taxi service by Aeiety Trips."/>
                 <meta property="og:locale" content="en_GB" />
             </Helmet>
      
@@ -79,10 +79,10 @@ function Body1(){
            <div className="row background-lemonchiffon">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-7 p-4 m-1">
-                     <h1>We Run Dependable Cab Service in Delhi&#9889;</h1>
+                     <h1>We Provide You With Reliable Delhi Taxi Rides &#9889;</h1>
                      <p className="font font24 fw-bold text-muted">Experience More Satisfaction and Zero Hassles </p>
                      <p className="font font22">
-                          Cab service in Delhi by Aeiety Trips is more affordable and satisfying. We focus on easing and streamlining taxi rides in the city's busy environment. Due to our comprehensive spectrum of offerings, you will get local and outstation taxi service in Delhi for all needs. Whether you need a cab for business travel, an official trip, a sightseeing tour, an airport transfer, or carrying a patient to the hospital, you all get them from us. A combination of safety, timeliness, reasonable pricing, and focus on customer satisfaction renders Aeiety Trips the number one choice for satisfying Delhi taxi service.        
+                          Cab travel provided by Aeiety Trips is more affordable and satisfying. We focus on easing and streamlining taxi rides in the city's busy environment. Due to our comprehensive spectrum of offerings, you will get a reliable Delhi taxi for all your needs. Whether you need a cab for business travel, an official trip, a sightseeing tour, an airport transfer, or carrying a patient to the hospital, you will get local and outstation taxi service in Delhi from us. A combination of safety, timeliness, reasonable pricing, and focus on customer satisfaction renders Aeiety Trips the number one choice. We also serve satisfying Delhi airport taxi transfers.  
                      </p>
                      <p>
                           <button type="button" class="btn btn-warning shadow"><a href="/" className="action">Book Taxi in Delhi&nbsp;&#129146;</a></button> 
@@ -122,7 +122,13 @@ function Body1(){
 //Service Features
 function TaxiServiceFeatures(){
      return(<>
-          <TaxiServiceDisplay/>
+           <div className="row background-lemonchiffon">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <TaxiServiceDisplay/>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>          
      </>);
 }
 //Body2
@@ -350,6 +356,14 @@ function Body4(){
                      </p>
                      <p className="font font22">
                           Emperor Shah Jahan started the construction of Lal Qila on 12 May 1638. The construction attained completion on 6 April 1648. You can travel to the UNESCO World Heritage Site by booking a Delhi taxi from Aeiety Trips. 
+                     </p>
+                     <h3>Mehrauli Archaeological Park</h3>
+                     <p className="font font22">
+                          Stepping into the Mehrauli Archaeological Park will take you back into the rich history of India. You can rent our affordable cab service in Delhi to visit the popular historical site in South Delhi.  It is around one kilometer away from the iconic Qutub Minar. You will find more than historically relevant monuments in the park. Interestingly, the place has been occupied for over 1,000 years. That indicates the importance of the Mehrauli Archaeological Park. Hiring our local Delhi taxi service can allow you to reach the park in less time. Inside the Mehrauli Archaeological Park, you will see the ancient Lal Kot built during the Tomar era. Interestingly, that is the oldest fort in Delhi. In addition, there are forts built by the Khalji, Tughlaq, Lodhi, and Mughal dynasties. Visiting the Mehrauli Archaeological Park can be educative and entertaining.
+                     </p>
+                     <h3>The National Museum</h3>
+                     <p className="font font22">
+                          It is among the important places to visit in Delhi. Our reliable Delhi taxi service can transport you to Janpath Road. As such, you can reach the museum, established in 1949, smoothly. Visiting the National Museum will entail educative value. You will see around two lakh artworks inside the museum. Interestingly, some are more than five thousand years old. You will visualize the rich history of India by visiting the museum in the country's national capital. After visiting the National Museum, you can rent our best taxi service in Delhi to visit the nearby places of importance, such as the India Gate and the Parliament.
                      </p>
                     
               </div>
