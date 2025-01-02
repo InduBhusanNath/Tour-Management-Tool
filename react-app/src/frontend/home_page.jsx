@@ -54,7 +54,7 @@ function Banner(){
       return(<>
            <div className="row">
                 <div className="col-sm-12 p-0 m-0">
-                     <img src="https://i.postimg.cc/ryn8Crjs/Home-Page-Aeiety.webp" alt="Aeiety Trips" className="img-fluid w-100 p-0 m-0"/>                     
+                     <img src="https://i.postimg.cc/cH8VRsfH/Home-Page-Aeiety.webp" alt="Aeiety Trips" className="img-fluid w-100 p-0 m-0"/>                     
                 </div>
            </div>
       </>);

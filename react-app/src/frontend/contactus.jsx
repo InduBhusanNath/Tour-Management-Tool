@@ -1,39 +1,47 @@
 import Header from "./header";
 import Footer from "./footer";
-import {Helmet} from "react-helmet";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import ContactUsMessage from "./contactus_message";
 //Contact Us
 export default function ContactUs(){
        return(<>
-                 <TechnicalSEO/>
-                <div className="container-fluid">                         
-                         <Header/>
-                         <Banner/>
-                         <BreadCrumb/>
-                         <Body/>
-                         <Footer/>                
-                 </div>
+                 <HelmetProvider>
+                         <TechnicalSEO/>
+                         <div className="container-fluid">                         
+                                 <Header/>
+                                 <Banner/>
+                                 <BreadCrumb/>
+                                 <Intro/>
+                                 <Description1/>
+                                 <Footer/>                
+                         </div>
+                 </HelmetProvider>                 
          </>);
 }
 //Technical SEO
 function TechnicalSEO(){
-        return(<>
-                
-                 <Helmet>
+        return(<>                
+                <Helmet>
                          <meta charSet="utf-8"/>
-                         <title>Cab booking at Affordable Fares: Reliable, Safe, Timely </title>                
-                         <meta name="description" content="Searching for dependable cab booking? Book taxi at affordable fare and undergo the best cab travel experience. Our customer service is available 24/7. "/>
+                         <title>Contact Aeiety Trips | Solve Your Queries, Let Us Help You</title>                
+                         <meta name="description" content="Get in touch with us to resolve your queries, learn more about our services, or discover how we can plan the best trip for realizing your dream vacation."/>
                          <link rel="canonical" href="https://aeiety.com/contactus"/>
-                 </Helmet>
+                         <meta property="og:title" content="Contact Aeiety Trips"/>
+                         <meta property="og:url" content="https://aeiety.com/contactus"/>
+                         <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
+                         <meta property="og:type" content="Web Page"/>
+                         <meta property="og:description" content="Contact Aeiety Trips."/>
+                         <meta property="og:locale" content="en_GB" />
+               </Helmet>
         
         </>);
-   }
+ }
 //Banner
 function Banner(){
         return(<>
                  <div className="row">
                          <div className="col-sm-12 p-0 m-0">
-                               <img src="./MainImages/contactus.png" alt="AeietyTrips" className="img-fluid w-100"/>                                 
+                               <img src="https://i.postimg.cc/NMBQj93t/Contact-Us-Banner.webp" alt="Contact Aeiety Trips" className="img-fluid w-100 p-0 m-0"/>                                 
                          </div>
                  </div>
         </>);
@@ -41,30 +49,39 @@ function Banner(){
 //Breadcrumb
 function BreadCrumb(){
         return(<>
-                 <div className="row">
-                         <div className="col-sm-12 bg-light bg-gradient">                                 
-                                         <nav aria-label="breadcrumb">
-                                                 <ol class="breadcrumb">
-                                                         <li class="breadcrumb-item"><a href="/">Home</a></li>
-                                                         <li class="breadcrumb-item"><a href="/aboutus">About Us</a></li>
-                                                         <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
-                                                 </ol>
-                                         </nav> 
+                 <div className="row background-azure">
+                         <div className="col-sm-12">                                 
+                                 <nav aria-label="breadcrumb">
+                                         <ol class="breadcrumb">
+                                                 <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                                 <li class="breadcrumb-item"><a href="/aboutus">About Us</a></li>
+                                                 <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                                         </ol>
+                                 </nav> 
                          </div>
                  </div>
         </>);
     }
-//Body
-function Body(){
+ //Intro
+ function Intro(){
          return(<>
-                 <div className="row">
+                 <div className="row background-azure p-3">
                          <div className="col-sm-1"></div>
-                         <div className="col-sm-10 padding25">
-                                 <h1>Get in Touch With Us to Assist You in Every Aspect of Your Trip. Whether it is Cab Booking or Trip Consultation, We are Ready to Serve You.</h1>
+                         <div className="col-sm-10">
+                                 <h1>Get in Touch With Us to Assist You in Every Aspect of Your Trip</h1>
+                                 <p className="font font24 text-center">
+                                         Whether it is Cab Booking or Trip Consultation, We are Ready to Serve You
+                                 </p>
                          </div>
                          <div className="col-sm-1"></div>
-                </div>
-                <div className="row">   
+                 </div>         
+         </>);
+ }
+//Body
+function Description1(){
+         return(<>
+                 
+                <div className="row background-azure p-3">   
                          <div className="col-sm-1"></div>                      
                          <div className="col-sm-4 padding25">
                                  <section>
