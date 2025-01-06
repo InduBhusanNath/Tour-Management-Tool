@@ -4,13 +4,13 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Link } from "react-router-dom";
 import Collapsible from 'react-collapsible';
 import TaxiServiceDisplay from "./taxi-service-display";
-export default function TaxiService(){
+export default function Taxis(){
     return(<>
        <HelmetProvider>
              <TechnicalSEO/>
              <div className="container-fluid">
                    <Header/>
-                   <TaxiServiceBanner/>
+                   <TaxisBanner/>
                    <BreadCrumb/>
                    <Intro/>
                    <Description1/>
@@ -28,24 +28,24 @@ function TechnicalSEO(){
    return(<>           
            <Helmet>
               <meta charSet="utf-8"/>
-              <title>#1 Taxi Service | Timely, Comfortable, Affordable Rides</title>                
-              <meta name="description" content="Looking for a reliable taxi service for comfortable and affordable rides? Look no further, simplify your taxi rides with our quick and easy cab booking options."/>
-              <link rel="canonical" href="https://aeiety.com/taxi-service"/>
-              <meta property="og:title" content="Taxi Service by Aeiety Trips"/>
-              <meta property="og:url" content="https://aeiety.com/taxi-service"/>
+              <title>Taxis | Quick, Safe, Comfortable, Trusted for Seamless Rides</title>                
+              <meta name="description" content="Get reliable taxis for all needs. We provide excellent cabs for local, outstation, airport, sightseeing, and corporate trips, with timely pickups and drop offs."/>
+              <link rel="canonical" href="https://aeiety.com/taxis"/>
+              <meta property="og:title" content="Taxis by Aeiety Trips"/>
+              <meta property="og:url" content="https://aeiety.com/taxis"/>
               <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
               <meta property="og:type" content="Web Page"/>
-              <meta property="og:description" content="Learn about taxi service by Aeiety Trips."/>
+              <meta property="og:description" content="Learn about taxis by Aeiety Trips."/>
               <meta property="og:locale" content="en_GB"/>
           </Helmet>
    </>);
 }
 //Banner
-function TaxiServiceBanner(){
+function TaxisBanner(){
        return(<>
              <div className="row">
                    <div className="col-sm-12 p-0 m-0">
-                      <img src="https://i.postimg.cc/HkDPJbnF/Taxi-Service-Banner.webp" alt="cab service" className="img-fluid w-100 p-0 m-0"/>
+                      <img src="https://i.postimg.cc/3RDQcsSc/Taxis-Banner.webp" alt="cabs" className="img-fluid w-100 p-0 m-0"/>
                    </div>
              </div>       
        </>);
@@ -59,7 +59,7 @@ function BreadCrumb(){
                                <ol class="breadcrumb">
                                      <li class="breadcrumb-item"><a href="/">Home</a></li>
                                      <li class="breadcrumb-item"><a href="/aboutus">About Us</a></li>
-                                     <li class="breadcrumb-item active" aria-current="page">Taxi Service</li>
+                                     <li class="breadcrumb-item active" aria-current="page">Taxis</li>
                                </ol>
                          </nav> 
                    </div>
@@ -72,7 +72,7 @@ function Intro(){
        <div className="row background-mintcream p-3">
              <div className="col-sm-1"></div>
              <div className="col-sm-10">
-                   <h1 className="text-center">We Give You the Best Taxi Service Experience </h1>
+                   <h1 className="text-center">Taxis Giving You the Best Experience</h1>
              </div>
              <div className="col-sm-1"></div>
        </div>
@@ -80,8 +80,12 @@ function Intro(){
              <div className="col-sm-1"></div>
              <div className="col-sm-10">
                    <section className="font font22">                                    
-                         <p>Your search for a trusted taxi service is now over. It is because you found us. We at Aeiety Trips strive to provide customers with satisfying cab rental services. A cab booking with us can allow you to travel to your destination seamlessly.  You will find our cabs timely, comfortable, safe, and affordable. As such, you will experience a satisfying taxi ride. We plan and run our cab operations carefully, keeping the customer at the center of everything. We aim to eliminate customers’ pain points and give them the best experience. Choosing Aeiety Trips can provide value for your money and time. </p>
-                         <p>Aeiety Trips’ taxi service can be the perfect choice for foreign tourists because of our comprehensive knowledge of tourist spots. In addition, our in-depth knowledge of hotels makes us the most preferred cab service provider for them. Due to this, they can rely on us to recommend the best hotels Besides, our quick cab booking facility can allow them to book cabs in advance before they leave their home countries. Due to our customer-centric policies, they will experience hassle-free taxi rides to local and outstation destinations. Our reasonable pricing will allow them to avoid excessive spending on taxi travel.</p>
+                         <p>
+                               At Aeiety Trips, the customer is the focal point. You will find its reflection in every aspect of our dedicated services. As such, your search for trusted taxis is over. It is because you found us. We strive to provide customers with satisfying cab rental services. Availing of our dedicated services can allow you to travel to your destination seamlessly.  You will find our cabs timely, comfortable, safe, and affordable. As such, you will experience a satisfying taxi ride. We plan and run our operations carefully, keeping the customer at the center of everything. We aim to eliminate customers’ pain points and give them the best experience. Choosing Aeiety Trips can provide value for your money and time. 
+                         </p>
+                         <p>
+                               Our excellent taxis can be the perfect choice for foreign tourists because of our comprehensive knowledge of tourist spots. In addition, our in-depth knowledge of hotels makes us the most preferred service provider for them. Due to this, they can rely on us to know about the best hotels. Besides, our quick booking facility allows them to book cabs in advance before they leave their home countries. Due to our customer-centric policies, they will experience hassle-free rides to local and outstation destinations. Our reasonable pricing will allow them to avoid excessive spending on their travel.
+                         </p>
                                                              
                    </section>
              </div>

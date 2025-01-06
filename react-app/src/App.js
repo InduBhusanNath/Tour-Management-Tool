@@ -8,7 +8,7 @@ import {
 
 import HomePage from "./frontend/home_page";
 import AboutUs from "./frontend/aboutus";
-import TaxiService from "./frontend/taxi-service";
+import Taxis from "./frontend/taxis";
 import DelhiTaxi from "./frontend/delhi-taxi";
 import GuwahatiTaxi from "./frontend/guwahati-taxi";
 import BlogPage from "./frontend/blog-page";
@@ -56,8 +56,8 @@ const router=createBrowserRouter([
    element:<AboutUs/>
   },
   {
-    path:"/taxi-service",
-    element:<TaxiService/>
+    path:"/taxis",
+    element:<Taxis/>
    },
   {
    path:"/delhi-taxi",

@@ -127,7 +127,7 @@ function CabServiceHomePage(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-6"></div>
                 <div className="col-sm-4 text-end">
-                     <Link to="/taxi-service" className="text-decoration-none link-dark">
+                     <Link to="/taxis" className="text-decoration-none link-dark">
                           <span className="fs-4 text-danger fw-bold rounded p-2">Taxi Service&#129146;</span>
                      </Link>
                 </div>
