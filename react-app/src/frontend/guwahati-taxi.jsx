@@ -32,8 +32,8 @@ function TechnicalSEO(){
              
              <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Cab Service in Guwahati-#1 Choice</title>                
-                <meta name="description" content="Get dedicated cab service in Guwahati from Aeiety Trips. We provide safe, smooth and timely Guwahati taxi service at affordable prices for local and outstation."/>
+                <title>Cab Service in Guwahati | For Assam, Meghalaya, Arunachal</title>                
+                <meta name="description" content="Get the best cab service in Guwahati for local and outstation rides at reasonable prices. We provide cabs for all places in Assam and northeastern states."/>
                 <link rel="canonical" href="https://aeiety.com/guwahati-taxi"/>
                 <meta property="og:title" content="Taxi Service in Guwahati by Aeiety Trips"/>
                 <meta property="og:url" content="https://aeiety.com/guwahati-taxi"/>

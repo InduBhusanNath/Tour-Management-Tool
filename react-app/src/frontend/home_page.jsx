@@ -19,12 +19,12 @@ export default function HomePage(){
                 <div className="container-fluid">                     
                      <Header/>
                      <Banner/>
-                     <Intro/>
-                     <OurGoverningPrinciples/>                     
+                     <Intro/>                                       
                      <CabServiceHomePage/>
                      <TourPackageHomePage/>
                      <TourismHomePage/>
-                     <WhyChooseUs/>                                          
+                     <WhyChooseUs/>
+                     <OurGoverningPrinciples/>                                             
                      <Footer/>
                 </div>   
            </HelmetProvider>  
@@ -76,9 +76,11 @@ function Intro(){
            <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <p className="font font22">
-                          We at Aeiety Trips work dedicatedly to enable you to experience the best travel. As a premier travel agency, we offer exciting and satisfying travel options. You can choose anything from taxi services, tourism options, tour packages, or cruise services. We strive to give the most fulfilling travel experience. That is why we run our operations with customer-centric policies. Our principal focus is your satisfaction, which is also the benchmark of our success. Our continuous emphasis on eliminating hassles and shortcomings has fine-tuned our services. As such, you will experience the best from whichever service you avail of from us. We are committed to operating Aeiety Trips with the governing tenets of affordability, timeliness, safety, and customer satisfaction.
-                     </p>                                        
+                     <section >
+                          <p className="font font22">
+                               We at Aeiety Trips work dedicatedly to enable you to experience the best travel. As a premier travel agency, we offer exciting and satisfying travel options. You can choose anything from taxi services, tourism options, tour packages, or cruise services. We strive to give the most fulfilling travel experience. That is why we run our operations with customer-centric policies. Our principal focus is your satisfaction, which is also the benchmark of our success. Our continuous emphasis on eliminating hassles and shortcomings has fine-tuned our services. As such, you will experience the best from whichever service you avail of from us. We are committed to operating Aeiety Trips with the governing tenets of affordability, timeliness, safety, and customer satisfaction.
+                          </p>
+                     </section>                                        
                 </div>
                 <div className="col-sm-1"></div>
            </div>
@@ -106,7 +108,7 @@ function OurGoverningPrinciples(){
 //Cab Service 
 function CabServiceHomePage(){
       return(<>
-           <div className="row background-lemonchiffon p-3">
+           <div className="row background-palegoldenrod p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h2 className="text-center">Taxi Service</h2>
@@ -116,14 +118,14 @@ function CabServiceHomePage(){
                 </div>
                 <div className="col-sm-1"></div>
            </div>           
-           <div className="row background-lemonchiffon p-3">
+           <div className="row background-palegoldenrod p-3">
                 <div className="col-sm-1"></div>                
                 <div className="col-sm-10 p-0 m-0">
                      <CabTypes/>
                 </div>  
                 <div className="col-sm-1"></div>                  
            </div>
-           <div className="row background-lemonchiffon p-3">
+           <div className="row background-palegoldenrod p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-6"></div>
                 <div className="col-sm-4 text-end">
@@ -139,7 +141,7 @@ function CabServiceHomePage(){
 //Tour Package
 function TourPackageHomePage(){
       return(<>
-           <div className="row background-palegoldenrod p-3">
+           <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div> 
                 <div className="col-sm-10">
                      <h2 className="text-center">Tour Packages</h2>
@@ -149,14 +151,14 @@ function TourPackageHomePage(){
                 </div> 
                 <div className="col-sm-1"></div>           
            </div>            
-           <div className="row background-palegoldenrod p-3">
+           <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-2"></div> 
                 <div className="col-sm-8">
                      <InternationalTourPackageCarousel/>
                 </div> 
                 <div className="col-sm-2"></div>           
            </div> 
-           <div className="row background-palegoldenrod p-3">
+           <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-6"></div>
                 <div className="col-sm-4 text-end">
@@ -172,7 +174,7 @@ function TourPackageHomePage(){
 //Tourism
 function TourismHomePage(){
       return(<>
-           <div className="row background-lemonchiffon p-3">
+           <div className="row background-palegoldenrod p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h2 className="text-center">Special Tourism</h2>
@@ -182,7 +184,7 @@ function TourismHomePage(){
                 </div>
                 <div className="col-sm-1"></div>
            </div>
-           <div className="row background-lemonchiffon p-3">
+           <div className="row background-palegoldenrod p-3">
                 <div className="col-sm-2"></div>
                 <div className="col-sm-8">
                      <TourismServices/>
@@ -196,14 +198,14 @@ function TourismHomePage(){
 //Why Choose Us
 function WhyChooseUs(){
       return(<>
-           <div className="row background-palegoldenrod p-3">
+           <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                     <h2 className="text-center">Why Choose Aeiety Trips?</h2>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
-           <div className="row background-palegoldenrod p-3">
+           <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <section className="font font22">
