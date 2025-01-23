@@ -92,7 +92,7 @@ function OurGoverningPrinciples(){
            <div className="row background-palegoldenrod p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h2 className="text-center">The Principles We Stand Upon</h2>
+                     <h2 className="text-center">Our Principles Benefitting You</h2>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
@@ -130,7 +130,7 @@ function CabServiceHomePage(){
                 <div className="col-sm-6"></div>
                 <div className="col-sm-4 text-end">
                      <Link to="/taxis" className="text-decoration-none link-dark">
-                          <span className="fs-4 text-danger fw-bold rounded p-2">Taxi Service&#129146;</span>
+                          <span className="fs-4 text-danger fw-bold rounded p-2">Taxi Service&#x1F86A;</span>
                      </Link>
                 </div>
                 <div className="col-sm-1"></div>
@@ -163,7 +163,7 @@ function TourPackageHomePage(){
                 <div className="col-sm-6"></div>
                 <div className="col-sm-4 text-end">
                      <Link to="/tour-packages-intro" className="text-decoration-none link-dark">
-                          <span className="fs-4 text-danger fw-bold rounded p-2">All Tour Packages&#129146;</span>
+                          <span className="fs-4 text-danger fw-bold rounded p-2">All Tour Packages&#x1F86A;</span>
                      </Link>
                 </div>
                 <div className="col-sm-1"></div>

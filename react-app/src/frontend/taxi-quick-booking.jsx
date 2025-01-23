@@ -1,26 +1,21 @@
 export default function TaxiQuickBooking(){
      return(<>
-         <div className="card-group shadow rounded-3">
-             <div className="card bg-warning border-0">
-                 <div className="card-body">
-                     <section className="text-center p-3">
-                          <p className="fs-3 text-danger">For QUICK Taxi Booking</p>
+         <div className="card-group shadow-sm">
+             <div className="card border-0 p-0 m-0">
+                 <div className="card-body p-0 m-0">
+                     <section className="text-center bg-info bg-gradient p-3">
+                         <p className="fs-1 fw-bold">For Quick</p>
+                         <p className="fs-1 fw-bold">Cab BOOKING</p>
                      </section>
-                 </div>
+                 </div>                 
              </div>
-             <div className="card bg-warning border-0">
-                 <div className="card-body">
-                     <section className="text-center p-3">
-                          <p className="fs-3 text-danger">Call/Whatsapp</p>
+             <div className="card border-0 p-0 m-0">
+                 <div className="card-body p-0 m-0">
+                     <section className="text-center bg-info bg-gradient p-3">
+                         <p className="fs-1 fw-bold">Call/Whatsapp</p>
+                         <p className="fs-1 fw-bold"> (+91) 9531393648</p>
                      </section>
-                 </div>
-             </div>
-             <div className="card bg-warning border-0">
-                 <div className="card-body">
-                     <section className="text-center p-3">
-                          <p className="fs-3 text-danger">(+91)9531393648</p>
-                     </section>
-                 </div>
+                 </div>                 
              </div>
          </div>
      </>);

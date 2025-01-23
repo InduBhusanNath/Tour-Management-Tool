@@ -54,7 +54,7 @@ function DelhiTaxiBanner(){
      return(<>
           <div className="row">
                <div className="col-sm-12 p-0 m-0">
-                    <img src="https://i.postimg.cc/BQYrCvxm/Delhi-Cab-Banner.webp" alt="Taxi in Delhi" className="img-fluid w-100 p-0 m-0"/>
+                    <img src="https://i.postimg.cc/YSJ6JQx9/Delhi-Cab-Banner.webp" alt="Cab service in Delhi" className="img-fluid w-100 p-0 m-0"/>
                </div>
           </div>          
      </>);
@@ -68,6 +68,7 @@ function BreadCrumb(){
                                <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="/" className="link-dark">Home</a></li>
                                     <li class="breadcrumb-item"><a href="/aboutus" className="link-dark">About Us</a></li>
+                                    <li class="breadcrumb-item"><a href="/taxis" className="link-dark">Taxi</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Taxi Delhi</li>
                                </ol>
                           </nav> 
@@ -83,13 +84,11 @@ function Body1(){
            <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10 p-4 m-1">
-                     <section className="float-start p-3">
-                          <img src="https://i.postimg.cc/MG5mZvfD/Delhi-Taxi-Side-Banner.webp" alt="Taxi Service in Delhi" className="img-fluid rounded-3 shadow w-100 p-0 m-0"/>
-                     </section>                                 
+                                                     
                 
                      <h1 className="text-center">Trustworthy Delhi Taxi Service for Satisfying Rides</h1>
                      <p className="font font22">
-                           Cab travel with Aeiety Trips is affordable and satisfying, making us the preferred choice for anyone seeking a reliable Delhi taxi. We focus on simplifying and streamlining taxi rides to suit the city's busy lifestyle. With our wide range of services, you can trust Aeiety Trips for all your cab needs, including business travel, official trips, sightseeing tours, airport transfers, and even patient transport. Our dependable taxi service in Delhi caters to both local and outstation journeys, ensuring a seamless experience for every traveller. Whether you’re booking an airport taxi in Delhi or planning a sightseeing tour of Delhi, we prioritize safety, punctuality, and affordability. Aeiety Trips is proud to deliver customer satisfaction at its best, making us the top choice for trusted cab services in Delhi. Book your ride today and experience the ease of convenient travel with Aeiety Trips.
+                          You can end your search for a reliable Delhi taxi as you found us. We at Aeiety Trips strive to provide the most affordable and satisfying cab rides. We focus on easing and streamlining rides in the city's busy environment. With our comprehensive spectrum of offerings, we can provide a reliable taxi service in Delhi for all needs. Whether you need a cab for business travel, an official trip, a sightseeing tour, an airport transfer, or carrying a patient to the hospital, you will get a local taxi in Delhi. We also provide excellent Delhi outstation taxis to travel outside the city. A combination of safety, timeliness, reasonable pricing, and focus on customer satisfaction renders Aeiety Trips the number one choice.
                      </p> 
                 </div>
                 <div className="col-sm-1"></div>
@@ -135,23 +134,23 @@ function Body2(){
                 <div className="col-sm-10 p-4 m-1">
                      <h2>The Key Features of Our Dedicated Delhi Taxi Service</h2>
                      <p className="font font22">
-                           We understand the fast-paced nature of Delhi, which is why we’ve tailored our Delhi taxi services to ensure you travel swiftly and efficiently. Timely pick-ups and drop-offs are at the heart of our operations, as we strive to maximize customer satisfaction. By focusing on understanding individual customer needs, we offer customized taxi rental services in Delhi that cater to diverse requirements. Our taxi service in Delhi is also optimized for outstation trips, streamlining the high demand for cabs traveling outside the city. With our quick and convenient taxi booking in Delhi, you have the flexibility to book our trusted services from anywhere, at any time. Tourists visiting Delhi can also benefit from our dedicated cab rental service, knowing that we are familiar with top tourist spots and excellent accommodation options. By choosing our Delhi taxi service, visitors can enjoy a seamless travel experience while exploring the city’s rich history and culture.
+                          We understand the city's busy nature. As such, we have structured our Delhi cab service to allow you to travel quickly. That is why picking up and dropping off on time is one of our core mandates. We strive to maximize customer satisfaction. We focus on understanding customer needs. That allows us to run customized cab rental services. Also, we have optimized our customer-centric taxi service in Delhi for outstation trips to streamline the high frequency of cab requirements for tours outside the city. With the facility of a quick taxi booking in Delhi, we give you the flexibility to avail of our trusted offerings from anywhere at any time. Notably, tourists can avail of our devoted cab rental service. We are aware of good accommodation facilities and the tourist spots. As such, they can have the best experience by hiring a taxi in Delhi with us. 
                      </p>
                      <p className="font font22 fw-bold">Timeliness</p>
                      <p className="font font22">
-                          It is our foremost priority. We ensure that we pick you up at the scheduled time. We focus on allowing you to reach your destination on time, So you do not arrive late to work or miss the flight. 
+                          It is our foremost priority in our dedicated Delhi taxi service. We ensure that we pick you up at the scheduled time. We focus on allowing you to reach your destination on time, So you do not arrive late to work or miss the flight.
                      </p>
                      <p className="font font22 fw-bold">Safety</p>
                      <p className="font font22">
-                          Safety is synonymous with Aeiety Trips, the provider of reliable cab service in Delhi. We ensure safe cab travel by implementing proven safety protocols. We deploy serviced cars and experienced drivers. These prevent any untoward incidents during taxi travel. 
+                          Safety is synonymous with Aeiety Trips, the provider of reliable cab service in Delhi. We ensure safe cab travel by implementing proven safety protocols. We deploy serviced cars and experienced drivers. These prevent any untoward incidents during taxi travel.  
                      </p>
                      <p className="font font22 fw-bold">Reasonable Pricing</p>
                      <p className="font font22">
-                          At Aeiety Trips, the Delhi taxi fare is based on the distance travelled and the type of car you choose. There are no additional charges beyond the fare quoted at the time of cab booking in Delhi. We pride ourselves on transparency—there are no hidden costs or surprise fees.We offer reasonable and competitive pricing, ensuring you won’t face excessive fares. As a result, you’ll find our taxi service in Delhi for both local and outstation trips to be highly affordable. The fare you agree upon during the booking process is the fixed fare you will pay. This ensures our customers always get great value for their money when they book a Delhi taxi with us.
+                          With Aeiety Trips, the Delhi taxi fare depends on the distance traveled and the car type. There is no pricing parameter in addition to these. You need to pay the amount we quoted for the cab booking in Delhi. There is no additional payment or hidden costs. Notably, we ask for reasonable prices. We refrain from asking for excessive fares. As such, you will find fares for local and outstation taxi service in Delhi affordable. You need to pay the fixed fare agreed upon when you book a taxi in Delhi. We enable customers to get value for their money. 
                      </p>
                      <p className="font font22 fw-bold">Cleanliness</p>
                      <p className="font font22">
-                          We ensure clean cars to prevent you from traveling in an unpleasant interior. That is why, your travel becomes pleasant when you hire a taxi in Delhi from Aeiety Trips. Our vehicles are washed frequently to maintain cleanliness. 
+                          We ensure clean cars to prevent you from traveling in an unpleasant interior. That is why your travel becomes pleasant when you book taxi in Delhi from Aeiety Trips. Our vehicles are washed frequently to maintain cleanliness. 
                      </p>
 
                </div>
@@ -257,7 +256,7 @@ function Body3(){
                <div className="col-sm-10 p-4 m-1">
                      <h2>Offerings of Our Top-Class Delhi Taxi Service</h2>
                      <p className="font font22">
-                          At Aeiety Trips, we care about your comfort and convenience. That’s why we strive to provide you with a reliable Delhi taxi for all your cab needs. Whether you require a taxi for local or outstation travel, we’ve got you covered. Our local Delhi taxi service is perfect for rides within the city, including office visits, business meetings, sightseeing tours with your family, hospital transfers, or airport pickups. Similarly, you can count on our dedicated outstation taxi service in Delhi to travel outside the city with ease and comfort, all without the usual hassles. With Aeiety Trips, you can always rely on a trustworthy taxi service in Delhi to meet all your transportation needs.
+                          We care about your trip. That is why we strive to make your taxi ride comfortable, safe, and affordable. With a trusted Delhi taxi service, we provide you with all your cab needs. It does not matter whether you need a taxi for local or outstation travel. We at Aeiety Trips provide a local taxi service in Delhi for rides within the city. As such, you can use our cabs for office visits, attending business meetings, sightseeing tours with your family, hospital visits, or airport transfers. Likewise, you can get Delhi outstation taxis to travel outside the city without hassles from Aeiety trips. We ensure you experience the best with our dedicated services. 
                      </p>
                     
               </div>
@@ -271,7 +270,7 @@ function Body4(){
           <div className="row background-lemonchiffon">
                <div className="col-sm-1"></div>
                <div className="col-sm-10 p-4 m-1">
-                     <h2 className="text-center">Offerings of Our Top-Class Delhi Taxi Service: Our Delhi Taxi Coverage</h2>
+                     <h2 className="text-center">Top Visiting Places in Delhi: The Coverage of Our Local Delhi Taxi Service</h2>
                      <h3>Qutub Minar</h3>
                      <p className="font font22">
                           The sight of the tall and iconic Qutub Minar is mentally stimulating. When you look at it from a distance, the curiosity to know how it came into being will catch your mind. It has significant historical significance. We provide the best taxi service in Delhi to transport you to the iconic site.
@@ -355,13 +354,16 @@ function Body4(){
                      </p>
                      <h3>Mehrauli Archaeological Park</h3>
                      <p className="font font22">
-                          Stepping into the Mehrauli Archaeological Park will take you back into India's rich history. You can rent our affordable cab service in Delhi to visit the popular historical site in South Delhi.  It is around one kilometer away from the iconic Qutub Minar. 
+                          You will visualize India’s rich history when you step into the historically relevant park in southern Delhi. Mehrauli Archaeological Park is in South Delhi. Our local Delhi taxi service can be the best option to reach the park.
                      </p>
                      <p className="font font22">
-                          You will find more than 100 historically relevant monuments in the park. Interestingly, the place has been occupied for over 1,000 years. That indicates the importance of the Mehrauli Archaeological Park. Hiring our local Delhi cab service can allow you to reach the park in less time. Inside the Mehrauli Archaeological Park, you will see the ancient Lal Kot built during the Tomar era. Remarkably, that is the oldest fort in Delhi. 
+                          The park is around one km away from the iconic Qutub Minar where more than a hundred historically relevant monuments are present. The length of human occupation of over one thousand years is another point of relevance.
                      </p>
                      <p className="font font22">
-                          In addition, there are forts built by the Khalji, Tughlaq, Lodhi, and Mughal dynasties. Visiting the Mehrauli Archaeological Park can be educative and entertaining. You can rent our on-time taxi in Delhi to visit Mehrauli Archaeological Park in less time. 
+                           The historical Lal Kot built during the Tomar era is a remarkable thing to see in the park. It is the oldest fort in Delhi. Rent our local Delhi cab service to reach the park in less time. 
+                     </p>
+                     <p className="font font22">
+                          In addition, there are forts built during the Mughal times in Mehrauli Archaeological Park. Visiting it can be educational and entertaining. You can rent our on-time taxi in Delhi to visit Mehrauli Archaeological Park in less time. 
                      </p>
                      <h3>The National Museum</h3>
                      <p className="font font22">
