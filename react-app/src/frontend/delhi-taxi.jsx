@@ -36,7 +36,7 @@ function TechnicalSEO(){
      return(<>
             <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Reliable Delhi Taxi  |  Affordable Taxi Service in Delhi</title>                
+                <title>Reliable Delhi Taxi | Affordable Taxi Service in Delhi</title>                
                 <meta name="description" content="Looking for a trustworthy Delhi taxi ? Get affordable, reliable, and punctual taxi service in Delhi for local and outstation travel. Book your ride today!"/>
                 <link rel="canonical" href="https://aeiety.com/delhi-taxi"/>
                 <meta property="og:title" content="Taxi Service in Delhi by Aeiety Trips"/>
