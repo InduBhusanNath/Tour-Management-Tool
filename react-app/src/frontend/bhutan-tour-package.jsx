@@ -13,8 +13,7 @@ export default function BhutanTourPackage(){
                      <Header/>
                      <BhutanTourPackageBanner/>
                      <BreadCrumb/>
-                     <Body1/>
-                     <Body1a/>
+                     <Intro/>                     
                      <ListBhutanTourPackages/>
                      <Body2/>
                      <Body3/>
@@ -78,8 +77,8 @@ function BreadCrumb(){
      </>);
  }
  
- //Body1
- function Body1(){
+ //Intro
+ function Intro(){
       return(<>
            <div className="row background-mintcream p-2">
                 <div className="col-sm-1"></div>
@@ -95,26 +94,19 @@ function BreadCrumb(){
                 <div className="col-sm-1"></div>
                 
            </div>
-      </>);
- }
- //Body1a
- function Body1a(){
-     return(<>
-          <div className="row background-mintcream p-2">
+           <div className="row background-mintcream p-2">
                <div className="col-sm-1"></div>
-               <div className="col-sm-10">                   
-                    
-                    <section className="font font22">
-                         <p>
-                               Wait no further. The time to materialize your long-cherished dream to visit Bhutan has come. We at Aeiety Trips bring exclusive Bhutan Tour Packages to you. Choose one to experience the country’s carbon-neutral atmosphere, spectacular mountains, and natural beauty. When you tour Bhutan, the country’s attractiveness will leave you spellbound. There will be opportunities to undergo exciting experiences by participating in enjoyable activities. From trekking in the spectacular Himalayan mountains to enjoying delicious local food, the uniqueness and richness of Bhutan tourism will make their presence felt in every aspect of your trip. After finishing it, you will carry lifetime memories and an urge to visit again.
-                         </p>
-                    </section>
+               <div className="col-sm-10"> 
+                     <p className="font font22">
+                          Wait no further. The time to materialize your long-cherished dream to visit Bhutan has come. We at Aeiety Trips bring exclusive Bhutan Tour Packages to you. Choose one to experience the country’s carbon-neutral atmosphere, spectacular mountains, and natural beauty. When you tour Bhutan, the country’s attractiveness will leave you spellbound. There will be opportunities to undergo exciting experiences by participating in enjoyable activities. From trekking in the spectacular Himalayan mountains to enjoying delicious local food, the uniqueness and richness of Bhutan tourism will make their presence felt in every aspect of your trip. After finishing it, you will carry lifetime memories and an urge to visit again.  
+                     </p>                    
                </div>
                <div className="col-sm-1"></div>
                
           </div>
-     </>);
-}
+      </>);
+ }
+ 
 // Tour Packages
 function ListBhutanTourPackages(){
       return(<>
@@ -141,15 +133,13 @@ function ListBhutanTourPackages(){
            </div>
            <div className="row background-mintcream">
                <div className="col-sm-1"></div>
-               <div className="col-sm-10">
-                     <section className="font font22">                          
-                          <p>
-                               The Kingdom of Bhutan is rich in a healthy atmosphere and beautiful. Our exclusive Bhutan Tour Packages will allow you to visit all the attractive tourist destinations. That means you will get the opportunity to enjoy all the places to visit in Bhutan that are distinguished by a remarkable geographical diversity. As such, you will not miss out on any attractive Bhutan tourism spots due to our thoughtfully planned packages.
-                          </p>
-                          <p>
-                               With valleys and snow-capped peaks reaching up to 7,000 m above sea level, Bhutan offers a magnificent sight. The country's biodiversity includes subtropical and lush dells, hillsides with pine forests, mountain glaciers, and wildlife. Notably, forests cover more than 70% of its land area.  When you tour Bhutan with our curated Bhutan holiday packages, you will have the opportunity to explore the attractive culture, geography, and lifestyle of the kingdom of happiness.
-                          </p>
-                     </section>
+               <div className="col-sm-10">                                             
+                     <p className="font font22">
+                          The Kingdom of Bhutan is rich in a healthy atmosphere and beautiful. Our exclusive Bhutan Tour Packages will allow you to visit all the attractive tourist destinations. That means you will get the opportunity to enjoy all the places to visit in Bhutan that are distinguished by a remarkable geographical diversity. As such, you will not miss out on any attractive Bhutan tourism spots due to our thoughtfully planned packages.
+                     </p>
+                     <p className="font font22">
+                          With valleys and snow-capped peaks reaching up to 7,000 m above sea level, Bhutan offers a magnificent sight. The country's biodiversity includes subtropical and lush dells, hillsides with pine forests, mountain glaciers, and wildlife. Notably, forests cover more than 70% of its land area.  When you tour Bhutan with our curated Bhutan holiday packages, you will have the opportunity to explore the attractive culture, geography, and lifestyle of the kingdom of happiness.
+                     </p>                     
                </div>
                <div className="col-sm-1"></div>
           </div>
@@ -167,26 +157,14 @@ function ListBhutanTourPackages(){
            </div>
            <div className="row background-mintcream">
                 <div className="col-sm-1"></div>
-                <div className="col-sm-10">
-                     <section className="font font22">
-                          <p>
-                               Our thoughtfully crafted  Bhutan holiday packages will take you to the exciting places to visit in Bhutan. In addition, delicious local food can be a part of your lifetime memory. You will find food items of the same ingredients throughout Bhutan. Cheese made of cow or yak milk, red rice, butter, buckwheat, and chilies are the popular ingredients. Delicious local food is also an attractive component of the experience when you tour Bhutan. Also, creative arts and handicrafts will leave you spellbound. As such, undergo a rich and unforgettable travel experience with our best Bhutan travel packages. You can visit solo, with your family, or in a group.
-                          </p>
-                     </section>
+                <div className="col-sm-10">                     
+                     <p className="font font22">
+                          Our thoughtfully crafted  Bhutan tour packages will take you to the exciting places to visit in Bhutan. In addition, delicious local food can be a part of your lifetime memory. You will find food items of the same ingredients throughout Bhutan. Cheese made of cow or yak milk, red rice, butter, buckwheat, and chilies are the popular ingredients. Delicious local food is also an attractive component of the experience when you tour Bhutan. Also, creative arts and handicrafts will leave you spellbound. As such, experience a rich and unforgettable trip with our best Bhutan holiday packages. You can visit solo, with your family, or in a group. Therefore, do not miss out the opportunity to make a tour to the kingdom of happiness with our excellent Bhutan tour packages. 
+                     </p>                     
                 </div>
                 <div className="col-sm-1"></div>
            </div>
-           <div className="row background-mintcream">
-                <div className="col-sm-1"></div>
-                <div className="col-sm-10">
-                     <section className="font font22">
-                          <p>
-                               There are many exciting places to visit in Bhutan. In addition, delicious local food is a major attraction. You will find food items of the same ingredients throughout Bhutan. Cheese made of cow or yak milk, red rice, butter, buckwheat, and chilies are the popular ingredients. Delicious local food is also an attractive component of Bhutan tourism. 
-                          </p>
-                     </section>
-                </div>
-                <div className="col-sm-1"></div>
-           </div> 
+           
            <div className="row background-mintcream">
                 <div className="col-sm-2"></div>
                 <div className="col-sm-8">

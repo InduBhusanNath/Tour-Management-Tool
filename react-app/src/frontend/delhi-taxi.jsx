@@ -36,8 +36,8 @@ function TechnicalSEO(){
      return(<>
             <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Delhi Taxi | Agra, Haridwar, Manali, Chandigarh, Airport</title>                
-                <meta name="description" content="Looking for a trusted Delhi taxi ? Get affordable, reliable, and punctual taxi service in Delhi for local and outstation trips. Call us to book a cab now!"/>
+                <title>Avail Our Excellent Delhi Taxi Service for Satisfying Rides</title>                
+                <meta name="description" content="Looking for a trustworthy Delhi taxi ? Get affordable, reliable, and punctual taxi service in Delhi for local and outstation trips. Call us to book a cab now!"/>
                 <link rel="canonical" href="https://aeiety.com/delhi-taxi"/>
                 <meta property="og:title" content="Taxi Service in Delhi by Aeiety Trips"/>
                 <meta property="og:url" content="https://aeiety.com/delhi-taxi"/>
@@ -80,13 +80,16 @@ function BreadCrumb(){
 //Body
 function Body1(){
       return(<>
-          
            <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
-                <div className="col-sm-10 p-4 m-1">
-                                                     
-                
-                     <h1 className="text-center">Avail Our Excellent Delhi Taxi Service for Satisfying Rides</h1>
+                <div className="col-sm-10 p-0 m-1">
+                     <h1 className="text-center">We Provide On-Time and Affordable Delhi Taxi Service</h1>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10 p-0 m-1">
                      <p className="font font22">
                           You can end your search for a reliable Delhi taxi as you found us. We at Aeiety Trips strive to provide the most affordable and satisfying cab rides. We focus on easing and streamlining rides in the city's busy environment. With the primary intent of easing your trip, we can provide a reliable taxi service in Delhi for all needs. As such, you can get a local taxi in Delhi for business travel, an official trip, a sightseeing tour, an airport transfer, or carrying a patient to the hospital. We also provide excellent Delhi outstation taxis to travel outside the city. A combination of safety, timeliness, reasonable pricing, and focus on customer satisfaction renders Aeiety Trips the number one choice.      
                      </p> 
