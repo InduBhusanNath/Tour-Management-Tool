@@ -13,32 +13,53 @@ export default function MobileMenu(){
    return(<>
          <div className="col-sm-12 background-blanchedalmond">
              <button className="show_btn" onClick={showMobMenu}>&equiv;</button>
-             <section className={mobMenu}>
-                 <button className="hide_btn" onClick={hideMobMenu}>&#10060;</button>
-                 <section className="font font20">
-                     <section className="row">
-                         <section className="col-sm">
-                             <Link to="/" className="text-decoration-none text-dark">HOME</Link>
-                             <br/>
-                             <Link to="/aboutus" className="text-decoration-none text-dark">About Us</Link>
-                             <br/>
-                             <Link to="/contactus" className="text-decoration-none text-dark">Contact Us</Link> 
-                             <br/>
-                             <Link to="/blog-page" className="text-decoration-none text-dark">Blogs</Link>
+                 <section className={mobMenu}>
+                     <button className="hide_btn" onClick={hideMobMenu}>&#10060;</button>                          
+                         <table className="table table-info table-hover">
+                             <thead>
+                                 <tr>
+                                    <th scope="col" className="text-center"><Link to="/taxis" className="font font24 text-decoration-none link-dark fw-bold">Cabs</Link></th>
+                                 </tr>
+                             </thead>
+                             <tbody>
+                                 <tr>
+                                     <td className="text-center"><Link to="/delhi-taxi" className="font font24 text-decoration-none link-dark">Delhi</Link></td>
+                                 </tr>
+                                 <tr>
+                                     <td className="text-center"><Link to="/guwahati-taxi" className="font font24 text-decoration-none link-dark">Guwahati</Link></td>
+                                 </tr>
+                             </tbody>
+                         </table>
+                         <table className="table table-info table-hover">
+                             <thead>
+                                 <tr>
+                                    <th scope="col" className="text-center"><Link to="/tour-packages-intro" className="font font24 text-decoration-none link-dark fw-bold">Tour Packages</Link></th>
+                                 </tr>
+                             </thead>
+                             <tbody>
+                                 <tr>
+                                     <td className="text-center"><Link to="/bhutan-tour-packages" className="font font24 text-decoration-none link-dark">Bhutan Tour Packages</Link></td>
+                                 </tr>
+                             </tbody>
 
-                         </section>
-                     </section>
-                     <section className="row">
-                         <span className="fw-bold">Cab Services</span>
-                         <br/>
-                         <Link to="/delhi-taxi" className="text-decoration-none text-dark">Delhi</Link>
-                         <br/>
-                         <Link to="/guwahati-taxi" className="text-decoration-none text-dark">Guwahati</Link>
-
-                     </section>
+                         </table>
+                         <table className="table table-info table-hover">
+                            <tbody>
+                                 <tr>
+                                     <td className="text-center"><Link to="/" className="font font24 text-decoration-none link-dark">HOME</Link></td>
+                                 </tr>
+                                 <tr>
+                                     <td className="text-center"><Link to="/aboutus" className="font font24 text-decoration-none link-dark">About Us</Link></td>
+                                 </tr>
+                                 <tr>
+                                     <td className="text-center"><Link to="/contactus" className="font font24 text-decoration-none link-dark">Contact Us</Link></td>
+                                 </tr>
+                                 <tr>
+                                     <td className="text-center"><Link to="/blog-page" className="font font24 text-decoration-none link-dark">Blogs</Link></td>
+                                 </tr>
+                             </tbody>
+                         </table>
                  </section>
-                
-             </section>
          </div>
          
                

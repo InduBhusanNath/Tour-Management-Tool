@@ -25,6 +25,18 @@ function Foot(){
 
                                  </p>
                          </section>
+                         <section className="text-center">
+                                 <a href="https://www.facebook.com/aeietytrips/" target="_blank" rel="noopener noreferrer" className="text-decoration-none"><FontAwesomeIcon icon={faFacebook}/></a>
+                                 &nbsp;&nbsp;
+                                 <FontAwesomeIcon icon={faTwitter} />
+                                 &nbsp;&nbsp;
+                                 <FontAwesomeIcon icon={faLinkedin} />
+                                 &nbsp;&nbsp;
+                                 <a href="https://www.youtube.com/@aeiety-trips" target="_blank" rel="noopener noreferrer" className="text-decoration-none"><FontAwesomeIcon icon={faYoutube} /></a>
+                                 &nbsp;&nbsp;
+                                 <FontAwesomeIcon icon={faInstagram} />
+
+                         </section>
                          
                          
                  </div>
@@ -48,6 +60,8 @@ function Foot(){
                  <div className="col-sm-3">
                          <section>
                                  <p className="font font24 fw-bold">Services</p>
+                                 &#10132;&nbsp;<Link to="/taxis" className="text-decoration-none text-dark">Cabs</Link>
+                                 <br/>
                                  &#10132;&nbsp;<Link to="/delhi-taxi" className="text-decoration-none text-dark">Delhi Taxi</Link>
                                  <br/>
                                  &#10132;&nbsp;<Link to="/guwahati-taxi" className="text-decoration-none text-dark">Guwahati Taxi</Link>
@@ -57,6 +71,8 @@ function Foot(){
                                  &#10132;&nbsp;<Link to="/eco-tourism" className="text-decoration-none text-dark">Eco Tourism</Link>
                                  <br/>
                                  &#10132;&nbsp;<Link to="/historical-tourism" className="text-decoration-none text-dark">Historical Tourism</Link>
+                                 <br/>
+                                 &#10132;&nbsp;<Link to="/tour-packages-intro" className="text-decoration-none text-dark">Tour Packages</Link>
 
 
                          </section>
@@ -67,21 +83,8 @@ function Foot(){
                                  <p>&#128241;&nbsp;<a href="tel:+919531393648" className="text-decoration-none text-dark">(+91) 9531393648</a></p>                                 
                                  <p>&#128231;&nbsp;trips.aeiety@gmail.com</p>  
                                  <p>&#127759;&nbsp;https://aeiety.com</p>  
-
-                                                                
                          </section>
-                         <section>
-                                 <a href="https://www.facebook.com/aeietytrips/" target="_blank" rel="noopener noreferrer" className="text-decoration-none"><FontAwesomeIcon icon={faFacebook}/></a>
-                                 &nbsp;&nbsp;
-                                 <FontAwesomeIcon icon={faTwitter} />
-                                 &nbsp;&nbsp;
-                                 <FontAwesomeIcon icon={faLinkedin} />
-                                 &nbsp;&nbsp;
-                                 <a href="https://www.youtube.com/@aeiety-trips" target="_blank" rel="noopener noreferrer" className="text-decoration-none"><FontAwesomeIcon icon={faYoutube} /></a>
-                                 &nbsp;&nbsp;
-                                 <FontAwesomeIcon icon={faInstagram} />
-
-                         </section>
+                         
                  </div>
          </row>
      </>);

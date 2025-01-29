@@ -120,16 +120,13 @@ function Whatsapp(){
            </>);  
 }
 function BasicLinks(){
-      return(<>
-           <section className="text-center font font18">
-                <nav>
+      return(<>           
+                <nav className="d-none d-sm-none d-md-none d-lg-block text-center font font18">
                      <ul>
                           <li><Link to="/aboutus" className="text-decoration-none text-dark padding5">About Us</Link></li>
                           <li><Link to="/contactus" className="text-decoration-none text-dark padding5">Contact Us</Link></li>
-                          <li><Link to="/blog-page" className="text-decoration-none text-dark padding5">Blogs</Link></li>
-                          <li><Link to="/#" className="text-decoration-none text-dark padding5">Places to Visit</Link></li>
+                          <li><Link to="/blog-page" className="text-decoration-none text-dark padding5">Blogs</Link></li>                          
                      </ul>
-                </nav>
-           </section>
+                </nav>           
       </>);
 }
