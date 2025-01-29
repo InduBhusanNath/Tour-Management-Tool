@@ -83,7 +83,7 @@ function Body1(){
            <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10 p-0 m-1">
-                     <h1 className="text-center">We Provide On-Time and Affordable Delhi Taxi Service</h1>
+                     <h1 className="text-center">Best Delhi Taxi Service Ensuring On-Time and Satisfying Rides for All Trips at Affordable Fares</h1>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
