@@ -83,7 +83,7 @@ function BreadCrumb(){
            <div className="row background-mintcream p-2">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h1 className="text-center">Exclusive Bhutan Tour Packages</h1>
+                     <h1 className="text-center">Exclusive Bhutan Tour Packages Paving the Way to Experience the Kindom of Happiness </h1>
 
                      <section className="font font22 text-center">
                           <p>
@@ -289,20 +289,23 @@ function Thimphu(){
           <div className="row background-mintcream">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
-                    <section className="font font22">
-                         <p>
-                               It is the Bhutan capital city. Thimphu is one of the major tourist places in Bhutan. Tourists can explore the city with one of our exclusive Bhutan tour packages. Thimphu town is at an altitude of 2,248 to 2,648 meters. If a list of the world's highest cities is made, Thimphu will be in the sixth position. It became the Bhutan capital in 1961. Previously, Punakha was the capital of Bhutan. 
+               
+                         <p className="font font22">
+                               It is the Bhutan capital city. Visiting the capital city with one of Aeiety Trips’ Bhutan tour packages during your vacation can be a good idea. As such, consider one of our popular Bhutan holiday packages to tour Bhutan. 
                          </p>
-                         <p>
-                               Thimphu town is the most significant hub for political, commercial, and religious activities. In the city, modern developments and ancient traditions co-exist. Notably, the city is without a traffic light. Perhaps, it is the only one of the kinds in the world. Thimphu in Bhutan has a population of approximately 90,000. 
+                         <p className="font font22">
+                               Thimphu town is the most significant hub for political, commercial, and religious activities. It became the Bhutan capital in 1961. Previously, Punakha was the capital of Bhutan. In the city, modern developments and ancient traditions co-exist. Notably, the city is without a traffic light. Perhaps, it is the only one of its kind in the world. So, tour Bhutan to experience it.
                          </p>
-                         <p>
-                               There are good lodging facilities in the city. Due to the availability of good hotels in Thimphu, a tourist in Bhutan can quickly find accommodation. 
+                         <p className="font font22">
+                               Our curated Bhutan Tour Packages can allow you to experience the beautiful city. So, you will find Thimphu in the sixth position if a list of the world's highest cities is made. Did you know at what height the town stands? The answer is: 2,248 to 2,648 meters.
                          </p>
-                         <p>
-                               There are many places to visit in Thimphu. Also, tourists will find many things to do in Thimphu. 
+                         <p className="font font22">
+                               The city's weather is generally mild. As such, people from any world region can tour Bhutan with one of Aeiety Trips’ Bhutan vacation packages. June to September are the summer months. December to February are the months of winter. The temperature in Thimphu extends from warm to cold.
                          </p>
-                    </section>
+                         <p className="font font22">
+                               There are good lodging facilities in the city. As such, a tourist in Bhutan can quickly find good hotels.There are many places to visit and many things to do there. 
+                         </p>
+                    
                </div>
                <div className="col-sm-1"></div>
           </div>           
@@ -327,14 +330,14 @@ function ThimphuVisitingPlaces(){
                                <img src="https://i.ibb.co/28yG4Ds/Buddha-Point-Upload.webp" className="img-fluid rounded shadow-sm" alt="Buddha Dordenma"/>
                           </section>
                           <section className="p-3">
-                               <p className="font font22">  
-                                    At the Kuensel Phodrang Nature Park, you will see a huge statue of Buddha. It is 54m  in height. It is called Buddha Dordenma. The place is called Buddha Point. The statue, made of bronze and coated with gold, is among the tallest in the world. As a result, its glow makes it visible from many parts of the town. 
+                               <p className="font font22">
+                                    At the Kuensel Phodrang Nature Park, you will see a huge statue of Buddha. It is in our Bhutan tour packages. It is called Buddha Dordenma and is 54m tall. However, Buddha Point is a popular identity. It is visible from many parts of the town due to its glow from gold coating. Bronze is the building material of the statue. Do not miss out on your tour to Bhutan.
                                </p>
                                <p className="font font22">
-                                    Notably, there are 125,000 small Buddha statues inside the main Buddha statue. They are 10 to 12 inches in height and made of bronze and coated with gold. Our Bhutan tour packages include Buddha Point.
+                                    Notably, there are one lakh twenty-five small Buddha statues inside the main statue. The constituent smaller ones are ten to twelve inches in height and made of bronze and coated with gold. Our Bhutan travel packages include Buddha Point.
                                </p>
                                <p className="font font22">
-                                    There is a large meditation hall under the main statue. It is meant for visitors to meditate. There is no entry fee. Buddha Point is among the most attractive tourist places in Bhutan.
+                                     There is a large meditation hall under the main statue. It is meant for visitors to meditate. There are no entry tickets. Our Bhutan tour packages include the place. 
                                </p>
                          </section>
                     </section>
@@ -351,13 +354,13 @@ function ThimphuVisitingPlaces(){
                           </section>
                           <section className="p-3">
                                <p className="font font22">
-                                     It is one of the prominent tourist places in Thimphu. National Memorial Chorten is a stupa that originated in 1974. It symbolizes respect for Bhutan’s third king, who is regarded as the father of modern Bhutan. It is in the southern part of Thimphu.
+                                    You will find National Memorial Chorten’s inclusion in our best Bhutan tour packages. It is among the most important tourist places in Thimphu. It symbolizes respect for Bhutan’s third king.  It has to be a must in your tour of Bhutan. The king is regarded as the father of modern Bhutan.
                                </p>
                                <p className="font font22">
-                                     You can participate with monks and other visitors by walking clockwise around the stupa. Moreover, you can rotate the prayer wheels around the National Memorial Chorten. In the early morning hours, you can participate in offering butter lamps. A Bhutan package tour from Aeiety Trips can enable you to visit the stupa.
+                                    You can participate with monks and other visitors by walking clockwise around the stupa. Moreover, you can rotate the prayer wheels around the National Memorial Chorten. In the early morning hours, you can participate in offering butter lamps. Bhutan trip packages from Aeiety Trips can enable you to visit the stupa. It is a stupa established in 1974 in the southern part of Thimphu. 
                                </p>
                                <p className="font font22">
-                                    If you happen to go there during the Monlam Prayer Festival, you will get the opportunity to participate in teachings by the religious head. Also, you will get to see their spiritual practices. National Memorial Chorten is among the prominent Bhutan tourist spots.
+                                    If you happen to go there during the Monlam Prayer Festival, you will get the opportunity to participate in teachings by the religious head. Choose from our affordable Bhutan tour packages to visit the place.  Also, you will get to see their spiritual practices. National Memorial Chorten is among the prominent Bhutan tourist spots.
                                </p>
                          </section>
                     </section>
@@ -374,13 +377,13 @@ function ThimphuVisitingPlaces(){
                           </section>
                           <section className="p-3">
                                <p className="font font22">
-                                     It is a majestic fortress. And, Tashichho Dzong is a significant aspect of Bhutan tourism. You can experience its attractiveness by taking a tour of Bhutan. You can purchase a Bhutan trip package from us. Tashichho Dzong is also called Thimphu Dzong. It is one of the most popular things to see in Bhutan.
+                                    It is a beautiful fortress. Our best Bhutan tour packages can allow you to experience it. Your tour of Bhutan must include it. It is a must-see thing to see on your tour of Bhutan.
                                </p>
                                <p className="font font22">
-                                     In Thimphu Dzong, there are the king’s throne room, secretariat, and home affairs and finance ministries. The nearby buildings house other ministries. The Bhutan government functions from Tashichho Dzong.
+                                    In the fortress, there is the king’s throne room, secretariat, and home affairs and finance ministries. The nearby buildings house other ministries. The Bhutan government functions from Tashichho Dzong. You can purchase a Bhutan trip package from us. 
                                </p>
                                <p className="font font22">
-                                    The sight of Tashichho Dzong is appealing. It is on the banks of Wang Chhu River. Inside the boundary, there are beautiful gardens. Notably, temples and shrines are also inside the boundary.
+                                    The sight of Tashichho Dzong is appealing. It is on the banks of Wang Chhu River. Inside the boundary, there are beautiful gardens. Notably, temples and shrines are also inside the boundary. Tashichho Dzong is a core component of Bhutan tourism. It is also called Thimphu Dzong, included in our Bhutan tour packages. 
                                </p>
                           </section>
                     </section>

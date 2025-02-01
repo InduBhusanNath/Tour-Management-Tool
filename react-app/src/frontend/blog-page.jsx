@@ -1,47 +1,65 @@
 import Header from "./header";
 import Footer from "./footer";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Link } from "react-router-dom";
 
 export default function BlogPage(){
      return(<>
-             <TechnicalSEO/>
-             <div className="container-fluid bg-body">
-                     <div className="col-sm-12">
-                             <Header/>
-                             <BreadCrumb/>
-                             <Footer/>
-                     </div>
-             </div>
+         <HelmetProvider>
+                 <TechnicalSEO/>
+                 <div className="container-fluid bg-body">
+                         <div className="col-sm-12">
+                                 <Header/>
+                                 <BlogsBanner/>
+                                 <BreadCrumb/>
+                                 <Footer/>
+                         </div>
+                 </div>
+         </HelmetProvider>
              
     
      </>);
 }
-{/*Technical SEO*/}
+// Technical SEO
 function TechnicalSEO(){
-    return(<>
-            
-            <Helmet>
-               <meta charSet="utf-8"/>
-               <title>Cabs for Outstation| Pleasant, Timely, Safe Rides for You</title>
-               <link rel="canonical" href="http://mysite.com/example" />
-               <link rel="icon" href="./favicon.ico" type="image/gif" sizes="16x16"></link>
-               <meta name="description" content="Book cabs for outstation destinations with us. That can ensure timely, pleasant, safe and fair-priced taxi rides for various outstation places of your choice."/>
-               <meta property="og:title" content="MyApp" />
-               <meta property="og:image" content="path/to/image.jpg" />
-           </Helmet>
-    
-    </>);
-}
-{/*Breadcrumb*/}
+        return(<>                
+                <Helmet>
+                   <meta charSet="utf-8"/>
+                   <title>Travel Blogs | Rich Insights to Broaden Your Perspectives </title>                
+                   <meta name="description" content="Read knowledgeable travel blogs to expand the periphery of your thoughts on traveling. The well-written blogs will make you understand why you must travel."/>
+                   <link rel="canonical" href="https://aeiety.com/blog-page"/>
+                   <meta property="og:title" content="Blogs by Aeiety Trips"/>
+                   <meta property="og:url" content="https://aeiety.com/blog-page"/>
+                   <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
+                   <meta property="og:type" content="Web Page"/>
+                   <meta property="og:description" content="Read blogs by Aeiety Trips."/>
+                   <meta property="og:locale" content="en_GB"/>
+               </Helmet>
+        </>);
+   }
+ //Blog Banner
+ function BlogsBanner(){
+         return(<>
+                 <div className="row">
+                         <div className="col-sm-12 p-0 m-0">
+                                 <img src="https://i.postimg.cc/VkrpHMwN/Blog.webp" alt="Travel Blogs" className="img-fluid w-100 p-0 m-0"/>
+                         </div>
+                 </div>
+         </>);
+ }
+// Breadcrumb
 function BreadCrumb(){
-    return(<>
-              <div className="row bg-transparent">
-                   <div className="col-sm-12">
-                        <section className="padding25 font font18">
-                                  <Link to="/" className="text-decoration-none text-dark">HOME</Link>&gt;<Link to="/aboutus" className="text-decoration-none text-dark">About Us</Link>&gt;Blogs
-                        </section>
-                   </div>
-             </div>
-    </>);
+        return(<>
+                 <div className="row">
+                        <div className="col-sm-12">
+                                 <nav aria-label="breadcrumb">
+                                         <ol class="breadcrumb">
+                                                 <li class="breadcrumb-item"><a href="/" className="link-dark">Home</a></li>
+                                                 <li class="breadcrumb-item"><a href="/aboutus" className="link-dark">About Us</a></li>                                                 
+                                                 <li class="breadcrumb-item active" aria-current="page">Blogs</li>
+                                         </ol>
+                                 </nav> 
+                         </div>
+                 </div>
+        </>);
 }
