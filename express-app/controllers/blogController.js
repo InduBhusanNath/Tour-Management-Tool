@@ -1,12 +1,6 @@
 const blogModel=require('../models/blogModel.js');
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://127.0.0.1:27017/mydb');
-const express = require('express');
-
-
-
-
-
 
 
 //Create Blog
@@ -33,7 +27,7 @@ function createBlog(req,res){
            blogFeaturedImageLink:n_featuredImageLink,
            blogFeaturedContent:n_featuredContent
        });
-        console.log(newBlog)
+        
        
        newBlog.save().then(result=>{
             res.send("New Blog Created Successfully.....");
@@ -61,7 +55,7 @@ async function readBlog(req,res){
       }     
      
       var totalPages;
-      var pageLimit=1;
+      var pageLimit=5;
       var offset; 
       var totalBlogs;
 
@@ -114,7 +108,7 @@ async function readBlog(req,res){
                         "totalPages":"0",
                         "totalBlogs":"0"
                  });
-                 console.log(result)
+                 
              });
 
 
@@ -128,83 +122,66 @@ async function readBlog(req,res){
       
 } 
 
-//Display Blog
-
-function edit_displayBlog(req,res){
-       eblgId=req.query.blgId;
-       blogModel.findOne({_id:eblgId}).then(results=>{
-
-            res.json(
-                  {
-                   "flag":"1",
-                   "eBlog_Id":results._id,
-                   "eBlogDate":results.blogDate,
-                   "eBlogTitle":results.blogTitle,
-                   "eBlogMetaDescription":results.blogMetaDescription,
-                   "eBlogHeading":results.blogHeading,
-                   "eBlogAuthor":results.blogAuthor,
-                   "eBlogBody":results.blogBody,
-                   "eBlogFeaturedImageLink":results.blogFeaturedImageLink,
-                   "eBlogFeaturedContent":results.blogFeaturedContent
-                  });
-            
-            
-            
-            
-       }).catch(error=>{
-                 res.json({"result":"Something Went Wrong, Please Try Again....."
-            })
-       });
-}      
- 
-
- 
-//Update Blog Content
-function edit_blogContent(req,res){
-       var ubId=req.body.ublgId;
-       var ubtitle=req.body.edit_n_blogTitle;
-       var ubmetadesc=req.body.edit_n_blogMetaDescription;
-       var ubheading=req.body.edit_n_blogHeading;
-       var ubauthor=req.body.edit_n_blogAuthor;
-       var ubbody=req.body.edit_n_blogBody;
-       var ubfeaturedImageLink=req.body.edit_n_featuredImageLink;
-       var ubfeaturedContent=req.body.edit_n_featuredContent;
-      
-      blogModel.findByIdAndUpdate(ubId,{blogTitle:ubtitle,blogMetaDescription:ubmetadesc,blogHeading:ubheading,blogAuthor:ubauthor,blogBody:ubbody,blogFeaturedImageLink:ubfeaturedImageLink,blogFeaturedContent:ubfeaturedContent})
-      .then(result=>{
-             res.send("Blog Successfully Updated.....");
-      }).catch(error=>{
-            res.send("Something Went Wrong, Please Try Again.....");
-      });
+//Get Update Data
+async function fetchBlogUpdateData(req,res){
+        var eId=req.query.blgId; 
+        var eData=await blogModel.findById(eId).exec();
+        if(!eData){
+            res.send({
+                  flag:"0"
+            });
+             return;
+        }
+        res.send({
+              eBlgId:eData._id,
+              eBlgDate:eData.blogDate,
+              eBlgTitle:eData.blogTitle,
+              eBlgMetaDescription:eData.blogMetaDescription,
+              eBlgHeading:eData.blogHeading,
+              eBlgAuthor:eData.blogAuthor,
+              eBlgBody:eData.blogBody,
+              eBlgFeaturedImageLink:eData.blogFeaturedImageLink,
+              eBlgFeaturedContent:eData.blogFeaturedContent
+        });
+} 
+//Update Blog
+async function updateBlog(req,res){
+       var query={
+             blogTitle:req.body.updteBlogTitle,
+             blogMetaDescription:req.body.updteblogMetaDescription,
+             blogHeading:req.body.updteBlogHeading,
+             blogAuthor:req.body.updteBlogAuthor,
+             blogBody:req.body.updteBlogBody,
+             blogFeaturedImageLink:req.body.updteBlogFeaturedImageLink,
+             blogFeaturedContent:req.body.updteBlogFeaturedContent
+      };
+      var updtBlg=await blogModel.findByIdAndUpdate(req.body.updteBlogId,query).exec();
+       if(!updtBlg){
+             res.send("Could Not Update Blog, Please Try One.....");
+       }else{
+             res.send("Blog Updated Successfully.....");
+       }
       
 }
+       
+//Delete Blog
+async function deleteBlog(req,res){      
+       var DelBlg=await blogModel.deleteOne({_id:req.body.n_blgDelId});
+       if(!DelBlg){
+             res.send("Something Went Wrong, Please Try Again.....");
+       }else{
+             res.send("Blog Deleted.....");
+       }
       
-//Delete Blog Content
-function delete_blogContent(req,res){
-       var dbId=req.body.dltBlgId;
-       blogModel.deleteOne({_id:dbId}).then(result=>{
-             res.send("Blog Deleted Successfully.....");
 
-       })
-       .catch(error=>{
-             res.send(error);
-       });      
-
-}    
-
-
-       
-        
-       
-
+}
 
 
 module.exports={
-       createBlog:createBlog,      
-       readBlog:readBlog,
-       edit_displayBlog:edit_displayBlog,
-       edit_blogContent:edit_blogContent,
-       delete_blogContent:delete_blogContent
-      
+       createBlog,      
+       readBlog,
+       fetchBlogUpdateData,
+       updateBlog,
+       deleteBlog      
 }
 

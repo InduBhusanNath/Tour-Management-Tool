@@ -400,17 +400,14 @@ function ThimphuVisitingPlaces(){
                           </section>
                           <section className="p-3">
                                <p className="font font22">
-                                    One of the places to visit in Thimphu is Simtokha Dzong. It is a historic dzong built in 1628. Nowadays, one of the premier Dzongkha language institutes runs from the dzong. It was earlier a monastery. Zhabdrung Ngawang Namgyal was behind the constructing of Simtokha Dzong, a historical monument. He unified Bhutan. Purchasing a Bhutan package tour from Aeiety Trips can enable you to enjoy the majestic place.
+                                    One of the notable places in Thimphu in our best Bhutan tour packages is Simtokha Dzong. It is a historic dzong built in 1628. Nowadays, one of the premier Dzongkha language institutes runs from the dzong. It was earlier a monastery. Zhabdrung Ngawang Namgyal was behind Simtokha Dzong, a historical monument. He unified Bhutan. Purchasing one of Aeiety Trips’ Bhutan travel packages can enable you to enjoy the majestic place on your tour of Bhutan.
                                </p>
                                <p className="font font22">
-                                    Interestingly, a road near Simtokha Dzong leads to Paro, another spot among important Bhutan tourist places. 
+                                    Interestingly, a road near Simtokha Dzong leads to Paro, another spot among important Bhutan tourist places. The dzong underwent renovations several times. It is 65 square feet in area. There are three floors and a single entry door.
                                </p>
                                <p className="font font22">
-                                    The dzong underwent renovations several times. It is 65 square feet in area. There are three floors and a single entry door. 
-                               </p>
-                               <p className="font font22">
-                                    On the ground floor, there are slate carvings of 300 Buddhist saints. There is also a statute of Sakyamuni Buddha. And, there are eight Bodhisattvas on each adjacent side.
-                               </p>
+                                    On the ground floor, there are slate carvings of 300 Buddhist saints. There is also a statue of Sakyamuni Buddha. And, there are eight Bodhisattvas on each adjacent side. Our Bhutan tour packages cover it. 
+                               </p>                               
                           </section>
                     </section>
                </div>
@@ -426,10 +423,10 @@ function ThimphuVisitingPlaces(){
                           </section>
                           <section className="p-3">
                                <p className="font font22">
-                                    Takin is Bhutan’s national animal. That is what you will see at the Motithang Takin Preserve. It is a wildlife preserve in the Motithang district of Thimphu. The preserve is especially used to preserve Takin. You will get the opportunity to visit the Motithang Takin Preserve when you tour Bhutan with one of our best Bhutan tour packages.
+                                    Takin is the country's national animal. That is what you will see at the Motithang Takin Preserve. We have included it in our affordable Bhutan tour packages. It is a wildlife preserve in the Motithang district of Thimphu. The preserve is especially used to preserve Takin. You will get the opportunity to visit it when you tour Bhutan.
                                </p>
                                <p className="font font22">
-                                    Pine trees cover the wildlife preserve. You will see Takins moving here and there in the preserve.
+                                    Pine trees cover the wildlife preserve. You will see Takins moving here and there in the preserve when you visit it with one of our best Bhutan tour packages.
                                </p>
                           </section>
                     </section>

@@ -57,8 +57,9 @@ app.get('/api/bhutan-tour-package-description',frontendTourPackageController.fro
 
 app.get('/api/adminDashboard/adminUsers',userController.readUsers);
 //app.get('/admin_logout',sessionController.adminLogOut);
-app.get('/adminDashboard/blogs/',blogController.readBlog);
-app.get('/adminDashboard/blogs/show_blog',blogController.edit_displayBlog);
+app.get('/api/adminDashboard/blogs/',blogController.readBlog);
+app.get('/api/adminDashboard/blogs/blog-update',blogController.fetchBlogUpdateData);
+
 app.get('/adminDashboard/contactus-messages/',contactUsMessageModel.readMessages);
 app.get('/adminDashboard/cab-booking-data/',cabBookingController.readCabBooking);
 app.get('/adminDashboard/manage-cab-booking/cab-booking-processing/get-cab-client-data/',cabBookingController.clientCabBooking);
@@ -95,9 +96,9 @@ app.post('/adminDashboard/adminUsers/user_priviledge_data_change',userController
 app.post('/change_password',userController.changePassword);
 app.post('/change_password_by_user',userController.changePasswordByUser);
 
-app.post('/adminDashboard/blogs/write_blog',blogController.createBlog);
-app.post('/adminDashboard/blogs/show_blog/update-blog-content',blogController.edit_blogContent);
-app.post('/adminDashboard/blogs/show_blog/delete-blog-content',blogController.delete_blogContent);
+app.post('/api/adminDashboard/blogs/write_blog',blogController.createBlog);
+app.post('/api/adminDashboard/blogs/blog-update',blogController.updateBlog);
+app.post('/api/adminDashboard/blogs/blog-delete',blogController.deleteBlog);
 app.post('/contact-us-message',contactUsMessageModel.visitorMessage);
 app.post('/adminDashboard/contactus-messages/delete-message/',contactUsMessageModel.deleteMessage);
 app.post('/create-cab-booking/',cabBookingController.createCabBooking);

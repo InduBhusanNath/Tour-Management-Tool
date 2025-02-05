@@ -27,6 +27,8 @@ import AdminUsers from "./backend/admin_users";
 import ForgotPassword from "./backend/forgot_password";
 import Blog from "./backend/blogs";
 import WriteBlog from "./backend/write_blog";
+import BlogUpdate from "./backend/blog-update";
+import BlogDelete from "./backend/blog-delete";
 import ShowBlog from "./backend/show_blog";
 import ContactUsMessage from "./frontend/contactus_message";
 import MessagesContactUs from "./backend/contactus_messages";
@@ -138,7 +140,17 @@ const router=createBrowserRouter([
          path:"/adminDashboard/blogs/write_blog/",
          element:<WriteBlog/>
 
-      },      
+      },
+      {
+        path:"/adminDashboard/blogs/blog-update/",
+        element:<BlogUpdate/>
+
+      }, 
+      {
+        path:"/adminDashboard/blogs/blog-delete/",
+        element:<BlogDelete/>
+
+      },        
       {  path:"/adminDashboard/blogs/show_blog",
          element:<ShowBlog/>
       },

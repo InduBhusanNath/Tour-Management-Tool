@@ -6,7 +6,7 @@ import { apihost } from "./apihost";
 
 
 let params=new URLSearchParams(document.location.search);
-let id=params.get("id");
+let id=params.get("id"); alert(id);
      
 //Show Blog, Edit, Delete
 export default function ShowBlog(){      
@@ -34,30 +34,7 @@ export default function ShowBlog(){
 
     
 
-     useEffect(()=>{
-             axios.get(apihost+'/adminDashboard/blogs/show_blog/?blgId='+id)
-             .then(response=>{
-                   if(response.data.flag==="1"){
-                         setMsg1("Blog Found.....");
-                   }else{
-                         setMsg1("Could Not Find Blog,Please Try Again.....");
-                         return;
-                   }  
-                   setEblog_Id(response.data.eBlog_Id);
-                   setEBlogDate(response.data.eBlogDate);                   
-                   setEBlogTitle(response.data.eBlogTitle);
-                   setEblogMetaDescription(response.data.eBlogMetaDescription);
-                   setEBlogImagePath(response.data.eBlogImagePath);
-                   setEBlogHeading(response.data.eBlogHeading);
-                   setEBlogAuthor(response.data.eBlogAuthor);
-                   setEBlogBody(response.data.eBlogBody);
-                   setEBlogFeaturedImageLink(response.data.eBlogFeaturedImageLink);
-                   setEBlogFeaturedContent(response.data.eBlogFeaturedContent);
-            })
-             .catch(error=>{
-                   setMsg1("Something Went Wrong, Please Try Again.....");
-            });
-       },[]);
+    
 
 
    
@@ -114,7 +91,7 @@ export default function ShowBlog(){
   function updateBlogContent(e){
        e.preventDefault();
        var updtBlg=new FormData();
-       updtBlg.append('ublgId',eBlog_Id); alert(updtBlg.get('ublgId'))
+       updtBlg.append('ublgId',eBlog_Id); 
        updtBlg.append('edit_n_blogTitle',eBlogTitle);
        updtBlg.append('edit_n_blogMetaDescription',eblogMetaDescription);
        updtBlg.append('edit_n_blogHeading',eBlogHeading);
@@ -123,9 +100,7 @@ export default function ShowBlog(){
      
        
              axios.post(apihost+"/adminDashboard/blogs/show_blog/update-blog-content",updtBlg,{
-                    headers: {
-                         'Content-Type': 'application/json'
-                }
+                    headers: {'Content-Type': 'application/json'}
              })
             .then(response=>{
                    setMessage(response.data);
