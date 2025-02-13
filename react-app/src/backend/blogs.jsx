@@ -60,7 +60,7 @@ function BlogList(){
                method:"get",
                url:apihost+"/adminDashboard/blogs/?page="+pg                    
             }).then(response=>{
-                     var blogData=response.data; alert(blogData._id);                   
+                     var blogData=response.data;                   
                      setBlogList(blogData.data);
                      setLastPage(blogData.totalPages);
                      setBlogCount(blogData.totalBlogs);     

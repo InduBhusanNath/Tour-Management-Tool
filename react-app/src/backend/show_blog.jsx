@@ -1,3 +1,5 @@
+{/*
+
 import { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
@@ -6,7 +8,7 @@ import { apihost } from "./apihost";
 
 
 let params=new URLSearchParams(document.location.search);
-let id=params.get("id"); alert(id);
+let id=params.get("id"); 
      
 //Show Blog, Edit, Delete
 export default function ShowBlog(){      
@@ -271,3 +273,5 @@ export default function ShowBlog(){
 
      </>);
 }
+
+*/}

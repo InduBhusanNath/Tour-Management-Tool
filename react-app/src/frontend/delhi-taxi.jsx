@@ -17,14 +17,16 @@ export default function DelhiTaxi(){
                      <Header/>
                      <DelhiTaxiBanner/>                     
                      <BreadCrumb/>
-                     <Body1/>
-                     <QuickCabBooking/>
+                     <Intro/>
+                     <QuickCabBooking/>                     
                      <TaxiServiceFeatures/>
-                     <Body2/>
-                     <Body3/>                     
-                     <OutstationRoutes/>
-                     <Body4/>
-                     <Faqs/>  
+                     <Offerings/>
+                     <OutstationDelhiTaxi/>                                          
+                     <OutstationRoutes/> 
+                     <LocalDelhiTaxi/>
+                     <DelhiVisitingPlaces/>                    
+                     <Faqs/>
+                     <DelhiTaxiExcellence/>  
                      <Footer/>
                 </div>
            </HelmetProvider>
@@ -78,12 +80,12 @@ function BreadCrumb(){
 }
 
 //Body
-function Body1(){
+function Intro(){
       return(<>
            <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10 p-0 m-1">
-                     <h1 className="text-center">Best Delhi Taxi Service Ensuring On-Time and Satisfying Rides for All Trips at Affordable Fares</h1>
+                     <h1 className="text-center">Best Delhi Taxi Service : On-Time and Satisfying Rides at Affordable Fares</h1>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
@@ -91,7 +93,7 @@ function Body1(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10 p-0 m-1">
                      <p className="font font22">
-                          You can end your search for a reliable Delhi taxi as you found us. We at Aeiety Trips strive to provide the most affordable and satisfying cab rides. We focus on easing and streamlining rides in the city's busy environment. With the primary intent of easing your trip, we can provide a reliable taxi service in Delhi for all needs. As such, you can get a local taxi in Delhi for business travel, an official trip, a sightseeing tour, an airport transfer, or carrying a patient to the hospital. We also provide excellent Delhi outstation taxis to travel outside the city. A combination of safety, timeliness, reasonable pricing, and focus on customer satisfaction renders Aeiety Trips the number one choice.      
+                          You can end your search for a reliable Delhi taxi as you found us. We at Aeiety Trips strive to provide the most affordable and satisfying cab rides. We focus on easing and streamlining rides in the city's busy environment. With the primary intent of easing your trip, we can provide a reliable taxi service in Delhi for all needs. As such, you can get a local taxi in Delhi for business travel, an official trip, a sightseeing tour, an airport transfer, or carrying a patient to the hospital. We also provide excellent Delhi outstation taxis to travel outside the city. A combination of safety, timeliness, reasonable pricing, and focus on customer satisfaction renders Aeiety Trips the number one Delhi taxi service choice.      
                      </p> 
                 </div>
                 <div className="col-sm-1"></div>
@@ -102,11 +104,11 @@ function Body1(){
 function QuickCabBooking(){
       return(<>
            <div className="row background-lemonchiffon p-3">
-                <div className="col-sm-1"></div>
-                <div className="col-sm-10">
+                <div className="col-sm-4"></div>
+                <div className="col-sm-4">
                      <TaxiQuickBooking/>
                 </div>
-                <div className="col-sm-1"></div>
+                <div className="col-sm-4"></div>
            </div>
       </>);
 }
@@ -130,14 +132,20 @@ function TaxiServiceFeatures(){
      </>);
 }
 //Body2
-function Body2(){
+function DelhiTaxiExcellence(){
       return(<>
-           <div className="row background-lemonchiffon">
+           <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
-                <div className="col-sm-10 p-4 m-1">
-                     <h2>The Key Features of Our Dedicated Delhi Taxi Service</h2>
+                <div className="col-sm-10">
+                     <h2>The Excellence of Our Dedicated Delhi Taxi Service</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">                
                      <p className="font font22">
-                          We understand the city's busy nature. As such, we have structured our Delhi cab service to allow you to travel quickly. That is why picking up and dropping off on time is one of our core mandates. We strive to maximize customer satisfaction. We focus on understanding customer needs. That allows us to run customized cab rental services. Also, we have optimized our customer-centric taxi service in Delhi for outstation trips to streamline the high frequency of cab requirements for tours outside the city. With the facility of a quick taxi booking in Delhi, we give you the flexibility to avail of our trusted offerings from anywhere at any time. Notably, tourists can avail of our devoted cab rental service. We are aware of good accommodation facilities and the tourist spots. As such, they can have the best experience by hiring a taxi in Delhi with us. 
+                          We understand the city's busy nature. As such, we have structured our Delhi taxi service to allow you to travel quickly. That is why picking up and dropping off on time is one of our core mandates. We strive to maximize customer satisfaction. We focus on understanding customer needs. That allows us to run customized cab rental services. Also, we have optimized our customer-centric taxi service in Delhi for outstation trips to streamline the high frequency of cab requirements for tours outside the city. With the facility of a quick taxi booking in Delhi, we give you the flexibility to avail of our trusted offerings from anywhere at any time. Notably, tourists can avail of our devoted cab rental service. We, an excellent Delhi taxi service provider, know good accommodation facilities and tourist spots. As such, they can have the best experience by hiring a taxi in Delhi with us. 
                      </p>
                      <p className="font font22 fw-bold">Timeliness</p>
                      <p className="font font22">
@@ -220,68 +228,127 @@ function Faqs(){
            </div>          
     </>);
 }
-//Routes
-function OutstationRoutes(){
+//Local Taxi
+function LocalDelhiTaxi(){
       return(<>
-           <div className="row background-lemonchiffon padding25">
+           <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h2>Top Outstation Routes</h2>
+                     <h2>Local Delhi Taxi Service</h2>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
-           <div className="row background-lemonchiffon padding25">
+           <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
-                <div className="col-sm-5">
-
-                     <section className="bg-warning text-center p-1 m-1 rounded-pill shadow font font22">Delhi to Agra taxi</section>
-                     
-                     <section className="bg-warning text-center p-1 m-1 rounded-pill shadow font font22">Delhi to Shimla cab</section>
-                     
-                     <section className="bg-warning text-center p-1 rounded-pill shadow-sm font font22">Delhi to Manali taxi</section>
+                <div className="col-sm-10">                     
+                     <p className="font font22">
+                          We at Aeiety Trips offer a local taxi service in Delhi for rides within the city. As such, you can use our cabs for office visits, attending business meetings, sightseeing tours with your family, hospital visits, or airport transfers. 
+                     </p>
                 </div>
-                <div className="col-sm-5">
-                     <section className="bg-warning text-center p-1 m-1 rounded-pill shadow font font22">Delhi to Haridwar cab</section>
-                     
-                     <section className="bg-warning text-center p-1 m-1 rounded-pill shadow font font22">Delhi to Rishikesh taxi</section>
-                     
-                     <section className="bg-warning text-center p-1 rounded-pill shadow font font22">Delhi to Jaipur cab</section>
+                <div className="col-sm-1"></div>
+           </div>
+      
+      </>);
+}
+//Outstation Service
+function OutstationDelhiTaxi(){
+      return(<>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h3>Delhi Outstation Taxis</h3> 
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">                                    
+                     <p className="font font22">
+                          You can get a dedicated outstation taxi service in Delhi to travel outside the city without hassles from Aeiety trips. We ensure you experience the best with our dedicated services. 
+                     </p>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+      
+      </>);
+}
+
+//Routes
+function OutstationRoutes(){
+      return(<>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h3>Top Outstation Delhi Taxi Routes</h3>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">                                    
+                     <table className="table">
+                          <tbody>
+                               <tr>
+                                    <td className="bg-transparent font font22">&#x2705;&nbsp;Delhi to Agra taxi</td>
+                                    <td className="bg-transparent font font22">&#x2705;&nbsp;Delhi to Shimla cab</td>
+                                    <td className="bg-transparent font font22">&#x2705;&nbsp;Delhi to Manali taxi</td>
+                               </tr>
+                               <tr>
+                                    <td className="bg-transparent font font22">&#x2705;&nbsp;Delhi to Haridwar cab</td>
+                                    <td className="bg-transparent font font22">&#x2705;&nbsp;Delhi to Rishikesh taxi</td>
+                                    <td className="bg-transparent font font22">&#x2705;&nbsp;Delhi to Jaipur cab</td>
+                               </tr>
+                          </tbody>
+                     </table>                     
                 </div>
                 <div className="col-sm-1"></div>
           </div>
       </>);
 }
 //Body3
-function Body3(){
+function Offerings(){
      return(<>
-          <div className="row background-lemonchiffon">
+          <div className="row background-lemonchiffon p-3">
                <div className="col-sm-1"></div>
-               <div className="col-sm-10 p-4 m-1">
-                     <h2>Offerings of Our Top-Class Delhi Taxi Service</h2>
+               <div className="col-sm-10">
+                     <h2>Offerings of Our Top-Class Delhi Taxi Service</h2>                                        
+              </div>
+              <div className="col-sm-1"></div>
+         </div>
+         <div className="row background-lemonchiffon p-3">
+               <div className="col-sm-1"></div>
+               <div className="col-sm-10">                     
                      <p className="font font22">
-                          We care about your trip. That is why do not fall behind in providing a trusted Delhi taxi service. As such, you can get comfortable, safe, and affordable taxi rides. With a trusted Delhi taxi service, we provide you with all your cab needs. It does not matter whether you need a taxi for local or outstation travel. We at Aeiety Trips offer a local taxi service in Delhi for rides within the city. As such, you can use our cabs for office visits, attending business meetings, sightseeing tours with your family, hospital visits, or airport transfers. Likewise, you can get Delhi outstation taxis to travel outside the city without hassles from Aeiety trips. We ensure you experience the best with our dedicated services. 
-                     </p>
-                    
+                          We care about your trip, so we do not fall behind in providing a trusted Delhi taxi service. As such, you can get comfortable, safe, and affordable taxi rides. With a trusted taxi service in Delhi, we provide you with all your cab needs, whether you need a taxi for local or outstation travel. 
+                     </p>                    
               </div>
               <div className="col-sm-1"></div>
          </div>
      </>);
 }
 //Body4
-function Body4(){
+function DelhiVisitingPlaces(){
      return(<>
-          <div className="row background-lemonchiffon">
-               <div className="col-sm-1"></div>
-               <div className="col-sm-10 p-4 m-1">
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
                      <h2 className="text-center">Top Visiting Places in Delhi: The Coverage of Our Local Delhi Taxi Service</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+               <div className="col-sm-1"></div>
+               <div className="col-sm-10">                     
                      <h3>Qutub Minar</h3>
-                     <p className="font font22">
+                     <img src="https://i.postimg.cc/50gbXPQB/Qutub-Minar.webp" alt="Qutub Minar" className="img-fluid float-start rounded p-0 m-2"/>
+                     <p className="font font22">                          
                           The sight of the tall and iconic Qutub Minar is mentally stimulating. When you look at it from a distance, the curiosity to know how it came into being will catch your mind. It has significant historical significance. We provide the best taxi service in Delhi to transport you to the iconic site. 
                      </p>
                      <p className="font font22">
                           Its height is 72.5m (238 ft). As a result, it is the world's tallest brick-built Minaret. Interestingly, it has 379 steps, signifying marvels of the technology during the Mughal times. A Delhi taxi booking from Aeiety Trips can ease your travel to the site. You will also see various remains of structures built during the Mughal period within the vicinity of Qutub Minar. Hiring a taxi in Delhi is the best option to reach the historically relevant entity. 
                      </p>
                      <h3>Purana Qila (Old Fort)</h3>
+                     <img src="https://i.postimg.cc/5yt1Lw8Z/Purana-Qila.webp" alt="Purana Qila" className="img-fluid float-start rounded p-0 m-2"/>
                      <p className="font font22">
                           It is also called the Red Fort, one of the major attractions. It is of the Mughal period. We provide a dependable taxi service in Delhi to transport people to and from the place. 
                      </p>
@@ -292,10 +359,13 @@ function Body4(){
                           The Old Fort is near Pragati Maidan. Using our excellent Delhi taxi service, you can get there without any hassles. You can also visit the Old Fort and experience its rich history. 
                      </p>
                      <h3>Lotus Temple</h3>
+                     <img src="https://i.postimg.cc/NF1C3p9r/Lotus-Temple.webp" alt="Lotus Temple" className="img-fluid float-start rounded p-0 m-2"/>
                      <p className="font font22">
                           It is a prominent attraction in New Delhi. You can hire our local cab service in Delhi to visit Lotus Temple. Its structure is that of a lotus, hence the name. It is 34m in height. Its construction was completed in 1986. Interestingly, people of any religion can visit it. It is near Nehru Place in New Delhi, at the Bahapur village. Although, all sorts of public transportation including the metro are available, renting a Delhi cab can be the most convenient transportation to Lotus Temple. After visiting, you can reach the nearby Nehru Place market by hiring a cab in Delhi. 
                      </p>
+                     <p>&nbsp;</p>
                      <h3>India Gate</h3>
+                     <img src="https://i.postimg.cc/RVYnr4mK/India-Gate.webp" alt="India Gate" className="img-fluid float-start rounded p-0 m-2"/>
                      <p className="font font22">
                           The iconic war memorial in New Delhi is a must-visit place. Hiring a taxi in Delhi can be the best way to travel to Rajpath where India Gate stands. It is near India’s parliament. The British set up India Gate in memory of soldiers who died in the First World War. The inauguration day was December February 12, 1931.
                      </p>
@@ -325,17 +395,22 @@ function Body4(){
                           In addition, CP is nearby to Barakhamba Road and Kasturba Gandhi Marg.
                      </p>
                      <h3>Jantar Mantar</h3>
+                     <img src="https://i.postimg.cc/13ZsVjcb/Jantar-Mantar.webp" alt="Jantar Mantar" className="img-fluid float-start rounded p-0 m-2"/>
                      <p className="font font22">
                           In Delhi, Jantar Mantar is a must-see thing. It was built in 1724 to carry out astronomical observations. Our best-in-class local Delhi taxi service can help make a trip there smoothly. It is one of the significant attractions in the city. People from within and outside the country come to visit the historical astronomical observatory. We provide excellent taxi service in Delhi to travel to such iconic and historically relevant sites.
                      </p>
+                     <p>&nbsp;</p><p>&nbsp;</p>
                      <h3>Dilli Haat</h3>
+                     <img src="https://i.postimg.cc/gkrRPk0D/Dilli-Haat.webp" alt="Dilli Haat" className="img-fluid float-start rounded p-0 m-2"/>
                      <p className="font font22">
                           People, including foreigners, regularly throng Dilli Haat, opposite the INA market. Here, you can buy food, crafts, and textiles from other states of India.
                      </p>
                      <p className="font font22">
                           Inside Dilli Haat, people of the respective states operate state-wise stalls. You can eat traditional food, buy traditional crafts and clothes, and experience the cultures of different states. Our excellent offering of an affordable taxi in Delhi can drop you off at Dilli Haat. 
                      </p>
+                     <p>&nbsp;</p>
                      <h3>Humayun’s Tomb</h3>
+                     <img src="https://i.postimg.cc/CxsfGZrw/Humayun-Tomb.webp" alt="Humayun’s Tomb" className="img-fluid float-start rounded p-0 m-2"/>
                      <p className="font font22">
                           Visiting there means getting the opportunity to visualize a UNESCO Heritage Site. Our best taxi in Delhi can pick you up to visit the place. It displays the richness of the architectural technology that prevailed during the Mughal times. The marvelous tourist spot is in Nizamuddin East in New Delhi.
                      </p>
@@ -346,6 +421,7 @@ function Body4(){
                           Remarkably, the popular historical structure is built of red sandstone. Our best cab service in Delhi can be a good option. It can help you reach Humayun’s Tomb quickly. If you book a round trip, we will pick you up after your visit.
                      </p>
                      <h3>Lal Qila (Red Fort)</h3>
+                     <img src="https://i.postimg.cc/HWhzM5GX/LalQila.webp" alt="Lal Qila" className="img-fluid float-start rounded p-0 m-2"/>
                      <p className="font font22">
                           Red Fort is the English translation of Lal Qila. It is a significant historical entity in Delhi. We run a dedicated local taxi service in Delhi to transport visitors to Red Fort, one of the most visited tourist places in Delhi. 
                      </p>
@@ -356,6 +432,7 @@ function Body4(){
                           Mughal Emperor Shah Jahan started the construction of Lal Qila on 12 May 1638. The construction attained completion on 6 April 1648. You can travel to the UNESCO World Heritage Site by booking a taxi in Delhi from Aeiety Trips. 
                      </p>
                      <h3>Mehrauli Archaeological Park</h3>
+                     <img src="https://i.postimg.cc/05XnS4MV/Mehrauli-Park.webp" alt="Mehrauli Archaeological Park" className="img-fluid float-start rounded p-0 m-2"/>
                      <p className="font font22">
                           You will visualize India’s rich history when you step into the historically relevant park in southern Delhi. Our local Delhi taxi service can be the best option to visit the park.
                      </p>
@@ -379,6 +456,7 @@ function Body4(){
                           After visiting the National Museum, you can rent our best taxi service in Delhi to visit the nearby places of importance, such as the India Gate and the Parliament.
                      </p>
                      <h3>Birla Temple</h3>
+                     <img src="https://i.postimg.cc/gj30G5fG/Birla-Temple.webp" alt="Birla Temple" className="img-fluid float-start rounded p-0 m-2"/>
                      <p className="font font22">
                           It is located near Connaught Place. You can reach the temple conveniently by hiring our best cab service in Delhi. The entire temple premises are well-maintained and spectacular. In addition to the main temple, there is a beautiful garden inside the premises. Also, it is a popular tourist spot in Delhi. 
                      </p>
@@ -386,6 +464,7 @@ function Body4(){
                           Interestingly, it was the first large Hindu temple built in New Delhi. After your visit, you can return by a Delhi cab or shop in the vibrant Connaught Place. Other options could be visiting India Gate or Lodhi Garden. Other options could be hiring our best taxi in Delhi to visit Lajpat Nagar or Khan Market. The temple's construction ended in 1939 after starting in 1933. 
                      </p>
                      <h3>Akshardham Temple</h3>
+                     <img src="https://i.postimg.cc/fb1WXBv1/Akshar-Dham.webp" alt="Akshardham Temple" className="img-fluid float-start rounded p-0 m-2"/>
                      <p className="font font22">
                           The temple is in the Pandav Nagar of New Delhi. You will see numerous people in Akshardham Temple daily. You should also visit the temple. You can ease your trip to the temple by booking our exclusive taxi service in Delhi. 
                      </p>
