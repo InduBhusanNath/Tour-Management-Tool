@@ -3,6 +3,7 @@ import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Collapsible from 'react-collapsible';
 import TaxiQuickBooking from "./taxi-quick-booking";
+import TaxiChooseUs from "./taxi-choose-us";
 import TaxiServiceDisplay from "./taxi-service-display";
 
 
@@ -18,9 +19,10 @@ export default function DelhiTaxi(){
                      <DelhiTaxiBanner/>                     
                      <BreadCrumb/>
                      <Intro/>
-                     <QuickCabBooking/>                     
-                     <TaxiServiceFeatures/>
+                     <QuickCabBooking/>   
+                     <ChooseTaxi/>
                      <Offerings/>
+                     <TaxiServiceFeatures/>
                      <OutstationDelhiTaxi/>                                          
                      <OutstationRoutes/> 
                      <LocalDelhiTaxi/>
@@ -112,13 +114,33 @@ function QuickCabBooking(){
            </div>
       </>);
 }
+//Choose Taxi
+function ChooseTaxi(){
+      return(<>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2>Why Choose Our Delhi Taxi Service?</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-2"></div>
+                <div className="col-sm-8">
+                    <TaxiChooseUs/>
+                </div>
+                <div className="col-sm-2"></div>
+           </div>
+      
+      </>);
+}
 //Service Features
 function TaxiServiceFeatures(){
      return(<>
            <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h2>Get a Delhi Taxi Based on Your Need and Budget </h2>
+                     <h3>Get a Delhi Taxi Based on Your Need and Budget </h3>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
@@ -175,7 +197,7 @@ function Faqs(){
            <div className="row background-lightyellow p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h2>FAQs</h2> 
+                     <h2>Delhi Taxi FAQs</h2> 
                 </div>
                 <div className="col-sm-1"></div>
            </div>
@@ -217,7 +239,7 @@ function Faqs(){
                                     Contact Aeiety Trips. We provide excellent cab service for business trips.
                                </p>      
                          </Collapsible>
-                         <Collapsible trigger="&#43;Does Aeiety Trips offer discounts?">
+                         <Collapsible trigger="&#43;Does Aeiety Trips offer discounts for Delhi taxi service?">
                               <p className="bg-warning rounded shadow-sm padding25">
                                     Yes, we do. We offer discounts to our frequent customers. 
                               </p>      
@@ -246,6 +268,46 @@ function LocalDelhiTaxi(){
                      </p>
                 </div>
                 <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <div className="card-group">
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Sightseeing
+                               </div>
+                          </div>
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Corporate Trips
+                               </div>
+                          </div>
+                          <div className="card bg-transparent border-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Hospital Transfers
+                               </div>
+                          </div>
+                     </div>
+                     <div className="card-group">
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Airport Transfers
+                               </div>
+                          </div>
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Railway Station Transfers
+                               </div>
+                          </div>
+                          <div className="card bg-transparent border-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Personalized Trips
+                               </div>
+                          </div>
+                     </div>
+                </div>
+                <div className="col-sm-1"></div>                
            </div>
       
       </>);
@@ -285,21 +347,41 @@ function OutstationRoutes(){
            </div>
            <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
-                <div className="col-sm-10">                                    
-                     <table className="table">
-                          <tbody>
-                               <tr>
-                                    <td className="bg-transparent font font22">&#x2705;&nbsp;Delhi to Agra taxi</td>
-                                    <td className="bg-transparent font font22">&#x2705;&nbsp;Delhi to Shimla cab</td>
-                                    <td className="bg-transparent font font22">&#x2705;&nbsp;Delhi to Manali taxi</td>
-                               </tr>
-                               <tr>
-                                    <td className="bg-transparent font font22">&#x2705;&nbsp;Delhi to Haridwar cab</td>
-                                    <td className="bg-transparent font font22">&#x2705;&nbsp;Delhi to Rishikesh taxi</td>
-                                    <td className="bg-transparent font font22">&#x2705;&nbsp;Delhi to Jaipur cab</td>
-                               </tr>
-                          </tbody>
-                     </table>                     
+                <div className="col-sm-10"> 
+                     <div className="card-group">
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Delhi to Agra taxi
+                               </div>
+                          </div>
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Delhi to Shimla cab
+                               </div>
+                          </div>
+                          <div className="card bg-transparent border-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Delhi to Manali taxi
+                               </div>
+                          </div>
+                     </div>
+                     <div className="card-group">
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Delhi to Haridwar cab
+                               </div>
+                          </div>
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Delhi to Rishikesh taxi
+                               </div>
+                          </div>
+                          <div className="card bg-transparent border-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Delhi to Jaipur cab
+                               </div>
+                          </div>
+                     </div>              
                 </div>
                 <div className="col-sm-1"></div>
           </div>
