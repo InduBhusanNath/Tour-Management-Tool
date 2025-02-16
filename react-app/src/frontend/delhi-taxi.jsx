@@ -381,7 +381,7 @@ function OutstationRoutes(){
                                     &#x2705;&nbsp;Delhi to Jaipur cab
                                </div>
                           </div>
-                     </div>              
+                     </div>                                   
                 </div>
                 <div className="col-sm-1"></div>
           </div>
