@@ -214,14 +214,33 @@ function ListBhutanTourPackages(){
                 <div className="col-sm-10">
                      <section className="font font22">
                           <p>
-                               There are attractive options in Bhutan for tourists	looking for adventure activities. Adventure tourism in Bhutan includes trekking in spectacular mountains, water rafting, mountain biking, and strenuous climbs. Adventure enthusiasts will find green landscapes, beautiful mountains, and rich biodiversity spots to indulge in adventure activities. Moreover, these are popular Bhutan tourist spots. They will get ample opportunities for camping, cycling, hiking, motorcycle tours, rafting, trekking, etc. 
+                               There are ample opportunities for adventure activities in the country. Our best Bhutan tour packages include them. 	
+                          </p>
+                          <p>
+                               The activities include:
+                               <ul class="list-group">
+                                    <li class="list-group-item">Trekking</li>
+                                    <li class="list-group-item">Rafting</li>
+                                    <li class="list-group-item">Biking</li>
+                                    <li class="list-group-item">Climbing</li>
+                               </ul>
+                          </p>
+                         <p>
+                               When you tour Bhutan, you can engage in such activities in scenic landscapes. 
                          </p>
                          <p>
-                               Sports enthusiasts can play golf on their tour of Bhutan. Golf has been a popular sport in the country since its maiden presence in 1968. All four golf courses are of 9-holes. They are: The Royal Thimphu Golf Club,  Haa Golf Club, India House Golf Club, and Drakpoi Golf Club.
+                               You can also play golf during your visit to the country with one of our Bhutan trip packages. Golf has been a popular sport in the country since its maiden presence in 1968. All four golf courses are 9-holes:
+                               <ul class="list-group">
+                                    <li class="list-group-item">The Royal Thimphu Golf Club</li>
+                                    <li class="list-group-item">Haa Golf Club</li>
+                                    <li class="list-group-item">India House Golf Club</li>
+                                    <li class="list-group-item">Drakpoi Golf Club</li>
+                               </ul>
                          </p>
                          <p>
-
+                               Our Bhutan tour packages are the best options to engage in the country’s adventure tourism. They are also key components of tourism in Bhutan.
                          </p>
+                         
                      </section>
                 </div>
                 <div className="col-sm-1"></div>
@@ -242,11 +261,11 @@ function ListBhutanTourPackages(){
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                     <section className="font font22">
-                          <p>  
-                               Nature enthusiasts will find the eco aspect of Bhutan tourism appealing.Bhutan tourist places with natural beauty allow visitors to experience the carbon-neutral natural environment and vibrant local communities. As such, they can fulfill their urge to experience the vibrancy of nature during their tour of tour of Bhutan. 
+                          <p>
+                               Nature enthusiasts will find the eco aspect of Bhutan tourism appealing. Our Bhutan tour packages are the best options to experience nature. Appealing places to visit in Bhutan with natural beauty allow visitors to experience the carbon-neutral natural environment and vibrant local communities. 
                           </p>
                           <p>
-                               In Bhutan, 70% of its land is under forests, resulting in carbon neutrality. Widespread biodiversity and clean natural Bhutan tourist spots allow visitors to undergo a rich eco-tourism experience. Our comprehensive Bhutan Tour Packages also include eco-tourism. 
+                               As such, tour Bhutan to experience the ecotourism in the country. In Bhutan, 70% of its land is under forests, resulting in carbon neutrality. Widespread biodiversity and clean natural tourist spots allow visitors to undergo a rich eco-tourism experience. Our comprehensive Bhutan Tour Packages also include eco-tourism. 
                           </p>
                     </section>
                </div>
@@ -451,10 +470,10 @@ function Paro(){
                <div className="col-sm-10">
                     <section className="font font22">
                          <p>
-                               It is an important town in Bhutan. Paro is historic and beautiful. Also, it is one of the notable places to visit in Bhutan. You will find many interesting things to see in the historically significant town. It finds a special place in Bhutan tourism. 
+                               It is an important town in Bhutan that we cover in our excellent Bhutan tour packages. Paro is historic and beautiful. Also, the historic town is among the most appealing places to visit in Bhutan. It finds a special place in Bhutan tourism.
                          </p>
                          <p>
-                               Interestingly, the only international airport in Bhutan is in Paro. Its distance to Thimphu is 54 km. Paro is of special focus in our excellent Bhutan tour packages. The town is on the bank of the Paro Chu River. A lot of agricultural cultivation happens in Paro. In addition, there are many ancient sites in the town. Also, there are many good hotels and restaurants in Paro. 
+                               Interestingly, the only international airport in the country is in the town. Its distance to Thimphu is 54 km. Paro is of special focus in our excellent Bhutan tour packages. The town is on the bank of the Paro Chu River. A lot of agricultural cultivation happens in Paro. In addition, there are many ancient sites in the town. Also, there are many good hotels and restaurants in Paro. So, you can conveniently visit the town on your tour of Bhutan. 
                          </p>                         
                     </section>
                </div>
@@ -482,13 +501,13 @@ function ParoVisitingPlaces(){
                           </section>
                           <section className="font font22 p-3">
                                <p>
-                                    The Taktsang Palphug Monastery is among the most significant Bhutan tourist spots. It is also called Paro Taktsang. You will visit it when you tour Bhutan with a Bhutan package tour from Aeiety Trips. 
+                                     The Taktsang Palphug Monastery is among the most significant Bhutan tourist spots. Our affordable Bhutan tour packages comprise Paro Taktsang. Its other name is Tiger's Nest. 
                                </p>
                                <p>
-                                    According to the belief, Guru Rinpoche meditated for years inside a cave in that place. He came to the place on the back of a tigress.  Subsequently, he incarnated in eight different forms. That is why, the place is considered holy. It is also popularly called Tiger’s Nest.
+                                     According to the belief, Guru Rinpoche meditated for years inside a cave in that place. He came to the place on the back of a tigress. Subsequently, he incarnated in eight different forms. That is why the place is considered holy. 
                                </p>
                                <p>
-                                    Paro Taktsang is at 2,950m above sea level. As such, you must trek to the monastery from the  Ramthangkha road. The trekking could take 2 to 3 hrs.
+                                    It is at 2,950m above sea level. As such, you must trek to the monastery from the  Ramthangkha road. The trekking could take 2 to 3 hrs. You will visit it when you tour Bhutan with one of our Bhutan tour packages from Aeiety Trips.
                                </p>
                          </section>
                     </section>
@@ -505,14 +524,11 @@ function ParoVisitingPlaces(){
                           </section>
                           <section className="font font22 p-3">
                                <p>
-                                    It is one of the most iconic places to visit in Bhutan. It is also called Paro Dzong. Rinpung Dzong attracts tourists due to its historical relevance and creative architecture. It has been used for defense and religious purposes. We include Rinpung Dzong in your tour of Bhutan with an excellent Bhutan trip package.
+                                    It is one of the most iconic places to visit in Bhutan. Our Bhutan tour packages will allow experience Rinpung Dzong, also called Paro Dzong. It attracts tourists due to its historical relevance and creative architecture. It has been used for defense and religious purposes. We include it in your tour of Bhutan with an excellent Bhutan trip package.
                                </p>
                                <p>
-                                    Paro Dzong is among the key attractions in Bhutan tourism. It was built in 1646. Zhabdrung Ngawang Namgyel was the behind the setting up of the fortress. 
-                               </p>
-                               <p>
-                                     Locals and tourists gather in large numbers in Rinpung Dzong during the annual festival of Paro Tsechu. It has excellent wooden carvings and paintings, drawing everyone’s appreciation.
-                               </p>
+                                    You will see a large gathering comprising locals and tourists during the annual festival of Paro Tsechu. It has excellent wooden carvings and paintings, drawing everyone’s appreciation. Experience it with one of Aeiety Trips’ Bhutan tour packages. The Dzong, built in 1646,  is among the key attractions in Bhutan tourism.
+                               </p>                               
                          </section>
                     </section>
                </div>
@@ -528,10 +544,10 @@ function ParoVisitingPlaces(){
                           </section>
                           <section className="font font22 p-3">
                                <p>
-                                    It functions as Bhutan’s National Museum. Inside Ta Dzong, you will see precious bronze statues and paintings. As such, you will get the opportunity to get a glimpse of the country’s rich artistic heritage. Ta Dzong houses more than 3,000 artifacts that are over 1,500 years old.  Our comprehensive Bhutan travel packages include Ta Dzong. As such, you will visit the National Museum on your Bhutan trip with one of Aeiety Trip’s packages.
+                                    It functions as Bhutan’s National Museum. You can choose one of our exclusive Bhutan tour packages. Inside Ta Dzong, you will see precious bronze statues and paintings. As such, you will get the opportunity to get a glimpse of the country’s rich artistic heritage. Ta Dzong houses more than 3,000 artifacts that are over 1,500 years old. Our comprehensive Bhutan travel packages include Ta Dzong. As such, you will visit the National Museum on your Bhutan trip with one of Aeiety Trip’s packages.
                                </p>
                                <p>
-                                    Ta Dzong is one of the major tourist attractions in Bhutan. Ponlop Tenzin Drukdra built it. He was the first governor of Paro. The construction was completed in 1651.
+                                    It is one of the major tourist attractions in Bhutan. Ponlop Tenzin Drukdra built it. He was the first governor of Paro. The construction was completed in 1651. Visit it with one of our Bhutan tour packages.
                                </p>
                                
                           </section>

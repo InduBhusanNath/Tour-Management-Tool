@@ -40,8 +40,8 @@ function TechnicalSEO(){
      return(<>
             <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Delhi Taxi | For Satisfying Rides at Reasonable Fares</title>                
-                <meta name="description" content="Looking for a trustworthy Delhi taxi ? Get affordable, reliable, and punctual taxi service in Delhi for local and outstation trips. Call us to book a cab now!"/>
+                <title>Delhi Taxi | Get Satisfying Rides at Reasonable Fares </title>                
+                <meta name="description" content="Book our excellent Delhi taxi service. We provide affordable, reliable, and punctual taxi service in Delhi for local and outstation trips. Explore our cabs."/>
                 <link rel="canonical" href="https://aeiety.com/delhi-taxi"/>
                 <meta property="og:title" content="Taxi Service in Delhi by Aeiety Trips"/>
                 <meta property="og:url" content="https://aeiety.com/delhi-taxi"/>
@@ -106,11 +106,11 @@ function Intro(){
 function QuickCabBooking(){
       return(<>
            <div className="row background-lemonchiffon p-3">
-                <div className="col-sm-4"></div>
-                <div className="col-sm-4">
+                <div className="col-sm-2"></div>
+                <div className="col-sm-8">
                      <TaxiQuickBooking/>
                 </div>
-                <div className="col-sm-4"></div>
+                <div className="col-sm-2"></div>
            </div>
       </>);
 }
@@ -443,7 +443,10 @@ function DelhiVisitingPlaces(){
                      <h3>Lotus Temple</h3>
                      <img src="https://i.postimg.cc/NF1C3p9r/Lotus-Temple.webp" alt="Lotus Temple" className="img-fluid float-start rounded p-0 m-2"/>
                      <p className="font font22">
-                          It is a prominent attraction in New Delhi. You can hire our local cab service in Delhi to visit Lotus Temple. Its structure is that of a lotus, hence the name. It is 34m in height. Its construction was completed in 1986. Interestingly, people of any religion can visit it. It is near Nehru Place in New Delhi, at the Bahapur village. Although, all sorts of public transportation including the metro are available, renting a Delhi cab can be the most convenient transportation to Lotus Temple. After visiting, you can reach the nearby Nehru Place market by hiring a cab in Delhi. 
+                          It is a prominent attraction in New Delhi. You can hire our local taxi service in Delhi to visit Lotus Temple. Its structure is that of a lotus, hence the representation. It is 34m in height. Its construction was completed in 1986. Interestingly, people of any religion can visit it. It is near Nehru Place in New Delhi, at the Bahapur village. 
+                     </p>
+                     <p className="font font22">
+                          Although, all sorts of public transportation including the metro are available, renting a Delhi taxi can be the most convenient transportation to Lotus Temple. After visiting, you can reach the nearby Nehru Place market by hiring a taxi in Delhi. 
                      </p>
                      <p>&nbsp;</p>
                      <h3>India Gate</h3>
@@ -459,22 +462,22 @@ function DelhiVisitingPlaces(){
                      </p>
                      <h3>Connaught Place</h3>
                      <p className="font font22">
-                          People often call it CP. It is the main business and financial hub in New Delhi. In Connaught Place, you will find the major companies operating, entailing a corporate atmosphere. The place also has another name: Rajiv Chowk, which is associated with especially the metro station area. Our reliable cab service in Delhi also covers CP for up and up-and-down. 
+                          People often call it CP. It is the main business and financial hub in New Delhi. In Connaught Place, you will find the major companies operating, entailing a corporate atmosphere. Our Delhi taxi service operates there. The place also has another name: Rajiv Chowk, which is associated with especially the metro station area. Our reliable taxi service in Delhi also covers CP for up and up-and-down. 
                      </p>
                      <p className="font font22">
-                          There are many shopping options, including nightlife. In addition to branded showrooms, you can go on a shopping spree in the famous Palika Bazaar, and the roadside shops.
+                          There are many shopping options, including nightlife. In addition to branded showrooms, you can go on a shopping spree in the famous Palika Bazaar, and the roadside shops. Our best Delhi taxi service can enable visiting them with ease.
                      </p>
                      <p className="font font22">
-                          With many food outlets in Connaught Place, you will find numerous dining options. There are many branded restaurants and popular food outlets to choose from. Notably, some restaurants in CP started operations in the pre-independence period. You can reach CP from anywhere in the city by riding a taxi in Delhi. 
+                          With many food outlets in Connaught Place, you will find numerous dining options. There are many branded restaurants and popular food outlets to choose from. Notably, some restaurants in CP started operations in the pre-independence period. You can reach CP from anywhere in the city by riding a taxi in Delhi, booked from Aeiety Trips’ Delhi taxi service. 
                      </p>
                      <p className="font font22">
-                          For cinema lovers, CP is the place to go. You will find many cinema halls, including multiplexes. Notably, the Regal Cinema Hall is an iconic theatre, built in 1932. You can leave the task of transporting you to the theatre to our dependable Delhi cab booking. We will drop you at the cinema hall, and pick you up after the show.
+                          For cinema lovers, CP is the place to go. You will find many cinema halls, including multiplexes. Notably, the Regal Cinema Hall is an iconic theatre, built in 1932. You can leave the task of transporting you to the theatre to our dependable Delhi taxi booking. We will drop you at the cinema hall, and pick you up after the show.
                      </p>
                      <p className="font font22">
                           There is a beautiful large park in the middle of CP. You can relax there amid a busy environment. 
                      </p>
                      <p className="font font22">
-                          In addition, CP is nearby to Barakhamba Road and Kasturba Gandhi Marg.
+                          In addition, CP is nearby to Barakhamba Road and Kasturba Gandhi Marg. Hire our Delhi taxi to reach those places.
                      </p>
                      <h3>Jantar Mantar</h3>
                      <img src="https://i.postimg.cc/13ZsVjcb/Jantar-Mantar.webp" alt="Jantar Mantar" className="img-fluid float-start rounded p-0 m-2"/>
@@ -494,13 +497,13 @@ function DelhiVisitingPlaces(){
                      <h3>Humayun’s Tomb</h3>
                      <img src="https://i.postimg.cc/CxsfGZrw/Humayun-Tomb.webp" alt="Humayun’s Tomb" className="img-fluid float-start rounded p-0 m-2"/>
                      <p className="font font22">
-                          Visiting there means getting the opportunity to visualize a UNESCO Heritage Site. Our best taxi in Delhi can pick you up to visit the place. It displays the richness of the architectural technology that prevailed during the Mughal times. The marvelous tourist spot is in Nizamuddin East in New Delhi.
+                          Visiting there means getting the opportunity to visualize a UNESCO Heritage Site. Our best Delhi taxi can pick you up to visit the place. It displays the richness of the architectural technology that prevailed during the Mughal times. The marvelous tourist spot is in Nizamuddin East in New Delhi.
                      </p>
                      <p className="font font22">
-                          Interestingly, it has not lost its charm even after centuries. You can go there by booking a Delhi taxi from Aeiety Trips. It came into existence in 1558.
+                          Interestingly, it has not lost its charm even after centuries. You can go there by booking a taxi in Delhi from Aeiety Trips. It came into existence in 1558.
                      </p>
                      <p className="font font22">
-                          Remarkably, the popular historical structure is built of red sandstone. Our best cab service in Delhi can be a good option. It can help you reach Humayun’s Tomb quickly. If you book a round trip, we will pick you up after your visit.
+                          Remarkably, the popular historical structure is built of red sandstone. Our best taxi service in Delhi can be a good option. It can help you reach Humayun’s Tomb quickly. If you book a round trip, we will pick you up after your visit.
                      </p>
                      <h3>Lal Qila (Red Fort)</h3>
                      <img src="https://i.postimg.cc/HWhzM5GX/LalQila.webp" alt="Lal Qila" className="img-fluid float-start rounded p-0 m-2"/>
@@ -540,21 +543,21 @@ function DelhiVisitingPlaces(){
                      <h3>Birla Temple</h3>
                      <img src="https://i.postimg.cc/gj30G5fG/Birla-Temple.webp" alt="Birla Temple" className="img-fluid float-start rounded p-0 m-2"/>
                      <p className="font font22">
-                          It is located near Connaught Place. You can reach the temple conveniently by hiring our best cab service in Delhi. The entire temple premises are well-maintained and spectacular. In addition to the main temple, there is a beautiful garden inside the premises. Also, it is a popular tourist spot in Delhi. 
+                          It is located near Connaught Place. You can reach the temple conveniently by hiring our best Delhi taxi. The spectacular and spacious temple will arouse your spiritual mind. In addition, there is a beautiful garden inside the boundary. It is recognized as a popular tourist spot in Delhi. 
                      </p>
                      <p className="font font22">
-                          Interestingly, it was the first large Hindu temple built in New Delhi. After your visit, you can return by a Delhi cab or shop in the vibrant Connaught Place. Other options could be visiting India Gate or Lodhi Garden. Other options could be hiring our best taxi in Delhi to visit Lajpat Nagar or Khan Market. The temple's construction ended in 1939 after starting in 1933. 
+                          Interestingly, it was the first Hindu temple built on a large scale in the city. After your visit, you can return by hiring our taxi service in Delhi or visit the classy Connaught Place. Other options could be visiting India Gate or Lodhi Garden. Other options could be hiring our best taxi in Delhi to visit Lajpat Nagar or Khan Market. The temple's construction ended in 1939 after starting in 1933.
                      </p>
                      <h3>Akshardham Temple</h3>
                      <img src="https://i.postimg.cc/fb1WXBv1/Akshar-Dham.webp" alt="Akshardham Temple" className="img-fluid float-start rounded p-0 m-2"/>
                      <p className="font font22">
-                          The temple is in the Pandav Nagar of New Delhi. You will see numerous people in Akshardham Temple daily. You should also visit the temple. You can ease your trip to the temple by booking our exclusive taxi service in Delhi. 
+                          The temple is in the Pandav Nagar of New Delhi. You will see numerous people in Akshardham Temple daily. You should also visit the temple. You can ease your trip to the temple by booking our exclusive Delhi taxi service.
                      </p>
                      <p className="font font22">
                           6 November 2005 was the day the temple was inaugurated. There are eateries and a retail store that sells the works of the temple associates. Hire our excellent taxi service in Delhi to visit the place. The main temple is a spectacular artistic construction. In addition, there is a large park inside the temple campus. Our local Delhi taxi provides convenient transportation to the temple. 
                      </p>
                      <p className="font font22">
-                          Our 24/7 taxi in Delhi can pick up tourists from hotels and take them to  Akshardham Temple.
+                          Our 24/7 taxi in Delhi can pick tourists from hotels and transport them to the temple.
                      </p>
                     
               </div>
