@@ -2,8 +2,10 @@ import Header from "./header";
 import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Collapsible from 'react-collapsible';
+import TaxiQuickBooking from "./taxi-quick-booking";
+import TaxiChooseUs from "./taxi-choose-us";
 import TaxiServiceDisplay from "./taxi-service-display";
-import YoutubeGuwahatiTaxi from "./youtube-guwahati-taxi";
+
 
 export default function GuwahatiTaxi(){
      return(<>
@@ -13,8 +15,14 @@ export default function GuwahatiTaxi(){
                      <Header/>
                      <GuwahatiTaxiBanner/>
                      <BreadCrumb/>
-                     <Body1/>
+                     <Intro/>
+                     <QuickCabBooking/>
+                     <WhyChooseUs/>
+                     <GuwahatiTaxiOfferings/>
                      <TaxiServiceFeatures/>
+                     <OutstationGuwahatiTaxi/>
+                     <TopGuwahatiTaxiOutsationRoutes/>
+                     <LocalGuwahatiTaxi/>
                      <Faqs/>
                      <Body2/>
                      <Body3/>
@@ -49,7 +57,7 @@ function GuwahatiTaxiBanner(){
       return(<>
            <div className="row">
                 <div className="col-sm-12 p-0 m-0">
-                     <img src="https://i.ibb.co/0FyfjQs/Guwahati-Cab-Banner.png" alt="Guwahati Cab" className="img-fluid w-100 p-0 m-0"/>
+                     <img src="https://i.ibb.co/TDHypvqh/Guwahati-Taxi-Banner.webp" alt="Guwahati Cab" className="img-fluid w-100 p-0 m-0"/>
                 </div>
            </div>          
       </>);
@@ -63,6 +71,7 @@ function BreadCrumb(){
                                <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="/" className="link-secondary">Home</a></li>
                                     <li class="breadcrumb-item"><a href="/aboutus" className="link-secondary">About Us</a></li>
+                                    <li class="breadcrumb-item"><a href="/taxis" className="link-dark">Taxi</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Taxi Guwahati</li>
                                </ol>
                           </nav> 
@@ -71,58 +80,252 @@ function BreadCrumb(){
      </>);
 }
 //Body1
-function Body1(){
+function Intro(){
       return(<>
-           <div className="row background-lemonchiffon">
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-2"></div>
+                <div className="col-sm-8 text-center">
+                     <h1>Experience the Best Cab Service in Guwahati: We Make the Difference</h1>
+                </div>
+                <div className="col-sm-2"></div> 
+           </div>
+           <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>  
-                <div className="col-sm-7 p-4 m-1">
-                     <h1>Experience the Difference in Cab Service in Guwahati&#9889;</h1>
-                     <p className="font font24 fw-bold text-muted">We Made it Affordable,Timely, Hassle-Free</p>
+                <div className="col-sm-10 ">                     
                      <p className="font font22">
-                          Cab service in Guwahati by Aeiety Trips is synonymous with a firm dedication to providing customers with the best Guwahati taxi service. With affordable fares, timely pickup, and nil hassles, we ensure smooth and efficient taxi trips. We at Aeiety Trips distinguish ourselves through timeliness, understanding of the customer, our efforts to eradicate pain points, and efficiency. Our customer-centric local and outstation taxi service in Guwahati provides cabs of different types: small, medium, or luxury for various needs. You can get the best taxi Guwahati ride experience when you choose Aeiety Trips.     
+                          Get the best cab service in Guwahati from Aeiety Trips. We are dedicated to providing customers with affordable, timely and safe cabs in Guwahati. With the proper understanding of the customer, we ensure smooth and efficient taxi trips. Due to our dedication and continuous improvement in our best Guwahati taxi service, you will encounter nil hassles. We at Aeiety Trips distinguish ourselves through understanding of the customer, our efforts to eradicate pain points, and efficiency. Our customer-centric local and outstation taxi service in Guwahati provides cabs of different types: small, medium, or large for various needs. You can get the best taxi Guwahati ride experience when you choose Aeiety Trips. We ensure the best cab service in Guwahati.
                      </p>
-                     <p>
-                          <button type="button" class="btn btn-warning shadow"><a href="/" className="action" rel="noreferrer noopener">Book Taxi Guwahati&nbsp;&#129146;</a></button> 
-                     </p>
-                     
-                </div>
-                <div className="col-sm-3 p-4 m-1">                     
-                     
-                     <section className="p-0">
-                          <div className="card border-warning mb-3 text-dark bg-warning shadow-sm">
-                               <div className="card-header text-center">
-                                    <span className="fw-bold">QUICK BOOKING</span>
-                               </div>
-                               <div className="card-body text-center">
-                                  Call/Whatsapp
-                                  <br/>
-                                  <span className="fw-bold">(+91)9531393648</span>
-                               </div>
-                          </div>
-                     </section>
-                     <section className="p-0">
-                          <div className="card border-warning mb-3 text-dark bg-warning shadow-sm">
-                               <div className="card-header border-0 text-center">
-                                    <span className="fw-bold">Watch Videos</span>
-                               </div>
-                               <div className="card-body p-0 m-0 w-100 text-center">
-                                    <YoutubeGuwahatiTaxi/>
-                                    <a href="https://www.youtube.com/@aeiety-trips/videos" target="_blank" rel="noreferrer noopener" className="text-decoration-none text-dark font font18">More Videos</a>
-                               </div>
-                               
-                          </div>
-                          
-                     </section>
-                </div>
+                </div>                     
                 <div className="col-sm-1"></div>
           </div>
 
       </>);
 }
+//Quick Taxi Booking
+function QuickCabBooking(){
+      return(<>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-2"></div>
+                <div className="col-sm-8">
+                    <TaxiQuickBooking/>
+                </div>
+                <div className="col-sm-2"></div>
+           </div>
+      </>);
+}
+
+//Why Choose Us
+function WhyChooseUs(){
+      return(<>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2>Why Choose Our Cab Service in Guwahati?</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <p className="font font22">
+                          We are aware that running a cab service in Guwahati is challenging. People from all over India and foreign countries come to the vibrant city. Many of them hire cabs in Guwahati to go from place to place in and outside the city. Providing them with personalized cab services needs careful planning and sincere efforts. Only that can give them the best cab experience. Therefore, we have carefully planned our Guwahati taxi service, looking at every possible scenario. As a result, our carefully and thoughtfully planned taxi Guwahati operations provide the best experience. That is why it makes sense to select our best cab service in Guwahati.
+                     </p>                    
+                </div>
+                <div className="col-sm-1"></div>
+           </div> 
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-2"></div>
+                <div className="col-sm-8">
+                     <TaxiChooseUs/>
+                </div>
+                <div className="col-sm-2"></div>
+           </div>     
+      </>);
+}
+//Offerings
+function GuwahatiTaxiOfferings(){
+      return(<>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2>Offerings of Our Best Cab Service in Guwahati</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <p className="font font22">
+                          At Aeiety Trips, we planned our cab rental operation with due diligence. We considered every aspect of the customer. That enabled us to structure our excellent cab service in Guwahati to cater to all needs. Due to this, you can get a cab for any purpose. Our comprehensive taxi Guwahati operations include:
+                     </p>
+                     <p className="font font22">
+                          <ul class="list-group list-group-flush">
+                               <li class="list-group-item bg-transparent">
+                                    Local taxis to institutions, offices, hotels, markets, hospitals, or entertainment entities within the city.
+                               </li>
+                               <li class="list-group-item bg-transparent">
+                                    Outstation taxis to places outside the city. We run one-way and round-way cabs for all destinations within Assam, Arunachal Pradesh, and Meghalaya.
+                               </li>
+                               <li class="list-group-item bg-transparent">
+                                     Airport transfers for picking up and dropping.
+                               </li>
+                               <li class="list-group-item bg-transparent">
+                                    Sightseeing cabs for pleasure trips to destinations inside and outside the city. 
+                               </li>
+                          </ul>
+                     </p>
+                </div>
+           </div>
+      
+      </>);
+}
+
 //Service Features
 function TaxiServiceFeatures(){
       return(<>
-           <TaxiServiceDisplay/>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <TaxiServiceDisplay/>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>           
+      </>);
+}
+
+//Outstation
+function OutstationGuwahatiTaxi(){
+      return(<>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2>Prefered Cab Service in Guwahati for Outstation Destinations</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <p className="font font22">
+                          At Aeiety Trips, we provide excellent outstation cab service in Guwahati. It is helpful for foreigners who come to the city to explore other parts of Assam and northeast India. They can regard it as a dependable tourist taxi service in Guwahati. We know about the best hotels and tourist spots in the northeastern region. As such, we can act as a trusted guide, giving them a smooth trip experience apart from providing them with the best cabs in Guwahati. Due to our reliable guidance, tourists can travel smoothly.  We provide taxi Guwahati to all parts of Assam and the northeastern states of Arunachal Pradesh and Meghalaya.
+                     </p>                                     
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+      </>);
+}
+//Top Outstation Routes
+function TopGuwahatiTaxiOutsationRoutes(){
+      return(<>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2>Top Outstation Taxi Service in Guwahati Routes</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <div className="card-group">
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Guwahati to Kaziranga taxi
+                               </div>
+                          </div>
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Guwahati to Shillong taxi
+                               </div>
+                          </div>
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0 border-end-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Guwahati to Sohra cab
+                               </div>
+                          </div>
+                     </div>
+                     <div className="card-group">
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Guwahati to Jorhat taxi
+                               </div>
+                          </div>
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Guwahati to Sivasagar cab
+                               </div>
+                          </div>
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0 border-end-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Guwahati to Dibrugarh taxi
+                               </div>
+                          </div>
+                     </div>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+      </>);
+}
+
+//Local Taxi
+function LocalGuwahatiTaxi(){
+      return(<>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2>Excellent Cab Service in Guwahati for Local Trips</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <p className="font font22">
+                          We provide cabs to any place to visit in Guwahati. Our dedicated local cab service in Guwahati can be the perfect option for tourists who want to travel inside the city. With many tourist places in Guwahati, foreigners and visitors from different regions in India can get many options. They can undergo the best sightseeing experience by hiring our dedicated Guwahati taxi service. With our comprehensive knowledge of the available Guwahati tour places, we can ensure customers a rich Guwahati tourism experience. Ancient temples, stunning river beaches, parks, waterfalls, a planetarium, a science museum, and an art museum are the attractive Guwahati tourist places. Our customer-centric taxi Guwahati covers all such locations.
+                     </p>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <div className="card-group">
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Sightseeing
+                               </div>
+                          </div>
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Corporate Tours
+                               </div>
+                          </div>
+                          <div className="card bg-transparent border-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Hospital Transfers
+                               </div>
+                          </div>
+                     </div>
+                     <div className="card-group">
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Airport Transfers
+                               </div>
+                          </div>
+                          <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Railway Station Transfers
+                               </div>
+                          </div>
+                          <div className="card bg-transparent border-0">
+                               <div className="card-body font font22">
+                                    &#x2705;&nbsp;Customized Tours
+                               </div>
+                          </div>
+                     </div>
+                </div>
+                <div className="col-sm-1"></div>                
+           </div>      
       </>);
 }
 //FAQs

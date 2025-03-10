@@ -10,7 +10,9 @@ import HomePage from "./frontend/home_page";
 import AboutUs from "./frontend/aboutus";
 import Taxis from "./frontend/taxis";
 import DelhiTaxi from "./frontend/delhi-taxi";
+import DelhiAirportTaxi from "./frontend/delhi-airport-taxi";
 import GuwahatiTaxi from "./frontend/guwahati-taxi";
+import GuwahatiAirportTaxi from "./frontend/guwahati-airport-taxi";
 import BlogPage from "./frontend/blog-page";
 import ContactUs from "./frontend/contactus";
 import AdventureTourism from "./frontend/adventure-tourism";
@@ -66,9 +68,17 @@ const router=createBrowserRouter([
    element:<DelhiTaxi/>
   },
   {
+    path:"/delhi-airport-taxi",
+    element:<DelhiAirportTaxi/>
+   },
+  {
    path:"/guwahati-taxi",
    element:<GuwahatiTaxi/>
   },
+  {
+    path:"/guwahati-airport-taxi",
+    element:<GuwahatiAirportTaxi/>
+   },
   {
    path:"/blog-page",
    element:<BlogPage/>
