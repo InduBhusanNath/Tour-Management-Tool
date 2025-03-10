@@ -52,7 +52,7 @@ function GuwahatiTaxiBanner(){
       return(<>
            <div className="row">
                 <div className="col-sm-12 p-0 m-0">
-                     <img src="https://i.ibb.co/TDHypvqh/Guwahati-Taxi-Banner.webp" alt="Guwahati Cab" className="img-fluid w-100 p-0 m-0"/>
+                     <img src="https://i.ibb.co/3YMKDLFJ/Guwahati-Taxi-Banner1.webp" alt="Guwahati Cab" className="img-fluid w-100 p-0 m-0"/>
                 </div>
            </div>          
       </>);
