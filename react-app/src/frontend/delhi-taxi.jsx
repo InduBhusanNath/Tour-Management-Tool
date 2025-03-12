@@ -238,7 +238,7 @@ function LocalDelhiTaxi(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">                     
                      <p className="font font22">
-                          We at Aeiety Trips offer a local taxi service in Delhi for rides within the city. As such, you can use our cabs for office visits, attending business meetings, sightseeing tours with your family, hospital visits, or airport transfers. Businesses can book a Delhi taxi from us for official tours. A taxi booking in Delhi can help to carry a patient to the hospital. You can ride our taxi in Delhi for sightseeing within the city.  You can also get an airport taxi in Delhi from Aeiety Trips. Our service is perfect for tourists going to various places in the city. 
+                          We at Aeiety Trips offer a local taxi service in Delhi for rides within the city. As such, you can use our cabs for office visits, attending business meetings, sightseeing tours with your family, hospital visits, or airport transfers. Businesses can book a Delhi taxi from us for official tours. A taxi booking in Delhi can help to carry a patient to the hospital. You can ride our taxi in Delhi for sightseeing within the city.  You can also get an airport taxi in Delhi from Aeiety Trips. Our service is perfect for <a href="https://delhitourism.gov.in" target="_blank" rel="noreferrer noopener" className="text-decoration-none link-danger">tourists</a> going to various places in the city. 
                      </p>
                 </div>
                 <div className="col-sm-1"></div>
@@ -389,7 +389,7 @@ function DelhiTaxiOfferings(){
          </div>
      </>);
 }
-//Body4
+//Delhi Places to Visit
 function DelhiVisitingPlaces(){
      return(<>
            <div className="row background-lightyellow p-3">

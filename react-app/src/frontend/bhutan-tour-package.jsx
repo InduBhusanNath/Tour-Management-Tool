@@ -83,7 +83,7 @@ function BreadCrumb(){
            <div className="row background-mintcream p-2">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h1 className="text-center">Exclusive Bhutan Tour Packages Paving the Way to Experience the Kindom of Happiness </h1>
+                     <h1 className="text-center">Exclusive Bhutan Tour Packages:Experience the Kindom of Happiness</h1>
 
                      <section className="font font22 text-center">
                           <p>
@@ -135,7 +135,7 @@ function ListBhutanTourPackages(){
                <div className="col-sm-1"></div>
                <div className="col-sm-10">                                             
                      <p className="font font22">
-                          The Kingdom of Bhutan is rich in a healthy atmosphere and beautiful. Our exclusive Bhutan Tour Packages will allow you to visit all the attractive tourist destinations. That means you will get the opportunity to enjoy all the places to visit in Bhutan that are distinguished by a remarkable geographical diversity. As such, you will not miss out on any attractive Bhutan tourism spots due to our thoughtfully planned Bhutan tour packages.
+                          The Kingdom of <a href="https://www.britannica.com/place/Bhutan" target="_blank" rel="noreferrer noopener" className="text-decoration-none link-danger">Bhutan</a> is rich in a healthy atmosphere and beautiful. Our exclusive Bhutan Tour Packages will allow you to visit all the attractive tourist destinations. That means you will get the opportunity to enjoy all the places to visit in Bhutan that are distinguished by a remarkable geographical diversity. As such, you will not miss out on any attractive Bhutan tourism spots due to our thoughtfully planned Bhutan tour packages.
                      </p>
                      <p className="font font22">
                           With valleys and snow-capped peaks reaching up to 7,000 m above sea level, Bhutan offers a magnificent sight. Forests cover more than 70% of its land area.The country's biodiversity includes subtropical and lush dells, hillsides with pine forests, mountain glaciers, and wildlife.  When you tour Bhutan with our curated Bhutan holiday packages, you will have the opportunity to explore the attractive culture, geography, and lifestyle of the kingdom of happiness. As such, examine our best Bhutan Tour Packages to determine the best one for you.
