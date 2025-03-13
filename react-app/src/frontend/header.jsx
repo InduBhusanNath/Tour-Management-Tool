@@ -33,9 +33,6 @@ function ExtraHeaderBar(){
            <div className="row background-bisque p-1">
                 <div className="col-sm-4"><HelpLine/></div>                
                 <div className="col-sm-4">
-                     <BasicLinks/>                   
-                </div>
-                <div className="col-sm-4">
                      <section className="text-center font font18">
                           <nav>
                                <ul>
@@ -43,8 +40,11 @@ function ExtraHeaderBar(){
                                          &#9993;&nbsp;trips.aeiety@gmail.com
                                     </li>
                                </ul>
-                         </nav>
-                    </section>
+                          </nav>
+                    </section>                                       
+                </div>
+                <div className="col-sm-4">                     
+                     <BasicLinks/> 
                 </div>
           </div>
        
@@ -54,7 +54,7 @@ function ExtraHeaderBar(){
 function Logo(){
      return(<>
            <section className="text-center padding10">
-                <Link to="/" className="text-decoration-none"><img src={process.env.PUBLIC_URL + 'MainImages/logo.png'} className="img-fluid w-75" alt="AeietyTrips"/></Link>
+                <Link to="/" className="text-decoration-none"><img src={process.env.PUBLIC_URL + 'MainImages/logo.png'} className="img-fluid p-0 m-0" alt="Aeiety Trips"/></Link>
                 
           </section>
      </>);
@@ -124,7 +124,9 @@ function BasicLinks(){
                 <nav className="d-none d-sm-none d-md-none d-lg-block text-center font font18">
                      <ul>
                           <li><Link to="/aboutus" className="text-decoration-none text-dark padding5">About Us</Link></li>
+                          <li>&nbsp;|&nbsp;</li>                          
                           <li><Link to="/contactus" className="text-decoration-none text-dark padding5">Contact Us</Link></li>
+                          <li>&nbsp;|&nbsp;</li>
                           <li><Link to="/blog-page" className="text-decoration-none text-dark padding5">Blogs</Link></li>                          
                      </ul>
                 </nav>           
