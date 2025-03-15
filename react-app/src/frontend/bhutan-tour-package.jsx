@@ -37,14 +37,14 @@ function TechnicalSEO(){
              
              <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Bhutan Tour Packages | Enjoy Magic of the Beautiful Kingdom</title>                
-                <meta name="description" content="Get Bhutan tour packages at the best prices. Buy packages for solo, group, family, adventure and eco trips to tour Bhutan and gain memorable experiences."/>
+                <title>Bhutan Tour Packages | Get Flat 20% Off | Book NOW!</title>                
+                <meta name="description" content="Browse Bhutan tour packages at the best prices. Choose from a wide range of Bhutan packages for solo, family, or group trips with dedicated guides."/>
                 <link rel="canonical" href="https://aeiety.com/bhutan-tour-packages"/>
-                <meta property="og:title" content="Bhutan Tour Packages by Aeiety Trips"/>
+                <meta property="og:title" content="Bhutan Tour Packages | Get Flat 20% Off | Book NOW!"/>
                 <meta property="og:url" content="https://aeiety.com/bhutan-tour-packages"/>
                 <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
                 <meta property="og:type" content="Web Page"/>
-                <meta property="og:description" content="Learn about Bhutan tour packages by Aeiety Trips."/>
+                <meta property="og:description" content="Browse Bhutan tour packages at the best prices. Choose from a wide range of Bhutan packages for solo, family, or group trips with dedicated guides."/>
                 <meta property="og:locale" content="en_GB"/>
             </Helmet>
      </>);

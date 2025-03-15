@@ -38,11 +38,11 @@ function TechnicalSEO(){
                 <title>Cab Service in Guwahati | Budget-Friendly | Timely | Safe</title>                
                 <meta name="description" content="Get the best cab service in Guwahati for local and outstation rides at reasonable fares. Book a Guwahati taxi for all places in Assam and northeastern states."/>
                 <link rel="canonical" href="https://aeiety.com/guwahati-taxi"/>
-                <meta property="og:title" content="Taxi Service in Guwahati by Aeiety Trips"/>
+                <meta property="og:title" content="Cab Service in Guwahati | Budget-Friendly | Timely | Safe"/>
                 <meta property="og:url" content="https://aeiety.com/guwahati-taxi"/>
                 <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
                 <meta property="og:type" content="Web Page"/>
-                <meta property="og:description" content="Learn about the excellent cab service in Guwahati by Aeiety Trips."/>
+                <meta property="og:description" content="Get the best cab service in Guwahati for local and outstation rides at reasonable fares. Book a Guwahati taxi for all places in Assam and northeastern states."/>
                 <meta property="og:locale" content="en_GB"/>
             </Helmet>
      </>);
