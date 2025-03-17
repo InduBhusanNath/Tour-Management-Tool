@@ -35,10 +35,10 @@ function TechnicalSEO(){
      return(<>             
              <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Cab Service in Guwahati | Budget-Friendly | Timely | Safe</title>                
+                <title>Cab Service in Guwahati for Assam & NE With Budget Fares</title>                
                 <meta name="description" content="Get the best cab service in Guwahati for local and outstation rides at reasonable fares. Book a Guwahati taxi for all places in Assam and northeastern states."/>
                 <link rel="canonical" href="https://aeiety.com/guwahati-taxi"/>
-                <meta property="og:title" content="Cab Service in Guwahati | Budget-Friendly | Timely | Safe"/>
+                <meta property="og:title" content="Cab Service in Guwahati for Assam & NE With Budget Fares"/>
                 <meta property="og:url" content="https://aeiety.com/guwahati-taxi"/>
                 <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
                 <meta property="og:type" content="Web Page"/>
@@ -367,6 +367,7 @@ function GuwahatiVisitingPlaces(){
                           Visitors can avail a cab service in Guwahati to reach the cultural institution. They can also opt for an hourly cab rental in Guwahati.
                      </p>
                      <h3>North Guwahati—the Land of Historical Temples</h3>
+                     <img src="https://i.ibb.co/zVf4MP5Q/north-guwahati.webp" alt="North Guwahati" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
                      <p className="font font22">
                           The city’s part on the north bank of the river Brahmaputra is appealing. It is called North Guwahati. The calm atmosphere differentiates it from other parts of the city.There is a broad range of things to do in North Guwahati. Sightseeing, engaging in spirituality, and picnicking could be the preferred ones.
                      </p>
@@ -420,6 +421,7 @@ function GuwahatiVisitingPlaces(){
                           Robert Reid, the then Governor of Assam, inaugurated the museum on 21 April 1940. It is a must-see thing in the city. Assam State Museum is near Dighalipukhuri. 
                      </p>
                      <h3>Science Museum: Knowledge and Entertainment</h3>
+                     <img src="https://i.ibb.co/LDND71Vb/science-centre.webp" alt="Science Museum" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
                      <p className="font font22">
                           It is located in Khanapara. You can hire our affordable cab service in Guwahati to reach the science museum. It allows you to learn many aspects of science. 
                      </p>

@@ -15,8 +15,9 @@ export default function BhutanTourPackage(){
                      <BreadCrumb/>
                      <Intro/>                     
                      <ListBhutanTourPackages/>
-                     <Body2/>
-                     <Body3/>
+                     <WhyOurPackages/>
+                     <AboutBhutan/>                     
+                     <PackageInclusions/>
                      <BhutanVisitingPlaces/>
                      <Thimphu/>
                      <ThimphuVisitingPlaces/>
@@ -37,10 +38,10 @@ function TechnicalSEO(){
              
              <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Bhutan Tour Packages | Get Flat 20% Off | Book NOW!</title>                
+                <title>Bhutan Tour Packages | Get Flat 20% Off on First Booking</title>                
                 <meta name="description" content="Browse Bhutan tour packages at the best prices. Choose from a wide range of Bhutan packages for solo, family, or group trips with dedicated guides."/>
                 <link rel="canonical" href="https://aeiety.com/bhutan-tour-packages"/>
-                <meta property="og:title" content="Bhutan Tour Packages | Get Flat 20% Off | Book NOW!"/>
+                <meta property="og:title" content="Bhutan Tour Packages | Get Flat 20% Off on First Booking"/>
                 <meta property="og:url" content="https://aeiety.com/bhutan-tour-packages"/>
                 <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
                 <meta property="og:type" content="Web Page"/>
@@ -80,10 +81,10 @@ function BreadCrumb(){
  //Intro
  function Intro(){
       return(<>
-           <div className="row background-mintcream p-2">
+           <div className="row background-mintcream p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h1 className="text-center">Exclusive Bhutan Tour Packages:Experience the Kindom of Happiness</h1>
+                     <h1 className="text-center">Make the Smart Choice With the Best Bhutan Tour Packages </h1>
 
                      <section className="font font22 text-center">
                           <p>
@@ -94,11 +95,14 @@ function BreadCrumb(){
                 <div className="col-sm-1"></div>
                 
            </div>
-           <div className="row background-mintcream p-2">
+           <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10"> 
                      <p className="font font22">
-                          Wait no further. The time to materialize your long-cherished dream to visit Bhutan has come. We at Aeiety Trips bring exclusive Bhutan Tour Packages to you. Choose one to experience the country’s carbon-neutral atmosphere, spectacular mountains, and natural beauty. When you tour Bhutan, the country’s attractiveness will leave you spellbound. There will be opportunities to undergo exciting experiences by participating in enjoyable activities. From trekking in the spectacular Himalayan mountains to enjoying delicious local food, the uniqueness and richness of Bhutan tourism will make their presence felt in every aspect of your trip. After finishing it, you will carry lifetime memories and an urge to visit again.  Browse our exclusive Bhutan tour packages to find your dream ones. 
+                          We bring you the best Bhutan tour packages. So, why wait further? This is the time to materialize your long-cherished dream to visit the kingdom of happiness. Choose one to experience the country’s unique attractions. A Bhutan tour from India can allow you to get involved with the carbon-neutral atmosphere, spectacular mountains, and natural beauty. The country's diversity and uniqueness will make you feel in awe. They will arouse a deep sense of wonder and admiration in you. We at Aeiety Trips facilitate sightseeing with excellent Bhutan packages. 
+                     </p>
+                     <p className="font font22">
+                          There will be opportunities to trek in the beautiful mountains, relish traditional food, or shop local-made handicrafts. In addition, our Bhutan sightseeing packages will take you to all places to visit in  Bhutan. The country’s richness will manifest in every place you visit. After finishing a trip, you will carry lifetime memories and an urge to visit again.  Browse our exclusive Bhutan tour packages to find your dream ones. You will experience exciting things by participating in various activities.
                      </p>                    
                </div>
                <div className="col-sm-1"></div>
@@ -110,7 +114,7 @@ function BreadCrumb(){
 // Tour Packages
 function ListBhutanTourPackages(){
       return(<>
-          <div className="row background-mintcream">
+          <div className="row background-mintcream p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <DisplayBhutanTourPackages/>
@@ -120,25 +124,59 @@ function ListBhutanTourPackages(){
       </>);
 
 }
-
- //Body2
- function Body2(){
+//Why Our Packages
+function WhyOurPackages(){
       return(<>
-           <div className="row background-mintcream p-2">
+           <div className="row background-mintcream p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2 className="text-center">Why Choose Our Bhutan Tour Packages</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-mintcream p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <p className="font font22">
+                          You will get substantial advantages by purchasing Bhutan tour packages from Aeiety Trips. We plan them meticulously. As such, they cover all Bhutan tourist attractions and activities. Our team of expert professionals handles every aspect of Bhutan holiday packages perfectly. They do the essential paperwork, fix accommodation, and arrange cars. 
+                     </p>
+                     <p className="font font22">
+                          Our knowledgeable guides cover all places as per our Bhutan packages. Their friendly attitude will create a warm bond. In addition to showing you places, they will explain their relevance. As such, you will gain a deeper insight into the country’s traditions. 
+                     </p>
+                     <p className="font font22">
+                          You will get the best Bhutan travel deals from Aeiety Trips. They also include tasty Bhutanese traditional food. Choose our excellent Bhutan tour packages because we:
+                     </p>
+                     <p className="font font22">
+                          <ul className="list-group list-group-flush">
+                               <li className="list-group-item bg-transparent">&#x2705;&nbsp;Customize them based on your preferences</li>
+                               <li className="list-group-item bg-transparent">&#x2705;&nbsp;Handle all aspects of your travel, from paperwork to arranging accommodations</li>
+                               <li className="list-group-item bg-transparent">&#x2705;&nbsp;Provide experienced guides who give deep insights into cultural aspects</li>
+                               <li className="list-group-item bg-transparent">&#x2705;&nbsp;Structure packages with budget-friendly pricing</li>
+                          </ul>                          
+                     </p>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>      
+      </>);
+}
+ //About Bhutan
+ function AboutBhutan(){
+      return(<>
+           <div className="row background-mintcream p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h2>A Bit About Bhutan </h2>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
-           <div className="row background-mintcream">
+           <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">                                             
                      <p className="font font22">
-                          The Kingdom of <a href="https://www.britannica.com/place/Bhutan" target="_blank" rel="noreferrer noopener" className="text-decoration-none link-danger">Bhutan</a> is rich in a healthy atmosphere and beautiful. Our exclusive Bhutan Tour Packages will allow you to visit all the attractive tourist destinations. That means you will get the opportunity to enjoy all the places to visit in Bhutan that are distinguished by a remarkable geographical diversity. As such, you will not miss out on any attractive Bhutan tourism spots due to our thoughtfully planned Bhutan tour packages.
+                          The Kingdom of <a href="https://www.britannica.com/place/Bhutan" target="_blank" rel="noreferrer noopener" className="text-decoration-none link-danger">Bhutan</a> is beautiful. It has a healthy atmosphere. Our exclusive Bhutan Tour Packages will allow you to visit all the attractive tourist destinations. That means you will get the opportunity to enjoy all the places to visit in Bhutan that are distinguished by a remarkable geographical diversity. As such, you will not miss out on any attractive Bhutan tourism spots due to our thoughtfully planned Bhutan vacation packages.
                      </p>
-                     <p className="font font22">
-                          With valleys and snow-capped peaks reaching up to 7,000 m above sea level, Bhutan offers a magnificent sight. Forests cover more than 70% of its land area.The country's biodiversity includes subtropical and lush dells, hillsides with pine forests, mountain glaciers, and wildlife.  When you tour Bhutan with our curated Bhutan holiday packages, you will have the opportunity to explore the attractive culture, geography, and lifestyle of the kingdom of happiness. As such, examine our best Bhutan Tour Packages to determine the best one for you.
+                     <p className="font font22"> 
+                          With valleys and snow-capped peaks reaching up to 7,000 m above sea level, Bhutan offers a magnificent sight. Forests cover more than seventy percent of its land area. When you tour Bhutan with our curated Bhutan packages, you will have the opportunity to explore every aspect of the kingdom of happiness. As such, examine our best Bhutan Tour Packages to determine the best one for you. The country has a diversified landscape including hillsides with pine forests, mountain glaciers, wildlife, culture, geography, and lifestyle.                        
                      </p>                     
                </div>
                <div className="col-sm-1"></div>
@@ -146,26 +184,29 @@ function ListBhutanTourPackages(){
       </>);
  }
  //Body3
- function Body3(){
+ function PackageInclusions(){
       return(<>
-           <div className="row background-mintcream p-2">
+           <div className="row background-mintcream p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h2>Tourist Attractions in Bhutan</h2>
+                     <h2>Inclusions of Our Bhutan Trip Packages</h2>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
-           <div className="row background-mintcream">
+           <div className="row background-mintcream p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">                     
                      <p className="font font22">
-                          Our carefully crafted  Bhutan tour packages include all attractive places to visit in Bhutan. In addition, delicious local food can be a part of your lifetime memory. You will find food items of the same ingredients throughout Bhutan. Cheese made of cow or yak milk, red rice, butter, buckwheat, and chilies are the popular ingredients. Delicious local food is also an attractive component of the experience when you tour Bhutan. Also, creative arts and handicrafts will leave you spellbound. As such, experience a rich and unforgettable trip with our best Bhutan holiday packages. You can visit solo, with your family, or in a group. Therefore, do not miss out on the opportunity to make a tour to the kingdom of happiness with our excellent Bhutan tour packages. 
+                          Our carefully crafted  Bhutan tour packages include all attractive places to visit in Bhutan. In addition, delicious local food can be a part of your lifetime memory. You will find food items of the same ingredients throughout Bhutan. Cheese made of cow or yak milk, red rice, butter, buckwheat, and chilies are the popular ingredients. Delicious local food is also an attractive component of our best Bhutan tourism packages. 
+                     </p>
+                     <p className="font font22">
+                          Also, creative arts and handicrafts will leave you spellbound. As such, experience a rich and unforgettable trip with our best Bhutan packages. You can visit solo, with your family, or in a group. Therefore, do not miss out on the opportunity to make a tour to the kingdom of happiness with our excellent Bhutan tour packages.
                      </p>                     
                 </div>
                 <div className="col-sm-1"></div>
            </div>
            
-           <div className="row background-mintcream">
+           <div className="row background-mintcream p-3">
                 <div className="col-sm-2"></div>
                 <div className="col-sm-8">
                      <section className="p-2">
@@ -202,45 +243,46 @@ function ListBhutanTourPackages(){
  //Adventure
  function AdventureTourismBhutan(){
       return(<>
-           <div className="row background-mintcream p-2">
+           <div className="row background-mintcream p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h2>Adventure Tourism in Bhutan</h2>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
-           <div className="row background-mintcream">
+           <div className="row background-mintcream p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <section className="font font22">
-                          <p>
-                               There are ample opportunities for adventure activities in the country. Our best Bhutan tour packages include them. 	
+                     <section>
+                          <p className="font font22">
+                               There are ample opportunities for adventure activities in the country. Our best Bhutan tour packages include them.They include:
                           </p>
-                          <p>
-                               The activities include:
-                               <ul class="list-group">
-                                    <li class="list-group-item">Trekking</li>
-                                    <li class="list-group-item">Rafting</li>
-                                    <li class="list-group-item">Biking</li>
-                                    <li class="list-group-item">Climbing</li>
+                          <p className="font font22">                               
+                               <ul className="list-group list-group-flush">
+                                    <li className="list-group-item bg-transparent">&#x2705;&nbsp;Trekking</li>
+                                    <li className="list-group-item bg-transparent">&#x2705;&nbsp;Rafting</li>
+                                    <li className="list-group-item bg-transparent">&#x2705;&nbsp;Biking</li>
+                                    <li className="list-group-item bg-transparent">&#x2705;&nbsp;Climbing</li>
                                </ul>
                           </p>
-                         <p>
-                               When you tour Bhutan, you can engage in such activities in scenic landscapes. 
+                         <p className="font font22">
+                               When you tour Bhutan, you can engage in such activities in scenic landscapes. 
                          </p>
-                         <p>
-                               You can also play golf during your visit to the country with one of our Bhutan trip packages. Golf has been a popular sport in the country since its maiden presence in 1968. All four golf courses are 9-holes:
-                               <ul class="list-group">
-                                    <li class="list-group-item">The Royal Thimphu Golf Club</li>
-                                    <li class="list-group-item">Haa Golf Club</li>
-                                    <li class="list-group-item">India House Golf Club</li>
-                                    <li class="list-group-item">Drakpoi Golf Club</li>
-                               </ul>
+                         <p className="font font22">
+                               You can also play golf during your visit to the country with one of our Bhutan tourism packages. Golf has been a popular sport in the country since its maiden presence in 1968. All four golf courses are 9-holes: 
                          </p>
-                         <p>
+                         <p className="font font22">
+                              <ul className="list-group list-group-flush">
+                                    <li className="list-group-item bg-transparent">&#x2705;&nbsp;The Royal Thimphu Golf Club</li>
+                                    <li className="list-group-item bg-transparent">&#x2705;&nbsp;Haa Golf Club</li>
+                                    <li className="list-group-item bg-transparent">&#x2705;&nbsp;India House Golf Club</li>
+                                    <li className="list-group-item bg-transparent">&#x2705;&nbsp;Drakpoi Golf Club</li>
+                               </ul>  
+
+                         </p>
+                         <p className="font font22">
                                Our Bhutan tour packages are the best options to engage in the country’s adventure tourism. They are also key components of tourism in Bhutan.
-                         </p>
-                         
+                         </p>                         
                      </section>
                 </div>
                 <div className="col-sm-1"></div>
@@ -250,22 +292,22 @@ function ListBhutanTourPackages(){
  //Eco
  function EcoTourismBhutan(){
      return(<>
-          <div className="row background-mintcream p-2">
+          <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                     <h2>Eco Tourism in Bhutan</h2>
                </div>
                <div className="col-sm-1"></div>
           </div>
-          <div className="row background-mintcream">
+          <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
-                    <section className="font font22">
-                          <p>
-                               Nature enthusiasts will find the eco aspect of Bhutan tourism appealing. Our Bhutan tour packages are the best options to experience nature. Appealing places to visit in Bhutan with natural beauty allow visitors to experience the carbon-neutral natural environment and vibrant local communities. 
+                    <section>
+                          <p className="font font22">
+                               Nature enthusiasts will find the eco aspect of Bhutan tourism appealing. Our Bhutan tour packages are the best options to experience nature. Appealing places to visit in Bhutan with natural beauty allow visitors to experience the carbon-neutral natural environment and vibrant local communities. 
                           </p>
-                          <p>
-                               As such, tour Bhutan to experience the ecotourism in the country. In Bhutan, 70% of its land is under forests, resulting in carbon neutrality. Widespread biodiversity and clean natural tourist spots allow visitors to undergo a rich eco-tourism experience. Our comprehensive Bhutan Tour Packages also include eco-tourism. 
+                          <p className="font font22">
+                               As such, tour Bhutan to experience the ecotourism in the country. In Bhutan, 70% of its land is under forests, resulting in carbon neutrality. Widespread biodiversity and clean natural tourist spots allow visitors to undergo a rich eco-tourism experience. Our comprehensive Bhutan Tour Packages also include eco-tourism.
                           </p>
                     </section>
                </div>
@@ -276,18 +318,18 @@ function ListBhutanTourPackages(){
 //Bhutan Visiting Places
 function BhutanVisitingPlaces(){
       return(<>
-           <div className="row background-mintcream p-2">
+           <div className="row background-mintcream p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h2>Places to Visit in Bhutan: The Inclusions of Our Best Bhutan Tour Packages</h2>
+                     <h2 className="text-center">Places to Visit in Bhutan: The Coverage of Our Bhutan Tour Packages</h2>
                 </div>
                 <div className="col-sm-1"></div>
            </div>  
-           <div className="row background-mintcream">
+           <div className="row background-mintcream p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">                     
                      <p className="font font22">
-                          When you tour Bhutan, naturally beautiful places will surround you. There are many appealing places to visit in Bhutan. In the vibrant places, you will find yourself in the rich Bhutanese culture and art. Artistic excellence in local handicrafts will leave you spellbound. And, the delicious taste of traditional food will become a lifetime memory. Being a tourist with one of our excellent Bhutan tour packages, you will find ample opportunities to indulge in adventures and eco-activities.
+                          When you tour Bhutan, you will find naturally beautiful places everywhere. Our best Bhutan tour packages will take you to the attractive places to visit in Bhutan. In the vibrant places, you will find yourself in the rich Bhutanese culture and art. Artistic excellence in local handicrafts will leave you spellbound. And, the delicious taste of traditional food will become a lifetime memory. Being a tourist with one of our excellent Bhutan holiday packages, you will find ample opportunities to indulge in adventures and eco-activities.
                      </p>                     
                 </div>
                 <div className="col-sm-1"></div>
@@ -298,32 +340,34 @@ function BhutanVisitingPlaces(){
 
 function Thimphu(){
      return(<>
-          <div className="row background-mintcream p-2">
+          <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                     <h3>Thimphu</h3>
                </div>
                <div className="col-sm-1"></div>
           </div>  
-          <div className="row background-mintcream">
+          <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
-               <div className="col-sm-10">
-               
-                         <p className="font font22">
-                               It is the Bhutan capital city. Visiting the capital city with one of Aeiety Trips’ Bhutan tour packages during your vacation can be a good idea. As such, consider one of our popular Bhutan holiday packages to tour Bhutan. 
-                         </p>
-                         <p className="font font22">
-                               Thimphu town is the most significant hub for political, commercial, and religious activities. It became the Bhutan capital in 1961. Previously, Punakha was the capital of Bhutan. In the city, modern developments and ancient traditions co-exist. Notably, the city is without a traffic light. Perhaps, it is the only one of its kind in the world. So, tour Bhutan to experience it.
-                         </p>
-                         <p className="font font22">
-                               Our curated Bhutan Tour Packages can allow you to experience the beautiful city. So, you will find Thimphu in the sixth position if a list of the world's highest cities is made. Did you know at what height the town stands? The answer is: 2,248 to 2,648 meters.
-                         </p>
-                         <p className="font font22">
-                               The city's weather is generally mild. As such, people from any world region can tour Bhutan with one of Aeiety Trips’ Bhutan vacation packages. June to September are the summer months. December to February are the months of winter. The temperature in Thimphu extends from warm to cold.
-                         </p>
-                         <p className="font font22">
-                               There are good lodging facilities in the city. As such, a tourist in Bhutan can quickly find good hotels.There are many places to visit and many things to do there. 
-                         </p>
+               <div className="col-sm-10">               
+                     <p className="font font22">
+                           It is Bhutan's capital city. Visiting it with one of Aeiety Trips’ Bhutan tour packages during your vacation can be a good idea.  In the city, modernity and ancient traditions exist side by side.
+                     </p>
+                     <p className="font font22">
+                          Thimphu town is the epicenter of political, commercial, and religious activities. It became the Bhutan capital in 1961. Notably, the city is without a traffic light. It is the only one of its kind in the world. So, tour Bhutan to experience it. You can consider one of our popular Bhutan packages. 
+                     </p>
+                     <p className="font font22">
+                          Our curated Bhutan vacation packages can allow you to experience the beautiful city. So, you will find Thimphu in the sixth position if a list of the world's highest cities is made. Did you know at what height the town stands? The answer is: 2,248 to 2,648 meters.
+                     </p>
+                     <p className="font font22">
+                          The city's weather is generally mild. As such, people from any world region can tour Bhutan with one of Aeiety Trips’ Bhutan tour packages. June to September are the summer months. December to February are the winter months. The temperature in Thimphu varies from warm to cold.
+                     </p>
+                     <p className="font font22">
+                          There are good lodging facilities in the city. As such, a tourist in Bhutan can quickly find good hotels. 
+                     </p>
+                     <p className="font font22">
+                          There are many places to visit and many things to do there.
+                     </p>
                     
                </div>
                <div className="col-sm-1"></div>
@@ -333,37 +377,37 @@ function Thimphu(){
 //Thimpu Visiting Places
 function ThimphuVisitingPlaces(){
      return(<>
-          <div className="row background-mintcream p-2">
+          <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                     <h3>Top Places to Visit in Thimphu</h3>
                </div>
                <div className="col-sm-1"></div>
           </div>  
-          <div className="row background-mintcream">
+          <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
-                     <h4>Buddha Dordenma</h4>
+                     <h4>Buddha Point</h4>
                      <section>
                           <section className="float-start p-3">
                                <img src="https://i.ibb.co/28yG4Ds/Buddha-Point-Upload.webp" className="img-fluid rounded shadow-sm" alt="Buddha Dordenma"/>
                           </section>
                           <section className="p-3">
                                <p className="font font22">
-                                    At the Kuensel Phodrang Nature Park, you will see a huge statue of Buddha. It is in our Bhutan tour packages. It is called Buddha Dordenma and is 54m tall. However, Buddha Point is a popular identity. It is visible from many parts of the town due to its glow from gold coating. Bronze is the building material of the statue. Do not miss out on your tour to Bhutan.
+                                    At the Kuensel Phodrang Nature Park, you will see a huge Buddha statue. It is in our Bhutan tour packages. It is called Buddha Dordenma and is 54m tall. However, Buddha Point is a popular identity. It is visible from many parts of the town due to its glow from gold coating. Bronze is the building material of the statue. Do not miss out on it on your tour to Bhutan. 
                                </p>
                                <p className="font font22">
-                                    Notably, there are one lakh twenty-five small Buddha statues inside the main statue. The constituent smaller ones are ten to twelve inches in height and made of bronze and coated with gold. Our Bhutan travel packages include Buddha Point.
+                                    Notably, there are one lakh twenty-five small Buddha statues inside the main statue. Our Bhutan packages give you the privilege of experiencing it. The constituent smaller ones are ten to twelve inches in height and made of bronze and coated with gold. Our Bhutan vacation packages include Buddha Point.
                                </p>
                                <p className="font font22">
-                                     There is a large meditation hall under the main statue. It is meant for visitors to meditate. There are no entry tickets. Our Bhutan tour packages include the place. 
+                                    A large meditation hall is under the statue. It is meant for visitors to meditate. Entry does not require tickets. Our Bhutan tour packages include the place.
                                </p>
                          </section>
                     </section>
                </div>
                <div className="col-sm-1"></div>
           </div>
-          <div className="row background-mintcream">
+          <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                      <h4>National Memorial Chorten</h4>
@@ -373,20 +417,23 @@ function ThimphuVisitingPlaces(){
                           </section>
                           <section className="p-3">
                                <p className="font font22">
-                                    You will find National Memorial Chorten’s inclusion in our best Bhutan tour packages. It is among the most important tourist places in Thimphu. It symbolizes respect for Bhutan’s third king.  It has to be a must in your tour of Bhutan. The king is regarded as the father of modern Bhutan.
+                                    You will find National Memorial Chorten’s inclusion in our best Bhutan tour packages. It is among the most important tourist places in Thimphu.
                                </p>
                                <p className="font font22">
-                                    You can participate with monks and other visitors by walking clockwise around the stupa. Moreover, you can rotate the prayer wheels around the National Memorial Chorten. In the early morning hours, you can participate in offering butter lamps. Bhutan trip packages from Aeiety Trips can enable you to visit the stupa. It is a stupa established in 1974 in the southern part of Thimphu. 
+                                    It symbolizes respect for Bhutan’s third king.  It has to be a must in your tour of Bhutan. The king is regarded as the father of modern Bhutan. Avail of our Bhutan packages to visit it. You can participate with monks and other visitors by walking clockwise around the stupa. Moreover, you can rotate the prayer wheels around the National Memorial Chorten.
                                </p>
                                <p className="font font22">
-                                    If you happen to go there during the Monlam Prayer Festival, you will get the opportunity to participate in teachings by the religious head. Choose from our affordable Bhutan tour packages to visit the place.  Also, you will get to see their spiritual practices. National Memorial Chorten is among the prominent Bhutan tourist spots.
+                                    In the early morning hours, you can participate in offering butter lamps. Bhutan trip packages from Aeiety Trips can enable you to visit the stupa. It is a stupa established in 1974 in the southern part of Thimphu. 
+                               </p>
+                               <p className="font font22">
+                                    If you happen to go there during the Monlam Prayer Festival, you will get the opportunity to participate in teachings by the religious head. Choose from our affordable Bhutan tour packages to visit the place.  Also, you will get to see their spiritual practices. National Memorial Chorten is among the prominent Bhutan tourist spots.
                                </p>
                          </section>
                     </section>
                </div>
                <div className="col-sm-1"></div>
           </div>    
-          <div className="row background-mintcream">
+          <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                      <h4>Tashichho Dzong</h4>
@@ -399,17 +446,17 @@ function ThimphuVisitingPlaces(){
                                     It is a beautiful fortress. Our best Bhutan tour packages can allow you to experience it. Your tour of Bhutan must include it. It is a must-see thing to see on your tour of Bhutan.
                                </p>
                                <p className="font font22">
-                                    In the fortress, there is the king’s throne room, secretariat, and home affairs and finance ministries. The nearby buildings house other ministries. The Bhutan government functions from Tashichho Dzong. You can purchase a Bhutan trip package from us. 
+                                    In the fortress, there is the king’s throne room, secretariat, and home affairs and finance ministries. The nearby buildings house other ministries. The Bhutan government functions from Tashichho Dzong. You can purchase one of the Bhutan packages from us. 
                                </p>
                                <p className="font font22">
-                                    The sight of Tashichho Dzong is appealing. It is on the banks of Wang Chhu River. Inside the boundary, there are beautiful gardens. Notably, temples and shrines are also inside the boundary. Tashichho Dzong is a core component of Bhutan tourism. It is also called Thimphu Dzong, included in our Bhutan tour packages. 
+                                    The sight of Tashichho Dzong is appealing. It is on the banks of the Wang Chhu River. Inside the boundary, there are beautiful gardens. Notably, temples and shrines are also inside the boundary. Tashichho Dzong is a core component of our Bhutan tourism packages. It is also called Thimphu Dzong, included in our curated Bhutan tour packages.
                                </p>
                           </section>
                     </section>
                </div>
                <div className="col-sm-1"></div>
           </div> 
-          <div className="row background-mintcream">
+          <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                      <h4>Simtokha Dzong</h4>
@@ -419,20 +466,23 @@ function ThimphuVisitingPlaces(){
                           </section>
                           <section className="p-3">
                                <p className="font font22">
-                                    One of the notable places in Thimphu in our best Bhutan tour packages is Simtokha Dzong. It is a historic dzong built in 1628. Nowadays, one of the premier Dzongkha language institutes runs from the dzong. It was earlier a monastery. Zhabdrung Ngawang Namgyal was behind Simtokha Dzong, a historical monument. He unified Bhutan. Purchasing one of Aeiety Trips’ Bhutan travel packages can enable you to enjoy the majestic place on your tour of Bhutan.
+                                    One of the notable places in Thimphu in our best Bhutan tour packages is Simtokha Dzong. It is a historic dzong built in 1628. Nowadays, one of the premier Dzongkha language institutes runs from the dzong. 
                                </p>
                                <p className="font font22">
-                                    Interestingly, a road near Simtokha Dzong leads to Paro, another spot among important Bhutan tourist places. The dzong underwent renovations several times. It is 65 square feet in area. There are three floors and a single entry door.
+                                    It was earlier a monastery. Zhabdrung Ngawang Namgyal was behind Simtokha Dzong, a historical monument. He unified Bhutan. Purchasing one of Aeiety Trips’ Bhutan holiday packages can enable you to enjoy the majestic place on your tour of Bhutan.
                                </p>
                                <p className="font font22">
-                                    On the ground floor, there are slate carvings of 300 Buddhist saints. There is also a statue of Sakyamuni Buddha. And, there are eight Bodhisattvas on each adjacent side. Our Bhutan tour packages cover it. 
+                                    Interestingly, a road near Simtokha Dzong leads to Paro, another spot among important Bhutan tourist places. The dzong underwent renovations several times. It is 65 square feet in area. There are three floors and a single entry door. Our Bhutan packages include it.
+                               </p>
+                               <p className="font font22">
+                                    On the ground floor, there are slate carvings of 300 Buddhist saints. There is also a statue of Sakyamuni Buddha. And, there are eight Bodhisattvas on each adjacent side. Our Bhutan tour packages cover it.
                                </p>                               
                           </section>
                     </section>
                </div>
                <div className="col-sm-1"></div>
           </div>    
-          <div className="row background-mintcream">
+          <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                      <h4>Motithang Takin Preserve</h4>
@@ -458,23 +508,26 @@ function ThimphuVisitingPlaces(){
 //Paro
 function Paro(){
      return(<>
-          <div className="row background-mintcream p-2">
+          <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                     <h3>Paro</h3>
                </div>
                <div className="col-sm-1"></div>
           </div>  
-          <div className="row background-mintcream">
+          <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
-                    <section className="font font22">
-                         <p>
+                    <section className="p-3">
+                          <p className="font font22">
                                It is an important town in Bhutan that we cover in our excellent Bhutan tour packages. Paro is historic and beautiful. Also, the historic town is among the most appealing places to visit in Bhutan. It finds a special place in Bhutan tourism.
                          </p>
-                         <p>
-                               Interestingly, the only international airport in the country is in the town. Its distance to Thimphu is 54 km. Paro is of special focus in our excellent Bhutan tour packages. The town is on the bank of the Paro Chu River. A lot of agricultural cultivation happens in Paro. In addition, there are many ancient sites in the town. Also, there are many good hotels and restaurants in Paro. So, you can conveniently visit the town on your tour of Bhutan. 
-                         </p>                         
+                          <p className="font font22">
+                               Interestingly, the only international airport in the country is in the town. Its distance to Thimphu is 54 km. Paro is of special focus in our excellent Bhutan packages. The town is on the bank of the Paro Chu River. A lot of agricultural cultivation happens in Paro. 
+                          </p>
+                          <p className="font font22">
+                               In addition, there are many ancient sites in the town. Also, there are many good hotels and restaurants in Paro. So, you can conveniently visit the town on your tour of Bhutan.
+                          </p>                         
                     </section>
                </div>
                <div className="col-sm-1"></div>
@@ -484,14 +537,14 @@ function Paro(){
 //Paro Visiting Places
 function ParoVisitingPlaces(){
      return(<>
-          <div className="row background-mintcream p-2">
+          <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                     <h3>Top Places to Visit in Paro</h3>
                </div>
                <div className="col-sm-1"></div>
           </div>  
-          <div className="row background-mintcream">
+          <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                      <h4>Tiger’s Nest</h4>
@@ -499,22 +552,22 @@ function ParoVisitingPlaces(){
                           <section className="float-start p-3">
                                <img src="https://i.ibb.co/RDDVRVw/Tiger-Nest-Upload.webp" className="img-fluid rounded shadow-sm" alt="Buddha Dordenma"/>
                           </section>
-                          <section className="font font22 p-3">
-                               <p>
-                                     The Taktsang Palphug Monastery is among the most significant Bhutan tourist spots. Our affordable Bhutan tour packages comprise Paro Taktsang. Its other name is Tiger's Nest. 
+                          <section className="p-3">
+                               <p className="font font22">
+                                    The Taktsang Palphug Monastery is among the most significant Bhutan tourist spots. Our affordable Bhutan tour packages comprise Paro Taktsang. Its other name is Tiger's Nest. 
                                </p>
-                               <p>
-                                     According to the belief, Guru Rinpoche meditated for years inside a cave in that place. He came to the place on the back of a tigress. Subsequently, he incarnated in eight different forms. That is why the place is considered holy. 
+                               <p className="font font22">
+                                    According to the belief, Guru Rinpoche meditated for years inside a cave in that place. He came to the place on the back of a tigress. Subsequently, he incarnated in eight different forms. That is why the place is considered holy. 
                                </p>
-                               <p>
-                                    It is at 2,950m above sea level. As such, you must trek to the monastery from the  Ramthangkha road. The trekking could take 2 to 3 hrs. You will visit it when you tour Bhutan with one of our Bhutan tour packages from Aeiety Trips.
+                               <p className="font font22">
+                                    It is at 2,950m above sea level. As such, you must trek to the monastery from the  Ramthangkha road. The trekking could take 2 to 3 hrs. You will visit it when you tour Bhutan with one of our Bhutan tour packages from Aeiety Trips.
                                </p>
                          </section>
                     </section>
                </div>
                <div className="col-sm-1"></div>
           </div>
-          <div className="row background-mintcream">
+          <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                      <h4>Rinpung Dzong</h4>
@@ -522,19 +575,25 @@ function ParoVisitingPlaces(){
                           <section className="float-start p-3">
                                <img src="https://i.ibb.co/PGdZyWW/Rinpung-Dzong-Upload.webp" className="img-fluid rounded shadow-sm" alt="Buddha Dordenma"/>
                           </section>
-                          <section className="font font22 p-3">
-                               <p>
-                                    It is one of the most iconic places to visit in Bhutan. Our Bhutan tour packages will allow experience Rinpung Dzong, also called Paro Dzong. It attracts tourists due to its historical relevance and creative architecture. It has been used for defense and religious purposes. We include it in your tour of Bhutan with an excellent Bhutan trip package.
+                          <section className="p-3">
+                               <p className="font font22">
+                                    Our Bhutan tour packages will allow you to experience it. The Dzong attracts tourists due to its historical relevance and creative architecture.
                                </p>
-                               <p>
-                                    You will see a large gathering comprising locals and tourists during the annual festival of Paro Tsechu. It has excellent wooden carvings and paintings, drawing everyone’s appreciation. Experience it with one of Aeiety Trips’ Bhutan tour packages. The Dzong, built in 1646,  is among the key attractions in Bhutan tourism.
+                               <p className="font font22">
+                                    Rinpung Dzong has been used for defense and religious purposes. We include it in your tour of Bhutan with an excellent Bhutan vacation package. It is also called Paro Dzong.
+                               </p>
+                               <p className="font font22">
+                                    You will see a large gathering comprising locals and tourists during the annual festival of Paro Tsechu. It has excellent wooden carvings and paintings, drawing everyone’s appreciation. Experience it with one of Aeiety Trips’ Bhutan tour packages.
+                               </p>
+                               <p className="font font22">
+                                    The Dzong, built in 1646,  is among the key attractions in Bhutan tourism.
                                </p>                               
                          </section>
                     </section>
                </div>
                <div className="col-sm-1"></div>
           </div>    
-          <div className="row background-mintcream">
+          <div className="row background-mintcream p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                      <h4>Ta Dzong</h4>
@@ -542,11 +601,14 @@ function ParoVisitingPlaces(){
                           <section className="float-start p-3">
                                <img src="https://i.ibb.co/j38mfV5/Ta-Dzong-Upload.webp" className="img-fluid rounded shadow-sm" alt="Buddha Dordenma"/>
                           </section>
-                          <section className="font font22 p-3">
-                               <p>
-                                    It functions as Bhutan’s National Museum. You can choose one of our exclusive Bhutan tour packages. Inside Ta Dzong, you will see precious bronze statues and paintings. As such, you will get the opportunity to get a glimpse of the country’s rich artistic heritage. Ta Dzong houses more than 3,000 artifacts that are over 1,500 years old. Our comprehensive Bhutan travel packages include Ta Dzong. As such, you will visit the National Museum on your Bhutan trip with one of Aeiety Trip’s packages.
+                          <section className="p-3">
+                               <p className="font font22">
+                                    It functions as Bhutan’s National Museum. You can choose one of our exclusive Bhutan tour packages. Inside Ta Dzong, you will see precious bronze statues and paintings. As such, you will get the opportunity to get a glimpse of the country’s rich artistic heritage.
                                </p>
-                               <p>
+                               <p className="font font22">
+                                    Ta Dzong houses more than 3,000 artifacts that are over 1,500 years old. Our comprehensive Bhutan trip packages include Ta Dzong. As such, you will visit the National Museum on your Bhutan trip with one of Aeiety Trip’s packages.
+                               </p>
+                               <p className="font font22">
                                     It is one of the major tourist attractions in Bhutan. Ponlop Tenzin Drukdra built it. He was the first governor of Paro. The construction was completed in 1651. Visit it with one of our Bhutan tour packages.
                                </p>
                                
