@@ -414,12 +414,15 @@ function GuwahatiVisitingPlaces(){
                           Notably, the forest reserve is also a place for adventure tourism. As such, you can engage in trekking. Nevertheless, it is a must-visit place in Guwahati.
                      </p>
                      <h3>Assam State Museum: Standing Since the British Era</h3>
+                     <img src="https://i.ibb.co/350S2FV4/museum-guwahati.webp" alt="Assam State Museum" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
                      <p className="font font22">
                           If you are keen on experiencing things established during the pre-independence period, the Assam State Museum is the one to go. It is in Guwahati. You can hire our reliable cab service in Guwahati to reach the museum.
-                     </p>
+                     </p>                     
                      <p className="font font22">
                           Robert Reid, the then Governor of Assam, inaugurated the museum on 21 April 1940. It is a must-see thing in the city. Assam State Museum is near Dighalipukhuri. 
                      </p>
+                     <p>&nbsp;</p>
+                     <p>&nbsp;</p>
                      <h3>Science Museum: Knowledge and Entertainment</h3>
                      <img src="https://i.ibb.co/LDND71Vb/science-centre.webp" alt="Science Museum" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
                      <p className="font font22">
