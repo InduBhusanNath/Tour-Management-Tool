@@ -15,8 +15,8 @@ import GuwahatiTaxi from "./frontend/guwahati-taxi";
 import GuwahatiAirportTaxi from "./frontend/guwahati-airport-taxi";
 import BlogPage from "./frontend/blog-page";
 import ContactUs from "./frontend/contactus";
-import AdventureTourism from "./frontend/adventure-tourism";
-import EcoTourism from "./frontend/eco-tourism";
+import AdventureTours from "./frontend/adventure-tours";
+import EcoTours from "./frontend/eco-tours";
 import HistoricalTourism from "./frontend/historical-tourism";
 import TourPackagesIntro from "./frontend/tour-packages-intro";
 import UniqueAttractions from "./frontend/unique-attractions";
@@ -88,12 +88,12 @@ const router=createBrowserRouter([
    element:<ContactUs/>
   },
   {
-   path:"/adventure-tourism",
-   element:<AdventureTourism/>
+   path:"/adventure-tours",
+   element:<AdventureTours/>
   },
   {
-   path:"/eco-tourism",
-   element:<EcoTourism/>
+   path:"/eco-tours",
+   element:<EcoTours/>
   },
   {
    path:"/historical-tourism",

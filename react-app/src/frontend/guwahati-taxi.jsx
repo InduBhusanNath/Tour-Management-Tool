@@ -52,7 +52,7 @@ function GuwahatiTaxiBanner(){
       return(<>
            <div className="row">
                 <div className="col-sm-12 p-0 m-0">
-                     <img src="https://i.ibb.co/3YMKDLFJ/Guwahati-Taxi-Banner1.webp" alt="Guwahati Cab" className="img-fluid w-100 p-0 m-0"/>
+                     <img src="https://i.ibb.co/3YMKDLFJ/Guwahati-Taxi-Banner1.webp" alt="cab service in Guwahati" className="img-fluid w-100 p-0 m-0"/>
                 </div>
            </div>          
       </>);
@@ -332,7 +332,7 @@ function GuwahatiVisitingPlaces(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h3>Umananda: World’s Smallest Riverine Island</h3>
-                     <img src="https://i.ibb.co/R4hnCQd3/umananda.webp" alt="Umananda island" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
+                     <img src="https://i.ibb.co/R4hnCQd3/umananda.webp" alt="cab service in Guwahati" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
                      <p className="font font22">
                           <a href="https://en.wikipedia.org/wiki/Umananda_Temple" target="_blank" rel="noreferrer noopener" className="text-decoration-none link-danger">Umanada</a> speaks for itself. It distinguishes itself as the smallest among all revering islands across the world. It is also called Peacock Island. The island stands on the river Brahmaputra, flowing across the city. You can rent our local cab service in Guwahati to reach the bank. 
                      </p>
@@ -356,7 +356,7 @@ function GuwahatiVisitingPlaces(){
                           Renting a cab service in Guwahati is the best option to reach the temple. The Guwahati to Kamakhya taxi fare is moderate. The ride from the foothill to the temple will be exciting. The natural beauty and serenity will make you undergo a unique experience of the popular place to visit in Guwahati.
                      </p>
                      <h3>Srimanta Sankardev Kalakshetra—the Cultural Hub</h3>
-                     <img src="https://i.ibb.co/hxbVLr5G/kalakshetra.webp" alt="Sankardev Kalakshetra" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
+                     <img src="https://i.ibb.co/hxbVLr5G/kalakshetra.webp" alt="Guwahati outstation cab services" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
                      <p className="font font22">
                           It is a cultural institution. There is a mix of educational aspects and excitement in Srimanta Sankardev Kalakshetra.
                      </p>
@@ -367,7 +367,7 @@ function GuwahatiVisitingPlaces(){
                           Visitors can avail a cab service in Guwahati to reach the cultural institution. They can also opt for an hourly cab rental in Guwahati.
                      </p>
                      <h3>North Guwahati—the Land of Historical Temples</h3>
-                     <img src="https://i.ibb.co/zVf4MP5Q/north-guwahati.webp" alt="North Guwahati" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
+                     <img src="https://i.ibb.co/zVf4MP5Q/north-guwahati.webp" alt="local cabs in Guwahati" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
                      <p className="font font22">
                           The city’s part on the north bank of the river Brahmaputra is appealing. It is called North Guwahati. The calm atmosphere differentiates it from other parts of the city.There is a broad range of things to do in North Guwahati. Sightseeing, engaging in spirituality, and picnicking could be the preferred ones.
                      </p>
@@ -393,7 +393,7 @@ function GuwahatiVisitingPlaces(){
                           Besides, the ropeway can be another exciting option for commuting to and from North Guwahati.
                      </p>
                      <h3>Basistha Temple</h3>
-                     <img src="https://i.ibb.co/hxbVLr5G/kalakshetra.webp" alt="Basistha Temple" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
+                     <img src="https://i.ibb.co/hxbVLr5G/kalakshetra.webp" alt="Guwahati cab service" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
                      <p className="font font22">
                           You can visit the famous Basistha Temple in Guwahati. It is mythologically relevant. You can hire our reliable cab service in Guwahati to reach the temple. It is around 2.9 km from the Basistha Charilai.
                      </p>
@@ -414,7 +414,7 @@ function GuwahatiVisitingPlaces(){
                           Notably, the forest reserve is also a place for adventure tourism. As such, you can engage in trekking. Nevertheless, it is a must-visit place in Guwahati.
                      </p>
                      <h3>Assam State Museum: Standing Since the British Era</h3>
-                     <img src="https://i.ibb.co/350S2FV4/museum-guwahati.webp" alt="Assam State Museum" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
+                     <img src="https://i.ibb.co/350S2FV4/museum-guwahati.webp" alt="cabs in Guwahati" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
                      <p className="font font22">
                           If you are keen on experiencing things established during the pre-independence period, the Assam State Museum is the one to go. It is in Guwahati. You can hire our reliable cab service in Guwahati to reach the museum.
                      </p>                     
@@ -424,7 +424,7 @@ function GuwahatiVisitingPlaces(){
                      <p>&nbsp;</p>
                      <p>&nbsp;</p>
                      <h3>Science Museum: Knowledge and Entertainment</h3>
-                     <img src="https://i.ibb.co/LDND71Vb/science-centre.webp" alt="Science Museum" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
+                     <img src="https://i.ibb.co/LDND71Vb/science-centre.webp" alt="cab booking Guwahati" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
                      <p className="font font22">
                           It is located in Khanapara. You can hire our affordable cab service in Guwahati to reach the science museum. It allows you to learn many aspects of science. 
                      </p>
@@ -435,7 +435,7 @@ function GuwahatiVisitingPlaces(){
                           There are picnic facilities inside the museum premises. As such, you can enjoy a picnic with your family there. The science museum is 32 km away from the airport. You can rent our airport taxi Guwahati to visit the National Science Centre.
                      </p>
                      <h3>Purva Tirupati Sri Balaji Temple</h3>
-                     <img src="https://i.ibb.co/Qjmvtvw2/tirupati.webp" alt="Balaji Temple" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
+                     <img src="https://i.ibb.co/Qjmvtvw2/tirupati.webp" alt="Guwahati cab rental" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
                      <p className="font font22">
                           It is one of the most spectacular places to visit in Guwahati. Purva Tirupati Sri Balaji Temple has an eye-catching campus. Also, its location is convenient. You can book a cab service in Guwahati to go there. 
                      </p>
@@ -457,13 +457,13 @@ function Faqs(){
            <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h2 className="text-center">FAQs on Cab Service in Guwahati</h2>
+                     <h2 className="text-center">FAQs : Cab Service in Guwahati</h2>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
            <div className="row background-lemonchiffon p-3">
-                <div className="col-sm-1"></div>
-                <div className="col-sm-5">                     
+                <div className="col-sm-2"></div>
+                <div className="col-sm-8">                     
                      <section className="font font22">
                           <Collapsible trigger="&#43;Which provides the best Guwahati taxi service?">                               
                                <p className="bg-warning rounded shadow-sm padding25">
@@ -474,12 +474,8 @@ function Faqs(){
                                <p className="bg-warning rounded shadow-sm padding25">
                                     Yes, we do provide cabs on an hourly basis.
                                </p>      
-                          </Collapsible>                          
-                     </section>                          
-                </div>
-                <div className="col-sm-5">
-                     <section className="font font22">
-                         <Collapsible trigger="&#43;What types of cars do Aeiety Trips provide?">                               
+                          </Collapsible>
+                          <Collapsible trigger="&#43;What types of cars do Aeiety Trips provide?">                               
                                <p className="bg-warning rounded shadow-sm padding25">
                                     We provide compact, sedan, and luxury cars, depending on your needs. We also run SUVs. 
                                </p>      
@@ -488,11 +484,11 @@ function Faqs(){
                                <p className="bg-warning rounded shadow-sm padding25">
                                     Yes, we provide tourists with exclusive cab service in the city. 
                                </p>      
-                          </Collapsible>                          
-                     </section>
-                </div>
-                <div className="col-sm-1"></div>
-           </div>           
+                          </Collapsible>                           
+                     </section>                          
+                </div>                
+                <div className="col-sm-2"></div>
+           </div>                      
      </>);
 }
 //Guwahati Taxi Excellence
