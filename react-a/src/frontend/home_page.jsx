@@ -6,7 +6,7 @@ import Collapsible from 'react-collapsible';
 import OurPrinciples from "./OurPrinciples";
 import TourismServices from "./tourism-service";
 import InternationalTourPackageCarousel from "./international-tour-package-carousel";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import CabTypes from "./cab-types";
 
 

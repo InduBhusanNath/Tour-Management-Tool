@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import MobileMenu from "./mobile-menu";
 export default function Header(){
      return(<>  
@@ -54,7 +54,7 @@ function ExtraHeaderBar(){
 function Logo(){
      return(<>
            <section className="text-center padding10">
-                <Link to="/" className="text-decoration-none"><img src={process.env.PUBLIC_URL + 'MainImages/logo.png'} className="img-fluid p-0 m-0" alt="Aeiety Trips"/></Link>
+                <Link to="/" className="text-decoration-none"><img src={"MainImages/logo.png"} className="img-fluid p-0 m-0" alt="Aeiety Trips"/></Link>
                 
           </section>
      </>);
@@ -71,12 +71,12 @@ function Nav(){
 
                          </ul>
                   </li>
-                  <li className="padding5">&nbsp;Tourism&#9662;
+                  <li className="padding5">&nbsp;Special Tours&#9662;
                          <ul>
                                
-                               <li><Link to="/adventure-tourism" className="text-decoration-none text-dark">Adventure</Link></li>
-                               <li><Link to="/eco-tourism" className="text-decoration-none text-dark">Eco</Link></li>
-                               <li><Link to="/historical-tourism" className="text-decoration-none text-dark">Historical</Link></li>
+                               <li><Link to="/adventure-tours" className="text-decoration-none text-dark">Adventure</Link></li>
+                               <li><Link to="/eco-tours" className="text-decoration-none text-dark">Eco</Link></li>
+                               <li><Link to="/historical-tours" className="text-decoration-none text-dark">Historical</Link></li>
                          </ul>
                   </li>
                   <li><Link to="/tour-packages-intro" className="text-decoration-none text-dark padding5">&nbsp;Tour Packages</Link></li>
@@ -115,7 +115,7 @@ function RequestResponse(){
 function Whatsapp(){
            return(<>
                <section className="text-center">
-                     <a aria-label="Message AeietyTrips" href="https://wa.me/919531393648?text='Please%20get%20back%20to%20me%20for%20cab%20booking" className="whatsapp"> <img alt="Aeiety Trips" src={process.env.PUBLIC_URL + 'MainImages/whatsapp.png'}/></a>
+                     <a aria-label="Message Aeiety Trips" href="https://wa.me/919531393648?text=Please%20get%20back%20to%20me" className="whatsapp"> <img alt="Aeiety Trips" src={"/MainImages/whatsapp.png"}/></a>
                </section>           
            </>);  
 }

@@ -17,7 +17,7 @@ import BlogPage from "./frontend/blog-page";
 import ContactUs from "./frontend/contactus";
 import AdventureTours from "./frontend/adventure-tours";
 import EcoTours from "./frontend/eco-tours";
-import HistoricalTourism from "./frontend/historical-tourism";
+import HistoricalTours from "./frontend/historical-tours";
 import TourPackagesIntro from "./frontend/tour-packages-intro";
 import UniqueAttractions from "./frontend/unique-attractions";
 import UniqueAttractionsAssam from "./frontend/unique-attractions-assam";
@@ -96,8 +96,8 @@ const router=createBrowserRouter([
    element:<EcoTours/>
   },
   {
-   path:"/historical-tourism",
-   element:<HistoricalTourism/>
+   path:"/historical-tours",
+   element:<HistoricalTours/>
   },
   {
     path:"/tour-packages-intro",

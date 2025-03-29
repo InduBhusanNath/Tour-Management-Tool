@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+import {Link} from 'react-router';
 export default function Footer(){
      return(<>
                  <Foot/>
@@ -10,7 +10,7 @@ function Foot(){
          <row className="row background-coral padding25">
                  <div className="col-sm-3">
                          <section className="padding10 text-center">
-                                 <Link to="/" className="text-decoration-none"><img src={process.env.PUBLIC_URL + 'MainImages/logo.png'} className="img-fluid p-0 m-0" alt="AeietyTrips"/></Link>
+                                 <Link to="/" className="text-decoration-none"><img src={"/MainImages/logo.png"} className="img-fluid p-0 m-0" alt="AeietyTrips"/></Link>
                                  
                          </section>
                          <section>
@@ -45,11 +45,11 @@ function Foot(){
                                  <br/>
                                  &#10132;&nbsp;<Link to="/guwahati-taxi" className="font font20 text-decoration-none text-dark">Guwahati Taxi</Link>
                                  <br/>
-                                 &#10132;&nbsp;<Link to="/adventure-tourism" className="font font20 text-decoration-none text-dark">Adventure Tourism</Link>
+                                 &#10132;&nbsp;<Link to="/adventure-tours" className="font font20 text-decoration-none text-dark">Adventure Tours</Link>
                                  <br/>
-                                 &#10132;&nbsp;<Link to="/eco-tourism" className="font font20 text-decoration-none text-dark">Eco Tourism</Link>
+                                 &#10132;&nbsp;<Link to="/eco-tours" className="font font20 text-decoration-none text-dark">Eco Tours</Link>
                                  <br/>
-                                 &#10132;&nbsp;<Link to="/historical-tourism" className="font font20 text-decoration-none text-dark">Historical Tourism</Link>
+                                 &#10132;&nbsp;<Link to="/historical-tours" className="font font20 text-decoration-none text-dark">Historical Tours</Link>
                                  <br/>
                                  &#10132;&nbsp;<Link to="/tour-packages-intro" className="font font20 text-decoration-none text-dark">Tour Packages</Link>
 
@@ -65,13 +65,13 @@ function Foot(){
                          </section>
                          <section>
                                  <p className="font font24 fw-bold">Follow Us</p>
-                                 <Link to="/https://www.facebook.com/aeietytrips" className="text-decoration-none" target="_blank" rel="noreferrer noopener"><img src={process.env.PUBLIC_URL + 'MainImages/facebook.png'} className="img-fluid p-0 m-0" alt="Cabs Aeiety Trips"/></Link>
+                                 <Link to="/https://www.facebook.com/aeietytrips" className="text-decoration-none" target="_blank" rel="noreferrer noopener"><img src={"/MainImages/facebook.png"} className="img-fluid p-0 m-0" alt="Cabs Aeiety Trips"/></Link>
                                  &nbsp;&nbsp;&nbsp;
-                                 <Link to="/" className="text-decoration-none" target="_blank" rel="noreferrer noopener"><img src={process.env.PUBLIC_URL + 'MainImages/x.png'} className="img-fluid p-0 m-0" alt="Tours Aeiety Trips"/></Link>
+                                 <Link to="/" className="text-decoration-none" target="_blank" rel="noreferrer noopener"><img src={"/MainImages/x.png"} className="img-fluid p-0 m-0" alt="Tours Aeiety Trips"/></Link>
                                  &nbsp;&nbsp;&nbsp;
-                                 <Link to="/" className="text-decoration-none" target="_blank" rel="noreferrer noopener"><img src={process.env.PUBLIC_URL + 'MainImages/instagram.png'} className="img-fluid p-0 m-0" alt="Tourism Aeiety Trips"/></Link>
+                                 <Link to="/" className="text-decoration-none" target="_blank" rel="noreferrer noopener"><img src={"/MainImages/instagram.png"} className="img-fluid p-0 m-0" alt="Tourism Aeiety Trips"/></Link>
                                  &nbsp;&nbsp;&nbsp;
-                                 <Link to="https://www.youtube.com/@aeiety-trips/videos" className="text-decoration-none" target="_blank" rel="noreferrer noopener"><img src={process.env.PUBLIC_URL + 'MainImages/youtube.png'} className="img-fluid p-0 m-0" alt="Cruises Aeiety Trips"/></Link>
+                                 <Link to="https://www.youtube.com/@aeiety-trips/videos" className="text-decoration-none" target="_blank" rel="noreferrer noopener"><img src={"/MainImages/youtube.png"} className="img-fluid p-0 m-0" alt="Cruises Aeiety Trips"/></Link>
 
                          </section>
                          

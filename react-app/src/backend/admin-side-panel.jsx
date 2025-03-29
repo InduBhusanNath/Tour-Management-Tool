@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 //Main export function
 export default function AdmSidePanel(){
     const [togle,setTogle]=useState('+');

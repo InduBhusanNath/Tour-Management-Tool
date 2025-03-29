@@ -1,8 +1,7 @@
 import {Helmet} from "react-helmet";
-import {useState} from "react";
-import {useEffect} from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers } from '@fortawesome/free-solid-svg-icons';
+import {useState, useEffect} from "react";
+
+
 import axios from "axios";
 
 function HandleSubmit(){
