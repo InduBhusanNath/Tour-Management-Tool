@@ -28,7 +28,7 @@ return(<>
                  <div>
                      <div className="card border-0 rounded p-0 m-1">
                          <div className="card-body p-0 m-0">
-                             <a href="/bhutan-tour-packages" className="text-decoration-none text-dark">
+                             <a href="/bhutan-tour-package" className="text-decoration-none text-dark">
                                  <img src="https://i.postimg.cc/SxVtxr1d/Bhutan-Carousel.webp" class="img-fluid rounded shadow-sm w-100 p-0 m-0" alt="Bhutan Package"/>                             
                              </a>
                          </div>                         
