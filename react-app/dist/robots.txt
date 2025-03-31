@@ -1,0 +1,15 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:/adminLogin
+Disallow:/adminDashboard
+
+
+
+
+
+Sitemap: https://aeiety.com/sitemap.xml
+
+
+
+
+
