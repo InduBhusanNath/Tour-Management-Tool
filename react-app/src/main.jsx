@@ -19,7 +19,7 @@ import AdventureTours from "./frontend/adventure-tours";
 import EcoTours from "./frontend/eco-tours";
 import HistoricalTours from "./frontend/historical-tours";
 import TourPackagesIntro from "./frontend/tour-packages-intro";
-import BhutanTourPackage from "./frontend/bhutan-tour-package";
+import BhutanTourPackages from "./frontend/bhutan-tour-packages";
 import BhutanTourPackageDescription from "./frontend/bhutan-tour-package-description";
 //Backend
 import AdminLogin from "./backend/admin-login";
@@ -50,7 +50,7 @@ ReactDOM.createRoot(root).render(
            <Route path="/eco-tours" element={<EcoTours/>} />
            <Route path="/historical-tours" element={<HistoricalTours/>} />
            <Route path="/tour-packages-intro" element={<TourPackagesIntro/>} />
-           <Route path="/bhutan-tour-package" element={<BhutanTourPackage/>} />
+           <Route path="/bhutan-tour-packages" element={<BhutanTourPackages/>} />
            <Route path="/bhutan-tour-package-description" element={<BhutanTourPackageDescription/>} />
 
 

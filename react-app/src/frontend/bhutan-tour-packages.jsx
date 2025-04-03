@@ -5,7 +5,7 @@ import DisplayBhutanTourPackages from "./bhutan-tour-packages-display";
 import BhutanFood from "./bhutan-food";
 import BhutanHandicrafts from "./bhutan-handicrafts";
 
-export default function BhutanTourPackage(){
+export default function BhutanTourPackages(){
       return(<>
            <HelmetProvider>
                 <TechnicalSEO/>

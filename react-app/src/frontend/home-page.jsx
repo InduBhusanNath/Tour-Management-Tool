@@ -2,7 +2,7 @@ import Header from "./header";
 import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import OurPrinciples from "./OurPrinciples";
-import TourismServices from "./tourism-service";
+import SpecialTourServices from "./special-tours-service";
 import InternationalTourPackageCarousel from "./international-tour-package-carousel";
 import { Link } from "react-router";
 import CabTypes from "./cab-types";
@@ -20,7 +20,7 @@ export default function HomePage(){
                      <Intro/>                                       
                      <CabServiceHomePage/>
                      <TourPackageHomePage/>
-                     <TourismHomePage/>
+                     <SpecialTours/>
                      <WhyChooseUs/>
                      <OurGoverningPrinciples/>                                             
                      <Footer/>
@@ -34,14 +34,14 @@ function TechnicalSEO(){
              
              <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Aeiety Trips: Book Cab, Tour, Cruise from #1 Travel Agency</title>                
-                <meta name="description" content="Experience the best satisfaction with our travel agency—excellent cab services, exciting tour packages, and luxurious cruises. Plan your dream travel with us!"/>
+                <title>#1 Travel Agency for  Cabs, Tours, Cruises : Aeiety Trips</title>                
+                <meta name="description" content="Explore the offerings of a trusted travel agency for cabs, tours and cruises. Plan your  trip with us for unforgettable travel experiences. Bag great deals!"/>
                 <link rel="canonical" href="https://aeiety.com"/>
-                <meta property="og:title" content="Cabs, Tourism, Package Tours by Aeiety Trips"/>
+                <meta property="og:title" content="#1 Travel Agency for  Cabs, Tours, Cruises : Aeiety Trips"/>
                 <meta property="og:url" content="https://aeiety.com/"/>
                 <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
                 <meta property="og:type" content="Web Page"/>
-                <meta property="og:description" content="Learn about the excellent Cabs, Tourism, Package Tours by Aeiety Trips."/>
+                <meta property="og:description" content="Explore the offerings of a trusted travel agency for cabs, tours and cruises. Plan your  trip with us for unforgettable travel experiences. Bag great deals!"/>
                 <meta property="og:locale" content="en_GB" />
             </Helmet>
      
@@ -64,8 +64,8 @@ function Intro(){
            <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h1 className="text-center color-darkorange">We Present You With A Basket of Travel Options </h1>
-                     <p className="font font2vw fw-bold text-center color-darkorange">
+                     <h1 className="text-center">We Present You With A Basket of Travel Options </h1>
+                     <p className="font font22 fw-bold text-center">
                           We Care for You, We Understand You, Your Satisfaction is Our Success
                      </p>
                 </div>
@@ -75,7 +75,7 @@ function Intro(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <section >
-                          <p className="font font2vw">
+                          <p className="font font22">
                                We at Aeiety Trips work dedicatedly to enable you to experience the best travel. As a premier travel agency, we offer exciting and satisfying travel options. You can choose anything from taxi services, tourism options, tour packages, or cruise services. We strive to give the most fulfilling travel experience. That is why we run our operations with customer-centric policies. Our principal focus is your satisfaction, which is also the benchmark of our success. Our continuous emphasis on eliminating hassles and shortcomings has fine-tuned our services. As such, you will experience the best from whichever service you avail of from us. We are committed to operating Aeiety Trips with the governing tenets of affordability, timeliness, safety, and customer satisfaction.
                           </p>
                      </section>                                        
@@ -170,14 +170,14 @@ function TourPackageHomePage(){
       </>);
 }
 //Tourism
-function TourismHomePage(){
+function SpecialTours(){
       return(<>
            <div className="row background-palegoldenrod p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h2 className="text-center">Special Tourism</h2>
+                     <h2 className="text-center">Special Tours</h2>
                      <p className="font font24">
-                          Do you want to embark on a different journey that can entail new experiences and knowledge? If so, why not try our exclusive adventure, eco, and historical tourism options?  
+                          Do you want to embark on a different journey that can entail new experiences and knowledge? If so, why not try our exclusive adventure, eco, and historical tour options?  
                      </p>
                 </div>
                 <div className="col-sm-1"></div>
@@ -185,7 +185,7 @@ function TourismHomePage(){
            <div className="row background-palegoldenrod p-3">
                 <div className="col-sm-2"></div>
                 <div className="col-sm-8">
-                     <TourismServices/>
+                     <SpecialTourServices/>
                 </div>
                 <div className="col-sm-2"></div>
            </div>      

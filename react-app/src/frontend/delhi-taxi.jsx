@@ -39,14 +39,14 @@ function TechnicalSEO(){
      return(<>
             <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Delhi Taxi | Service Available 24/7 | Book NOW!</title>                
-                <meta name="description" content="Explore our excellent Delhi taxi services. Get affordable, reliable, safe and timely taxis for local and outstation trips. Contact us to book a taxi in Delhi."/>
+                <title>Delhi Taxi Service With No Hassles, No Excessive Fares</title>                
+                <meta name="description" content="Explore our excellent Delhi taxi service. Get affordable, reliable, safe and timely taxis for local and outstation trips. Contact us to book a taxi in Delhi."/>
                 <link rel="canonical" href="https://aeiety.com/delhi-taxi"/>
-                <meta property="og:title" content="Delhi Taxi | Service Available 24/7 | Book NOW!"/>
+                <meta property="og:title" content="Delhi Taxi Service With No Hassles, No Excessive Fares"/>
                 <meta property="og:url" content="https://aeiety.com/delhi-taxi"/>
                 <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
                 <meta property="og:type" content="Web Page"/>
-                <meta property="og:description" content="Explore our excellent Delhi taxi services. Get affordable, reliable, safe and timely taxis for local and outstation trips. Contact us to book a taxi in Delhi."/>
+                <meta property="og:description" content="Explore our excellent Delhi taxi service. Get affordable, reliable, safe and timely taxis for local and outstation trips. Contact us to book a taxi in Delhi."/>
                 <meta property="og:locale" content="en_GB" />
             </Helmet>
      

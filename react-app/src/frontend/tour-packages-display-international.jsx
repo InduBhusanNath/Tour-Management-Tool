@@ -4,7 +4,7 @@ export default function InternationalTourPackagesDisplay(){
              <div className="card-group">
                  <div className="card border-0">
                      <div className="card-body p-0 m-0">
-                         <a href="/bhutan-tour-package" className="link-dark text-decoration-none">
+                         <a href="/bhutan-tour-packages" className="link-dark text-decoration-none">
                              <img src="https://i.postimg.cc/0jFtn3Bt/Bhutan-Destination.webp" class="card-img-top" alt="Bhutan Tour Packages, Bhutan Tourism, Tour Bhutan, Places to Visit in Bhutan" className="img-fluid w-100 p-0 m-0"/>
                          </a>
                      </div>

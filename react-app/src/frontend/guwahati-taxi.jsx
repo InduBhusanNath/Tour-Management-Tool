@@ -346,6 +346,7 @@ function GuwahatiVisitingPlaces(){
                           Reaching Umananda can be quick and convenient. Hire our cab service in Guwahati. After deboarding from the taxi, visitors should board a ferry at the river bank to reach the island.Ferries run at frequent intervals, providing seamless connectivity between the island and the river bank. Interestingly, ferry travel can be another exciting experience. With the island in sight, the flowing river, and the natural beauty around, the experience can be unforgettable.
                      </p>
                      <h3>Nilachal Hill: the Abode of the Kamakhya Temple</h3>
+                     <img src="https://i.ibb.co/PZ4NFxs5/kamakhya.webp" alt="Guwahati taxi service" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
                      <p className="font font22">
                           A fusion of natural beauty and spirituality attracts people from various parts of the world to the Nilachal Hills. The fame of Nilachal Hills in Guwahati has spread globally. That is due to the abode of the famous <a href="https://en.wikipedia.org/wiki/Kamakhya_Temple" target="_blank" rel="noreferrer noopener" className="text-decoration-none link-danger">Kamakhya</a> temple being on the hills. 
                      </p>
