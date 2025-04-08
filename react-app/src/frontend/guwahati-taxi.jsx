@@ -1,6 +1,7 @@
 import Header from "./header";
 import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Link } from "react-router";
 import Collapsible from 'react-collapsible';
 import TaxiQuickBooking from "./taxi-quick-booking";
 import TaxiChooseUs from "./taxi-choose-us";
@@ -156,16 +157,16 @@ function GuwahatiTaxiOfferings(){
                      <p className="font font22">
                           <ul class="list-group list-group-flush">
                                <li class="list-group-item bg-transparent">
-                                    Local taxis to institutions, offices, hotels, markets, hospitals, or entertainment entities within the city.
+                                    &#x2705;&nbsp;Local taxis to institutions, offices, hotels, markets, hospitals, or entertainment entities within the city.
                                </li>
                                <li class="list-group-item bg-transparent">
-                                    Outstation taxis to places outside the city. We run one-way and round-way cabs for all destinations within Assam, Arunachal Pradesh, and Meghalaya.
+                                    &#x2705;&nbsp;Outstation taxis to places outside the city. We run one-way and round-way cabs for all destinations within Assam, Arunachal Pradesh, and Meghalaya.
                                </li>
                                <li class="list-group-item bg-transparent">
-                                    Airport transfers for picking up and dropping.
+                                    &#x2705;&nbsp;Airport transfers for picking up and dropping.
                                </li>
                                <li class="list-group-item bg-transparent">
-                                    Sightseeing cabs for pleasure trips to destinations inside and outside the city. 
+                                    &#x2705;&nbsp;Sightseeing cabs for pleasure trips to destinations inside and outside the city. 
                                </li>
                           </ul>
                      </p>
@@ -299,7 +300,7 @@ function LocalGuwahatiTaxi(){
                      <div className="card-group">
                           <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
                                <div className="card-body font font22">
-                                    &#x2705;&nbsp;Airport Transfers
+                                    &#x2705;&nbsp;<Link to="/guwahati-airport-taxi" className="text-decoration-none link-dark">Airport Transfers</Link>
                                </div>
                           </div>
                           <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
@@ -394,7 +395,7 @@ function GuwahatiVisitingPlaces(){
                           Besides, the ropeway can be another exciting option for commuting to and from North Guwahati.
                      </p>
                      <h3>Basistha Temple</h3>
-                     <img src="https://i.ibb.co/hxbVLr5G/kalakshetra.webp" alt="Guwahati cab service" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
+                     <img src="https://i.ibb.co/PGgcQ2xB/basistha.webp" alt="Guwahati cab service" className="rounded shadow-sm img-fluid float-start m-1 p-0"/>
                      <p className="font font22">
                           You can visit the famous Basistha Temple in Guwahati. It is mythologically relevant. You can hire our reliable cab service in Guwahati to reach the temple. It is around 2.9 km from the Basistha Charilai.
                      </p>

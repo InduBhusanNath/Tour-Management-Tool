@@ -1,6 +1,7 @@
 import Header from "./header";
 import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Link } from "react-router";
 import Collapsible from 'react-collapsible';
 import TaxiQuickBooking from "./taxi-quick-booking";
 import TaxiChooseUs from "./taxi-choose-us";
@@ -263,7 +264,7 @@ function LocalDelhiTaxi(){
                      <div className="card-group">
                           <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
                                <div className="card-body font font22">
-                                    &#x2705;&nbsp;Airport Transfers
+                                    &#x2705;&nbsp;<Link to="/delhi-airport-taxi" className="text-decoration-none link-dark">Airport Transfers</Link>
                                </div>
                           </div>
                           <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">

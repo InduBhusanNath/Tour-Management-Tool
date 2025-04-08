@@ -1,6 +1,7 @@
 import Header from "./header";
 import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Link } from "react-router";
 
 //Main export function
 
@@ -13,6 +14,7 @@ export default function DelhiAirportTaxi(){
                      <DelhiAirportTaxiBanner/>
                      <BreadCrumb/>
                      <Intro/>
+                     <WhyChooseDelhiAirportTaxi/>
                      <Footer/>
                  </div>
              </HelmetProvider>
@@ -70,7 +72,7 @@ function Intro(){
            <div className="row p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h1 className="text-center">Delhi Airport Taxi — Your Ride, Right On Time</h1>
+                     <h1 className="text-center">The Best Delhi Airport Taxi — Your Ride, Right On Time</h1>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
@@ -78,13 +80,64 @@ function Intro(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
-                          Travelling can be exhausting — but finding a Delhi airport taxi shouldn’t add to that stress. Whether you’ve just landed at IGI Airport or need to catch a flight, we’re here to make your airport travel super easy, comfortable, and absolutely hassle-free.
+                          24x7 Delhi airport taxi service is one of our exclusive service lines. We at Aeiety Trips ensure smooth transfers at the Indira Gandhi International Airport. As such, you get a seamless taxi facility at the IGI airport. 
                      </p>
                      <p className="font font22">
-                          We believe booking an airport taxi Delhi should feel simple, clear, and reliable. No confusing pricing. No last-minute drama. Just clean cabs, polite drivers, and on-time pick-up & drop — always.
+                          Our best-in-class taxi service at Delhi airport is simple, on time, safe, and fairly priced. Therefore, availing of a reliable airport taxi Delhi will pose no hassles. You will get a cab whenever you need one. 
+                     </p>
+                     <p className="font font22">
+                          We genuinely care about being on time. As such, our timely Delhi airport pickup and drop eliminates the risk of missing your flight or getting late to your scheduled work after landing. Therefore, book our best Delhi airport taxi service to experience the best.
                      </p>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
       </>);
+}
+//Why Choose Us
+ function WhyChooseDelhiAirportTaxi(){
+      return(<>
+           <div className="row p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2 className="text-center">Why Choose Our Delhi Airport Taxi</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <p className="font font22">
+                          Hiring the best Delhi airport taxi is essential. That can give you the best experience. Notably, you need to ensure the best service. If you choose the wrong one, you might face consequences, like missing your flight or paying excessive fares. 
+                     </p>
+                     <p className="font font22">
+                          Good taxi service at Delhi airport is also about peace of mind. We at Aeiety Trips provide the best Delhi airport transfer. 
+                     </p>
+                     <h3>Customer-Centricity</h3>
+                     <p className="font font22">
+                          We care for customers. So, we strive for their best cab experience. For us, every customer is important. Due to this, we run the best taxi service at Delhi airport to create values for customers.
+                     </p>
+                     <h3>Timeliness</h3>
+                     <p className="font font22">
+                          The biggest thing we focus on is time. We pick up on time. So, the possibility of missing your flight does not arise. So when you book our airport taxi Delhi service, we will be right there, exactly when you need us. Our airport cabs Delhi operate round-the-clock.
+                     </p>
+                     <h3>Reasonable Pricing</h3>
+                     <p className="font font22">
+                          We have set reasonable pricing for our cabs. In fact, we are a provider of affordable <Link to="/delhi-taxi" className="text-decoration-none link-danger">cab service in Delhi</Link>. Also, our pricing is transparent. As such, there are no hidden or extra charges. You get value for your money. Notably, you can fix the fare with our best prepaid taxi Delhi airport. 
+                     </p>
+                     <h3>Expert Drivers</h3>
+                     <p className="font font22">
+                          Our airport taxi Delhi drivers are experienced and trained. As a result, they can drive safely. Also, they know the routes well. And, they know the shortcuts and traffic. Say you booked a one-way taxi to Delhi airport, the driver will reach the IGI airport in a short time due to their knowledge of the best routes.
+                     </p>
+                     <h3>Safety</h3>
+                     <p className="font font22">
+                          Safety matters the most in our excellent taxi service at Delhi airport. Clean cars, frequent servicing, and polite drivers entail safety.
+                     </p>
+                     <h3>24x7 Customer Service</h3>
+                     <p className="font font22">
+                          We offer dedicated customer service round-the-clock. Remarkably, we do not implement bots to answer your queries. We provide a customer-friendly Delhi airport taxi service. 
+                     </p>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+      </>);      
 }
