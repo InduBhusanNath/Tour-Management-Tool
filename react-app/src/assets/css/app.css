@@ -142,7 +142,7 @@
       z-index:15;
 }
 .dropdown{
-      position:absolute;
+      position:relative;
       /*display:none;*/
       border:none;
       border-radius:12px 12px 12px 12px;

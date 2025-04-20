@@ -1,8 +1,7 @@
 import { apihost } from "./apihost";
 import {Helmet} from "react-helmet";
-import {useState} from "react";
+import {useState,useEffect} from "react";
 import axios from "axios";
-
 
 
 //Export Component
@@ -11,11 +10,13 @@ export default function AdminLogin(){
      return(
              <>             
                  <div className="container-fluid">
-                     <TechnicalSeo/>  
+                     <TechnicalSeo/> 
+                     <AlreadyLoggedinRedirection/>                    
                      <CreateDummyUser/>
-                     <Body1/>
+                     <SessionCreation/>
                  </div>
-             </>     );
+             </>     
+             );
 }
 
 //Technical SEO
@@ -24,13 +25,29 @@ function TechnicalSeo(){
      return(<>
          <Helmet>
              <html lang="en"/>
-             <title>Admin Login</title>            
+             <title>Admin Login</title>
              <body className="background-lightgoldenrodyellow"/>
          </Helmet>
      </>);
 }
-   
 
+//Redirection for Already Logged In
+
+function AlreadyLoggedinRedirection(){  
+     //localStorage.removeItem("isLoggedIn");
+     if(localStorage.getItem("isLoggedIn")==="undefined"){
+
+     }else if(!localStorage.getItem("isLoggedIn")){
+
+     }else if(!!localStorage.getItem("isLoggedIn") && localStorage.getItem("isLoggedIn")!=="undefined"){
+         setTimeout(()=>{
+              window.location.href="/adminDashboard";
+         },1);
+        
+        
+     }
+     return(<></>);         
+}
 
 //Create Dummy User for First Login
 function CreateDummyUser(){ 
@@ -53,7 +70,7 @@ function CreateDummyUser(){
 
      
      return(<>
-         <div className="row">
+         <div className="row p-3">
                  <div className="col-sm-6">
                          <form method="post" onSubmit={HandleAutoUser}>
                                  <input type="hidden" className="form-control" name="n_autoUser" value={autoUser}/>
@@ -69,10 +86,11 @@ function CreateDummyUser(){
 
 }
 
-//Body
-function Body1(){
+
+//Create Session
+function SessionCreation(){
     return(<>
-        <div className="row">
+        <div className="row p-3">
             <div className="col-sm-1"></div>
             <div className="col-sm-5">
                 <section className="padding25">
@@ -105,6 +123,7 @@ function Body1(){
 //Allow Access
 
 function AllowAcces(){
+    
      const [adminEmail,setAdminEmail]=useState("");
      const [errorAdminEmail, setErrorAdminEmail]=useState("");
      const [adminPassword,setAdminPassword]=useState("");
@@ -113,8 +132,9 @@ function AllowAcces(){
      const [checked, setChecked]=useState(false);
      const [res,setRes]=useState('');
      const [autousr,setAutousr]=useState('');
-     //const [sessionUserId, setSessionUserId]=useState('');
-     //const [sessionAdminStatus,setSessionAdminStatus]=useState('');
+
+     
+     
      
 
      //Show/Hide Password
@@ -143,34 +163,48 @@ function AllowAcces(){
         return;
      }
 
-     var adm_usr=new FormData();
-     adm_usr.append('userName',adminEmail);
-     adm_usr.append('userPassword',adminPassword);
-     axios.post(apihost+"/adminLogin/check_admin_user",adm_usr,{headers:{'Content-Type':'application/json'}})
+     var admUsr=new FormData();
+     admUsr.append("userName",adminEmail);
+     admUsr.append("userPassword",adminPassword);
+
+     
+     
+     axios.post(apihost+"/adminLogin/check-admin-user",admUsr,
+     {headers:{'Content-Type':'application/json'}})
      .then(response=>{
-         var admUserData=response.data;
-         if(admUserData.flag==="1"){  
-             
-             
-             setRes("Allowing Access.....");
-                 setTimeout(()=>{
-                     window.location.assign("/adminDashboard/");                                          
-                 },2000);
+         if(response.data.flag==="User=0"){
+             setRes("No Such User Exists.....");
              return;
-         }else if(admUserData.flag==="0"){
-             setRes("No Combination of Such Username/Password.....");
-             return;
-         }else if(admUserData.flag==="1+"){
+         }else if(response.data.flag==="User>0"){
              setRes("Duplicate Username Suspected.....");
              return;
-         }else if(admUserData.flag==="0+"){
+         }else if(response.data.flag==="Pwd>-1"){ 
              setRes("Type the Correct Password.....");
              return;
-         }else if(admUserData.flag==="err"){
-             setRes("Errors Detected, Please Try Again.....");
+         }else if(response.data.flag==="Session:1"){             
+             //Storing Login Data, Granting Access
+             localStorage.setItem("isLoggedIn",adminEmail);             
+             setRes("Allowing Access.....");
+             setTimeout(()=>{
+                window.location.assign("/adminDashboard/");
+             },1000);
+             
+         }else if(response.data.flag==="Session:-1"){
+             setRes("Could Not Create Session,Try Again.....");
+             return;
+         }else if(response.data.flag==="Session:1+"){
+             setRes("Session Already Exists.....");
+             setTimeout(()=>{
+                window.location.assign("/adminDashboard/");
+             },200);
+             return;
+         }else if(response.data.flag==="Session:>1"){
+             setRes("Multiple Sessions Detected, Access Denied.....");
+             return;
+         }else if(response.data.flag==="Non-Admin"){
+             setRes("Non-Admin Status: Access Denied.....");
+             return;
          }
-        
-
      })
      .catch(error=>{
         setRes(error);
@@ -187,7 +221,7 @@ function AllowAcces(){
              <br/>
              <section className="bg-transparent shadow-sm border border-warning-subtle rounded">
                     <br/>                           
-                     <h1 className="text-center">ADMIN LOGIN</h1>
+                     <h2 className="text-center">ADMIN LOGIN</h2>
                      <br/>
                      <span className="text-danger small">{res}</span>
                      <form method="post" onSubmit={HandleSubmit}>
@@ -213,7 +247,7 @@ function AllowAcces(){
              </section>
              <section>
                      <br/>
-                     <a href="forgotPassword" className="font font20 text-decoration-none">Forgot Password</a>
+                     <a href="forgotPassword" className="font font20 text-decoration-none link-danger">Forgot Password</a>
              </section>       
      </>);
 }

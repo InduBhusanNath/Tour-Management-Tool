@@ -7,25 +7,40 @@ import AdminUsers from "./admin-users";
 import AdmSidePanel from "./admin-side-panel";
 
 
-
-
 //Main export function
 export default function AdminDashboard(){
-    return(<>        
+     return(<>
          <TechnicalSeo/>
-         <AdmBody/>
-         
+         <div className="container-fluid">
+             <TopBar/>              
+         </div>
     </>);
 }
 //Technical SEO
 function TechnicalSeo(){
     return(<>
-       <Helmet>
-               <html lang="en"/>
-               <title>Admin Dashboard</title>               
-               <body className="background-lightgoldenrodyellow"/>
-           </Helmet>
+         <Helmet>
+             <html lang="en"/>
+             <title>Admin Dashboard</title>
+             <body className="background-lightgoldenrodyellow"/>             
+        </Helmet>
     </>);
+}
+
+//Top Bar
+
+function TopBar(){    
+     return(<>
+         <div className="row">
+             <div className="col-sm-3"></div>
+             <div className="col-sm-3"></div>
+             <div className="col-sm-3"></div>
+             <div className="col-sm-3">
+                 <SessionCheck/>
+             </div>
+         </div>     
+     </>);
+
 }
 
 //Admin Body
@@ -145,20 +160,22 @@ function AdmBody(){
                     .catch(error=>{
         
                     });
-        }        
+        }   
+        
+        var sessionOn=localStorage.getItem(isLoggedin);
      
     return(<> 
          
              <div className="container">
                 
                 <div className="row height15">
-                     <div className="col-sm-4"></div>
+                     <div className="col-sm-4">{sessionOn}</div>
                      <div className="col-sm-4"></div>
                      <div className="col-sm-4">
-                     <a href="javascript:void(0);" className="text-decoration-none text-dark fw-bold" onClick={ShowDropdown}>{sessionName}&nbsp;&#9660;</a> 
-                     &nbsp; <a href="javascript:void(0);" className="text-decoration-none text-dark font font18" onClick={AdmLogOut}>LogOut</a><span className="small text-danger">{admLogOutRes}</span>
-                     {/*Dropdown*/}
-                     <section className={profileDropdownVisibility}>
+                             <a href="javascript:void(0);" className="text-decoration-none text-dark fw-bold" onClick={ShowDropdown}>{sessionName}&nbsp;&#9660;</a> 
+                             &nbsp; <a href="javascript:void(0);" className="text-decoration-none text-dark font font18" onClick={AdmLogOut}>LogOut</a><span className="small text-danger">{admLogOutRes}</span>
+                             {/*Dropdown*/}
+                             <section className={profileDropdownVisibility}>
                         
                              <section className="dropdown font font18">
                                  <button onClick={HideDropdown}>&#10060;</button>
@@ -219,8 +236,10 @@ function AdmBody(){
                              </section>
                              
                         
-                     </section>
-
+                             </section>
+                             <section>
+                                     <a href="javascript:void(0);" className="text-decoration-none text-dark fw-bold" onClick={ShowDropdown}>hi</a>
+                             </section>
                      </div>
                 </div>
 

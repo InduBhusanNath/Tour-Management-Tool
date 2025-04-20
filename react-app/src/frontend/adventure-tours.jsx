@@ -42,7 +42,7 @@ function AdventureTourismBanner(){
   return(<>
        <div className="row">
             <div className="col-sm-12 p-0 m-0">
-                 <img src="https://i.postimg.cc/hvh8dLJ8/adventure-tour.webp" alt="adventure tours in India" className="w-100 img-fluid p-0 m-0"/>
+                 <img src="https://i.postimg.cc/W3RgsGr1/adventure-tour.webp" alt="adventure tours in India" className="w-100 img-fluid p-0 m-0"/>
             </div>
        </div>
   </>);

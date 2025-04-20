@@ -44,7 +44,7 @@ function createUser(req,res){
 }
 function readUsers(req,res){    
             const limit=2;
-            const page=req.query.page; console.log(page)
+            const page=req.query.page; 
             
             userModel.countDocuments().then(function(rows){
                    var totalRows=rows;
