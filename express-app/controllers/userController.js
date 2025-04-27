@@ -2,9 +2,10 @@ const userModel=require('../models/userModel.js');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
-
-function createUser(req,res){
-    var originalPwd=req.body.n_password;
+//Create User
+function createUser(req,res){  
+      
+    var originalPwd=req.body.n_password; 
     const salt = bcrypt.genSaltSync(saltRounds);
     const original_pwd=bcrypt.hashSync(originalPwd,salt);
 
@@ -13,7 +14,7 @@ function createUser(req,res){
         name:req.body.n_name,
         username:req.body.n_username,
         password:original_pwd,
-        adminStatus:req.body.n_nonAdmin,
+        adminStatus:req.body.n_adminStatus,
         designation:req.body.n_designation,
         address:req.body.n_address    
       });   
@@ -21,11 +22,11 @@ function createUser(req,res){
       
       userModel.countDocuments({username:req.body.n_name}).then(rows=>{
             if(rows=="0"){
-                   newUser.save().then(data=>{
-                         res.send("New User Created Successfully.....");
+                   newUser.save().then(data=>{                         
+                         res.send(data.username+":"+" "+"New User Created Successfully.....");
                   })
                   .catch(error=>{
-                        res.send(error);
+                         res.send(error);
                   });
             }else if(rows=="1"){
                    res.send("User Already Exists.....");
@@ -34,13 +35,8 @@ function createUser(req,res){
             }
       })
       .catch(error=>{
-            res.send(error);
-      });
-
-             
-      
-
-      
+             res.send(error);
+      });      
 }
 function readUsers(req,res){    
             const limit=2;
@@ -218,17 +214,17 @@ function changePasswordByUser(req,res){
 }
 
 
-module.exports={
-      createUser:createUser,
-      readUsers:readUsers,
-      editUsersData:editUsersData,
-      editUsers:editUsers,
-      deleteUserData:deleteUserData,
-      deleteUser:deleteUser,
-      priviledgeUserData:priviledgeUserData,
-      changeUserPriviledge:changeUserPriviledge,
-      changePassword:changePassword,
-      changePasswordByUser:changePasswordByUser
+module.exports={ 
+       createUser,
+       readUsers,
+       editUsersData,
+       editUsers,
+       deleteUserData,
+       deleteUser,
+       priviledgeUserData,
+       changeUserPriviledge,
+       changePassword,
+       changePasswordByUser
 }
       
 

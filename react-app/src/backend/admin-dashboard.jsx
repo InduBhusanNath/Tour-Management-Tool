@@ -5,6 +5,7 @@ import axios from "axios";
 import SessionCheck from "./sessionCheck";
 import AdminUsers from "./admin-users";
 import AdmSidePanel from "./admin-side-panel";
+import AdminDashboardRoot from "./admin-dashboard-root";
 
 
 //Main export function
@@ -12,7 +13,8 @@ export default function AdminDashboard(){
      return(<>
          <TechnicalSeo/>
          <div className="container-fluid">
-             <TopBar/>              
+             <TopBar/> 
+             <Dashboard/>             
          </div>
     </>);
 }
@@ -31,7 +33,7 @@ function TechnicalSeo(){
 
 function TopBar(){    
      return(<>
-         <div className="row">
+         <div className="row p-3">
              <div className="col-sm-3"></div>
              <div className="col-sm-3"></div>
              <div className="col-sm-3"></div>
@@ -41,6 +43,19 @@ function TopBar(){
          </div>     
      </>);
 
+}
+//Admin Dashboard
+function Dashboard(){
+     return(<>     
+             <div className="row p-3">
+                 <div className="col-sm-3">
+                     <AdmSidePanel/>
+                 </div>
+                 <div className="col-sm-9">                     
+                     <Outlet />
+                 </div>
+             </div>
+     </>);
 }
 
 //Admin Body

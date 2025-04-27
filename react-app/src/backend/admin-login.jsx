@@ -194,8 +194,9 @@ function AllowAcces(){
              return;
          }else if(response.data.flag==="Session:1+"){
              setRes("Session Already Exists.....");
+             localStorage.setItem("isLoggedIn",adminEmail); 
              setTimeout(()=>{
-                window.location.assign("/adminDashboard/");
+                 window.location.assign("/adminDashboard/");
              },200);
              return;
          }else if(response.data.flag==="Session:>1"){

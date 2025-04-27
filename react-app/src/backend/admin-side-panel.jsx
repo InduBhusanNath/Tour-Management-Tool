@@ -2,19 +2,23 @@ import { useState } from "react";
 import { Link } from "react-router";
 //Main export function
 export default function AdmSidePanel(){
-    const [togle,setTogle]=useState('+');
-    const [display,setDisplay]=useState('hidden')
-    function Settings(){
-        if(togle==='+'){
-            setTogle('-');
-            setDisplay('visible');
-        }else{
-            setTogle('+');
-            setDisplay('hidden');
-        }
-       
+      const [togle,setTogle]=useState('+');
+      const [display,setDisplay]=useState('hidden')
+      
+      //Toggle Settings
+      function Settings(){
+           if(togle==='+'){
+                setTogle('-');
+                setDisplay('visible');
+            }else{
+                setTogle('+');
+                setDisplay('hidden');
+           }       
      }
      return(<>
+           <ul className="list-group list-group-flush fs-3">
+                <li className="list-group-item bg-transparent">&nbsp;<Link to="/adminDashboard/" className="link-dark fw-bold">&#127968;&nbsp;DASHBOARD</Link></li>
+           </ul>
         <table className="table font font18">
             <tbody>
                 <tr>
@@ -45,7 +49,7 @@ export default function AdmSidePanel(){
             <button className="collapse_button w-75 fw-bold" onClick={Settings}>&#9967;&nbsp;Settings</button><span className="text-end w-25">{togle}</span>
                  <section className={display}>
                      <section className="text-left">
-                         <span className="bg-transparent">&#128101;&nbsp;<Link to="/adminDashboard/adminUsers/" className="action">Users</Link></span>   
+                         <span className="bg-transparent">&#128101;&nbsp;<Link to="/adminDashboard/manage-users" className="action">Users</Link></span>   
                      </section>
                  </section>   
         </table>

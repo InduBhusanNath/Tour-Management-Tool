@@ -10,7 +10,14 @@ const loginDateTime=new Date();
 async function checkAdminUser(req,res){
      
       var userName=req.body.userName; 
-      var originalPassword=req.body.userPassword;       
+      var originalPassword=req.body.userPassword;
+      
+      if(!userName){
+         res.send({
+             "flag":404
+         });
+         return;
+      }
       
       var countUsers=await userModel.countDocuments({username:userName}); 
       if(countUsers===0){
@@ -38,19 +45,22 @@ async function checkAdminUser(req,res){
          }
 
          async function userValidated(adm){
-             var isSession=await sessionModel.countDocuments({sessionUser:adm,loginTime:'',logoutTime:''});
-                 if(isSession===0){
-                     var sessionCreate=await sessionModel.create({sessionUser:adm,loginTime:loginDateTime});
-                     if(!!sessionCreate){
-                         res.send({
-                             "flag":"Session:1"
-                         });
-                     }else{
-                        res.send({
-                            "flag":"Session:-1"
-                         });                         
-                     }
-                 } 
+            
+             var isSession=await sessionModel.countDocuments( { $or:[{sessionUser:''},{sessionUser:adm,loginStatus:1}]});
+                 
+                         if(isSession===0){
+                             var sessionCreate=await sessionModel.create({sessionUser:adm, loginStatus:1, loginTime:loginDateTime});
+                    
+                                 if(sessionCreate){
+                                         res.send({
+                                                 "flag":"Session:1"
+                                         });
+                                 }else if(!sessionCreate){                    
+                                         res.send({
+                                                 "flag":"Session:-1"
+                                         });                         
+                                 }
+                         } 
 
                  
                  if(isSession===1){
@@ -67,44 +77,8 @@ async function checkAdminUser(req,res){
              
          }
          
-}
-
-      
-         
-
-       
-      
-     
-      /*
-
-      userModel.countDocuments({username:userName}).then(count=>{
-        if(count=="0"){
-             res.send({"flag":"0"});
-        }else if(count>1){
-             res.send({"flag":"1+"});
-        }else if(count=="1"){
-             userModel.findOne({username:userName},'password').then(data=>{
-                 var pwd=data.password;
-                 bcrypt.compare(originalPassword,pwd,function(err,result){
-                     if(result==true){
-                        userModel.countDocuments({username:userName,password:pwd,adminStatus:'Admin'}).then(count=>{
-                             if(count=="1"){  
-                                     console.log("hi")
-                                   }
-                        });
-                     }else if(result==false){
-                         console.log('hhhh')
-                     }else if(err){
-                         res.send({"flag":"err"});
-                     }
-
-                 });
-             });
-             
-        }
-      }); 
-
-      */
+ }
+  
 }
 
 

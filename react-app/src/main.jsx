@@ -27,7 +27,8 @@ import BhutanTourPackageDescription from "./frontend/bhutan-tour-package-descrip
 import AdminLogin from "./backend/admin-login";
 import ForgotPassword from "./backend/forgot_password";
 import AdminDashboard from "./backend/admin-dashboard";
-import AdminUsers from "./backend/admin-users";
+import AdminDashboardRoot from "./backend/admin-dashboard-root";
+import ManageUsers from "./backend/user-management";
 import Blog from "./backend/blogs";
 import WriteBlog from "./backend/write-blog";
 import BlogUpdate from "./backend/blog-update";
@@ -63,7 +64,8 @@ ReactDOM.createRoot(root).render(
            <Route path="/adminLogin" element={<AdminLogin/>} />
            <Route path="/forgotPassword" element={<ForgotPassword/>} />
            <Route path="/adminDashboard" element={<AdminDashboard/>} >
-                 <Route path="/adminDashboard/adminUsers" element={<AdminUsers />} />
+                 <Route index element={<AdminDashboardRoot />} />                 
+                 <Route path="/adminDashboard/manage-users" element={<ManageUsers />} />
                  <Route path="/adminDashboard/blogs" element={<Blog />} /> 
                  <Route path="/adminDashboard/blogs/write_blog" element={<WriteBlog />} /> 
                  <Route path="/adminDashboard/blogs/blog-update" element={<BlogUpdate/>} /> 

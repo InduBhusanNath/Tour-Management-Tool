@@ -18,7 +18,7 @@ export default function SessionCheck(){
      const[plus,setPlus]=useState('\u2795');
      const[profileDropdownVisibility,setprofileDropdownVisibility]=useState('hidden');
      const[passwordResetVisibility,setpasswordResetVisibility]=useState('hidden');  
-
+        localStorage.setItem("isLoggedIn",'');
         if(!sesId){
              window.location.href="/adminLogin";
              return;
@@ -66,7 +66,12 @@ export default function SessionCheck(){
              axios.post(apihost+"/adminDashboard/adminuser-logout",loggedUsr,
              {headers:{'Content-Type':'application/json'}})
              .then(response=>{
-                   if(response.data.flag==="1+"){
+                   
+                   if(!response.data.flag){
+                         localStorage.setItem("isLoggedIn",'');
+                         window.location.href="/adminLogin";
+                         return;
+                   }else if(response.data.flag==="1+"){
                          return;
                    }else if(response.data.flag===0){
                          alert("Something Went Wrong, Try Again.....");
@@ -85,7 +90,7 @@ export default function SessionCheck(){
       return(<>
            <a href="javascript:void(0);" className="text-decoration-none font font16 fw-bold link-primary" onClick={ShowProfileMenu}>{name}</a>&nbsp;{triangle}
            {/*Profile Menu */}
-            < section className={profileDropdownVisibility}>
+            <section className={profileDropdownVisibility}>
                    <section className="dropdown font font14">
                          <table className="table">
                                <tbody>

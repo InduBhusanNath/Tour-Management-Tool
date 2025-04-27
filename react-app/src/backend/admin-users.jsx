@@ -1,12 +1,15 @@
 import { apihost } from "./apihost";
 import {Helmet} from "react-helmet";
-import {useState} from "react";
-import {useEffect} from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers } from '@fortawesome/free-solid-svg-icons';
+
+import {useState, useEffect} from "react";
 import axios from "axios";
 
+//Main Export Function
+export default function ManageUsers(){
+       
+}
 
+/*
 
 function AddAdminUser(){
     const current = new Date();
@@ -706,3 +709,5 @@ export default function AdminUsers(){
          
         </>);
 }
+
+*/

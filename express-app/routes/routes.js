@@ -19,7 +19,6 @@ app.use(bodyParser.urlencoded({ extended:true}));
 
 var userController=require('../controllers/userController.js');
 var adminUserController=require('../controllers/adminUserController.js');
-var createUser = require('../controllers/userController.js');
 var sessionController=require('../controllers/sessionController.js');
 var blogController=require('../controllers/blogController.js');
 var contactUsMessageModel=require('../controllers/contactUsMessageController.js');
@@ -78,8 +77,10 @@ app.get('/api/adminDashboard/tour-packages/delete-data',tourPackageController.fe
 app.post('/api/adminLogin/create-auto-admin',autoCreateAdminController.createautoAdmin);
 app.post('/api/adminLogin/check-admin-user',adminUserController.checkAdminUser);
 //app.post('/api/adminLogin/check-session',sessionController.checkSession);
-app.post('/api/adminDashboard/adminUsers/user_post',userController.createUser);
 
+//USER MANAGEMENT 
+
+app.post('/api/adminDashboard/manage-users/create-user',userController.createUser);
 app.post('/adminDashboard/adminUsers/user_edit_data',userController.editUsersData);
 app.post('/adminDashboard/adminUsers/user_edit',userController.editUsers); 
 app.post('/adminDashboard/adminUsers/user_delete_data',userController.deleteUserData);
