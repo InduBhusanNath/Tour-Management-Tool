@@ -88,18 +88,30 @@ export default function AddUsers(){
                          "n_designation":designation,
                          "n_address":address
                         };
-                 axios.post(apihost+"/adminDashboard/manage-users/create-user",cu,
+                 axios.post(apihost+"/adminDashboard/manage-users/user-add/create-user",cu,
                  {headers: {'Content-Type':'application/json'}})
                  .then(response=>{
-                        alert(response.data)
+                         if(response.data.flag===1){
+                                 setName('');
+                                 setUsername('');
+                                 setPassword('');
+                                 setDesignation('');
+                                 setAddress('');
+                                 setMsg1(response.data.payload+" "+"is created successfully.....");
+                         }else if(response.data.flag===0){
+                                 setMsg1("Error Detected:"+" "+response.data.payload);                                 
+                         }else if(response.data.flag===11){
+                                 setMsg1("User Already Exists.....");
+                         }else if(response.data.flag===12){
+                                 setMsg1("Opeartion Aborted:Duplicate User");
+                        }
                  })
                  .catch(error=>{
                          alert(error)                         
-                 });
-                 
+                 });                 
          }
 
-         return(<>
+ return(<>
          {/* Button to Show Add Users Form*/}
          <div className="row p-3">
                  <div className="col-sm-4">
@@ -120,7 +132,7 @@ export default function AddUsers(){
                                                 <span className="small text-danger">{msg1}</span>
                                                 <form method="post" onSubmit={PostUsers}>
                                                         <div className="form-group">
-                                                                 <input type="text" name="n_entryDate" value={entryDate} readOnly/>
+                                                                 <input type="text" className="form-control" name="n_entryDate" value={entryDate} readOnly/>
                                                         </div>
                                                         <div className="form-group">
                                                                  <label>Name</label>
@@ -166,4 +178,4 @@ export default function AddUsers(){
                  </div>
          </div>
          
-         </>);}
+ </>);}

@@ -65,7 +65,7 @@ ReactDOM.createRoot(root).render(
            <Route path="/forgotPassword" element={<ForgotPassword/>} />
            <Route path="/adminDashboard" element={<AdminDashboard/>} >
                  <Route index element={<AdminDashboardRoot />} />                 
-                 <Route path="/adminDashboard/manage-users" element={<ManageUsers />} />
+                 <Route path="/adminDashboard/manage-users" element={<ManageUsers />} />                 
                  <Route path="/adminDashboard/blogs" element={<Blog />} /> 
                  <Route path="/adminDashboard/blogs/write_blog" element={<WriteBlog />} /> 
                  <Route path="/adminDashboard/blogs/blog-update" element={<BlogUpdate/>} /> 

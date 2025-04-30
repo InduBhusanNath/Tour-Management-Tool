@@ -41,8 +41,13 @@ app.get('/api/bhutan-tour-package-description',frontendTourPackageController.fro
 
 //Login && Session
 
-app.get('/api/adminDashboard/adminUsers',userController.readUsers);
 app.get('/api/adminDashboard/check-user-session',sessionController.checkUserSession);
+
+//User Management
+app.get('/api/adminDashboard/manage-users/users-read',userController.readUsers);
+app.get('/api/adminDashboard/manage-users/update-user-right/get-user-details/',userController.getUserDetails);
+app.get('/api/adminDashboard/manage-users/user-profile-update/get-user-update-data/',userController.getUserUpdateData);
+
 //app.get('/admin_logout',sessionController.adminLogOut);
 
 //Password
@@ -80,13 +85,13 @@ app.post('/api/adminLogin/check-admin-user',adminUserController.checkAdminUser);
 
 //USER MANAGEMENT 
 
-app.post('/api/adminDashboard/manage-users/create-user',userController.createUser);
-app.post('/adminDashboard/adminUsers/user_edit_data',userController.editUsersData);
-app.post('/adminDashboard/adminUsers/user_edit',userController.editUsers); 
+app.post('/api/adminDashboard/manage-users/user-add/create-user',userController.createUser);
+app.post('/api/adminDashboard/manage-users/update-user-right/change-user-right',userController.changeUserRight);
+app.post('/api/adminDashboard/manage-users/user-profile-update/update-user',userController.updateUser); 
 app.post('/adminDashboard/adminUsers/user_delete_data',userController.deleteUserData);
 app.post('/adminDashboard/adminUsers/user_delete',userController.deleteUser); 
-app.post('/adminDashboard/adminUsers/user_priviledge_data',userController.priviledgeUserData);
-app.post('/adminDashboard/adminUsers/user_priviledge_data_change',userController.changeUserPriviledge);
+
+
 app.post('/change_password',userController.changePassword);
 app.post('/change_password_by_user',userController.changePasswordByUser);
 

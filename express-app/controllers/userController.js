@@ -23,89 +23,133 @@ function createUser(req,res){
       userModel.countDocuments({username:req.body.n_name}).then(rows=>{
             if(rows=="0"){
                    newUser.save().then(data=>{                         
-                         res.send(data.username+":"+" "+"New User Created Successfully.....");
+                         res.send({
+                               "flag":1,
+                               "payload":data.username
+                         });                              
                   })
                   .catch(error=>{
-                         res.send(error);
+                         res.send({
+                               "flag":0,
+                               "payload":error
+                         });
                   });
             }else if(rows=="1"){
-                   res.send("User Already Exists.....");
+                   res.send({
+                         "flag":11                         
+                   });
             }else if(rows>"1"){
-                   res.send("Duplicate User Suspected.....");
+                   res.send({
+                         "flag":12
+                   });
             }
       })
       .catch(error=>{
              res.send(error);
       });      
 }
+//Read Users
 function readUsers(req,res){    
-            const limit=2;
-            const page=req.query.page; 
+             var limit=2;
+             var page=req.query.page;                   
             
             userModel.countDocuments().then(function(rows){
                    var totalRows=rows;
-                   var offset=(page-1)*limit;
                    var totalPages=Math.ceil(totalRows/limit);
-                   
-                   userModel.find({}).skip(offset).limit(limit).then(data=>{
-                        res.json(data);                     
-                        console.log(data)
-                   });                  
-                  
-                  
-            });  
-            
-            
+                         if(page<1){
+                               page=1;
+                         }else if(page>totalPages){
+                               page=totalPages;
+                         }
+                   var offset=(page-1)*limit;
                     
-     
+                   
+                   userModel.find({}).skip(offset).limit(limit).then(result=>{
+                         res.send({
+                               "userArray":result,
+                               "lstPg":totalPages
+                         });
+                   }); 
+            }); 
+}
+
+//Send User Details
+function getUserDetails(req,res){
+       userModel.findById(req.query.id,'username adminStatus')
+       .then(result=>{
+             res.send({
+                   "usnm":result.username,
+                   "usrSts":result.adminStatus
+             });            
+       })
+       .catch(error=>{
+             res.send({
+                   "usrRole":error
+             });
+       });
+        
+}
+//Change User Right
+function changeUserRight(req,res){       
+      userModel.findByIdAndUpdate(req.body.id,{adminStatus:req.body.n_changeUserRight},{new:true})
+      .then(result=>{            
+            res.send("User Right Changed to:"+" "+result.adminStatus+".....");             
+      })
+      .catch(error=>{
+            res.send(error);
+      });
 }
 
                    
-//Fetch Edit Users Data
-function editUsersData(req,res){
-      var userId=req.body.id;    
-      
-         
-       userModel.find({_id:userId}).then(data=>{             
-
-            res.json(data);
-            
-            
-      });
+//Get Edit Users Data
+function getUserUpdateData(req,res){       
+       userModel.findById(req.query.id,'name username designation address')
+       .then(result=>{
+              if(result){
+                   res.send({
+                         "flag":1,
+                         "n_name":result.name,
+                         "n_username":result.username,
+                         "n_designation":result.designation,
+                         "n_address":result.address
+                   });
+              }else{
+                   res.send({
+                         "flag":0
+                   });
+              }
+       })
+       .catch(error=>{
+             res.send({
+                   "flag":"err",
+                   "error":error
+             });             
+       });  
+               
+       
       
 }
 //Edit Users
-function editUsers(req,res){
-      var editId=req.body.n_editId;
-      var editEntryDate=req.body.n_editEntryDate;
-      var editName=req.body.n_editName;
-      var editUsername=req.body.n_editUsername;
-      var editAdminStatus=req.body.n_editAdminStatus;
-      var editDesignation=req.body.n_editDesignation;
-      var editAddress=req.body.n_editAddress;
+function updateUser(req,res){
+       userModel.findByIdAndUpdate(req.body.id,{name:req.body.n_updateName,username:req.body.n_updateUsername,designation:req.body.n_updateDesignation,address:req.body.n_updateAddress},{new:true})
+       .then(result=>{
+             if(result){
+                   res.send({
+                         "flag":1
+                  });
+             }else{
+                   res.send({
+                         "flag":0
+                   });
+             }
+       })
+       .catch(error=>{
+                   res.send({
+                         "flag":"err",
+                         "err":error
+                   });
+       });
 
-      userModel.findByIdAndUpdate(
-            {_id:editId},
-            {
-                   entryDate:editEntryDate,
-                   name:editName,
-                   username:editUsername,
-                   adminStatus:editAdminStatus,
-                   designation:editDesignation,
-                   address:editAddress
-            },
-            {
-                  new: true
-            }
-      )
-      
-      .then((data)=>{
-            res.send("Data Updated Successfully.....");
-      })
-      .catch(error=>{
-             res.send(error);
-      });
-      
       
 
 }
@@ -130,46 +174,15 @@ function deleteUser(req,res){
        });
 
 }
-//Priviledge User Data
-function priviledgeUserData(req,res){
-      var privId=req.body.priv_Id;
-      userModel.findById(privId,'adminStatus').then(data=>{
-            res.json(data);
-      });
-      
-}
-//Change User Priviledge
-function changeUserPriviledge(req,res){
-       var privId1=req.body.priviledgeId;
-       var newAdminUser=req.body.newAdminStatus;
-       userModel.findByIdAndUpdate({_id:privId1},
-            {
-                 adminStatus:newAdminUser
-            },
-            {
-                  new:true
-            }
-            )
-            .then(data=>{
-                  res.send("Admin Status Change to: "+newAdminUser);
-            })
-            .catch(error=>{
-                  res.send(error);
-            });
 
-      
-      
-      
 
-}
 //Change Password
 function changePassword(req,res){
        var newPwd_Id=req.body.newPwd_Id;
        var newPassword=req.body.newPassword;
 
        const salt = bcrypt.genSaltSync(saltRounds);
-       const changed_pwd = bcrypt.hashSync(newPassword,salt);
-       
+       const changed_pwd = bcrypt.hashSync(newPassword,salt);       
        
                   userModel.findByIdAndUpdate(
                          {_id:newPwd_Id},
@@ -217,12 +230,12 @@ function changePasswordByUser(req,res){
 module.exports={ 
        createUser,
        readUsers,
-       editUsersData,
-       editUsers,
+       getUserDetails,
+       getUserUpdateData,
+       updateUser,
        deleteUserData,
-       deleteUser,
-       priviledgeUserData,
-       changeUserPriviledge,
+       deleteUser,       
+       changeUserRight,
        changePassword,
        changePasswordByUser
 }

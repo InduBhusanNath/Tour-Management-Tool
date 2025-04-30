@@ -18,12 +18,12 @@ export default function SessionCheck(){
      const[plus,setPlus]=useState('\u2795');
      const[profileDropdownVisibility,setprofileDropdownVisibility]=useState('hidden');
      const[passwordResetVisibility,setpasswordResetVisibility]=useState('hidden');  
-        localStorage.setItem("isLoggedIn",'');
+        //localStorage.setItem("isLoggedIn",'');
         if(!sesId){
              window.location.href="/adminLogin";
              return;
          }
-       axios(apihost+"/adminDashboard/check-user-session/?ssn="+sesId)
+       axios.get(apihost+"/adminDashboard/check-user-session/?ssn="+sesId)
        .then(response=>{
              setName(response.data.name);            
              setUserName(response.data.username);
