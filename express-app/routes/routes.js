@@ -47,6 +47,8 @@ app.get('/api/adminDashboard/check-user-session',sessionController.checkUserSess
 app.get('/api/adminDashboard/manage-users/users-read',userController.readUsers);
 app.get('/api/adminDashboard/manage-users/update-user-right/get-user-details/',userController.getUserDetails);
 app.get('/api/adminDashboard/manage-users/user-profile-update/get-user-update-data/',userController.getUserUpdateData);
+app.get('/api/adminDashboard/manage-users/user-delete/get-user-delete-data/',userController.getUserDeleteData);
+
 
 //app.get('/admin_logout',sessionController.adminLogOut);
 
@@ -87,12 +89,17 @@ app.post('/api/adminLogin/check-admin-user',adminUserController.checkAdminUser);
 
 app.post('/api/adminDashboard/manage-users/user-add/create-user',userController.createUser);
 app.post('/api/adminDashboard/manage-users/update-user-right/change-user-right',userController.changeUserRight);
-app.post('/api/adminDashboard/manage-users/user-profile-update/update-user',userController.updateUser); 
-app.post('/adminDashboard/adminUsers/user_delete_data',userController.deleteUserData);
-app.post('/adminDashboard/adminUsers/user_delete',userController.deleteUser); 
+app.post('/api/adminDashboard/manage-users/user-profile-update/update-user',userController.updateUser);
+app.post('/api/adminDashboard/manage-users/user-delete/delete-user',userController.deleteUser);
+
+//PASSWORD MANAGEMENT
+app.post('/api/adminDashboard/manage-users/password-reset-by-admin/change-password-by-admin',userController.changePasswordByAdmin); 
 
 
-app.post('/change_password',userController.changePassword);
+ 
+
+
+
 app.post('/change_password_by_user',userController.changePasswordByUser);
 
 app.post('/api/adminDashboard/blogs/write_blog',blogController.createBlog);

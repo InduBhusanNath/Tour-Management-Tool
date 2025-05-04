@@ -154,57 +154,77 @@ function updateUser(req,res){
 
 }
 
-//Fetch Delete User Data
-function deleteUserData(req,res){
-       var delId=req.body.id;
-       userModel.findById(delId,'_id name').then(data=>{
-            res.json(data);
-            
+//Get Delete User Data
+function getUserDeleteData(req,res){ 
+       userModel.findById(req.query.id, 'name username')
+       .then(result=>{
+                   if(result){
+                         res.send({
+                               "flag":1,
+                               "name":result.name,
+                               "username":result.username
+                         });
+                   }else {
+                         res.send({
+                               "flag":0                               
+                         });
+                   }              
        })
        .catch(error=>{
-            
-       })
-             
-       }
+                   res.send({
+                         "flag":"err",
+                         "errorMsg":error
+                   });
+       });
+ }
+
 //Delete User
 function deleteUser(req,res){
-       var delId=req.body.id;
-       userModel.deleteOne({_id:delId}).then(data=>{
-            res.send("User Successfully Deleted.....");
-       });
-
+             userModel.deleteOne({_id:req.body.delUid})
+             .then(result=>{
+                   if(result.acknowledged===true){
+                         res.send({
+                               "flag":1                         
+                        });
+                   }else{
+                         res.send({
+                               "flag":0
+                         });
+                   }                   
+             })
+             .catch(error=>{
+                    res.send({
+                         "flag":"err",
+                         "errorMsg":error
+                    });
+             });
 }
 
 
-//Change Password
-function changePassword(req,res){
-       var newPwd_Id=req.body.newPwd_Id;
-       var newPassword=req.body.newPassword;
-
+//Change Password By Admin
+function changePasswordByAdmin(req,res){      
+       
        const salt = bcrypt.genSaltSync(saltRounds);
-       const changed_pwd = bcrypt.hashSync(newPassword,salt);       
+       const hashedPwd = bcrypt.hashSync(req.body.n_newPasswordValue,salt);
        
-                  userModel.findByIdAndUpdate(
-                         {_id:newPwd_Id},
-                         {
-                             password:changed_pwd
-                         },
-                         {
-                              new:true
-                         }
-
-                  )
-                  .then(data=>{
-                        res.send("Password Changed Successfully.....");
-                  })
-                  .catch(error=>{
-                        res.send(error);
-                  });
-                             
-
-            
-       
-        
+       userModel.findByIdAndUpdate(req.body.id,{password:hashedPwd},{new:true})
+       .then(result=>{
+              if(result){
+                   res.send({
+                         "flag":1
+                   });
+              }else{
+                   res.send({
+                         "flag":0
+                   });
+              }
+       })
+       .catch(error=>{
+             res.send({
+                   "flag":"err",
+                   "payload":error
+             });
+       });      
 }
 
 //Change Password By User
@@ -232,11 +252,11 @@ module.exports={
        readUsers,
        getUserDetails,
        getUserUpdateData,
-       updateUser,
-       deleteUserData,
+       getUserDeleteData,
+       updateUser,       
        deleteUser,       
        changeUserRight,
-       changePassword,
+       changePasswordByAdmin,
        changePasswordByUser
 }
       

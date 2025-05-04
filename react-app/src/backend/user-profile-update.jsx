@@ -1,6 +1,7 @@
 import { apihost } from "./apihost";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import PasswordResetByAdmin from "./password-reset-by-admin";
 //Main Export function 
 export default function UpdateUserProfile(props){     
       const editId=props.id;      
@@ -13,6 +14,8 @@ export default function UpdateUserProfile(props){
       const [errorUpdateDesignation,setErrorUpdateDesignation]=useState('');
       const [updateAddress,setUpdateAddress]=useState('');
       const [errorUpdateAddress, setErrorUpdateAddress]=useState(''); 
+      const [plus,setPlus]=useState('\u2795');
+      const [passwordResetByAdminFormVisibility,setPasswordResetByAdminFormVisibility]=useState('hidden');
       
       //Get User Edit Data
       useEffect(()=>{
@@ -78,6 +81,20 @@ export default function UpdateUserProfile(props){
            });         
 
       }
+      //Show Password Reset By AdminForm
+      function ShowPasswordResetByAdminForm(){
+           if(passwordResetByAdminFormVisibility==='hidden'){
+               setTimeout(()=>{
+                    setPasswordResetByAdminFormVisibility('shown');
+                    setPlus('\u2796');
+               },500);
+           }else if(passwordResetByAdminFormVisibility==='shown'){
+                setTimeout(()=>{
+                     setPasswordResetByAdminFormVisibility('hidden');
+                     setPlus('\u2795');
+                },500);
+           }
+      }
 
       return(<>
                 <div className="row p-1">
@@ -108,6 +125,18 @@ export default function UpdateUserProfile(props){
                                     <button type="submit" className="submit">UPDATE USER</button>
                                </div>
                           </form>
+                     </div>
+                </div>
+                <div className="row p-2">
+                     <div className="col-sm-12">
+                          <main>
+                               <section className="bg-warning p-1" onClick={ShowPasswordResetByAdminForm}>
+                                         <a href="javascript:void(0);" className="text-decoration:none link-dark fs-6 fw-bold">Reset Password{plus}</a>
+                               </section>
+                               <section className={passwordResetByAdminFormVisibility}>
+                                    <PasswordResetByAdmin id={editId}/>
+                               </section>
+                          </main>
                      </div>
                 </div>
       </>)

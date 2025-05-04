@@ -3,6 +3,8 @@ import { useState,useEffect} from "react";
 import axios from "axios";
 import UpdateUserRight from "./update-user-right";
 import UserUpdateProfile from "./user-profile-update";
+import UserDelete from "./user-delete";
+
 
 //Main Export Function
 export default function ReadUsers(){
@@ -10,7 +12,8 @@ export default function ReadUsers(){
          const [users,setUsers]=useState([]);
          const [id,setId]=useState('');
          const [userRightFormVisibility,setUserRightFormVisibility]=useState('hidden');
-         const  [userProfileUpdateFormVisibility,setUserProfileUpdateFormVisibility]=useState('hidden');
+         const [userProfileUpdateFormVisibility,setUserProfileUpdateFormVisibility]=useState('hidden');
+         const [userDeleteFormVisibility,setUserDeleteFormVisibility]=useState('hidden');
          const [lastPage,setLastPage]=useState('');
 
          const urlprms=new URLSearchParams(window.location.search);
@@ -61,7 +64,7 @@ export default function ReadUsers(){
                  }
          }
          //Hide User Role Changing Form
-         function HideUpdateUserRoleForm(){
+         function HideUpdateUserRightForm(){
                  if(userRightFormVisibility==='shown'){
                          setUserRightFormVisibility('hidden');
                          setId('');
@@ -81,6 +84,22 @@ export default function ReadUsers(){
                  setUserProfileUpdateFormVisibility('hidden');
                  setId('');
          }
+
+         //Show Delete Users Form
+         function ShowUserDeleteForm(e){
+                 var clickedId3=e.target.name;
+                 setId(clickedId3); 
+                 if(id===clickedId3){
+                         setUserDeleteFormVisibility('shown');
+               }                
+         }
+
+         //Hide User Delete Form
+         function HideUserDeleteForm(){
+                 setUserDeleteFormVisibility('hidden')
+         }
+
+         
  
          
 
@@ -96,7 +115,7 @@ export default function ReadUsers(){
                      <td className="text-center bg-transparent">{us.address}</td>
                      <td className="text-center bg-transparent"><a href="javascript:void(0);" name={us._id} className="text-decoration-none link-danger" onClick={ShowUpdateUserRightForm}>&#x271C;</a></td>
                      <td className="text-center bg-transparent"><a href="javascript:void(0);" name={us._id} className="text-decoration-none link-danger" onClick={ShowUserProfileUpdateForm}>&#128393;</a></td>
-                     <td className="text-center bg-transparent">&#128465;</td>
+                     <td className="text-center bg-transparent"><a href="javascript:void(0);" name={us._id} className="text-decoration-none link-danger" onClick={ShowUserDeleteForm}>&#10060;</a></td>
                  </tr>
              );
          });
@@ -129,7 +148,7 @@ export default function ReadUsers(){
                          {/*User Right Changing Form*/}
                          <main className={userRightFormVisibility}>
                                  <section className="popup">
-                                         <button className="hide_btn" onClick={HideUpdateUserRoleForm}>&#10060;</button>
+                                         <button className="hide_btn" onClick={HideUpdateUserRightForm}>&#10060;</button>
                                          <UpdateUserRight id={id}/>
                                  </section>
                          </main>
@@ -139,8 +158,14 @@ export default function ReadUsers(){
                                          <button className="hide_btn" onClick={HideUserProfileUpdateForm}>&#10060;</button>
                                          <UserUpdateProfile id={id}/>
                                  </section>
-                         </main>                         
-                          
+                         </main>
+                         {/*Delete User Form*/} 
+                         <main className={userDeleteFormVisibility}>
+                                 <section className="popup">
+                                         <button className="hide_btn" onClick={HideUserDeleteForm}>&#10060;</button>
+                                         <UserDelete id={id}/>                                
+                                 </section>
+                         </main> 
                  </div>                             
              </div>                
      </>);
