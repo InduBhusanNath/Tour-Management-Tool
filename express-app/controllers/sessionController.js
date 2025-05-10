@@ -30,7 +30,7 @@ async function checkUserSession(req,res){
  async function adminLogOut(req,res){
       
       var isLoggedOut=await sessionModel.countDocuments({sessionUser:req.body.n_sesId,loginStatus:1}).exec();
-      console.log(isLoggedOut)
+      
       
       if(isLoggedOut===1){
            var isUpdated= await sessionModel.findOneAndUpdate({sessionUser:req.body.n_sesId,loginStatus:0,logoutTime:logoutDateTime});

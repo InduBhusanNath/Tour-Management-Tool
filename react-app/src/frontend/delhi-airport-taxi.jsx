@@ -2,6 +2,7 @@ import Header from "./header";
 import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Link } from "react-router";
+import Collapsible from 'react-collapsible';
 
 //Main export function
 
@@ -15,6 +16,7 @@ export default function DelhiAirportTaxi(){
                      <BreadCrumb/>
                      <Intro/>
                      <WhyChooseDelhiAirportTaxi/>
+                     <Faqs/>
                      <Footer/>
                  </div>
              </HelmetProvider>
@@ -51,8 +53,8 @@ function DelhiAirportTaxiBanner(){
 //Breadcrumb
 function BreadCrumb(){
     return(<>
-              <div className="row">
-                   <div className="col-sm-12 background-lemonchiffon">
+              <div className="row background-lemonchiffon p-3">
+                   <div className="col-sm-12">
                          <nav aria-label="breadcrumb">
                               <ol class="breadcrumb">
                                    <li class="breadcrumb-item"><a href="/" className="link-dark">Home</a></li>
@@ -69,14 +71,14 @@ function BreadCrumb(){
 //Intro
 function Intro(){
       return(<>
-           <div className="row p-3">
+           <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h1 className="text-center">The Best Delhi Airport Taxi — Your Ride, Right On Time</h1>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
-           <div className="row p-3">
+           <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
@@ -96,14 +98,14 @@ function Intro(){
 //Why Choose Us
  function WhyChooseDelhiAirportTaxi(){
       return(<>
-           <div className="row p-3">
+           <div className="row background-lightyellow p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h2 className="text-center">Why Choose Our Delhi Airport Taxi</h2>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
-           <div className="row p-3">
+           <div className="row background-lightyellow p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
@@ -140,4 +142,49 @@ function Intro(){
                 <div className="col-sm-1"></div>
            </div>
       </>);      
+}
+//FAQs
+function Faqs(){
+      return(<>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                    <h2 className="text-center">FAQs : Delhi Airport Taxi Service</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div> 
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <section className="font font22">
+                          <Collapsible trigger="#1. What does it mean by Delhi airport taxi service?">
+                               <p className="p-2">
+                                    You can regard it as a dedicated offering of cabs to drop you at T1, T2, or T3 of the Indira Gandhi International Airport or pick you up from the terminals. You can pre-book cabs. 
+                               </p>
+                          </Collapsible>
+                          <Collapsible trigger="#2. What separates taxi service at Delhi airport from other taxis?">
+                               <p className="p-2">
+                                    The differences lie in specialized services for airport transfers. The services involved timely pickup, drop off, professional drivers, and fixed fares. Other cab services can involve wait times, late pick-up, or fare negotiation. 
+                               </p>
+                          </Collapsible>
+                          <Collapsible trigger="#3. Does Aeiety Trips guarantee safety for airport taxis Delhi?">
+                               <p className="p-2">
+                                    Yes, we do. We deploy experienced, expert, and verified drivers. 
+                               </p>
+                          </Collapsible>
+                          <Collapsible trigger="#4. What type of cars do Aeiety Trips provide for Delhi airport pickup and drop?">
+                               <p className="p-2">
+                                    We provide almost all types of cabs for airport transfers. As such, you can get small, medium, and large cars. Book the one appropriate for your needs. 
+                               </p>
+                          </Collapsible>
+                          <Collapsible trigger="#5. Will the fares for taxi service at Delhi airport change?">
+                               <p className="p-2">
+                                    No, fares for our cabs do not change from the booking quotes.  
+                               </p>
+                          </Collapsible>
+                     </section>                     
+                </div>
+                <div className="col-sm-1"></div>
+           </div>      
+      </>);
 }
