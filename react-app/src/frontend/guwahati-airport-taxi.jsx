@@ -42,10 +42,16 @@ function TechnicalSEO(){
      
      </>);
 }
-//Delhi Airport Taxi Banner
+//Guwahati Airport Taxi Banner
 function GuwahatiAirportTaxiBanner(){
-     return(<>
-     <h1>Banner Ghy</h1>
+      return(<>
+           <div className="row">
+                <div className="col-sm-12 p-0 m-0">
+                     <figure className="p-0 m-0">
+                          <img src="https://i.postimg.cc/sg6nnjhd/guwahati-airport-taxi.webp" className="img-fluid object-fit-cover w-100 p-0 m-0" alt="Guwahati Airport Taxi Service"/>
+                     </figure>
+                </div>
+           </div>
      </>);
 }
 

@@ -44,8 +44,14 @@ function TechnicalSEO(){
 }
 //Delhi Airport Taxi Banner
 function DelhiAirportTaxiBanner(){
-     return(<>
-     <h1>Banner</h1>
+      return(<>
+           <div className="row">
+                <div className="col-sm-12 p-0 m-0">
+                     <figure className="p-0 m-0">
+                          <img src="https://i.postimg.cc/VkLGBr5W/delhi-airport-taxi.webp" className="img-fluid object-fit-cover w-100 p-0 m-0" alt="Delhi Airport Taxi Service"/>
+                     </figure>
+                </div>
+           </div>
      </>);
 }
 
