@@ -42,7 +42,7 @@ function Banner(){
       return(<> 
                 <div className="row">
                      <div className="col-sm-12 p-0 m-0">
-                          <img src="https://i.postimg.cc/4y2VXTF6/About-Us-Banner.webp" alt="Trip Planner" className="img-fluid w-100 p-0 m-0"/>
+                          <img src="https://i.postimg.cc/Sx4CbyzZ/AboutUsBanner.webp" alt="Trip Planner" className="img-fluid w-100 p-0 m-0"/>
                      </div>
                 </div>
                 

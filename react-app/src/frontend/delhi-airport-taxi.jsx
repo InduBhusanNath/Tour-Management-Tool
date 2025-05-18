@@ -48,7 +48,7 @@ function DelhiAirportTaxiBanner(){
            <div className="row">
                 <div className="col-sm-12 p-0 m-0">
                      <figure className="p-0 m-0">
-                          <img src="https://i.postimg.cc/VkLGBr5W/delhi-airport-taxi.webp" className="img-fluid object-fit-cover w-100 p-0 m-0" alt="Delhi Airport Taxi Service"/>
+                          <img src="https://i.postimg.cc/KvK2b8nf/delhi-airport-taxi.webp" className="img-fluid object-fit-cover w-100 p-0 m-0" alt="Delhi Airport Taxi Service"/>
                      </figure>
                 </div>
            </div>

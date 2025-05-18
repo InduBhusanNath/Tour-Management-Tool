@@ -41,7 +41,7 @@ function Banner(){
         return(<>
                  <div className="row">
                          <div className="col-sm-12 p-0 m-0">
-                               <img src="https://i.postimg.cc/NMBQj93t/Contact-Us-Banner.webp" alt="Contact Aeiety Trips" className="img-fluid w-100 p-0 m-0"/>                                 
+                               <img src="https://i.postimg.cc/P5MZtBWd/Contact-Us-Banner.webp" alt="Contact Aeiety Trips" className="img-fluid w-100 p-0 m-0"/>                                 
                          </div>
                  </div>
         </>);
