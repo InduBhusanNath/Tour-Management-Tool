@@ -34,10 +34,10 @@ function TechnicalSEO(){
              
              <Helmet>
                 <meta charSet="utf-8"/>
-                <title>#1 Travel Agency for  Cabs, Tours, Cruises : Aeiety Trips</title>                
+                <title>Aeiety Trips : Best Travel Agency | Cabs, Tours, Cruises </title>                
                 <meta name="description" content="Explore the offerings of a trusted travel agency for cabs, tours and cruises. Plan your  trip with us for unforgettable travel experiences. Bag great deals!"/>
                 <link rel="canonical" href="https://aeiety.com"/>
-                <meta property="og:title" content="#1 Travel Agency for  Cabs, Tours, Cruises : Aeiety Trips"/>
+                <meta property="og:title" content="Aeiety Trips : Best Travel Agency | Cabs, Tours, Cruises "/>
                 <meta property="og:url" content="https://aeiety.com/"/>
                 <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
                 <meta property="og:type" content="Web Page"/>
@@ -52,7 +52,9 @@ function Banner(){
       return(<>
            <div className="row">
                 <div className="col-sm-12 p-0 m-0">
-                     <img src="https://i.postimg.cc/cH8VRsfH/Home-Page-Aeiety.webp" alt="Aeiety Trips" className="img-fluid w-100 p-0 m-0"/>                     
+                     <figure className="p-0 m-0">                     
+                          <img src="https://i.postimg.cc/D0Vf55d6/Home-Page-Aeiety.webp" alt="Aeiety Trips" className="img-fluid w-100 p-0 m-0"/>
+                     </figure>                     
                 </div>
            </div>
       </>);
@@ -64,10 +66,7 @@ function Intro(){
            <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h1 className="text-center">We Present You With A Basket of Travel Options </h1>
-                     <p className="font font22 fw-bold text-center">
-                          We Care for You, We Understand You, Your Satisfaction is Our Success
-                     </p>
+                     <h1 className="text-center">A Basket of Curated Travel Options Just for You</h1>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
@@ -76,7 +75,16 @@ function Intro(){
                 <div className="col-sm-10">
                      <section >
                           <p className="font font22">
-                               We at Aeiety Trips work dedicatedly to enable you to experience the best travel. As a premier travel agency, we offer exciting and satisfying travel options. You can choose anything from taxi services, tourism options, tour packages, or cruise services. We strive to give the most fulfilling travel experience. That is why we run our operations with customer-centric policies. Our principal focus is your satisfaction, which is also the benchmark of our success. Our continuous emphasis on eliminating hassles and shortcomings has fine-tuned our services. As such, you will experience the best from whichever service you avail of from us. We are committed to operating Aeiety Trips with the governing tenets of affordability, timeliness, safety, and customer satisfaction.
+                               Welcome to Aeiety Trips. Consider us your dedicated travel consultant. We work dedicatedly to enable you to experience the best travel. As a premier travel agency, we offer exciting and satisfying travel options. 
+                          </p>
+                          <p className="font font22">
+                               You can choose anything from taxi services, tourism options, tour packages, or cruise services. We strive to give the most fulfilling travel experience. That is why we run our operations with customer-centric policies. 
+                          </p>
+                          <p className="font font22">
+                               Our principal focus is your satisfaction, which is also the benchmark of our success. Our continuous emphasis on eliminating hassles and shortcomings has fine-tuned our services. As such, you will experience the best from whichever service you avail of from us. 
+                          </p>
+                          <p className="font font22">
+                               We are committed to operating Aeiety Trips with the governing tenets of affordability, timeliness, safety, and customer satisfaction.
                           </p>
                      </section>                                        
                 </div>
