@@ -53,7 +53,9 @@ function GuwahatiTaxiBanner(){
       return(<>
            <div className="row">
                 <div className="col-sm-12 p-0 m-0">
-                     <img src="https://i.ibb.co/3YMKDLFJ/Guwahati-Taxi-Banner1.webp" alt="cab service in Guwahati" className="img-fluid w-100 p-0 m-0"/>
+                     <figure className="p-0 m-0">
+                          <img src="https://i.postimg.cc/tR8X90vQ/Guwahati-Taxi-Banner.webp" alt="Aeiety Trips" className="img-fluid w-100 p-0 m-0"/>
+                     </figure>                     
                 </div>
            </div>          
       </>);
