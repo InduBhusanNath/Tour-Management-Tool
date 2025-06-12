@@ -83,7 +83,7 @@ function Intro(){
            <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-2"></div>
                 <div className="col-sm-8 text-center">
-                     <h1>Experience the Best Cab Service in Guwahati: We Make the Difference</h1>
+                     <h1>The Best Cab Service in Guwahati Makes the Difference</h1>
                 </div>
                 <div className="col-sm-2"></div> 
            </div>
@@ -91,7 +91,16 @@ function Intro(){
                 <div className="col-sm-1"></div>  
                 <div className="col-sm-10 ">                     
                      <p className="font font22">
-                          Get the best cab service in Guwahati from Aeiety Trips. We are dedicated to providing customers with affordable, timely, and safe cabs in Guwahati. With the proper understanding of the customer, we ensure smooth and efficient taxi trips. Due to our dedication and continuous improvement in our best Guwahati taxi service, you will encounter nil hassles. We at Aeiety Trips distinguish ourselves through our understanding of the customer, efforts to eradicate pain points, and efficiency. Our customer-centric local and outstation taxi service in Guwahati provides cabs of different types: small, medium, or large for various needs. You can get the best taxi Guwahati ride experience when you choose Aeiety Trips. We ensure the best cab service in Guwahati.
+                          We at Aeiety Trips strive to make a difference. It makes our offerings stand apart from the rest. You can get the best cab service in Guwahati from Aeiety Trips. We dedicate our focused offering to benefit the customer the most.
+                     </p>
+                     <p className="font font22">
+                          We provide affordable, timely, and safe cabs in Guwahati.  A proper understanding of the customer is behind our best Guwahati taxi service. We ensure smooth and efficient taxi trips. As such, you will encounter nil hassles in taxi booking in Guwahati.
+                     </p>
+                     <p className="font font22">
+                          We continuously upgrade. Foreigners can get the best tourist taxi in Guwahati. Our efforts eradicate pain points and increase efficiency. Our local and outstation taxi service in Guwahati involves cabs of different types. You can get small, medium, or large for various needs.
+                     </p>
+                     <p className="font font22">
+                          You can be sure of the best taxi Guwahati ride experience when you choose Aeiety Trips. We ensure the best cab service in Guwahati.
                      </p>
                 </div>                     
                 <div className="col-sm-1"></div>
