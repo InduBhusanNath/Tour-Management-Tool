@@ -87,7 +87,7 @@ function Intro(){
            <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10 p-0 m-1">
-                     <h1 className="text-center">Best Delhi Taxi Service : On-Time and Satisfying Rides at Affordable Fares</h1>
+                     <h1 className="text-center">Best Delhi Taxi Service for On-Time and Satisfying Rides</h1>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
@@ -95,8 +95,17 @@ function Intro(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10 p-0 m-1">
                      <p className="font font22">
-                          You can end your search for a reliable Delhi taxi as you found us. We at Aeiety Trips strive to provide the most affordable and satisfying cab rides. We focus on easing and streamlining rides in the city's busy environment. With the primary intent of easing your trip, we can provide a reliable taxi service in Delhi for all needs. As such, you can get a local taxi in Delhi for business travel, an official trip, a sightseeing tour, an airport transfer, or carrying a patient to the hospital. We also provide excellent Delhi outstation taxis to travel outside the city. A combination of safety, timeliness, reasonable pricing, and focus on customer satisfaction renders Aeiety Trips the number one Delhi taxi service choice. 
+                         Now, you found us. So, stop your search here. You have found the best Delhi taxi service. We at Aeiety Trips strive to provide the most affordable and satisfying cab rides. We focus on easing and streamlining rides in the city's busy environment. Focussing on easing your trip, we provide a reliable taxi service in Delhi for all purposes.
                      </p> 
+                     <p className="font font22">
+                          We can provide a local taxi in Delhi. It could be for business travel, an official trip, a sightseeing tour, an airport transfer, or carrying a patient to the hospital. We also provide excellent Delhi outstation taxis for traveling outside the city.
+                     </p>
+                     <p className="font font22">
+                          Delhi receives numerous tourists. We provide them with a reliable tourist taxi in Delhi. Our dedicated customer service can help them with taxi bookings in Delhi.
+                     </p>
+                     <p className="font font22">
+                          Aeiety Trips combines safety, timeliness, reasonable pricing, and customer focus. As such, we are the number one Delhi taxi service choice.
+                     </p>
                 </div>
                 <div className="col-sm-1"></div>
            </div>      

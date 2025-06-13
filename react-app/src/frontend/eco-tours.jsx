@@ -24,9 +24,9 @@ function TechnicalSEO(){
                 <meta charSet="utf-8"/>
                 <title>Eco Tours in India : Top Places for Sustainable Travel</title>                
                 <meta name="description" content="Discover the best eco tours in India  with our best sustainable travel packages. Delve into the hidden secrets of nature and support eco-friendly practices."/>
-                <link rel="canonical" href="https://aeiety.com/eco-tourism"/>
+                <link rel="canonical" href="https://aeiety.com/eco-tours"/>
                 <meta property="og:title" content="Eco Tours in India : Top Places for Sustainable Travel"/>
-                <meta property="og:url" content="https://aeiety.com/adventure-tourism"/>
+                <meta property="og:url" content="https://aeiety.com/eco-tours"/>
                 <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
                 <meta property="og:type" content="Web Page"/>
                 <meta property="og:description" content="Discover the best eco tours in India  with our best sustainable travel packages. Delve into the hidden secrets of nature and support eco-friendly practices."/>
