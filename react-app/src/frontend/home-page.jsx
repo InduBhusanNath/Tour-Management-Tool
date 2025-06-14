@@ -53,7 +53,7 @@ function Banner(){
            <div className="row">
                 <div className="col-sm-12 p-0 m-0">
                      <figure className="p-0 m-0">                     
-                          <img src="https://i.postimg.cc/vmKQVz1x/HomePage.webp" alt="Aeiety Trips" className="img-fluid w-100 p-0 m-0"/>
+                          <img src="https://i.postimg.cc/nrWjt5bT/HomePage.webp" alt="Aeiety Trips" className="img-fluid w-100 p-0 m-0"/>
                      </figure>                     
                 </div>
            </div>

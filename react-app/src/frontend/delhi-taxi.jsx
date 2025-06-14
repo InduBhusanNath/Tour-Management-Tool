@@ -95,7 +95,7 @@ function Intro(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10 p-0 m-1">
                      <p className="font font22">
-                         Now, you found us. So, stop your search here. You have found the best Delhi taxi service. We at Aeiety Trips strive to provide the most affordable and satisfying cab rides. We focus on easing and streamlining rides in the city's busy environment. Focussing on easing your trip, we provide a reliable taxi service in Delhi for all purposes.
+                          Now, you found us. So, stop your search here. You have found the best Delhi taxi service. We at Aeiety Trips strive to provide the most affordable and satisfying cab rides. We ease and streamline rides in busy traffic. Focussing on customers’ needs, we offer a reliable taxi service in Delhi for all purposes.
                      </p> 
                      <p className="font font22">
                           We can provide a local taxi in Delhi. It could be for business travel, an official trip, a sightseeing tour, an airport transfer, or carrying a patient to the hospital. We also provide excellent Delhi outstation taxis for traveling outside the city.
@@ -104,7 +104,7 @@ function Intro(){
                           Delhi receives numerous tourists. We provide them with a reliable tourist taxi in Delhi. Our dedicated customer service can help them with taxi bookings in Delhi.
                      </p>
                      <p className="font font22">
-                          Aeiety Trips combines safety, timeliness, reasonable pricing, and customer focus. As such, we are the number one Delhi taxi service choice.
+                          Aeiety Trips combines safety, timeliness, reasonable pricing, and customer focus. As such, we are the number one Delhi taxi service choice. Choose us if you want to hire a taxi in Delhi.
                      </p>
                 </div>
                 <div className="col-sm-1"></div>
@@ -137,8 +137,14 @@ function WhyChooseDelhiTaxi(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
-                          We care about your trip. As such, we do not fall behind in providing a trusted Delhi taxi service. We ensure customers experience the best due to affordable pricing, timeliness, comfortability, and safety.  With customer-centricity, Aeiety Trips caters to all your cab needs. That is why we can claim to run a comprehensive taxi service in Delhi. Therefore, you can get a taxi for outstation or local travel. Notably, the rides are comfortable, safe, and affordable. At Aeiety Trips, we carefully assess the needs of our customers to provide them with excellent personalized services. As such, you get a satisfying ride when you choose us for a taxi in Delhi. 
+                          We care about your trip. So, we put together all our efforts to make it convenient and cost-effective. Therefore, we ensure a trusted Delhi taxi service. Affordable pricing, timeliness, comfortability, and safety make customers feel the best.  
                      </p> 
+                     <p className="font font22">
+                          Customer-centricity is the focal point of Aeiety Trips. We cater to all your cab needs. That is why we can claim to run a convenient taxi service in Delhi. Therefore, you can get an affordable taxi for outstation or local travel. Notably, the rides are comfortable, safe, and inexpensive.
+                     </p>
+                     <p className="font font22">
+                          At Aeiety Trips, we carefully assess the needs of our customers. It allows us to provide them with excellent cabs in Delhi. As such, you get a comfortable ride when you book a taxi in Delhi from us. 
+                     </p>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
