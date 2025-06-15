@@ -25,7 +25,8 @@ export default function GuwahatiTaxi(){
                      <LocalGuwahatiTaxi/>
                      <GuwahatiVisitingPlaces/>                     
                      <Faqs/>
-                     <GuwahatiTaxiExcellence/>                                   
+                     <GuwahatiTaxiExcellence/>
+                     <OtherTaxiRoutes/>                                   
                      <Footer/>
                 </div>
            </HelmetProvider>
@@ -54,7 +55,7 @@ function GuwahatiTaxiBanner(){
            <div className="row">
                 <div className="col-sm-12 p-0 m-0">
                      <figure className="p-0 m-0">
-                          <img src="https://i.postimg.cc/GhYz8NnD/Guwahati-Taxi-Banner.webp" alt="Aeiety Trips" className="img-fluid w-100 p-0 m-0"/>
+                          <img src="https://i.postimg.cc/Y92LkdQT/Guwahati-Taxi-Banner.webp" alt="Aeiety Trips" className="img-fluid w-100 p-0 m-0"/>
                      </figure>                     
                 </div>
            </div>          
@@ -549,6 +550,30 @@ function GuwahatiTaxiExcellence(){
                 <div className="col-sm-1"></div>
            </div>
 
+      </>);
+}
+
+//Other Taxi Routes
+function OtherTaxiRoutes(){
+      return(<>
+           <div className="row background-lightyellow p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2 className="text-center">Other Taxi Routes</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lightyellow p-3">
+                <div className="col-sm-2"></div>
+                <div className="col-sm-4">
+                     <section className="bg-warning bg-gradient rounded shadow text-left fs-3 p-2 m-2"><Link to="/delhi-taxi" className="text-decoration-none link-dark">{'\u2705'} Delhi Taxi</Link></section>
+                     <section className="bg-warning bg-gradient rounded shadow text-left fs-3 p-2 m-2"><Link to="/delhi-airport-taxi" className="text-decoration-none link-dark">{'\u2705'} Delhi Airport Taxi</Link></section>
+                </div>
+                <div className="col-sm-4">
+                     <section className="bg-warning bg-gradient rounded shadow text-left fs-3 p-2 m-2"><Link to="/guwahati-airport-taxi" className="text-decoration-none link-dark">{'\u2705'} Guwahati Airport Taxi</Link></section>
+                </div>
+                <div className="col-sm-2"></div>
+           </div>
       </>);
 }
 

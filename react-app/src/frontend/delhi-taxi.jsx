@@ -28,7 +28,8 @@ export default function DelhiTaxi(){
                      <LocalDelhiTaxi/>
                      <DelhiVisitingPlaces/>                    
                      <Faqs/>
-                     <DelhiTaxiExcellence/>                     
+                     <DelhiTaxiExcellence/>
+                     <OtherTaxiRoutes/>                     
                      <Footer/>
                 </div>
            </HelmetProvider>
@@ -139,11 +140,13 @@ function WhyChooseDelhiTaxi(){
                      <p className="font font22">
                           We care about your trip. So, we put together all our efforts to make it convenient and cost-effective. Therefore, we ensure a trusted Delhi taxi service. Affordable pricing, timeliness, comfortability, and safety make customers feel the best.  
                      </p> 
+                     <h3>Affordable Taxi in Delhi</h3>
                      <p className="font font22">
-                          Customer-centricity is the focal point of Aeiety Trips. We cater to all your cab needs. That is why we can claim to run a convenient taxi service in Delhi. Therefore, you can get an affordable taxi for outstation or local travel. Notably, the rides are comfortable, safe, and inexpensive.
+                          Customer-centricity is the focal point of Aeiety Trips. We cater to all your cab needs. That is why we can claim to run a convenient taxi in Delhi. Therefore, you can get an affordable taxi for outstation or local travel. Notably, the rides are comfortable, safe, and inexpensive.
                      </p>
+                     <h3>Tourist Taxi Service in Delhi</h3>
                      <p className="font font22">
-                          At Aeiety Trips, we carefully assess the needs of our customers. It allows us to provide them with excellent cabs in Delhi. As such, you get a comfortable ride when you book a taxi in Delhi from us. 
+                          We make extra efforts to serve foreigners in their travel matters. At Aeiety Trips, we carefully assess their needs. It allows us to provide them with excellent tourist taxi service. As such, they get comfortable cabs in Delhi. Our simple online cab booking in Delhi facilitates them to quickly book a taxi in Delhi.
                      </p>
                 </div>
                 <div className="col-sm-1"></div>
@@ -571,5 +574,29 @@ function DelhiVisitingPlaces(){
               <div className="col-sm-1"></div>
          </div>
      </>);
+}
+//Other Taxi Routes
+
+function OtherTaxiRoutes(){
+      return(<>
+           <div className="row background-lightyellow p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2 className="text-center">Other Taxi Routes</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lightyellow p-3">
+                <div className="col-sm-2"></div>
+                <div className="col-sm-4">
+                     <section className="bg-warning bg-gradient rounded shadow text-left fs-3 p-2 m-2"><Link to="/guwahati-taxi" className="text-decoration-none link-dark">{'\u2705'}Guwahati Taxi</Link></section>
+                     <section className="bg-warning bg-gradient rounded shadow text-left fs-3 p-2 m-2"><Link to="/guwahati-airport-taxi" className="text-decoration-none link-dark">{'\u2705'}Guwahati Airport Taxi</Link></section>
+                </div>
+                <div className="col-sm-4">
+                     <section className="bg-warning bg-gradient rounded shadow text-left fs-3 p-2 m-2"><Link to="/delhi-airport-taxi" className="text-decoration-none link-dark">{'\u2705'} Delhi Airport Taxi</Link></section>
+                </div>
+                <div className="col-sm-2"></div>
+           </div>
+      </>);
 }
 
