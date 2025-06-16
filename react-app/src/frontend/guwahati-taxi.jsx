@@ -136,7 +136,7 @@ function WhyChooseGuwahatiTaxi(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
-                          We are aware that running a cab service in Guwahati is challenging. People from all over India and foreign countries come to the vibrant city. Many of them hire cabs in Guwahati to go from place to place in and outside the city. Providing them with personalized cab services needs careful planning and sincere efforts. Only that can give them the best cab experience. Therefore, we have carefully planned our Guwahati taxi service, looking at every possible scenario. As a result, our carefully and thoughtfully planned taxi Guwahati operations provide the best experience. That is why it makes sense to select our best cab service in Guwahati.
+                          We are aware that running a cab service in Guwahati is challenging. People from all over India and foreign countries come to the vibrant city. Many of them hire cabs in Guwahati to go from place to place in and outside the city. Providing them with personalized cab services needs careful planning and sincere efforts. Only that can give them the best cab experience. Therefore, we have carefully planned our Guwahati taxi service, looking at every possible scenario. As a result, our carefully and thoughtfully planned taxi Guwahati operations provide the best experience. That is why it makes sense to select our best <Link to="/taxis" className="text-decoration-none link-dark">cab service in Guwahati</Link>.
                      </p>                    
                 </div>
                 <div className="col-sm-1"></div>

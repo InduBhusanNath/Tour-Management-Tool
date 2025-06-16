@@ -18,6 +18,7 @@ export default function DelhiAirportTaxi(){
                      <WhyChooseDelhiAirportTaxi/>
                      <Faqs/>
                      <WhyHireDelhiAirportTaxi/>
+                     <BookDelhiAirportTaxi/>
                      <Footer/>
                  </div>
              </HelmetProvider>
@@ -211,8 +212,44 @@ function WhyHireDelhiAirportTaxi(){
                      <p className="font font22">
                           Carefulness is essential during your travel to or from the airport. Although public transport is available, hiring a Delhi airport taxi could be the best thing to do. You must carry luggage and navigate the traffic on the city's busy roads. As such, your travel to the Indira Gandhi International Airport could be stressful. Also, you could risk missing the flight. Again, you might reach IGI Airport, New Delhi, barely minutes before the closure of boarding. In that case, you will have to rush through the pre-boarding process. That will be confusing and stressful. However, the good thing is that you can avoid hassles by hiring a top-notch taxi service at Delhi airport. 
                      </p>
+                     <h3>Airport Taxi Delhi for Tourists</h3>
+                     <p className="font font22">
+                          Tourists come to the city for various purposes. They need a taxi service at Delhi airport to travel to the city's places. They can book a cab beforehand to pick them up after landing at IGI airport.  That can smoothen their travel. Moreover, they can travel to various places in the city with our dedicated airport taxi in Delhi. Also, reaching the hotel can be quick and smooth. 
+                     </p>
+                     <p className="font font22">
+                          Outstation Delhi taxis by Aeiety Trips allow tourists to travel to places outside the city. Affordable cabs enable them to spend reasonably during their tour of India. Besides, our drivers can act as good guides.
+                     </p>
+                     <h3>Taxi Service at Delhi Airport for Business People</h3>
+                     <p className="font font22">
+                          Corporate people must attend their business activities on time. So, using a dedicated Delhi airport taxi service can be a good idea. That way, they can reach places for such activities without hassles. They can board the can straightaway after landing at IGI airport. As such, their transfer can be smooth. 
+                     </p>
+                     <p className="font font22">
+                          They can use our taxi service at Delhi airport to travel to offices, meetings, or events. Likewise, they can travel to the airport in cabs. Pre-booking taxis can be a good idea.
+                     </p>
+
                 </div>
                 <div className="col-sm-1"></div>
            </div> 
        </>);
+}
+//Book Delhi Airport Taxi
+function BookDelhiAirportTaxi(){
+      return(<>
+          <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                    <h2 className="text-center">Book Delhi Airport Taxi Now!</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <p className="font font22">
+                          Why wait? Act now! Book a Delhi airport taxi service. Experience on-time and convenient cab rides to T1, T2, or T3 of IGI airport. Aeiety Trip ensures the best airport taxi in Delhi at affordable fares. Experience the best with expert drivers and clean cars. 
+                     </p>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>  
+      </>);
 }

@@ -18,6 +18,7 @@ export default function GuwahatiAirportTaxi(){
                      <WhyChooseGuwahatiAirportTaxi/>
                      <Faqs/>
                      <WhyBookGuwahatiAirportTaxi/>
+                     <BookGuwahatiAirportTaxi/>
                      <Footer/>
                  </div>
              </HelmetProvider>
@@ -191,8 +192,43 @@ function WhyBookGuwahatiAirportTaxi(){
                      <p className="font font22">
                           You would not be correct if you believe travelling to or from Lokpriya Gopinath Bordoloi International Airport, Guwahati, is smooth. So, booking a Guwahati airport taxi can be sensible. You must know of the various things involved. Remember, you could encounter hassles on your way to the airport. For example, a traffic jam, vehicle breakdown, etc., could be possible hindrances. However, a dedicated taxi service at Guwahati airport can make the difference. It ensures timely arrival and departure from the airport. As a result, you do not risk missing your flight or arriving late to your scheduled work after landing. In addition, it makes airport transfers comfortable.
                      </p>
+                     <h3>Airport Taxi Guwahati for Tourists</h3>
+                     <p className="font font22">
+                          There are several reasons why tourists visit the city. To go to the Guwahati's locations, they require an airport taxi in Guwahati. It can facilitate their journey.When they arrive at Lokpriya Gopinath International Airport, they can reserve a taxi in advance to pick them up. Additionally, customers can use our special taxi service at Guwahati airport to get to different locations throughout the city. Additionally, getting to the hotel might be easy and quick.
+                     </p>
+                     <p className="font font22">
+                          Tourists can travel to locations outside of the city with Aeiety Trips' outstation taxis in Guwahati. They may travel on a budget thanks to reasonably priced taxis. Additionally, our drivers can serve as excellent guides.
+                     </p>
+                     <h3>Taxi Service at Guwahati Airport for Corporate People</h3>
+                     <p className="font font22">
+                          Corporate personnel are required to arrive on time for their corporate events. Therefore, it may be wise to choose a specialized cab service at Guwahati Airport. In this manner, they can easily get to locations for these kinds of events. When they land at Guwahati airport, they can immediately board the cab. Their transfer can therefore go smoothly.
+                     </p>
+                     <p className="font font22">
+                          They can travel to meetings, offices, or events by using our Guwahati airport taxi. They can also take taxis to the airport. It can be wise to reserve taxis in advance.
+                     </p>
                 </div>
                 <div className="col-sm-1"></div>
            </div>      
       </>);
+}
+//Book Guwahati Airport Taxi
+function BookGuwahatiAirportTaxi(){
+      return(<>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                     <div className="col-sm-10">
+                          <h2 className="text-center">Book Guwahati Airport Taxi Now!</h2>
+                     </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lemonchiffon p-3">
+                <div className="col-sm-1"></div>
+                     <div className="col-sm-10">
+                          <p className="font font22">
+                               Why hold off? Take action now! Reserve a Guwahati Airport Taxi. Take advantage of convenient and punctual taxi trips to Lokpriya Gopinath Bordoloi Airport. Aeiety Trip guarantees timely pickup and drop-off apart from reasonable prices. Experience the best taxi service at Guwahati airport. We provide knowledgeable drivers and best-in-class cars.
+                          </p>
+                     </div>
+                <div className="col-sm-1"></div>
+           </div>
+      </>);      
 }
