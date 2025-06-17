@@ -80,7 +80,7 @@ function Nav(){
                          </ul>
                   </li>
                   <li><Link to="/tour-packages-intro" className="text-decoration-none text-dark padding5">&nbsp;Tour Packages</Link></li>
-                  <li><Link to="/#" className="text-decoration-none text-dark padding5">&nbsp;Cruises</Link></li>
+                  <li><Link to="/cruises" className="text-decoration-none text-dark padding5">&nbsp;Cruises</Link></li>
                   
               </ul>
           </nav>

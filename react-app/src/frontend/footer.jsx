@@ -52,6 +52,8 @@ function Foot(){
                                  &#10132;&nbsp;<Link to="/historical-tours" className="font font20 text-decoration-none text-dark">Historical Tours</Link>
                                  <br/>
                                  &#10132;&nbsp;<Link to="/tour-packages-intro" className="font font20 text-decoration-none text-dark">Tour Packages</Link>
+                                 <br/>
+                                 &#10132;&nbsp;<Link to="/cruises" className="font font20 text-decoration-none text-dark">Cruises</Link>
 
 
                          </section>
