@@ -13,7 +13,11 @@ export default function Cruises(){
                      <Header/>
                      <CruiseBanner/>
                      <BreadCrumb/>
+                     <H1/>
                      <Intro/>
+                     <WhatIsOnOffer/>
+                     <FeaturedDestinations/>
+                     <WhyChooseUs/>
                      <Footer/>
                 </div>
            </HelmetProvider>   
@@ -65,13 +69,109 @@ function BreadCrumb(){
               </div>
      </>);
 }
-//Intro
-function Intro(){
+//H1
+function H1(){
       return(<>
            <div className="row background-ghostwhite p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h1>Cruises in India: Explore Stunning River and Sea Voyages</h1>
+                     <h1 className="text-center">Cruises in India: Explore Stunning River and Sea Voyages</h1>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+      </>);
+}
+//Intro
+function Intro(){
+      return(<>           
+           <div className="row background-ghostwhite p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <p className="font font22">
+                          Crafted for those who settle for nothing but the exceptional. Experienced best-in-class luxury. Step aboard our exclusive India Cruises, where every journey is a masterpiece of comfort, culture, and class. Whether you choose a tranquil river voyage or a lavish sea escape, you’ll sail aboard world-class ships offering 5-star service, gourmet cuisine, private suites, and curated experiences unlike anything else.
+                     </p>
+                     <p className="font font22">
+                          This is more than travel — it’s a privilege. And with our premium cruise deals in India, indulgence doesn’t wait. Secure your place now and discover how India reveals her finest secrets only to those who cruise in style.
+                     </p>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+      </>);
+}
+//What is on the Offer
+function WhatIsOnOffer(){
+      return(<>
+           <div className="row background-whitesmoke p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2 className="text-center">What Is on the Offer: India Cruises with Style, Comfort & Unmatched Value</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-whitesmoke p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <p className="font font22">
+                          At Aeiety Trips, we curate the finest India Cruises — from serene river journeys to indulgent sea adventures — tailored for those who expect seamless luxury and exceptional value for their time.
+                     </p>
+                     <p className="font font22">
+                          Experience the timeless beauty of India aboard our handpicked river cruises, gliding through the Ganges, Brahmaputra, or the backwaters of Kerala in refined comfort. Or set sail on our luxury sea cruises across the Arabian Sea and Bay of Bengal, with private suites, gourmet dining, and hand-crafted itineraries built around your preferences.
+                     </p>
+                     <p className="font font22">
+                          Each journey is more than a voyage — it’s a statement. With Aeiety Trips, you gain access to exclusive cruise deals in India that combine elite service, cultural richness, and stress-free planning — ensuring every moment of your trip is as meaningful as it is memorable.
+                     </p>
+                     <p className="font font22">
+                          Discover how India Cruises can redefine your idea of luxury travel — with experiences built entirely around your expectations.
+                     </p>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+      
+      </>);
+}
+//Featured Destination
+function FeaturedDestinations(){
+      return(<>
+           <div className="row background-ghostwhite p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2 className="text-center">Featured Destinations on India Cruises</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-ghostwhite p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <p className="font font22">
+                          At Aeiety Trips, we offer a carefully curated selection of destinations that showcase the richness and diversity of India Cruises. Our itineraries include sacred journeys along the Ganges, where ancient cities like Varanasi and Kolkata unfold in a blend of tradition and grandeur. In the south, the tranquil backwaters of Kerala provide a peaceful escape through lush landscapes and timeless villages. For those drawn to the sea, our experiences include the vibrant shores of Goa, the dramatic Konkan coastline, and the pristine beauty of the Andaman Islands. Each route is crafted to balance luxury, cultural immersion, and scenic discovery. With personalized service and access to premium cruise deals in India, we ensure that every voyage delivers more than just travel — it delivers lasting impressions, elegantly wrapped in comfort.
+                     </p>                     
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+      </>);
+}
+//Why Choose Us
+function WhyChooseUs(){
+      return(<>
+           <div className="row background-whitesmoke p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2 className="text-center">Why Choose Aeiety Trips for India Cruises</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-whitesmoke p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <p className="font font22">
+                          At Aeiety Trips, we believe luxury is not about excess — it’s about experience. Our approach to India Cruises is built on personalization, precision, and a deep understanding of what discerning travelers truly value: comfort, culture, and curated detail.
+                     </p>
+                     <p className="font font22">
+                          We don’t sell trips — we craft journeys. Whether it’s a slow cruise through the backwaters of Kerala or a sea-bound escape to the Andamans, every itinerary is thoughtfully selected to reflect India’s diversity while ensuring your time is spent in effortless comfort. We focus on creating intimate, meaningful travel experiences that are never rushed, never off-the-shelf.
+                     </p>
+                     <p className="font font22">
+                          As a boutique agency, we give you what larger operators can’t — direct attention, honest recommendations, and access to exclusive cruise deals in India that align with your tastes. With Aeiety Trips, you’re not just booking a cruise. You’re choosing a partner who’s committed to elevating every moment of your journey.
+                     </p>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
