@@ -75,7 +75,7 @@ function Intro(){
                 <div className="col-sm-10">
                      <section >
                           <p className="font font22">
-                               Welcome to Aeiety Trips. Consider us your dedicated travel consultant. We work dedicatedly to enable you to experience the best travel. As a premier travel agency, we offer exciting and satisfying travel options. 
+                               Welcome to Aeiety Trips. We are your dedicated travel consultant. As a premier travel agency, we offer exciting and satisfying travel options. Experience the best travel with us.
                           </p>
                           <p className="font font22">
                                You can choose anything from taxi services, tourism options, tour packages, or cruise services. We strive to give the most fulfilling travel experience. That is why we run our operations with customer-centric policies. 
