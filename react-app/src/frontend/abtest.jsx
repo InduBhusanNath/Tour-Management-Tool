@@ -100,6 +100,36 @@ We provide timely cabs for all purposes. We have got a taxi in Delhi ready for y
                   <p>
                     You can also get an airport taxi in Delhi from Aeiety Trips. Besides, our service suits the best for tourists going to various places in the city. Clean cars and timely pickups will entail the best experience.
                   </p>
+                  <h2>Our Top-Class Delhi Taxi Service Offerings </h2>
+                  <p>
+                    Traffic in Delhi is busy. The city is the country's political capital. It is also one of India's largest commercial zones. Our Delhi taxi service can be the perfect option to travel smoothly in high traffic. 
+
+                  </p>
+                  <p>
+                    Fulfilling all types of customer needs is our principal motto. For that, we focus on understanding the emerging customer tastes and preferences. As a result, we can run customized taxi services in Delhi for every need. 
+                  </p>
+                  <p>
+                     The city is also a tourism hub. Numerous tourists arrive in Delhi every day. They need a dependable can rental service. Also, the frequency of taxi bookings to travel outside the city is high. Our planned cab operations streamline the strong demand. As such, every tourist can get a dependable taxi in Delhi from us. 
+                  </p>
+                  <h3>Timely Taxi Service in Delhi</h3>
+                  <p>
+                     Timeliness is our foremost priority. Timely picking up and dropping off is one of our core mandates. We know the negative consequences of delays. As such, picking you up at the scheduled time is our assurance. Moreover, our drivers ensure that they reach their destination on time. Due to our timely taxi service in Delhi, you will not be late to work or miss the flight. Also, our Delhi taxi booking process is simple and quick.  
+                  </p>
+                  <h3>Safe Taxis in Delhi</h3>
+                  <p>
+                      We regard the safety aspect seriously. We ensure safe cab travel by implementing proven safety protocols. We deploy serviced cars and experienced drivers. These prevent any untoward incidents during taxi travel. When you book a taxi in Delhi from us, you can put safety concerns to rest.
+                  </p>
+                  <h3>Fair Priced Delhi Taxi</h3>
+                  <p>
+                    Our pricing parameters include the distance traveled and the car type. There are no additional factors beyond these. As such, you need to pay the amount quoted for the Delhi taxi booking. Notably, there are no hidden costs. 
+                  </p>
+                  <p>
+                    Our pricing is reasonable. We never ask for excessive fares. As such, you will get value for your money. 
+                  </p>
+                  <h3>Clean Delhi Taxi</h3>
+                  <p>
+                    We ensure clean cars to prevent you from traveling in an unpleasant interior. That is why your travel becomes pleasant when you book Delhi taxi services from Aeiety Trips. Our vehicles are washed frequently to maintain cleanliness.
+                  </p>
 
              </div>
              <div className="col-sm-1"></div>
