@@ -88,10 +88,13 @@ function Intro(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
-                          Crafted for those who settle for nothing but the exceptional. Experienced best-in-class luxury. Step aboard our exclusive India Cruises, where every journey is a masterpiece of comfort, culture, and class. Whether you choose a tranquil river voyage or a lavish sea escape, you’ll sail aboard world-class ships offering 5-star service, gourmet cuisine, private suites, and curated experiences unlike anything else.
+                          Why not go for the exceptional? You can find yourself in a dream world. Luxurious ambience, scenic waterways, and world-class offerings make India Cruises the appropriate choice. 
                      </p>
                      <p className="font font22">
-                          This is more than travel — it’s a privilege. And with our premium cruise deals in India, indulgence doesn’t wait. Secure your place now and discover how India reveals her finest secrets only to those who cruise in style.
+                          Comfort and class will define your voyage on our world-class ships. You might choose a tranquil river voyage or a lavish sea escape. You will experience curated offerings. There will be world-class service, excellent suites, and delicious food. 
+                     </p>
+                     <p className="font font22">
+                          Our amazing cruise deals in India are a privilege for you. Embark upon amazing river and sea cruises on luxury ships.
                      </p>
                 </div>
                 <div className="col-sm-1"></div>

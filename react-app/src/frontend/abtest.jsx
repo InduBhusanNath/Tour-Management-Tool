@@ -17,9 +17,9 @@ function TechnicalSEO(){
                 <meta charSet="utf-8"/>
                 <title>Delhi Taxi Booking | Get the Best Ride | Timely, Fair Fares</title>                
                 <meta name="description" content="Experience affordable, safe and comfortable Delhi taxi service. Excellent cabs are available for local and outstation trips. Book a taxi in Delhi from us now! "/>
-                <link rel="canonical" href="https://aeiety.com/aboutus"/>
+                <link rel="canonical" href="https://aeiety.com/abtest"/>
                 <meta property="og:title" content="India Cruises: Luxury Trips & Best Cruise Deals"/>
-                <meta property="og:url" content="https://aeiety.com/aboutus"/>
+                <meta property="og:url" content="https://aeiety.com/abtest"/>
                 <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
                 <meta property="og:type" content="Web Page"/>
                 <meta property="og:description" content="Explore top India cruises with luxury amenities, scenic routes & the best cruise deals. Book your perfect voyage today—coastal, river, or island. "/>
