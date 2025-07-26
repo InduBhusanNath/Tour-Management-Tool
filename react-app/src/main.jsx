@@ -18,6 +18,7 @@ import DelhiAirportTaxi from "./frontend/delhi-airport-taxi";
 import GuwahatiTaxi from "./frontend/guwahati-taxi";
 import GuwahatiAirportTaxi from "./frontend/guwahati-airport-taxi";
 import AdventureTours from "./frontend/adventure-tours";
+import ScubaDiving from "./frontend/scuba-diving";
 import EcoTours from "./frontend/eco-tours";
 import HistoricalTours from "./frontend/historical-tours";
 import TourPackagesIntro from "./frontend/tour-packages-intro";
@@ -54,6 +55,7 @@ ReactDOM.createRoot(root).render(
            <Route path="/guwahati-taxi" element={<GuwahatiTaxi/>} />
            <Route path="/guwahati-airport-taxi" element={<GuwahatiAirportTaxi/>} />
            <Route path="/adventure-tours" element={<AdventureTours/>} />
+           <Route path="/scuba-diving" element={<ScubaDiving/>} />
            <Route path="/eco-tours" element={<EcoTours/>} />
            <Route path="/historical-tours" element={<HistoricalTours/>} />
            <Route path="/tour-packages-intro" element={<TourPackagesIntro/>} />

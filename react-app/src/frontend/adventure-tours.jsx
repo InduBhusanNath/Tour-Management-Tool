@@ -1,6 +1,7 @@
 import Header from "./header";
 import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import AdventureTourPackageDisplay from "./adventure-tour-packages";
 export default function AdventureTours(){
        return(
              <>
@@ -10,8 +11,10 @@ export default function AdventureTours(){
                           <Header/>
                           <AdventureTourismBanner/>
                           <BreadCrumb/>
-                          <Intro/>
+                          <H1/>
+                          <Intro/>                          
                           <AdventureTourTypes/>
+                          <AdventureTripPackages/>
                           <WhyChooseOurAdventureTours/>
                           <Consultation/>
                           <Footer/>
@@ -63,60 +66,85 @@ function BreadCrumb(){
            </div>
   </>);
 }
+//H1
+function H1(){
+      return(<>
+           <div className="row background-azure p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h1 className="text-center">Captivating Adventure Tours in India: Unleash the Explorer in You</h1>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+      </>);
+}
+
 //Intro
 function Intro(){
       return(<>
            <div className="row background-azure p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h1 className="text-center">Spice Up With Amazing Adventure Tours in India</h1>
-                </div>
-                <div className="col-sm-1"></div>
-           </div>
-           <div className="row background-azure p-3">
-                <div className="col-sm-1"></div>
-                <div className="col-sm-10">
                      <p className="font font22">
-                          Go on adventure tours in India with our guidance. That can be the perfect thing to do if you crave unique experiences. For that, we at Aeiety Trips have structured the best adventure trip packages. As such, you can engage in exciting activities to experience fun and excitement. Notably, undertaking such a trip can entail additional benefits. For example, you will get to put the courageous version of yourself into action. Also, you will explore and learn many new things. Our comprehensive coverage of adventure destinations in India ensures the exotic places. As such, you will enjoy a holistic thrill. Notably, we are one of the best adventure travel companies in India. Therefore, explore our service. Then, choose the appropriate package for you.
+                          You must try out something different. Why not go for a trip that calls for thrilling physical activities? We offer exciting adventure tours in India to give you a memorable experience.
+                     </p>
+                     <p className="font font22">
+                          Such trips could be the perfect thing if you crave unique experiences. Also, forget the fear of the challenges from adventure activities. With our guidance, you can enjoy them easily.
+                     </p>
+                     <p className="font font22">
+                          Aeiety Trips provides India's best adventure travel packages at affordable prices. So, engage in exciting activities to experience fun and excitement. Notably, we are one of the best adventure travel companies in India.
+                     </p>
+                     <p className="font font22">
+                          Such tours can entail additional benefits. For example, you can put the courageous version of yourself into action. Additionally, you will experience and learn many new things.
+                     </p>
+                     <p className="font font22">
+                          Our comprehensive coverage of adventure destinations in India ensures exotic places. As such, you will enjoy a holistic thrill. Therefore, explore our adventure tours in India. Then, choose the appropriate package for you. 
                      </p>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
       </>);
 }
+
 //Types of Adventure Tours
 function AdventureTourTypes(){
       return(<>
-           <div className="row background-aliceblue p-3">
+           <div className="row background-honeydew p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h2 className="text-center">Types of Adventure Tours in India</h2>
+                     <h2 className="text-center">Our Adventure Tour Packages: Curated for the Best Experience</h2>
                 </div>
                 <div className="col-sm-1"></div>
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
-                          At Aeiety Trips, we offer a holistic spectrum of adventure tours in India. Therefore, you can choose activities according to your preferences. Also, our best adventure trip packages are aimed at all types of travelers. As such, you can undertake such a trip solo, with family, or with a group of friends. The adventure activities you can engage in:
+                          At Aeiety Trips, the focus is on enabling you to experience the best. Furthermore, we consider emerging customer preferences. We offer a holistic spectrum of adventure tours in India at affordable prices. 
                      </p>
                      <p className="font font22">
-                          <ul>
-                               <li>Trekking</li>
-                               <li>Wildlife Safaris</li>
-                               <li>Rafting</li>
-                               <li>Paragliding</li>
-                               <li>Mountain Biking</li>
-                               <li>Rock Climbing</li>
-                               <li>Caving</li>
-                               <li>Skiing</li>
-                          </ul>
-                     </p>
+                          You can choose activities according to your preferences. Also, our best adventure trip packages are suitable for all types of such tours. As such, you can undertake such a trip solo, with family, or with a group of friends. 
+                     </p>                     
                      <p className="font font22">
                           Due to our careful selection, you will find your favorite activities. Also, you can choose the best adventure destinations in India from our excellent packages.
+                     </p>
+                     <p className="font font22">
+                          The adventure activities you can engage in:
                      </p>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
       </>);
+}
+//Adventure Packages
+function AdventureTripPackages(){
+      return(<>
+           <div className="row background-honeydew p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                    <AdventureTourPackageDisplay/>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>      
+      </>);      
 }
 //Why Choose Adventure Trip Packages
 function WhyChooseOurAdventureTours(){
@@ -132,18 +160,21 @@ function WhyChooseOurAdventureTours(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
-                          Choose our best adventure tours in India for valid reasons. We at Aeiety Trips operate the best adventure trip packages with perfection. Also, our tailor-made tour packages will unleash the courageous explorer in you. As such, you can choose adventure holiday tours in India that suit you the best. 
+                          You want to undergo the best experience. So, you must select the best agency. There can be valid reasons for choosing India's best adventure travel packages from Aeiety Trips. 
+                     </p>
+                     <p className="font font22">
+                          We operate the best adventure tours in India  with perfection. Also, our tailor-made tour packages will unleash the courageous explorer in you. As such, you can choose adventure holiday tours in India that suit you the best. 
                      </p>
                      <p className="font font22">
                           We ensure all-round thrilling experiences. As such, you gain unforgettable memories. Most importantly,  we ensure a safe trip. For that, we provide the essential adventure travel gear and equipment. Safety is our principal priority.
                      </p>
                      <h3>Curated Adventure Tours</h3>
                      <p className="font font22">
-                          We offer a broad range of adventure tours in India. They are based on careful considerations. Notably, we ensure experience curated tours. They provide wholesome exploration, excitement, and learning in safe settings. 
+                           We offer a broad range of adventure tours in India. They are based on careful considerations. Notably, we ensure experience curated tours. They provide wholesome exploration, excitement, and learning in safe settings. 
                      </p>
                      <h3>Expert and Experienced Guides</h3>
                      <p className="font font22">
-                          Our tour guides are expert professionals. Due to experience, they know how to guide such tours. India.  Due to their expertise, we ensure the best adventure trip packages in India.
+                          Our tour guides are expert professionals. Due to experience, they know how to guide such tours.  As such, we ensure the best adventure trip packages in India.
                      </p>
                      <h3>Customization</h3>
                      <p className="font font22">

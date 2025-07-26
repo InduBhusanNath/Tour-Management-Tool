@@ -43,10 +43,10 @@ function TechnicalSEO(){
      return(<>
             <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Delhi Taxi Service | 100% Satisfaction for Sure | Book 24/7</title>                
+                <title>Delhi Taxi Service | 24/7 Local, Outstation & Airport Cabs</title>                
                 <meta name="description" content="Explore our excellent Delhi taxi service. Get affordable, reliable, safe and timely taxis for local and outstation trips. Book a taxi in Delhi from us now!"/>
                 <link rel="canonical" href="https://aeiety.com/delhi-taxi"/>
-                <meta property="og:title" content="Delhi Taxi Service | 100% Satisfaction for Sure | Book 24/7"/>
+                <meta property="og:title" content="Delhi Taxi Service | 24/7 Local, Outstation & Airport Cabs"/>
                 <meta property="og:url" content="https://aeiety.com/delhi-taxi"/>
                 <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
                 <meta property="og:type" content="Web Page"/>
@@ -90,7 +90,7 @@ function H1(){
            <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10 p-0 m-1">
-                     <h1 className="text-center">Trusted Delhi Taxi Service: Book 24/7</h1>
+                     <h1 className="text-center">Book Your Delhi Taxi for Seamless City & Outstation Travel</h1>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
@@ -114,10 +114,10 @@ function Intro(){
                           You'll get cars with professional drivers. Moreover, fares are fair. We have a taxi in Delhi ready for you whenever you want it. 
                      </p> 
                      <p className="font font22">
-                          If you are still unsure about which taxi service is the best in Delhi, put your concerns to rest. It is always on time. As such, your ride will be according to your scheduled departure. So, no stress.
+                          If you are still unsure about which taxi service is the best in Delhi, put your concerns to rest. Aeiety Trips is the go-to cab operator. 
                      </p>
                      <p className="font font22">
-                          Choose our excellent Delhi taxi agency with dedicated customer service. 
+                          Choose our excellent Delhi taxi agency with dedicated customer service. We are always on time. As such, your ride will be according to your scheduled departure. So, no stress.
                      </p>                    
                 </div>
                 <div className="col-sm-1"></div>
