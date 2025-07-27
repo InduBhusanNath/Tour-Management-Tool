@@ -15,6 +15,7 @@ import BlogPage from "./frontend/blog-page";
 import Taxis from "./frontend/taxis";
 import DelhiTaxi from "./frontend/delhi-taxi";
 import DelhiAirportTaxi from "./frontend/delhi-airport-taxi";
+import DelhiSightseeingTaxi from "./frontend/delhi-sightseeing-taxi";
 import GuwahatiTaxi from "./frontend/guwahati-taxi";
 import GuwahatiAirportTaxi from "./frontend/guwahati-airport-taxi";
 import AdventureTours from "./frontend/adventure-tours";
@@ -51,7 +52,8 @@ ReactDOM.createRoot(root).render(
            <Route path="/blog-page" element={<BlogPage/>} />
            <Route path="/taxis" element={<Taxis/>} />
            <Route path="/delhi-taxi" element={<DelhiTaxi/>} />
-           <Route path="/delhi-airport-taxi" element={<DelhiAirportTaxi/>} />           
+           <Route path="/delhi-airport-taxi" element={<DelhiAirportTaxi/>} />
+           <Route path="/delhi-sightseeing-taxi" element={<DelhiSightseeingTaxi/>} />
            <Route path="/guwahati-taxi" element={<GuwahatiTaxi/>} />
            <Route path="/guwahati-airport-taxi" element={<GuwahatiAirportTaxi/>} />
            <Route path="/adventure-tours" element={<AdventureTours/>} />

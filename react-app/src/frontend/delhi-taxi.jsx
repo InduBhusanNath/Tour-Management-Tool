@@ -3,7 +3,6 @@ import Footer from "./footer";
 import Accordion from 'react-bootstrap/Accordion';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Link } from "react-router";
-import Collapsible from 'react-collapsible';
 import TaxiQuickBooking from "./taxi-quick-booking";
 import TaxiChooseUs from "./taxi-choose-us";
 import TaxiServiceDisplay from "./taxi-service-display";
@@ -354,7 +353,7 @@ function LocalDelhiTaxi(){
                      <div className="card-group">
                           <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">
                                <div className="card-body font font22">
-                                    &#x2705;&nbsp;Sightseeing
+                                    &#x2705;&nbsp;<Link to="/delhi-sightseeing-taxi" className="text-decoration-none link-dark">Sightseeing</Link>
                                </div>
                           </div>
                           <div className="card bg-transparent border-top-0 border-bottom-0 border-start-0">

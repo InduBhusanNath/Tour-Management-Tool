@@ -1,6 +1,7 @@
 import Header from "./header";
 import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import Accordion from 'react-bootstrap/Accordion';
 import AdventureTourPackageDisplay from "./adventure-tour-packages";
 export default function AdventureTours(){
        return(
@@ -16,6 +17,7 @@ export default function AdventureTours(){
                           <AdventureTourTypes/>
                           <AdventureTripPackages/>
                           <WhyChooseOurAdventureTours/>
+                          <Faqs/>
                           <Consultation/>
                           <Footer/>
                      </div>  
@@ -207,4 +209,41 @@ function Consultation(){
                <div className="col-sm-3"></div>
           </div>
      </>);
+}
+//FAQs
+function Faqs(){
+      return(<>
+           <div className="row background-azure p-3">
+                <div className="col-sm-2"></div>
+                <div className="col-sm-8">
+                    <Accordion flush>
+                          <Accordion.Item eventKey="0">
+                               <Accordion.Header>
+                                    <span className="font font22">
+                                         #1. What are adventure tours in India?
+                                    </span>
+                               </Accordion.Header>                                    
+                               <Accordion.Body>
+                                    <p className="font font22">
+                                         These involve mildly challenging physical activities. For example, scuba diving, paragliding, trekking etc.They entail excitement and unique experiences. 
+                                    </p>
+                               </Accordion.Body>
+                          </Accordion.Item>
+                          <Accordion.Item eventKey="1">
+                               <Accordion.Header>
+                                    <span className="font font22">
+                                         #2. Are adventure activities safe?
+                                    </span>
+                               </Accordion.Header>                                    
+                               <Accordion.Body>
+                                    <p className="font font22">
+                                        Top-class tour operators deploy certified guides, provide good safety equipment, and provide safety briefings. So, they are safe.
+                                    </p>
+                               </Accordion.Body> 
+                          </Accordion.Item>                        
+                     </Accordion>                   
+                </div>
+                <div className="col-sm-2"></div>
+           </div>      
+      </>);
 }
