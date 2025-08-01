@@ -216,6 +216,13 @@ function Faqs(){
            <div className="row background-azure p-3">
                 <div className="col-sm-2"></div>
                 <div className="col-sm-8">
+                     <h2>FAQs : Adventure Trip Packages</h2>
+                </div>
+                <div className="col-sm-8"></div>
+           </div>
+           <div className="row background-azure p-3">
+                <div className="col-sm-2"></div>
+                <div className="col-sm-8">
                     <Accordion flush>
                           <Accordion.Item eventKey="0">
                                <Accordion.Header>
