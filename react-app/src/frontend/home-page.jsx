@@ -34,10 +34,10 @@ function TechnicalSEO(){
              
              <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Aeiety Trips : Best Travel Agency | Cabs, Tours, Cruises </title>                
+                <title>Best Travel Agency | Cabs, Tours, Cruises : Aeiety Trips </title>                
                 <meta name="description" content="Explore the offerings of a trusted travel agency for cabs, tours and cruises. Plan your  trip with us for unforgettable travel experiences. Bag great deals!"/>
                 <link rel="canonical" href="https://aeiety.com"/>
-                <meta property="og:title" content="Aeiety Trips : Best Travel Agency | Cabs, Tours, Cruises "/>
+                <meta property="og:title" content="Best Travel Agency | Cabs, Tours, Cruises : Aeiety Trips "/>
                 <meta property="og:url" content="https://aeiety.com/"/>
                 <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
                 <meta property="og:type" content="Web Page"/>

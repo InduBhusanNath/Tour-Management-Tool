@@ -568,9 +568,11 @@ function OtherTaxiRoutes(){
                 <div className="col-sm-4">
                      <section className="bg-warning bg-gradient rounded shadow text-left fs-3 p-2 m-2"><Link to="/delhi-taxi" className="text-decoration-none link-dark">{'\u2705'} Delhi Taxi</Link></section>
                      <section className="bg-warning bg-gradient rounded shadow text-left fs-3 p-2 m-2"><Link to="/delhi-airport-taxi" className="text-decoration-none link-dark">{'\u2705'} Delhi Airport Taxi</Link></section>
+                     <section className="bg-warning bg-gradient rounded shadow text-left fs-3 p-2 m-2"><Link to="/delhi-sightseeing-taxi" className="text-decoration-none link-dark">{'\u2705'} Delhi SightseeingTaxi</Link></section>
                 </div>
                 <div className="col-sm-4">
                      <section className="bg-warning bg-gradient rounded shadow text-left fs-3 p-2 m-2"><Link to="/guwahati-airport-taxi" className="text-decoration-none link-dark">{'\u2705'} Guwahati Airport Taxi</Link></section>
+                     
                 </div>
                 <div className="col-sm-2"></div>
            </div>
