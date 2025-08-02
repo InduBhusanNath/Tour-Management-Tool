@@ -18,6 +18,7 @@ export default function AdventureTours(){
                           <AdventureTripPackages/>
                           <WhyChooseOurAdventureTours/>
                           <Faqs/>
+                          <SafetyConsiderations/>
                           <Consultation/>
                           <Footer/>
                      </div>  
@@ -61,7 +62,7 @@ function BreadCrumb(){
                            <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="/">Home</a></li>  
                                 <li class="breadcrumb-item"><a href="/aboutus">About Us</a></li>                                    
-                                <li class="breadcrumb-item active" aria-current="page">Adventure Tourism</li>
+                                <li class="breadcrumb-item active" aria-current="page">Adventure Tours</li>
                            </ol>
                       </nav> 
                  </div>
@@ -172,7 +173,7 @@ function WhyChooseOurAdventureTours(){
                      </p>
                      <h3>Curated Adventure Tours</h3>
                      <p className="font font22">
-                           We offer a broad range of adventure tours in India. They are based on careful considerations. Notably, we ensure experience curated tours. They provide wholesome exploration, excitement, and learning in safe settings. 
+                        We offer a broad range of adventure tours in India. They are based on careful considerations. Notably, our curated tours ensure the best experience. They provide wholesome exploration, excitement, and learning in safe settings. 
                      </p>
                      <h3>Expert and Experienced Guides</h3>
                      <p className="font font22">
@@ -196,20 +197,7 @@ function WhyChooseOurAdventureTours(){
       </>);
 }
 
-//Consultation
-function Consultation(){
-     return(<>
-          <div className="row background-aliceblue p-3">
-               <div className="col-sm-3"></div>
-               <div className="col-sm-6">
-                    <div class="d-grid gap-2">
-                         <a class="btn btn-warning" href="/contactus" role="button">Contact Our Experts for a Free Consultation</a>
-                    </div>
-               </div>
-               <div className="col-sm-3"></div>
-          </div>
-     </>);
-}
+
 //FAQs
 function Faqs(){
       return(<>
@@ -247,10 +235,96 @@ function Faqs(){
                                         Top-class tour operators deploy certified guides, provide good safety equipment, and provide safety briefings. So, they are safe.
                                     </p>
                                </Accordion.Body> 
+                          </Accordion.Item>  
+                          <Accordion.Item eventKey="2">
+                               <Accordion.Header>
+                                    <span className="font font22">
+                                         #3. Can I travel solo on adventure travels?
+                                    </span>
+                               </Accordion.Header>                                    
+                               <Accordion.Body>
+                                    <p className="font font22">
+                                         Yes, you can. Our assistance will put you at ease. 
+                                    </p>
+                               </Accordion.Body> 
                           </Accordion.Item>                        
                      </Accordion>                   
                 </div>
                 <div className="col-sm-2"></div>
            </div>      
       </>);
+}
+//Safety
+function SafetyConsiderations(){
+      return(<>
+           <div className="row background-aliceblue p-3">
+               <div className="col-sm-1"></div>
+               <div className="col-sm-10">
+                     <h2>Safety Considerations Before Adventure Tours</h2>
+               </div>
+               <div className="col-sm-1"></div>
+          </div>
+          <div className="row background-aliceblue p-3">
+               <div className="col-sm-1"></div>
+               <div className="col-sm-10">
+                     <p className="font font22">
+                          The urge to push beyond the boundary will drive you in your adventure travel. You will undergo memorable experiences. They could prompt you to undertake such trips again. However, there is a guiding principle. You should not undermine carefulness. 
+                     </p>
+                     <p className="font font22">
+                          At Aeiety Trips, we recommend preparing smartly for such tours. That will make your adventure trip exciting and safe.
+                     </p>
+                     <p className="font font22">
+                          Here is how we ensure safety:
+                     </p>
+                     <h3>Expert Guides</h3>
+                     <p className="font font22">
+                         Our guides are well-trained professionals. They know the best practices of adventure trips. In addition, they are experts in emergency preparedness.
+                     </p>
+                     <h3>Reliable Gear</h3>
+                     <p className="font font22">
+                          We provide tried and tested gear for adventure travel. So, they are 100% sage. Also, they are customized for the respective environment.
+                     </p>
+                     <h3>Risk Management</h3>
+                     <p className="font font22">
+                          We manage risks. For that, we brief on the essentials before every trip. Also, we monitor the weather conditions. We allow going on adventure tours only in favorable weather.
+                     </p>
+                     <h3>Advice</h3>
+                     <p className="font font22">
+                          Your adventure activities will be smooth, even if you are a newbie. We advise you on the best practices, packing checklists, and other essential matters. As such, you will experience the best.
+                     </p>
+               </div>
+               <div className="col-sm-1"></div>
+          </div>
+      </>);
+}
+
+//Consultation
+function Consultation(){
+     return(<>
+           <div className="row background-aliceblue p-3">
+               <div className="col-sm-1"></div>
+               <div className="col-sm-10">
+                     <h2>Feel Free to Get in Touch With Us</h2>
+               </div>
+               <div className="col-sm-1"></div>
+          </div>
+          <div className="row background-aliceblue p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <p className="font font22">
+                          Why wait any longer to enjoy a challenging and inspiring tour? Contact our representatives to advise you on the most suitable adventure tour in India for you. You can call our customer helpline or drop a message.
+                     </p>
+                </div>
+                <div className="col-sm-1"></div>
+          </div>
+          <div className="row background-aliceblue p-3">
+               <div className="col-sm-3"></div>
+               <div className="col-sm-6">
+                    <div class="d-grid gap-2">
+                         <a class="btn btn-warning" href="/contactus" role="button">Contact Our Experts for a Free Consultation</a>
+                    </div>
+               </div>
+               <div className="col-sm-3"></div>
+          </div>
+     </>);
 }
