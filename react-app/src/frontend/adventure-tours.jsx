@@ -31,10 +31,10 @@ function TechnicalSEO(){
   return(<>          
           <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Adventure Tours in India | Engage in Thrilling Activities</title>                
+                <title>Adventure Tours in India | Redefining Packages |  Book Now!</title>                
                 <meta name="description" content="Discover the best adventure tours in India with top adventure trip packages in India. Trek, raft, and explore breathtaking landscapes for a unique thrill."/>
                 <link rel="canonical" href="https://aeiety.com/adventure-tours"/>
-                <meta property="og:title" content="Adventure Tours in India | Engage in Thrilling Activities"/>
+                <meta property="og:title" content="Adventure Tours in India | Redefining Packages |  Book Now!"/>
                 <meta property="og:url" content="https://aeiety.com/adventure-tours"/>
                 <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
                 <meta property="og:type" content="Web Page"/>
