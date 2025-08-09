@@ -18,6 +18,9 @@ export default function DelhiSightseeingTaxi(){
                 <LalQila/>
                 <QutubMinar/>
                 <PuranaQila/>
+                <LotusTemple/>
+                <IndiaGate/>
+                <ConnaughtPlace/>
                  
                 <OtherTaxiRoutes/>
                 <Footer/>
@@ -225,6 +228,106 @@ function PuranaQila(){
       </>);
 }
 
+//Lotus Temple
+function LotusTemple(){
+      return(<>
+           <div className="row background-lightyellow p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h3>Lotus Temple</h3>                     
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lightyellow p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <figure className="float-start">
+                          <img src="https://i.postimg.cc/NF1C3p9r/Lotus-Temple.webp" alt="taxi service in Delhi" className="img-fluid shadow rounded p-0 m-2"/>
+                          <figcaption className="text-center">Lotus Temple, New Delhi</figcaption>
+                     </figure>
+                     <p className="font font22">
+                          It is a prominent attraction in New Delhi. You can hire a Delhi sightseeing cab from us to visit Lotus Temple. Its structure is that of a lotus, hence the representation. It is 34m in height. Its construction was completed in 1986. 
+                     </p>
+                     <p className="font font22">
+                          Interestingly, people of any religion can visit it. It is near Nehru Place in New Delhi, at the Bahapur village. Although all sorts of public transportation including the metro are available, renting a local taxi service in Delhi can be the most convenient transportation to Lotus Temple. 
+                     </p>
+                     <p className="font font22">
+                          &nbsp;
+                     </p>
+                     <p className="font font22">
+                          It is one of the most popular places to visit in Delhi. After visiting, you can reach the nearby Nehru Place market by hiring a Delhi city tour cab. 
+                     </p>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+      </>);
+}
+//India Gate
+function IndiaGate(){
+      return(<>
+           <div className="row background-lightyellow p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h3>India Gate</h3>                     
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lightyellow p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <figure className="float-start">
+                          <img src="https://i.postimg.cc/RVYnr4mK/India-Gate.webp" alt="Delhi cab service" className="img-fluid shadow rounded p-0 m-2"/>                          
+                          <figcaption className="text-center">India Gate, New Delhi</figcaption>
+                     </figure>
+                     <p className="font font22">
+                          It is a war memorial in New Delhi. Hiring a Delhi sightseeing cab can be the best way to travel to India Gate stands. It is near India’s parliament, in Rajpath. The British had set up India Gate. It is to commemorate the soldiers who lost their lives in the First World War. December February 12, 1931, was its inauguration day.
+                     </p>
+                     <p className="font font22">
+                          The historically relevant war memorial is among the most sought-after tourist attractions in Delhi. Interestingly, you will get a good view of India’s parliament building from India Gate. You can hire our best taxi in Delhi service to visit the war memorial.
+                     </p>
+                     <p className="font font22">
+                          It is among the most important places to visit in Delhi. Also, you can relax there apart from viewing the iconic war memorial. Our trusted Delhi city tour cab can be the best option for reaching India Gate seamlessly.
+                     </p>                    
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+      </>);
+}
+//Connaught Place
+function ConnaughtPlace(){
+      return(<>
+           <div className="row background-lightyellow p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h3>Connaught Place</h3>                     
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-lightyellow p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <p className="font font22">
+                          People often call it CP. It is the main business and financial hub in New Delhi. In Connaught Place, you will find the major companies operating, entailing a corporate atmosphere. And, the place also has another name: Rajiv Chowk, which is associated with the metro station area. Our reliable Delhi sightseeing cab service also covers CP for up and up-and-down.
+                     </p> 
+                     <p className="font font22">
+                          There are many shopping options, including nightlife. In addition to branded showrooms, you can go on a shopping spree in the famous Palika Bazaar, and the roadside shops. Our best taxi in  Delhi can enable visiting them with ease. 
+                     </p>
+                     <p className="font font22">
+                          With many food outlets in Connaught Place, you will find numerous dining options. There are many branded restaurants and popular food outlets to choose from. Notably, some restaurants in CP started operations in the pre-independence period. You can reach CP by riding a Delhi taxi booked from Aeiety Trips from anywhere in the city. And, it is among the oldest places to visit in Delhi.
+                     </p> 
+                     <p className="font font22">
+                          For cinema lovers, CP is the place to go with a taxi in Delhi. You will find many cinema halls, including multiplexes. Notably, the Regal Cinema Hall is an iconic theatre, built in 1932. You can leave the task of transporting you to the theatre to our dependable taxi booking in Delhi. We will drop you at the cinema hall, and pick you up after the show.
+                     </p> 
+                     <p className="font font22">
+                          There is a beautiful large park in the middle of CP. You can relax there amid a busy environment. In addition, CP is near Barakhamba Road and Kasturba Gandhi Marg. Hire our Delhi tour cab to reach those places.                         
+                     </p>   
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+      </>);
+}
+
+
 //Delhi Places to Visit
 function DelhiVisitingPlaces1(){
      return(<>
@@ -250,7 +353,7 @@ function DelhiVisitingPlaces1(){
                           You will also see various remains of structures built during the Mughal period within the vicinity of Qutub Minar. Hiring a taxi service in Delhi is the best option to visit the historically relevant entity. 
                      </p>
                      <h3>Purana Qila (Old Fort)</h3>
-                     <img src="https://i.postimg.cc/5yt1Lw8Z/Purana-Qila.webp" alt="taxi Delhi" className="img-fluid float-start rounded p-0 m-2"/>
+                     <img src=" " alt="taxi Delhi" className="img-fluid shadow rounded p-0 m-2"/>
                      <p className="font font22">
                           It is also called the Red Fort, one of the major attractions. It is of the Mughal period. We provide a dependable Delhi taxi service to transport people to and from the place.
                      </p>
