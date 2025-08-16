@@ -1,6 +1,7 @@
 import Header from "./header";
 import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Link } from "react-router";
 import Accordion from 'react-bootstrap/Accordion';
 import AdventureTourPackageDisplay from "./adventure-tour-packages";
 export default function AdventureTours(){
@@ -171,7 +172,7 @@ function WhyChooseOurAdventureTours(){
                           Our tailor-made tour packages will unleash the courageous explorer in you. As such, you can choose adventure holiday tours in India that suit you the best. Also, we operate the best adventure tours in India  with perfection. 
                      </p>
                      <p className="font font22">
-                          We ensure all-round thrilling experiences. As such, you gain unforgettable memories. Most importantly,  we ensure a safe trip. For that, we provide the essential adventure travel gear and equipment. Safety is our principal priority.
+                          We ensure all-round thrilling experiences. As such, you gain unforgettable memories. Most importantly,  we ensure a safe trip. For that, we provide the essential <Link to="https://en.wikipedia.org/wiki/Adventure_travel" className="text-decoration-none link-danger" target="_blank" rel="noopener noreferrer">adventure travel</Link> gear and equipment. Safety is our principal priority.
                      </p>
                      <h3>Curated Adventure Tours</h3>
                      <p className="font font22">
@@ -250,7 +251,31 @@ function Faqs(){
                                          Yes, you can. Our assistance will put you at ease. 
                                     </p>
                                </Accordion.Body> 
-                          </Accordion.Item>                        
+                          </Accordion.Item>
+                          <Accordion.Item eventKey="3">
+                               <Accordion.Header>
+                                    <span className="font font22">
+                                         #4. What are the inclusions in adventure travel packages?
+                                    </span>
+                               </Accordion.Header>                                    
+                               <Accordion.Body>
+                                    <p className="font font22">
+                                         Please check our package details for the inclusions.
+                                    </p>
+                               </Accordion.Body> 
+                          </Accordion.Item> 
+                          <Accordion.Item eventKey="4">
+                               <Accordion.Header>
+                                    <span className="font font22">
+                                         #5. How can I book an adventure journey?
+                                    </span>
+                               </Accordion.Header>                                    
+                               <Accordion.Body>
+                                    <p className="font font22">
+                                         You can book on our website, or ask a customer service rep to book one for you. 
+                                    </p>
+                               </Accordion.Body> 
+                          </Accordion.Item>                           
                      </Accordion>                   
                 </div>
                 <div className="col-sm-2"></div>

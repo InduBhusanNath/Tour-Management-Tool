@@ -1,6 +1,7 @@
 import Header from "./header";
 import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Link } from "react-router";
 import Accordion from 'react-bootstrap/Accordion';
 
 //Export Function
@@ -17,7 +18,8 @@ export default function ScubaDiving(){
                  <AboutScubaDiving/>
                  <DivingGear/>
                  <DivingBenefits/>
-                 <FAQs/>
+                 <ScubaSites/>
+                 <FAQs/>                 
                  <Footer/>
              </div>
          </HelmetProvider>     
@@ -59,7 +61,7 @@ function BreadCrumb(){
                            <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="/">Home</a></li>  
                                 <li class="breadcrumb-item"><a href="/aboutus">About Us</a></li> 
-                                <li class="breadcrumb-item"><a href="/adventure-tours">About Us</a></li>                                    
+                                <li class="breadcrumb-item"><a href="/adventure-tours">Adventure Tours</a></li>                                    
                                 <li class="breadcrumb-item active" aria-current="page">Scuba Diving</li>
                            </ol>
                       </nav> 
@@ -221,17 +223,49 @@ function DivingBenefits(){
            </div>
       </>);
 }
+
+//Scuba Sites
+function ScubaSites(){
+      return(<>
+           <div className="row background-ghostwhite p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2>A Round Up of the Top Sites for Scuba Diving in India</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-ghostwhite p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <p className="font font22">
+                          The Bay of Bengal, the Indian Ocean, and the Arabian Sea are to the east, south, and west of India's vast coastline. As such, scuba diving in India takes place in various spots in the country. The shoreline extends approximately <Link to="https://en.wikipedia.org/wiki/Coastal_India" className="text-decoration-none link-danger" target="_blank" rel="noopener noreferrer">1,098.81 km</Link>.
+                     </p>
+                     <p className="font font22">
+                          There are 40 such spots in the country. And, each has its charm. Interestingly, a scuba dive in the respective sites will entail unique experiences.
+                     </p>
+                     <p className="font font22">
+                          You have the privilege of choosing a site for an underwater diving adventure. And, it could be in the country’s eastern, southern, and western parts. However, getting access to information about the spots is essential.
+                     </p>
+                     <p className="font font22">
+                          To facilitate access, we carry detailed descriptions of the sites. Here are the spots for scuba diving in India to choose from:
+                     </p>
+                </div>
+                <div className="col-sm-1"></div>
+           </div>
+      </>);
+}
+
 //Faqs
 function FAQs(){
       return(<>
-           <div className="row background-ghostwhite p-3">
+           <div className="row background-whitesmoke p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h2>FAQs: Underwater Diving</h2>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
-           <div className="row background-ghostwhite p-3">
+           <div className="row background-whitesmoke p-3">
                 <div className="col-sm-2"></div>
                 <div className="col-sm-8">
                     <Accordion flush>
@@ -266,3 +300,4 @@ function FAQs(){
            </div>      
       </>);
 }
+
