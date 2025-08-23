@@ -89,6 +89,10 @@ function Intro(){
            <div className="row background-azure p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
+                     <figure className="float-end">
+                          <img src="https://i.postimg.cc/Vkrn1cH1/adventure-banner.webp" alt="Adventure Travel Destinations" className="img-fluid rounded p-0 m-2"/>                          
+                          <figcaption className="text-center"></figcaption>
+                     </figure>
                      <p className="font font22">
                           Trying out something different has its charm. Isn’t it? Then, why not go for a trip that calls for thrilling physical activities? We offer excellent adventure tour packages in India to give you a memorable experience.
                      </p>
@@ -272,7 +276,19 @@ function Faqs(){
                                </Accordion.Header>                                    
                                <Accordion.Body>
                                     <p className="font font22">
-                                         You can book on our website, or ask a customer service rep to book one for you. 
+                                         You can book on our website. Or, a customer service rep can book one for you. 
+                                    </p>
+                               </Accordion.Body> 
+                          </Accordion.Item> 
+                          <Accordion.Item eventKey="5">
+                               <Accordion.Header>
+                                    <span className="font font22">
+                                         #6. What level of physical fitness is required to participate in adventure activities?
+                                    </span>
+                               </Accordion.Header>                                    
+                               <Accordion.Body>
+                                    <p className="font font22">
+                                         You need to have at least a certain level of fitness. You can ask one of our experts for an explanation.  
                                     </p>
                                </Accordion.Body> 
                           </Accordion.Item>                           

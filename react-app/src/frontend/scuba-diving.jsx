@@ -249,6 +249,30 @@ function ScubaSites(){
                      <p className="font font22">
                           To facilitate access, we carry detailed descriptions of the sites. Here are the spots for scuba diving in India to choose from:
                      </p>
+                     <h3>Andaman</h3>
+                     <p className="font font22">
+                          Clear waters and amazing underwater entities are standout features of the Andaman Islands. It is one of the most sought-after places for underwater diving. The popular sites are Swaraj Dweep (erstwhile Havelock Island), North Bay Island, Neil Island, and Port Blair.
+                     </p>
+                     <h3>Pondicherry</h3>
+                     <p className="font font22">
+                          It is another popular destination for a scuba dive. Pondicherry's diving sites are Aravind’s Wall, The Ravines, The Hole, and Temple Reef. They have marine species and corals.
+                     </p>
+                     <h3>Lakshadweep</h3>
+                     <p className="font font22">
+                          Lakshadweep's Agatti Island, Kavaratti Island, Bangaram Island, Minicoy Island, and Kadmat Island are popular diving spots. They make the difference with intriguing corals and clear waters. The spots are among the best places for scuba diving in India.
+                     </p>
+                     <h3>Gujarat</h3>
+                     <p className="font font22">
+                          Beautiful aquatic entities make underwater diving in the Shivrajpur beach of Dwarka, Gujarat, enjoyable.
+                     </p>
+                     <h3>Karnataka</h3>
+                     <p className="font font22">
+                          Netrani is a fantastic site for scuba dives. It is also called the heart of India’s diving. The site is in the state’s Uttara Kannada district. 
+                     </p>
+                     <h3>Chennai</h3>
+                     <p className="font font22">
+                          Kovalam, Rameswaram, and Pamban Island are the underwater diving sites in Chennai. They have clear waters, wrecks, and corals.
+                     </p>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
