@@ -23,28 +23,28 @@
       background-color: aliceblue;
 }
 .background-lemonchiffon{
-      background-color:lemonchiffon;
+      background-color: lemonchiffon;
 }
 .background-beige{
       background-color:beige;
 }
 .background-midnightblue{
-      background-color:midnightblue;
+      background-color: midnightblue;
 }
 .background-powderblue{
-      background-color:powderblue;
+      background-color: powderblue;
 }
 .background-cornsilk{
-      background-color:cornsilk;
+       background-color:cornsilk;
 }
 .background-skyblue{
        background-color: skyblue;
 }
 .background-lavender{
-      background-color:lavender;
+      background-color: lavender;
 }
 .background-khaki{
-      background-color:khaki;
+      background-color: khaki;
 }
 .background-peachpuff{
       background-color: peachpuff;
@@ -80,9 +80,20 @@
        background-color: coral;
 }
 .background-orangered{
-      background-color: orangered;
+       background-color: orangered;
 }
-
+.background-lightcyan{
+        background-color: lightcyan;
+}
+.background-paleturquoise{
+       background-color: paleturquoise;
+}
+.background-aquamarine{
+       background-color: aquamarine;
+}
+.background-navajowhite{
+       background-color: navajowhite;
+}
 
 
 .color-gold{

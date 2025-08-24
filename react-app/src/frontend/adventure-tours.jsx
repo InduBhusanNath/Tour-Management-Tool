@@ -16,7 +16,7 @@ export default function AdventureTours(){
                           <H1/>
                           <Intro/>                          
                           <AdventureTourTypes/>
-                          <AdventureTripPackages/>
+                          {/*<AdventureTripPackages/>*/}
                           <WhyChooseOurAdventureTours/>
                           <Faqs/>
                           <SafetyConsiderations/>
@@ -58,7 +58,7 @@ function AdventureTourismBanner(){
 function BreadCrumb(){
   return(<>
             <div className="row">
-                 <div className="col-sm-12 background-azure">
+                 <div className="col-sm-12 background-cornsilk">
                       <nav aria-label="breadcrumb">
                            <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="/">Home</a></li>  
@@ -73,7 +73,7 @@ function BreadCrumb(){
 //H1
 function H1(){
       return(<>
-           <div className="row background-azure p-3">
+           <div className="row background-cornsilk p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h1 className="text-center">Thrilling Adventure Tour Packages in India for the Bold & Curious</h1>
@@ -86,16 +86,15 @@ function H1(){
 //Intro
 function Intro(){
       return(<>
-           <div className="row background-azure p-3">
+           <div className="row background-cornsilk p-3">
                 <div className="col-sm-1"></div>
-                <div className="col-sm-10">
-                     <figure className="float-end">
-                          <img src="https://i.postimg.cc/Vkrn1cH1/adventure-banner.webp" alt="Adventure Travel Destinations" className="img-fluid rounded p-0 m-2"/>                          
-                          <figcaption className="text-center"></figcaption>
-                     </figure>
+                <div className="col-sm-10">                     
                      <p className="font font22">
                           Trying out something different has its charm. Isn’t it? Then, why not go for a trip that calls for thrilling physical activities? We offer excellent adventure tour packages in India to give you a memorable experience.
                      </p>
+                     <section className="p-3">
+                          <AdventureTourPackageDisplay/>
+                     </section>
                      <p className="font font22">
                           Investing in the packages can be the perfect thing to do if you crave unique experiences. Also, forget the fear of the challenges from adventure activities. With our guidance, you can enjoy adventure tours in India to the fullest.
                      </p>
@@ -118,12 +117,14 @@ function Intro(){
 //Types of Adventure Tours
 function AdventureTourTypes(){
       return(<>
-           <div className="row background-honeydew p-3">
+           <div className="row background-cornsilk p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h2 className="text-center">Our Curated Adventure Tour Packages in India for the Best Experience</h2>
                 </div>
                 <div className="col-sm-1"></div>
+           </div>
+           <div className="row background-cornsilk p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
@@ -147,7 +148,7 @@ function AdventureTourTypes(){
 //Adventure Packages
 function AdventureTripPackages(){
       return(<>
-           <div className="row background-honeydew p-3">
+           <div className="row background-cornsilk p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                     <AdventureTourPackageDisplay/>
@@ -159,14 +160,14 @@ function AdventureTripPackages(){
 //Why Choose Adventure Trip Packages
 function WhyChooseOurAdventureTours(){
       return(<>
-           <div className="row background-azure p-3">
+           <div className="row background-cornsilk p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <h2 className="text-center">Why Choose Our Adventure Tour Packages in India</h2>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
-           <div className="row background-azure p-3">
+           <div className="row background-cornsilk p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
@@ -209,14 +210,14 @@ function WhyChooseOurAdventureTours(){
 //FAQs
 function Faqs(){
       return(<>
-           <div className="row background-azure p-3">
+           <div className="row background-cornsilk p-3">
                 <div className="col-sm-2"></div>
                 <div className="col-sm-8">
                      <h2>FAQs : Adventure Trip Packages</h2>
                 </div>
                 <div className="col-sm-8"></div>
            </div>
-           <div className="row background-azure p-3">
+           <div className="row background-cornsilk p-3">
                 <div className="col-sm-2"></div>
                 <div className="col-sm-8">
                     <Accordion flush>
@@ -301,14 +302,14 @@ function Faqs(){
 //Safety
 function SafetyConsiderations(){
       return(<>
-           <div className="row background-aliceblue p-3">
+           <div className="row background-cornsilk p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                      <h2>Safety Considerations Before Adventure Tours</h2>
                </div>
                <div className="col-sm-1"></div>
           </div>
-          <div className="row background-aliceblue p-3">
+          <div className="row background-cornsilk p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                      <p className="font font22">
@@ -346,14 +347,14 @@ function SafetyConsiderations(){
 //Consultation
 function Consultation(){
      return(<>
-           <div className="row background-aliceblue p-3">
+           <div className="row background-cornsilk p-3">
                <div className="col-sm-1"></div>
                <div className="col-sm-10">
                      <h2>Speak With Our Experts</h2>
                </div>
                <div className="col-sm-1"></div>
           </div>
-          <div className="row background-aliceblue p-3">
+          <div className="row background-cornsilk p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
@@ -362,7 +363,7 @@ function Consultation(){
                 </div>
                 <div className="col-sm-1"></div>
           </div>
-          <div className="row background-aliceblue p-3">
+          <div className="row background-cornsilk p-3">
                <div className="col-sm-3"></div>
                <div className="col-sm-6">
                     <div class="d-grid gap-2">
