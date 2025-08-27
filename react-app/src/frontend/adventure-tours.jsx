@@ -49,7 +49,7 @@ function AdventureTourismBanner(){
   return(<>
        <div className="row">
             <div className="col-sm-12 p-0 m-0">
-                 <img src="https://i.postimg.cc/SR2fKdSg/adventurebanner.webp" alt="Adventure Tour Packages by Aeiety Trips" className="w-100 img-fluid p-0 m-0"/>
+                 <img src="https://i.postimg.cc/Vv3rjqF7/adventurebanner.webp" alt="Adventure Tour Packages in India by Aeiety Trips" className="w-100 img-fluid p-0 m-0"/>
             </div>
        </div>
   </>);
@@ -76,7 +76,7 @@ function H1(){
            <div className="row background-cornsilk p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h1 className="text-center">Thrilling Adventure Tour Packages in India for the Bold & Curious</h1>
+                     <h1 className="text-center">Curated Adventure Tour Packages in India at Budget Prices</h1>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
@@ -120,7 +120,7 @@ function AdventureTourTypes(){
            <div className="row background-cornsilk p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h2 className="text-center">Our Curated Adventure Tour Packages in India for the Best Experience</h2>
+                     <h2 className="text-center">Types of Activities in Our Adventure Tour Packages in India </h2>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
@@ -128,7 +128,7 @@ function AdventureTourTypes(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
-                          At Aeiety Trips, the focus is on enabling you to experience the best. Furthermore, we consider emerging customer preferences. We offer a holistic spectrum of adventure tour packages in India at affordable prices. 
+                          At Aeiety Trips, the focus is on enabling you to experience the best. Furthermore, we take into account emerging customer preferences. We offer a holistic spectrum of adventure tour packages in India at affordable prices. 
                      </p>
                      <p className="font font22">
                           You can choose activities according to your preferences. Also, our adventure tours in India are suitable for all types of such tours. As such, you can undertake such a trip solo, with family, or with a group of friends. 
@@ -137,7 +137,7 @@ function AdventureTourTypes(){
                           Due to our careful selection, you will find your favorite activities. Also, you can choose the best adventure destinations in India from our excellent packages.
                      </p>
                      <p className="font font22">
-                          The adventure activities you can engage in:
+                          Types of adventure activities you can engage in include mountain expeditions, water activities, aerial ventures, jungle safaris, and desert excursions. 
                      </p>
                      
                 </div>

@@ -302,6 +302,12 @@
 .vertical-align-middle{
        vertical-align: middle;
 }
-        
+.zoom{
+       
+} 
+.zoom:hover{
+       transform: scaleY(1.1)
+}
+
 
         
