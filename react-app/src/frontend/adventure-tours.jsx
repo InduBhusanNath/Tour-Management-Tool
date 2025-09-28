@@ -9,7 +9,7 @@ export default function AdventureTours(){
              <>
                 <HelmetProvider>
                      <TechnicalSEO/>
-                     <div className="container-fluid background-khaki">
+                     <div className="container-fluid">
                           <Header/>
                           <AdventureTourismBanner/>                          
                           <BreadCrumb/>                          
