@@ -35,14 +35,14 @@ function TechnicalSEO(){
              
              <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Best Travel Agency | Cabs, Tours, Cruises : Aeiety Trips </title>                
-                <meta name="description" content="Explore the offerings of a trusted travel agency for cabs, tours and cruises. Plan your  trip with us for unforgettable travel experiences. Bag great deals!"/>
+                <title>Travel Agency in India | Cabs, Cruises, Holiday Packages</title>                
+                <meta name="description" content="Plan your next trip with a trusted travel agency in India. Enjoy hassle-free cab rides, scenic cruises, and tailor-made holiday packages. Book a tour today!"/>
                 <link rel="canonical" href="https://aeiety.com"/>
-                <meta property="og:title" content="Best Travel Agency | Cabs, Tours, Cruises : Aeiety Trips "/>
+                <meta property="og:title" content="Travel Agency in India | Cabs, Cruises, Holiday Packages"/>
                 <meta property="og:url" content="https://aeiety.com/"/>
                 <meta property="og:image" content="https://i.ibb.co/gFhMF2T/logofb.png"/>
                 <meta property="og:type" content="Web Page"/>
-                <meta property="og:description" content="Explore the offerings of a trusted travel agency for cabs, tours and cruises. Plan your  trip with us for unforgettable travel experiences. Bag great deals!"/>
+                <meta property="og:description" content="Plan your next trip with a trusted travel agency in India. Enjoy hassle-free cab rides, scenic cruises, and tailor-made holiday packages. Book a tour today!"/>
                 <meta property="og:locale" content="en_GB" />
             </Helmet>
      
@@ -54,7 +54,7 @@ function Banner(){
            <div className="row">
                 <div className="col-sm-12 p-0 m-0">
                      <figure className="p-0 m-0">                     
-                          <img src="https://i.ibb.co/2YZg8gXf/Home-Banner.webp" alt="Aeiety Trips Travel Agency" className="img-fluid w-100 p-0 m-0"/>
+                          <img src="https://i.ibb.co/2YZg8gXf/Home-Banner.webp" alt="Travel Agency in India" className="img-fluid w-100 p-0 m-0"/>
                      </figure>                     
                 </div>
            </div>
@@ -76,16 +76,16 @@ function Intro(){
                 <div className="col-sm-6">
                      <section >
                           <p className="font font22">
-                               Welcome to Aeiety Trips. We are your dedicated travel consultant. As a premier travel agency, we offer exciting and satisfying travel options. Experience the best travel with us.
+                               Welcome to Aeiety Trips. As a premier travel agency in India, we offer exciting and satisfying travel options. Consider us your dedicated travel consultant. And, experience the best travel with us. You can choose anything from taxi services, special activity options, tour packages, or cruise services. '
                           </p>
                           <p className="font font22">
-                               You can choose anything from taxi services, tourism options, tour packages, or cruise services. We strive to give the most fulfilling travel experience. That is why we run our operations with customer-centric policies. 
+                               We strive to give customers the most fulfilling travel experiences. Therefore, we run our operations with the customer in mind. Also, our budget-friendly holiday packages can fulfill the travel needs of all kinds of people. With the best destinations and thoughtful planning, we guarantee fantastic experiences. 
                           </p>
                           <p className="font font22">
-                               Our principal focus is your satisfaction, which is also the benchmark of our success. Our continuous emphasis on eliminating hassles and shortcomings has fine-tuned our services. As such, you will experience the best from whichever service you avail of from us. 
+                               Our principal focus is your satisfaction, which is also the benchmark of our success. Our continuous emphasis on eliminating hassles and shortcomings has fine-tuned our services. As such, you will experience the best from whichever service you avail of from us.
                           </p>
                           <p className="font font22">
-                               We are committed to operating Aeiety Trips with the governing tenets of affordability, timeliness, safety, and customer satisfaction. 
+                               We, as a reputed travel agency in India, are committed to operating Aeiety Trips with the governing tenets of affordability, timeliness, safety, and customer satisfaction.
                           </p>
                           <p className="font font22">
                               <Link to="/aboutus" className="text-decoration-none link-danger fw-bold">Know Us {"\u226B"}</Link>
@@ -94,31 +94,13 @@ function Intro(){
                 </div>
                 <div className="col-sm-5">
                      <figure className="p-0 m-0">
-                          <img src="https://i.ibb.co/Zpps1HjQ/Offers-Rounded.webp" alt="travel agencies in Delhi" className="img-fluid w-100 p-0 m-0"/>
+                          <img src="https://i.ibb.co/xt133zkC/Offers-Rounded.webp" alt="travel agencies in Delhi" className="img-fluid w-100 p-0 m-0"/>
                      </figure>
                 </div>
            </div>
       </>);
 }
-//Our Governing Principles
-function OurGoverningPrinciples(){
-      return(<>
-           <div className="row background-palegoldenrod p-3">
-                <div className="col-sm-1"></div>
-                <div className="col-sm-10">
-                     <h2 className="text-center">Our Principles Benefitting You</h2>
-                </div>
-                <div className="col-sm-1"></div>
-           </div>
-           <div className="row background-palegoldenrod p-3">
-                <div className="col-sm-1"></div>
-                <div className="col-sm-10">
-                     <OurPrinciples/>
-                </div>
-                <div className="col-sm-1"></div>
-           </div>
-      </>);
-}
+
 //Cab Service 
 function CabServiceHomePage(){
       return(<>
@@ -132,7 +114,7 @@ function CabServiceHomePage(){
                 <div className="col-sm-6 p-3">
                      <h2 className="text-center p-3">Round-the-Clock Taxi Service for All Trips</h2>
                      <p className="font font24">
-                          Excellence drives our cab rental services. Small, medium, and large cars to cater to all needs. We ensure that our customer-focused cab service is timely, comfortable, safe, and priced reasonably. We offer taxis for both local and out-of-town travel.
+                          Excellence drives our cab rental services. Cars of small, medium, and large sizes are available from the trusted travel agency in India.  They can cater to all trip needs. Timely, comfortable, safe, and reasonably priced cabs make the difference. We offer taxis for both local and out-of-town travel.
                      </p>
                      <p className="font font24">
                           <Link to="/taxis" className="text-decoration-none link-danger fw-bold">Taxi Services {"\u226B"}</Link>
@@ -151,7 +133,7 @@ function TourPackageHomePage(){
                 <div className="col-sm-10">
                      <h2 className="text-center">Tour Packages Taking You to Your Dream Places</h2>
                      <p className="font font24">
-                          Exciting and satisfying trips to your dream destinations are just a call away. Our thoughtful tour packages are structured to provide exclusive tour options to your wonderlands. The flexibility to customize travel packages to your tastes and preferences makes them super exciting. And, reasonable pricing gives you value for your money. 
+                         Exciting and satisfying trips to your dream destinations are just a call away. Our thoughtful tour packages are structured to provide exclusive tour options to your wonderlands. Customized holiday packages fulfil individual tastes and preferences. And, reasonable pricing gives you value for your money. 
                      </p>                     
                 </div> 
                 <div className="col-sm-1"></div>           
@@ -182,7 +164,7 @@ function SpecialTours(){
            <div className="row background-palegoldenrod p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h2 className="text-center">Special Tours for One-of-a-Kind Experiences</h2>                     
+                     <h2 className="text-center">Special Tours for Distinctive Experiences</h2>                     
                 </div>
                 <div className="col-sm-1">                                         
                 </div> 
@@ -191,7 +173,7 @@ function SpecialTours(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-4">                     
                      <p className="font font24">
-                          Do you want to embark on a different journey that can entail new experiences and knowledge? If so, why not try our exclusive adventure, eco, and historical tour options?  
+                          Do you want to undertake a journey with extraordinary activities? The objective is to explore exceptional activities and enhance knowledge. If so, why not try our exclusive adventure, eco, and historical tourism options?  
                      </p>
                 </div>
                 <div className="col-sm-7">                     
@@ -219,13 +201,12 @@ function WhyChooseUs(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
-                          There can be justifiable reasons behind selecting us. We are a travel agency dedicated to offering you satisfying travel options. At Aeiety Trips, we maintain trust in our services. Our operating policies revolve around the customer.
+                          There can be justifiable reasons behind selecting us. We are a travel agency in India dedicated to offering you satisfying travel options. At Aeiety Trips, we maintain trust in our services. Our operating policies revolve around the customer.
                      </p>
                      <p className="font font22">
-                           We take ample care to eliminate customers' pain points. That helps us to fine-tune our operations, giving them the best experience. Customer satisfaction is the focus of every aspect of our dedicated operations. 
+                           We take ample care to eliminate customers' pain points. That helps us to fine-tune our operations, giving clients the best experience. Customer satisfaction is the focus of every aspect of our dedicated operations, including holiday packages. 
                      </p> 
                      <p className="font font22">
-                          Therefore, experience our best-in-class services and gain a lifetime memory. 
                      </p>                                        
                 </div>
                 <div className="col-sm-1"></div>
@@ -242,7 +223,7 @@ function WhyChooseUs(){
                 <div className="col-sm-10">
                      <h3>Affordability</h3>
                      <p className="font font22">
-                          Affordability is one core tenet of our thoughtful pricing structure. We refrain from charging excessive and unreasonable prices, ensuring customers get value for their money. In addition, our pricing structure is free of any hidden costs.
+                          Affordability is a fundamental benchmark of our thoughtful pricing structure. Charging excessive and unreasonable prices is out of our strategy. We ensure customers get value for their money. And, no hidden costs exist. We are a budget-friendly travel agency in India.
                      </p>
                      <h3>Timeliness</h3>
                      <p className="font font22">
@@ -254,7 +235,7 @@ function WhyChooseUs(){
                      </p>
                      <h3>Satisfaction</h3>
                      <p className="font font22">
-                          Customer-centricity and transparency are among our core features. We ensure the best deals for our customers, ensuring their satisfaction. We are an excellent travel agency with curated services.
+                          Customer-centricity and transparency are among our core features. We ensure the best holiday package deals for our customers, ensuring their satisfaction. We are an excellent travel agency in India with curated services. Therefore, experience our best-in-class services and gain a lifetime memory.
                      </p>
                 </div>
                 <div className="col-sm-1"></div>
@@ -270,15 +251,16 @@ function CallToAction(){
                     <h2 className="text-center p-3">Want to Go on Your Dream TRIP?</h2>
                     <section className="rounded p-3">
                           <p className="font font22">
-                               If so, let us assist you. Why not contact us? Our representatives are ready to support. They will help you decide on the tour that suits you the best. Not only that. The dedicated representatives will even guide you in choosing your dream destinations and tailor your trip to your preferences.  
+                              If so, let us assist you. Why not contact us? Dedicated representatives of the exceptional travel agency in India are ready to support. They will help you decide on the tour that suits you the best. Not only that. The dedicated representatives will even guide you in choosing your dream destinations and tailor your trip to your preferences. 
                           </p>
                           <p className="font font22">
-                               Fill and submit the form alongside. Or, call us. We will revert soon.
+                              Fill and submit the form alongside. Or, call us. We will revert soon.
                           </p>
                     </section>
                 </div>
                 <div className="col-sm-4">
                      <section className="background-powderblue shadow rounded p-3">
+                          <p className="font font30 fw-bold text-center">Drop Your Message</p>
                           <ContactUsMessage/>
                      </section>                    
                 </div>
