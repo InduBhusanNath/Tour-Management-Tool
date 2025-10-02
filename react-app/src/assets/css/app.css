@@ -303,8 +303,8 @@
        vertical-align: middle;
 }
 .zoom{
-       
-} 
+       z-index:10;
+}
 .zoom:hover{
        transform: scaleY(1.1)
 }
