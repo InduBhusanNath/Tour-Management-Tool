@@ -3,6 +3,7 @@ import Footer from "./footer";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Link } from "react-router";
 import Accordion from 'react-bootstrap/Accordion';
+import ScubaDivingPackageList from "./scuba-diving-package-list";
 
 //Export Function
 export default function ScubaDiving(){
@@ -98,6 +99,9 @@ function Intro(){
                      <p className="font font22">
                           Our scuba diving packages in India cover the country’s key locations. As such, you can have the option to dive at your favorite spot. So, choose our packages to undergo a memorable diving experience.
                      </p>
+                     <section className="p-3">
+                          <ScubaDivingPackageList/>
+                     </section>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
@@ -169,7 +173,7 @@ function DivingGear(){
            <div className="row background-whitesmoke p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h2>Scuba Diving in India : A Breakdown of Protective Gear</h2>
+                     <h2>Scuba Diving Packages: A Breakdown of Protective Gear</h2>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
