@@ -16,13 +16,15 @@ export default function ScubaDiving(){
                  <BreadCrumb/>
                  <H1/>
                  <Intro/>
+                 <ScubaDivingPackageDisplay/>
                  <AboutScubaDivingPackages/>
                  <ScubaActivity/>
                  <DivingGear/>
                  <DivingBenefits/>
                  <ScubaSites/>
                  <FAQs/>
-                 <Conclusion/>                 
+                 <Conclusion/> 
+                 <InternalLinks/>                
                  <Footer/>
              </div>
          </HelmetProvider>     
@@ -98,14 +100,25 @@ function Intro(){
                      </p>
                      <p className="font font22">
                           Our scuba diving packages in India cover the country’s key locations. As such, you can have the option to dive at your favorite spot. So, choose our packages to undergo a memorable diving experience.
-                     </p>
-                     <section className="p-3">
-                          <ScubaDivingPackageList/>
-                     </section>
+                     </p>                     
                 </div>
                 <div className="col-sm-1"></div>
            </div>
       </>);
+}
+//Scuba Diving Package List
+function ScubaDivingPackageDisplay(){
+      return(<>
+           <div className="row background-ghostwhite p-3">
+           <div className="col-sm-1"></div>
+           <div className="col-sm-10">
+               <section className="p-3">
+                     <ScubaDivingPackageList/>
+                </section>
+           </div>
+           <div className="col-sm-1"></div>
+      </div>
+      </>);      
 }
 //About Scuba Diving
 function AboutScubaDivingPackages(){
@@ -428,6 +441,31 @@ function Conclusion(){
                 </div>
                 <div className="col-sm-1"></div>
            </div>      
+      </>);
+}
+//Links
+function InternalLinks(){
+      return(<>
+           <div className="row background-ghostwhite p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2>Adventure Offerings at Aeiety Trips</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div> 
+          <div className="row background-ghostwhite p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                    <p className="font font22">
+                          <ul className="list-group list-group-horizontal-sm">
+                               <li className="list-group-item bg-transparent"><Link to="/adventure-tours" className="text-decoration-none link-success">Adventure Packages</Link></li>
+                               <li className="list-group-item bg-transparent">India Scuba Diving</li>
+                               <li className="list-group-item bg-transparent">Andaman Scuba Packages</li>                               
+                          </ul>
+                     </p>
+                </div>
+                <div className="col-sm-1"></div>
+           </div> 
       </>);
 }
 

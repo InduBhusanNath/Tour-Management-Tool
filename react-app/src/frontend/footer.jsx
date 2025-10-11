@@ -67,7 +67,7 @@ function Foot(){
                          </section>
                          <section>
                                  <p className="font font24 fw-bold">Follow Us</p>
-                                 <Link to="/https://www.facebook.com/aeietytrips" className="text-decoration-none" target="_blank" rel="noreferrer noopener"><img src={"/MainImages/facebook.png"} className="img-fluid p-0 m-0" alt="Cabs Aeiety Trips"/></Link>
+                                 <Link to="https://www.facebook.com/AeietyTripsPage" className="text-decoration-none" target="_blank" rel="noreferrer noopener"><img src={"/MainImages/facebook.png"} className="img-fluid p-0 m-0" alt="Cabs Aeiety Trips"/></Link>
                                  &nbsp;&nbsp;&nbsp;
                                  <Link to="/" className="text-decoration-none" target="_blank" rel="noreferrer noopener"><img src={"/MainImages/x.png"} className="img-fluid p-0 m-0" alt="Tours Aeiety Trips"/></Link>
                                  &nbsp;&nbsp;&nbsp;
