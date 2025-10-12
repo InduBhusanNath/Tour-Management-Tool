@@ -1,4 +1,4 @@
-export default function InternationalTourPackagesDisplay(){
+export default function InternationalTravelPackagesList(){
      return(<>
          <div className="card shadow-sm">
              <div className="card-group">

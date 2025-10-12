@@ -79,7 +79,7 @@ function Nav(){
                                <li><Link to="/historical-tours" className="text-decoration-none text-dark">Historical</Link></li>
                          </ul>
                   </li>
-                  <li><Link to="/tour-packages-intro" className="text-decoration-none text-dark padding5">&nbsp;Tour Packages</Link></li>
+                  <li><Link to="/travel-packages" className="text-decoration-none text-dark padding5">&nbsp;Travel Packages</Link></li>
                   <li><Link to="/cruises" className="text-decoration-none text-dark padding5">&nbsp;Cruises</Link></li>
                   
               </ul>

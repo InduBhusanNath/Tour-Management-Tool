@@ -21,7 +21,7 @@ const responsive = {
 };
 
 //Main export function
-export default function InternationalTourPackageCarousel(){
+export default function InternationalTravelPackageCarousel(){
 return(<>
      
              <Carousel responsive={responsive}>

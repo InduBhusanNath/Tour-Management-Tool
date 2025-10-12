@@ -4,7 +4,7 @@ import ContactUsMessage from "./contactus_message";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import OurPrinciples from "./OurPrinciples";
 import SpecialTourServices from "./special-tours-service";
-import InternationalTourPackageCarousel from "./international-tour-package-carousel";
+import InternationalTravelPackageCarousel from "./international-travel-package-carousel";
 import { Link } from "react-router";
 
 
@@ -20,7 +20,7 @@ export default function HomePage(){
                      <Banner/>
                      <Intro/>                                       
                      <CabServiceHomePage/>
-                     <TourPackageHomePage/>
+                     <TravelPackageHomePage/>
                      <SpecialTours/>
                      <WhyChooseUs/> 
                      <CallToAction/>                                                                 
@@ -108,7 +108,7 @@ function CabServiceHomePage(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-4">
                      <figure className="p-0 m-0">
-                          <img src="https://i.ibb.co/ycZ6CXFg/Taxi-Types.webp" alt="travel agencies in Guwahati" className="img-fluid w-100 p-0 m-0"/>
+                          <img src="https://i.ibb.co/9kM7zt02/Taxi-Types.webp" alt="travel agencies in Guwahati" className="img-fluid w-100 p-0 m-0"/>
                      </figure>
                 </div>
                 <div className="col-sm-6 p-3">
@@ -126,14 +126,14 @@ function CabServiceHomePage(){
       </>);
 }
 //Tour Package
-function TourPackageHomePage(){
+function TravelPackageHomePage(){
       return(<>
            <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-1"></div> 
                 <div className="col-sm-10">
-                     <h2 className="text-center">Tour Packages Taking You to Your Dream Places</h2>
+                     <h2 className="text-center">Travel Packages Taking You to Your Dream Places</h2>
                      <p className="font font24">
-                         Exciting and satisfying trips to your dream destinations are just a call away. Our thoughtful tour packages are structured to provide exclusive tour options to your wonderlands. Customized holiday packages fulfil individual tastes and preferences. And, reasonable pricing gives you value for your money. 
+                         Exciting and satisfying trips to your dream destinations are just a call away. Our thoughtful trip packages are structured to provide exclusive tour options to your wonderlands. Customized holiday packages fulfil individual tastes and preferences. And, reasonable pricing gives you value for your money. 
                      </p>                     
                 </div> 
                 <div className="col-sm-1"></div>           
@@ -141,7 +141,7 @@ function TourPackageHomePage(){
            <div className="row background-lemonchiffon p-3">
                 <div className="col-sm-2"></div> 
                 <div className="col-sm-8">
-                     <InternationalTourPackageCarousel/>
+                     <InternationalTravelPackageCarousel/>
                 </div> 
                 <div className="col-sm-2"></div>           
            </div> 
@@ -150,7 +150,7 @@ function TourPackageHomePage(){
                 <div className="col-sm-6"></div>
                 <div className="col-sm-4 text-end">
                      <p className="font font24">
-                          <Link to="/tour-packages-intro" className="text-decoration-none link-danger fw-bold">All Tour Packages{"\u226B"}</Link>
+                          <Link to="/travel-packages" className="text-decoration-none link-danger fw-bold">All Holiday Packages{"\u226B"}</Link>
                      </p>
                 </div>
                 <div className="col-sm-1"></div>

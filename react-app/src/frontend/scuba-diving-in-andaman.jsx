@@ -22,6 +22,7 @@ export default function ScubaDivingAndaman(){
                      <PackageChecklist/>
                      <MarineLife/>
                      <ChoosingRightPackage/>
+                     <InternalLinks/>
                      <Footer/>
                  </div>              
              </HelmetProvider>
@@ -339,7 +340,31 @@ function ChoosingRightPackage(){
                 </div>
                 <div className="col-sm-1"></div>
            </div>
+      </>);    
+      
+}
+//Links
+function InternalLinks(){
+      return(<>
+           <div className="row bg-light bg-gradient p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                     <h2>Adventure Offerings at Aeiety Trips</h2>
+                </div>
+                <div className="col-sm-1"></div>
+           </div> 
+          <div className="row bg-light bg-gradient p-3">
+                <div className="col-sm-1"></div>
+                <div className="col-sm-10">
+                    <p className="font font22">
+                          <ul className="list-group list-group-horizontal-sm">
+                               <li className="list-group-item bg-transparent">{'\u2705'}<Link to="/adventure-tours" className="text-decoration-none link-success">Adventure Packages</Link></li>
+                               <li className="list-group-item bg-transparent">{'\u2705'}<Link to="/scuba-diving" className="text-decoration-none link-success">India Scuba Diving</Link></li>
+                               <li className="list-group-item bg-transparent">{'\u2705'}<Link to="/scuba-diving-in-andaman" className="text-decoration-none link-success">Andaman Scuba Packages</Link></li>                               
+                          </ul>
+                     </p>
+                </div>
+                <div className="col-sm-1"></div>
+           </div> 
       </>);
-      
-      
 }

@@ -1,18 +1,18 @@
 import Header from "./header";
 import Footer from "./footer";
 import { Helmet } from "react-helmet";
-import InternationalTourPackagesDisplay from "./tour-packages-display-international";
+import InternationalTravelPackagesList from "./travel-packages-list-international";
 
-export default function TourPackagesIntro(){
+export default function TravelPackagesIntro(){
      return(<>
          <div className="container-fluid">
              <Header/>
              <TechnicalSEO/>
-             <TourPackageBanner/>
+             <TravelPackageBanner/>
              <BreadCrumb/>
              <Body1/>
              <Body2/>
-             <InternationalTourPackagesList/>
+             <InternationalTravelPackagesDisplay/>
              <Body3/>             
              <Footer/>
          </div>     
@@ -38,7 +38,7 @@ function TechnicalSEO(){
     </>);
 }
 //Banner
-function TourPackageBanner(){
+function TravelPackageBanner(){
      return(<>
          <div className="row">
              <div className="col-sm-12 p-0 m-0">
@@ -57,7 +57,7 @@ function BreadCrumb(){
                              <ol class="breadcrumb">
                                   <li class="breadcrumb-item"><a href="/" className="link-dark">Home</a></li>
                                   <li class="breadcrumb-item"><a href="/aboutus" className="link-dark">About Us</a></li>                                    
-                                  <li class="breadcrumb-item active" aria-current="page">Tour Packages</li>
+                                  <li class="breadcrumb-item active" aria-current="page">Travel Packages</li>
                              </ol>
                         </nav> 
                    </div>
@@ -65,7 +65,7 @@ function BreadCrumb(){
     </>);
 }
 //International Tour Packages
-function InternationalTourPackagesList(){
+function InternationalTravelPackagesDisplay(){
      return(<>
          <div className="row background-lightgoldenrodyellow p-3">
              <div className="col-sm-1"></div>
@@ -77,7 +77,7 @@ function InternationalTourPackagesList(){
          <div className="row background-lightgoldenrodyellowp-3">
              <div className="col-sm-1"></div>
              <div className="col-sm-10 border border-warning border-2 rounded p-2">
-                 <InternationalTourPackagesDisplay/>
+                 <InternationalTravelPackagesList/>
              </div>
              <div className="col-sm-1"></div>
          </div>

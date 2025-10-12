@@ -23,7 +23,7 @@ import ScubaDiving from "./frontend/scuba-diving";
 import ScubaDivingAndaman from "./frontend/scuba-diving-in-andaman";
 import EcoTours from "./frontend/eco-tours";
 import HistoricalTours from "./frontend/historical-tours";
-import TourPackagesIntro from "./frontend/tour-packages-intro";
+import TravelPackagesIntro from "./frontend/travel-packages";
 import BhutanTourPackages from "./frontend/bhutan-tour-packages";
 import BhutanTourPackageDescription from "./frontend/bhutan-tour-package-description";
 import Cruises from "./frontend/cruises";
@@ -62,7 +62,7 @@ ReactDOM.createRoot(root).render(
            <Route path="/scuba-diving-in-andaman" element={<ScubaDivingAndaman/>} />
            <Route path="/eco-tours" element={<EcoTours/>} />
            <Route path="/historical-tours" element={<HistoricalTours/>} />
-           <Route path="/tour-packages-intro" element={<TourPackagesIntro/>} />
+           <Route path="/travel-packages" element={<TravelPackagesIntro/>} />
            <Route path="/bhutan-tour-packages" element={<BhutanTourPackages/>} />
            <Route path="/bhutan-tour-package-description" element={<BhutanTourPackageDescription/>} />
            <Route path="/cruises" element={<Cruises/>} />
