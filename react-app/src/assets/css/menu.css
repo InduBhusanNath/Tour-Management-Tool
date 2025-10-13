@@ -28,3 +28,21 @@ nav ul li:hover ul{
 nav ul li ul li:hover{
      background-color: lightsalmon;
 }
+.mobile-menu{
+       position:absolute;
+       z-index:30;     
+       top:0%;
+       left:0%;
+       width:90%;              
+       overflow:hidden;     
+}
+.width-0{
+       width:0%;
+       
+}
+.width-75{
+       width:75%;
+}
+.width-90{
+       width:90%;
+}
