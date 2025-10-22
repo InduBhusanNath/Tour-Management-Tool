@@ -80,7 +80,7 @@ function H1(){
            <div className="row background-ghostwhite p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-                     <h1 className="text-center">Tailored Scuba Diving Packages for Beginners to Pros</h1>
+                     <h1 className="text-center">Curated Scuba Diving Packages: Explore the Underwater Paradise</h1>
                 </div>
                 <div className="col-sm-1"></div>
            </div>
@@ -93,14 +93,14 @@ function Intro(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
-                          Do you often feel the urge to experience the underwater world? If so, investing in scuba diving packages can provide the answer. In other words, you will realize what the inside of the sea or ocean looks like. A scuba dive allows for the discovery and experience of the fascinating underwater world. 
+                          At Aeiety Trips, we offer you the opportunity to experience the dreamlike world beneath the sea or ocean surface. Our exclusive scuba diving packages are tailor-made and affordable. These enable going under the sea or the ocean surface. As such, you will find the answer to the question: what exists beneath the water surface.  
                      </p>
                      <p className="font font22">
-                          Additionally, scuba trips are appealing, educational, and beneficial to health. As such, there can be an all-round result from the activity. We at Aeiety Trips provide excellent underwater diving packages at affordable prices. With our expert professionals, you will experience the best dive. 
+                          Additionally, scuba trips are appealing, educational, and beneficial to health. As such, there can be an all-round result from the activity. We at Aeiety Trips provide excellent underwater diving packages at affordable prices. With our expert professionals, you will experience the best dive.
                      </p>
                      <p className="font font22">
                           Our scuba diving packages in India cover the country’s key locations. As such, you can have the option to dive at your favorite spot. So, choose our packages to undergo a memorable diving experience.
-                     </p>                     
+                     </p>                                       
                 </div>
                 <div className="col-sm-1"></div>
            </div>
@@ -134,11 +134,11 @@ function AboutScubaDivingPackages(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
-                          There are differences between an average dive and an unforgettable adventure. Examining our scuba diving packages is a good idea. The assessment will allow you to understand how we can make a difference. Our scuba trips are tailored for new and seasoned divers. 
+                          There are differences between an average dive and an unforgettable adventure. Examining our scuba diving packages is a good idea. That way, you will realize the difference we make. Our scuba trips are tailored for new and seasoned divers. 
                      </p>
-                     <h3>Scuba Trips Suit Beginners to Pros</h3>
+                     <h3>Scuba Trips Suit All Diver Types</h3>
                      <p className="font font22">
-                          Our scuba diving packages cater to the needs of all divers, from beginners to pros. There will be proper guidance for first-timers. Experienced divers can get their preferred options. We customize scuba trips to ensure safety and fun. 
+                          Newbies to experienced divers can use our customized scuba diving packages. There will be proper guidance for first-timers. Experienced divers can get their preferred options. We customize scuba trips to ensure safety and fun. 
                      </p>
                      <h3>Tailored Scuba Trips</h3>
                      <p className="font font22">
@@ -167,10 +167,10 @@ function ScubaActivity(){
                 <div className="col-sm-1"></div>
                      <div className="col-sm-10">
                           <p className="font font22">
-                               Speaking broadly, the activity involves diving into the sea or ocean. You can consider scuba diving packages as a means to engage in exploration, sport, or adventure. Nevertheless, the activity is a fantastic adventure. And, it is a safe activity.
+                               Speaking broadly, the activity involves diving into the sea or ocean. You can consider scuba diving packages as a fantastic adventure. Notably, the activity is safe. Again, regarding it as an exploration, sport, or adventure is not wrong. 
                           </p>
                           <p className="font font22">
-                               Notably, underwater diving during scuba trips requires the use of protective gear. It allows breathing and navigating inside water.  And, anyone over the age of 12 is eligible for a scuba dive. Also, practice can help to master the activity quickly. 
+                               Notably, underwater diving during scuba trips requires the use of protective gear. It allows breathing and navigating inside water.  Also, there is an age limit of 12 years as one of the eligibility conditions for a scuba dive. Also, practice can help to master the activity quickly. 
                           </p>
                           <p className="font font22">
                                Training is essential before diving. You need to master the basics. Moreover, the activity can entail notable benefits. So, you have got the answer if you asked what scuba diving packages are all about.
@@ -194,10 +194,10 @@ function DivingGear(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
-                          A scuba dive necessitates wearing protective gear. As such, knowing about the gear before booking scuba diving packages is meaningful. The associated components enable breathing, sight, movement, and maintaining body temperature while submerged in water.  Thus, you can plan to participate in scuba trips in India with the gear.
+                         It is meaningful to understand the protective gear properly. Notably, doing that before booking scuba diving packages is a good idea. The associated components enable breathing, sight, movement, and maintaining body temperature while submerged in water during a scuba dive.  Thus, you can plan to participate in scuba trips in India with the gear.
                      </p>
                      <p className="font font22">
-                          The list of essential equipment for underwater diving is:
+                         The list of essential equipment for underwater diving is:
                      </p>                     
                      <p className="font font22">
                           <ul>
@@ -228,23 +228,23 @@ function DivingBenefits(){
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
                      <p className="font font22">
-                         Diving is not only a recreation or adventure. It has broader implications. Scuba trips in India can positively impact multiple dimensions of life. A scuba dive can entail physical, mental, and social benefits. As such, you gain a lot from the activity. Here are the principal advantages:
+                          Diving is not only a recreation or adventure. It has broader implications. Scuba trips in India can positively impact multiple dimensions of life. A scuba dive can entail physical, mental, and social benefits. As such, you gain a lot from the activity. Here are the principal advantages:
                      </p>                                       
                      <h3>Health Benefits</h3>
                      <p className="font font22">
                           <ul>
-                               <li>An hour of diving can burn 390 to 788 calories of body fat. Continuous body movements exercise the body to burn fat. As such, scuba trips can help to lose weight.</li>
+                               <li>390 to 788 calories of body fat can be burned in a diving hour. Continuous body movements exercise the body to burn fat. As such, scuba trips can help to lose weight.</li>
                                <li>Physical activities underwater strengthen muscles and tone the body.</li>
-                               <li>Slow and deep breaths with air from the apparatus improve breathing control and respiratory health. Also, a scuba dive can stabilize heart rate.</li>
+                               <li>Slow and deep breaths with air from the apparatus improve breathing control and respiratory health. Also, a scuba dive can stabilize heart rate. </li>
                                <li>The water environment lowers blood pressure. As such, a session of scuba diving in India can instill calmness in the body.</li>
-                               <li>Movements of different body parts improve blood circulation.</li>
+                               <li>Moments of different body parts improve blood circulation.</li>
                                <li>Sea or ocean water improves skin health.</li>
                           </ul>
                      </p> 
                      <h3>Mental Benefits</h3> 
                      <p className="font font22">
                           <ul>
-                               <li>The environment inside the sea or ocean is captivating and thought-provoking. Also, it causes peace of mind. As such, underwater diving reduces stress.</li>
+                               <li>The environment inside the sea or ocean is spectacular and intriguing. Also, it causes peace of mind. As such, underwater diving reduces stress.</li>
                                <li>Navigating underwater is akin to problem-solving. Underwater movement necessitates good decision-making. As such, scuba trips build confidence and self-esteem in the diver.</li>
                                <li>The sight of vegetation, marine species, coral reefs, and other underwater entities can create broader perspectives on nature. As such, scuba diving in India can create a sense of bonding with nature.</li>
                           </ul>
@@ -290,7 +290,7 @@ function ScubaSites(){
                      </p>                     
                      <h3>Andaman</h3>
                      <p className="font font22">
-                          Clear waters and amazing underwater entities are standout features of the Andaman Islands. It is one of the most sought-after places for underwater diving. Andaman's popular diving sites are:
+                         Clear waters and amazing underwater entities are standout features of the Andaman Islands. It is one of the most sought-after places for underwater diving. Andaman's popular diving sites are:
                      </p>
                      <p className="font font22">
                           <ul className="list-group list-group-horizontal-sm">
@@ -302,7 +302,7 @@ function ScubaSites(){
                      </p>
                      <h3>Pondicherry</h3>
                      <p className="font font22">
-                           It is another popular destination for scuba diving in India. Pondicherry has marine species and corals. Pondicherry's diving sites are:
+                          It is another popular destination for scuba diving in India. Pondicherry has marine species and corals. Pondicherry's diving sites are:
                      </p>
                      <p className="font font22">
                           <ul className="list-group list-group-horizontal-sm">
@@ -327,11 +327,11 @@ function ScubaSites(){
                      </p>
                      <h3>Gujarat</h3>
                      <p className="font font22">
-                          Beautiful aquatic entities make underwater diving on the Shivrajpur beach of Dwarka, Gujarat, enjoyable.
+                         Beautiful aquatic entities make underwater diving on the Shivrajpur beach of Dwarka, Gujarat, enjoyable.
                      </p>
                      <h3>Karnataka</h3>
                      <p className="font font22">
-                          Netrani is a fantastic site for scuba dives. It is also called the heart of India’s underwater diving. The site is in the state’s Uttara Kannada district. 
+                          Netrani is a fantastic site for scuba dives. It is also called the heart of India’s underwater diving. The site is in the state’s Uttara Kannada district.
                      </p>
                      <h3>Chennai</h3>
                      <p className="font font22">
@@ -413,7 +413,7 @@ function FAQs(){
                                </Accordion.Header>                                    
                                <Accordion.Body>
                                     <p className="font font22">
-                                         Yes, there are preconditions, such as heart diseases, asthma, or other such health issues. It is good to get a doctor’s certificate before engaging in underwater diving.
+                                         You must be free from heart disorders, asthma, or other such health issues. It is good to get a doctor’s certificate before engaging in underwater diving.
                                     </p>
                                </Accordion.Body> 
                           </Accordion.Item>  
@@ -437,7 +437,18 @@ function Conclusion(){
            <div className="row background-ghostwhite p-3">
                 <div className="col-sm-1"></div>
                 <div className="col-sm-10">
-
+                     <p className="font font22">
+                          Our experts plan exclusive trips. They will tailor scuba diving packages to your preferences. As such, you will undergo special experiences, not just generic ones. Our team will curate your trip with care to ensure you get the best value.
+                     </p>
+                     <p className="font font22">
+                          Your scuba trips will be seamless at excellent dive sites. We ensure high safety, personalized care, and quality in all aspects. You will enjoy dives matching your skill level. Therefore, why wait further? 
+                     </p>
+                     <p className="font font22">
+                          Contact us now! Call our dedicated representatives to assist in booking a package. That way, you will get assistance in spotting the best package. Also, you can share your preferences with them. We will create an exclusive package for scuba diving in Andaman.
+                     </p>
+                     <p className="font font22">
+                          Speak to a representative. 
+                     </p>
                 </div>
                 <div className="col-sm-1"></div>
            </div>      

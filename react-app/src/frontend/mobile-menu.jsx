@@ -42,7 +42,7 @@ export default function MobileMenu(){
      return(<>
          <div className="zindex-30">
              <main className="p-3">
-                 <button className="rounded border-0 bg-info shadow" onClick={showMobMenu}>{'\u2630'}</button>
+                 <button className="rounded border-0 bg-light shadow" onClick={showMobMenu}>{'\u2630'}</button>
              </main>             
          </div>
          <div className={mobStatus}>
@@ -57,8 +57,8 @@ export default function MobileMenu(){
                      </ul>
                      <article className={cabStatus}>
                          <ul className="list-group list-group-flush">
-                             <li className="list-group-item fs-4">Delhi</li>
-                             <li className="list-group-item fs-4">Guwahati</li>
+                             <li className="list-group-item fs-4 background-ghostwhite" onClick={hideMobMenu}><Link to="/delhi-taxi" className="text-decoration-none link-dark">Delhi</Link></li>
+                             <li className="list-group-item fs-4 background-ghostwhite" onClick={hideMobMenu}><Link to="/guwahati-taxi" className="text-decoration-none link-dark">Guwahati</Link></li>
                          </ul> 
                      </article>                                                         
                  </section> 
@@ -69,40 +69,40 @@ export default function MobileMenu(){
                      </ul>   
                      <article className={specialTourStatus}>
                           <ul className="list-group list-group-flush">
-                             <li className="list-group-item fs-4">Adventure</li>
-                             <li className="list-group-item fs-4">Eco</li>
-                             <li className="list-group-item fs-4">Historical</li>
+                             <li className="list-group-item fs-4 background-ghostwhite" onClick={hideMobMenu}><Link to="/adventure-tours" className="text-decoration-none link-dark">Adventure</Link></li>
+                             <li className="list-group-item fs-4 background-ghostwhite" onClick={hideMobMenu}><Link to="/eco-tours" className="text-decoration-none link-dark">Eco</Link></li>
+                             <li className="list-group-item fs-4 background-ghostwhite" onClick={hideMobMenu}><Link to="/historical-tours" className="text-decoration-none link-dark">Historical</Link></li>
                          </ul>
                      </article>
                  </section>
                  {/*Travel Packages */}
                  <section className="text-center">
                      <ul className="list-group list-group-flush">
-                         <li className="list-group-item text-decoration-none link-dark fs-2 bg-transparent  border-bottom">Travel Packages</li>
+                         <li className="list-group-item text-decoration-none link-dark fs-2 bg-transparent  border-bottom" onClick={hideMobMenu}><Link to="/travel-packages" className="text-decoration-none link-dark">Travel Packages</Link></li>
                      </ul>  
                  </section>
                  {/*Cruises*/}
                  <section className="text-center">
                      <ul className="list-group list-group-flush">
-                         <li className="list-group-item text-decoration-none link-dark fs-2 bg-transparent  border-bottom">Cruises</li>
+                         <li className="list-group-item text-decoration-none link-dark fs-2 bg-transparent  border-bottom" onClick={hideMobMenu}><Link to="/cruises" className="text-decoration-none link-dark">Cruises</Link></li>
                      </ul>  
                  </section>
                  {/*Home*/}
                  <section className="text-center">
                      <ul className="list-group list-group-flush">
-                         <li className="list-group-item text-decoration-none link-dark fs-2 bg-transparent  border-bottom">HOME</li>
+                         <li className="list-group-item text-decoration-none link-dark fs-2 bg-transparent  border-bottom" onClick={hideMobMenu}><Link to="/" className="text-decoration-none link-dark">HOME</Link></li>
                      </ul>  
                  </section>
                  {/* About Us */}
                  <section className="text-center">
                      <ul className="list-group list-group-flush">
-                         <li className="list-group-item text-decoration-none link-dark fs-2 bg-transparent  border-bottom">About Us</li>
+                         <li className="list-group-item text-decoration-none link-dark fs-2 bg-transparent  border-bottom" onClick={hideMobMenu}><Link to="/aboutus" className="text-decoration-none link-dark">About Us</Link></li>
                      </ul>  
                  </section>
                  {/*Blogs*/}
                  <section className="text-center">
                      <ul className="list-group list-group-flush">
-                         <li className="list-group-item text-decoration-none link-dark fs-2 bg-transparent  border-bottom">Blogs</li>
+                         <li className="list-group-item text-decoration-none link-dark fs-2 bg-transparent  border-bottom" onClick={hideMobMenu}><Link to="/blog-page" className="text-decoration-none link-dark">Blogs</Link></li>
                      </ul>  
                  </section>
                  {/* Places to Visit */}
@@ -114,15 +114,13 @@ export default function MobileMenu(){
                  {/* Contact Us */}
                  <section className="text-center">
                      <ul className="list-group list-group-flush">
-                         <li className="list-group-item text-decoration-none link-dark fs-2 bg-transparent  border-bottom">Contact Us</li>
+                         <li className="list-group-item text-decoration-none link-dark fs-2 bg-transparent  border-bottom" onClick={hideMobMenu}><Link to="/contactus" className="text-decoration-none link-dark">Contact Us</Link></li>
                      </ul>  
                  </section>
                  <section className="text-center">
-                     <ul className="list-group list-group-flush">
-                         <li className="list-group-item text-decoration-none link-dark fs-2 bg-transparent">&nbsp;</li>
-                         <li className="list-group-item text-decoration-none link-dark fs-2 bg-transparent">&nbsp;</li>
-                         <li className="list-group-item text-decoration-none link-dark fs-2 bg-transparent">&nbsp;</li>
-                     </ul>  
+                     <p>&nbsp;</p>
+                     <p>&nbsp;</p>
+                     <p>&nbsp;</p>
                  </section>              
              </main>                                   
          </div>                
